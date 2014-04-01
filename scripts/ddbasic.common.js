@@ -1,9 +1,10 @@
-(function($) {
+(function ($) {
+  'use strict';
 
   /**
    * Toggle opening hours
    */
-  function toggle_opening_hours() {
+  function toggleOpeningHours() {
     // Create toggle link
     $('<a />', {
       'class' : 'opening-hours-toggle js-opening-hours-toggle js-collapsed',
@@ -18,12 +19,12 @@
     var scrollToTarget;
 
     // Attach click
-    element.on('click touchstart', function(event) {
+    element.on('click touchstart', function (event) {
       // Store clicked element for later use
       var element = this;
 
       // Toggle
-      $(this).next('.js-opening-hours-toggle-element').slideToggle('fast', function() {
+      $(this).next('.js-opening-hours-toggle-element').slideToggle('fast', function () {
         // Toggle class
         $(element).toggleClass('js-collapsed js-expanded');
 
@@ -34,7 +35,7 @@
         } else {
           // Else the window is scrolled to the top and we have to multiply the
           // height by 2 because it get's position fixed
-          scrollOffset = $(siteHeader).height()*2;
+          scrollOffset = $(siteHeader).height() * 2;
         }
 
         // Scroll to the top of the element
@@ -63,10 +64,10 @@
   // When ready start the magic.
   $(document).ready(function () {
     // Toggle opening hours.
-    toggle_opening_hours();
+    toggleOpeningHours();
 
     // Toggle footer menu.
-    $('.footer .pane-title').on('click', function() {
+    $('.footer .pane-title').on('click', function () {
       var element = $(this).parent();
       $('.menu', element).toggle();
       $(this).toggleClass('js-toggled');
