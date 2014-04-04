@@ -46,7 +46,8 @@ module.exports = function (grunt) {
       dist: {                   // Target
         options: {              // Target options
           sassDir: 'sass',
-          cssDir: 'css'
+          cssDir: 'css',
+          outputStyle: 'compressed'
         }
       }
     },
