@@ -574,7 +574,6 @@ input#edit-search-block-form--2.spinner {
 
 .pane-search-result {
   clear: both;
-  overflow: hidden;
   padding-top: 20px;
 
   .search-results {
@@ -582,8 +581,22 @@ input#edit-search-block-form--2.spinner {
       padding-left: 0;
 
       .list-item {
-        background: url('../images/pw_maze_white.png');
+        background-image: url('../images/pw_maze_white.png');
         padding: 15px;
+
+        &.ding-search-collection {
+          background-image: none;
+          padding: 0;
+          margin-top: 30px;
+          margin-right: 10px;
+
+          .ting-collection-wrapper {
+            background-image: url('../images/pw_maze_white.png');
+            position: relative;
+            z-index: 30;
+            padding: 15px;
+          }
+        }
       }
 
       .view-mode-teaser {
