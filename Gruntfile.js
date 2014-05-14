@@ -48,7 +48,7 @@ module.exports = function (grunt) {
         options: {              // Target options
           sassDir: 'sass',
           cssDir: 'css',
-          outputStyle: 'expanded'
+          outputStyle: 'compressed'
         }
       }
     },
