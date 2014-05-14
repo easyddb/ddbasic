@@ -79,9 +79,73 @@
 
     .availability-status {
       &:before {
-        content: " - ";
         margin-left: 5px;
+        content: " - ";
       }
     }
+  }
+}
+
+/* Search results availability
+   ========================================================================== */
+
+.page-search .availability {
+
+  &.pending {
+    background-color: $availability-pending;
+  }
+
+  &.availability.processed {
+    background-color: $availability-processed;
+  }
+
+  &.availability.available {
+    background-color: $availability-available;
+  }
+
+  &.availability.reservable {
+    background-color: $availability-reservable;
+  }
+
+  &.availability.available.reservable {
+    background-color: $availability-available-reservable;
+  }
+
+  &.availability.available.not-reservable {
+    background-color: $availability-available-not-reservable;
+  }
+
+  &.availability.unavailable.reservable {
+    background-color: $availability-reservable;
+  }
+
+  &.availability.unavailable.not-reservable {
+    background-color: $availability-unavailable-not-reservable;
+  }
+}
+
+/* Availability legend
+   ========================================================================== */
+
+.availability-legend {
+
+  .availability-label {
+    color: $white;
+  }
+
+  .available {
+    background-color: $legend-available;
+  }
+
+  .on-loan {
+    background-color: $legend-on-loan;
+  }
+
+  .unavailable {
+    background-color: $legend-unavailable;
+  }
+
+  .unreservable {
+    background-color: $legend-unreservable;
   }
 }

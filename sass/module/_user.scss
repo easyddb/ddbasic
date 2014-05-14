@@ -193,7 +193,6 @@
   #dibs-cards-supported {
     .card-name {
       font-weight: $base-font-weight-bold;
-      font-family: $font-bold;
     }
   }
 }
@@ -347,7 +346,6 @@
   .user {
     padding-top: 30px;
     padding-right: 20px;
-    padding-bottom: 60px;
     padding-left: 20px;
   }
 }
@@ -362,6 +360,7 @@
 
   .form-item-name {
     @include zen-grid-item(6, 1);
+    margin-bottom: 0;
 
     .form-text {
       padding-left: 45px;
@@ -370,6 +369,7 @@
 
   .form-item-pass {
     @include zen-grid-item(6, 1, right);
+    margin-bottom: 0;
 
     .form-text {
       padding-left: 42px;

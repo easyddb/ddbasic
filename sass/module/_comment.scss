@@ -23,7 +23,8 @@
   }
 
   span {
-    font-family: $font-light-italic;
+    font-style: italic;
+    font-weight: $base-font-weight-bold;
     line-height: 35px;
     margin-left: 5px;
   }
