@@ -24,7 +24,8 @@ module.exports = function (grunt) {
         '!scripts/jquery.scrollto.js',
         '!scripts/respond.min.js',
         '!scripts/respond.src.js',
-        '!scripts/scalefix.js'
+        '!scripts/scalefix.js',
+        '!scripts/modernizr.js'
       ]
     },
     uglify: {
@@ -47,7 +48,7 @@ module.exports = function (grunt) {
         options: {              // Target options
           sassDir: 'sass',
           cssDir: 'css',
-          outputStyle: 'compressed'
+          outputStyle: 'expanded'
         }
       }
     },
@@ -57,13 +58,19 @@ module.exports = function (grunt) {
           'sass/{,*/}*.{scss,sass}',
           'sass/*/{,*/}*.{scss,sass}'
         ],
-        tasks: ['compass']
+        tasks: ['compass'],
+        options: {
+          livereload: true
+        }
       },
       js: {
         files: [
           '<%= jshint.all %>'
         ],
-        tasks: ['jshint', 'uglify']
+        tasks: ['jshint', 'uglify'],
+        options: {
+          livereload: true
+        }
       }
     }
   });

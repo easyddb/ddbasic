@@ -9,7 +9,6 @@
 input,
 textarea,
 select {
-  font-family: $base-font-family;
   font-size: $font-size-reset;
   letter-spacing: 1px;
 }
@@ -24,7 +23,6 @@ select {
   -webkit-appearance: menulist-button;
 
   border: 1px solid $gray;
-  height: 36px;
   min-width: 99%;
   padding: 8px;
 }
@@ -49,7 +47,6 @@ textarea {
   background-color: $white;
   border: 1px solid $gray-light;
   display: block;
-  font-family: $base-font-family;
   font-size: $font-size-reset;
   min-height: $medium-spacing;
   margin-bottom: $medium-spacing;

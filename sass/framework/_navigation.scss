@@ -358,7 +358,6 @@
       padding-left: 35px;
 
       &.active {
-        font-family: $font-bold;
         font-weight: $base-font-weight-bold;
       }
 
@@ -493,7 +492,6 @@
     }
 
     a {
-      font-family: $base-font-family;
       margin-left: -$large-spacing;
       padding-left: 25px;
     }

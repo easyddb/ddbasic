@@ -17,15 +17,13 @@ $search-border-type: solid;
    ========================================================================== */
 
 .search-overlay--wrapper {
-  background-color: transparentize($black, .25);
-
-  width: 100%;
-  height: 100%;
+  position: fixed;
   top: 0px;
   bottom: 0px;
-  position: fixed;
   z-index: 99;
-
+  width: 100%;
+  height: 100%;
+  background-color: transparentize($black, .25);
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -33,29 +31,25 @@ $search-border-type: solid;
 .search-overlay--inner {
   @include box-sizing(border-box);
   @include border-radius(8px);
-
+  position: absolute;
+  top: 50%;
   left: 50%;
   margin-top: -150px;
   margin-left: -150px;
-  max-width: 300px;
   padding: 20px;
+  max-width: 300px;
   width: 100%;
-  position: absolute;
-  top: 50%;
-
   background-color: transparentize($black, .25);
 }
 
 .search-overlay--icon {
-  height: auto;
   width: auto;
-
+  height: auto;
   font-size: $font-size-largest;
 }
 
 .search-overlay--text {
   @include font-bold();
-
   margin-bottom: 0;
 }
 
@@ -67,13 +61,19 @@ $search-border-type: solid;
   .search {
     padding-top: 30px;
     padding-right: 10px;
-    padding-bottom: 30px;
     padding-left: 10px;
   }
 }
 
 .search {
   @extend %search-user-header;
+  clear: both;
+
+  /* Media queries */
+
+  @include small-medium {
+    width: auto;
+  }
 
   .search-field-wrapper {
     position: relative;
@@ -99,15 +99,15 @@ $search-border-type: solid;
   .form-text {
     padding-left: 49px;
   }
-
-  @include small-medium {
-    width: auto;
-  }
 }
 
 
 /* Search in content
    ========================================================================== */
+
+.pane-search-result-count {
+  float: left;
+}
 
 .search-field-in-content {
   @include large-x-large() {
@@ -123,10 +123,9 @@ $search-border-type: solid;
 
 .search-field-in-content {
   @extend .search;
-
+  position: relative;
   margin-bottom: 20px;
   padding: 0;
-  position: relative;
 
   .form-text {
     border: 1px solid $gray;
@@ -136,10 +135,8 @@ $search-border-type: solid;
 
 .search-field-in-content--message {
   @include font-bold();
-
   margin-bottom: 30px;
   padding: 20px;
-
   background-color: lighten($yellow, 20%);
 }
 
@@ -168,13 +165,14 @@ $search-border-type: solid;
 
 .page-search .pane-ting-search-sort-form {
   clear: none;
-
   overflow: visible;
 }
 
 .page-search .pane-search-per-page,
 .page-search .pane-ting-search-sort-form {
   @include zen-nested-container();
+
+  /* Media queries */
 
   @include small-medium() {
     @include zen-clear(both);
@@ -210,7 +208,6 @@ input#edit-search-block-form--2.spinner {
 
 .button-see-online {
   @extend %button-action;
-
   margin-left: 10px;
   line-height: 125%;
 }
@@ -226,6 +223,8 @@ input#edit-search-block-form--2.spinner {
   padding-left: 0;
   min-height: 100px;
 
+  /* Media queries */
+
   @include small() {
     @include zen-grid-item(4, 1);
   }
@@ -239,8 +238,9 @@ input#edit-search-block-form--2.spinner {
 
 .ting-object-right {
   @include zen-grid-item(10, 1, right);
-
   padding-right: 0;
+
+  /* Media queries */
 
   @include small() {
     @include zen-grid-item(8, 1, right);
@@ -259,7 +259,9 @@ input#edit-search-block-form--2.spinner {
    ========================================================================== */
 
 %search-facet-expand {
+
   /* Expand facets link */
+
   .expand {
     margin-top: 5px;
     margin-right: 10px;
@@ -267,25 +269,23 @@ input#edit-search-block-form--2.spinner {
 
     &:before {
       float: left;
-      margin-right: 3px;
       margin-top: -1px;
+      margin-right: 3px;
       padding-right: 5px;
-
-      font-family: $base-icon-library-font;
-      font-size: $font-size-large;
       text-decoration: none;
+      font-size: $font-size-large;
+      font-family: $base-icon-library-font;
     }
   }
 
   .expand-more {
     @extend .icon-plus-sign;
-
     display: block;
     float: left;
   }
+
   .expand-less {
     @extend .icon-minus-sign;
-
     display: block;
     float: left;
   }
@@ -301,12 +301,10 @@ input#edit-search-block-form--2.spinner {
   input.form-radio,
   input.form-checkbox {
     float: left;
-
     margin-top: 4px;
     margin-right: 8px;
-    height: 16px;
     width: 16px;
-
+    height: 16px;
     vertical-align: baseline;
   }
 
@@ -323,9 +321,9 @@ input#edit-search-block-form--2.spinner {
   }
 
   legend {
-    line-height: inherit;
     padding-top: 10px;
     padding-bottom: 10px;
+    line-height: inherit;
   }
 
   /* Specific font color for headings and result count */
@@ -352,14 +350,13 @@ input#edit-search-block-form--2.spinner {
     margin-bottom: 20px;
 
     .selected-checkbox {
-      background-color: $gray-light;
       padding: 5px;
+      background-color: $gray-light;
     }
 
     .unselect {
       @extend .expand;
       @extend .icon-remove-sign;
-
       float: right;
       margin-top: 10px;
     }
@@ -372,19 +369,18 @@ input#edit-search-block-form--2.spinner {
 
   /* Group with hidden facets */
   .hidden-facets-group {
-    margin-bottom: 20px;
     display: none;
+    margin-bottom: 20px;
   }
 
   .expand-facets {
     @extend .expand;
-
     display: block;
-    text-align: right;
     margin: 0;
-    padding-top: 20px;
     margin-top: 10px;
+    padding-top: 20px;
     border-top: $search-border-size $search-border-type $gray;
+    text-align: right;
   }
 }
 
@@ -397,9 +393,10 @@ input#edit-search-block-form--2.spinner {
   display: none;
 
   /* Media queries */
+
   @include small-medium() {
-    clear: both;
     display: block;
+    clear: both;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -411,6 +408,7 @@ input#edit-search-block-form--2.spinner {
 }
 
 /* Responsive styling for facet browser depending on context */
+
 .primary-content {
   .pane-ding-facetbrowser {
     display: none;
@@ -454,7 +452,6 @@ input#edit-search-block-form--2.spinner {
 
 .pane-ting-search-search-display-extended-query {
   @include zen-grid-item(8, 1);
-
   overflow: hidden;
   margin-bottom: 20px;
 
@@ -473,7 +470,6 @@ input#edit-search-block-form--2.spinner {
 
 .pane-ting-search {
   @include zen-grid-item(4, 1, right);
-
   text-align: right;
 
   .ting-search-amount-block {
@@ -487,10 +483,10 @@ input#edit-search-block-form--2.spinner {
    ========================================================================== */
 
 .pane-ting-search-sort-form {
-  clear: both;
-  color: $gray-darker;
   float: left;
+  clear: both;
   overflow: hidden;
+  color: $gray-darker;
 
   .form-item {
     margin: 0;
@@ -508,10 +504,10 @@ input#edit-search-block-form--2.spinner {
 }
 
 .pane-ting-search-records-per-page {
-  color: $gray-darker;
   float: right;
-  margin-left: 20px;
   overflow: hidden;
+  margin-left: 20px;
+  color: $gray-darker;
 
   a {
     margin-left: 10px;
@@ -520,10 +516,11 @@ input#edit-search-block-form--2.spinner {
     text-decoration: underline;
 
     &.selected {
-      font-weight: bold;
       color: $link-color-hover;
       text-decoration: none;
+      font-weight: bold;
     }
+
     &:last-child {
       border-right: none;
     }
@@ -532,7 +529,6 @@ input#edit-search-block-form--2.spinner {
 
 .pane-ding-toggle-format-toggle {
   @extend .pane-ting-search-records-per-page;
-
   float: right;
 
   #ding-toggle-format-image {
@@ -541,27 +537,42 @@ input#edit-search-block-form--2.spinner {
 }
 
 /* Availability explaination legend */
+
 .pane-ding-availability-legend {
+
+  @include till-x-large() {
+    margin-bottom: 10px;
+  }
   clear: both;
   overflow: hidden;
 
-  .availability-legend {
+  /* Media queries */
+
+  @include x-large() {
     float: right;
-    border: none;
+  }
+
+  .availability-legend {
     padding: 0;
+    border: none;
 
     .availability-legend-item {
-      margin: 0;
-      margin-left: 10px;
+      @include border-radius(3px);
+      margin: 0 10px 10px 0;
+      padding: 5px;
       line-height: normal;
 
+      &:last-child {
+        margin-right: 0;
+      }
+
       img {
-        vertical-align: middle;
+        display: none;
       }
 
       .availability-label {
-        font-weight: normal;
-        color: $gray-darker;
+        font-weight: $base-font-weight-normal;
+        font-size: $font-size-reset;
       }
     }
   }
@@ -577,43 +588,50 @@ input#edit-search-block-form--2.spinner {
   padding-top: 20px;
 
   .search-results {
+
+    @include small() {
+      .list {
+        .heading {
+          font-size: $font-size-tiny;
+        }
+      }
+    }
+
     .list {
       padding-left: 0;
 
       .list-item {
-        background-image: url('../images/pw_maze_white.png');
         padding: 15px;
+        background-image: url('../images/pw_maze_white.png');
 
         &.ding-search-collection {
-          background-image: none;
-          padding: 0;
           margin-top: 30px;
           margin-right: 10px;
+          padding: 0;
+          background-image: none;
 
           .ting-collection-wrapper {
-            background-image: url('../images/pw_maze_white.png');
             position: relative;
             z-index: 30;
             padding: 15px;
+            background-image: url('../images/pw_maze_white.png');
           }
         }
       }
 
       .view-mode-teaser {
         padding: 20px;
-
         background-color: transparentize($white, .1);
       }
 
       .heading h2 {
         margin-bottom: 10px;
-
         font-size: $font-size-large;
       }
 
       .search-result--heading-type {
-        color: $gray-darker;
         padding-right: 5px;
+        color: $gray-darker;
       }
 
       .search-result--meta {
@@ -630,16 +648,17 @@ input#edit-search-block-form--2.spinner {
 
       .search-result--availability,
       .search-result--series {
-        border-top: 1px solid $gray-light;
         margin-top: 20px;
         padding-top: 20px;
+        border-top: 1px solid $gray-light;
       }
 
       .search-result--availability-link {
-        margin-right: 8px;
-        padding-right: 11px;
-
-        right: 1px solid $gray;
+        @include border-radius(3px);
+        display: inline-block;
+        margin: 0 8px 8px 0;
+        padding: 5px;
+        color: $white;
       }
 
       .search-result--availability-link:last-child {
@@ -709,14 +728,6 @@ input#edit-search-block-form--2.spinner {
         }
       }
     }
-
-    @include small() {
-      .list {
-        .heading {
-          font-size: $font-size-tiny;
-        }
-      }
-    }
   }
 }
 
@@ -733,15 +744,15 @@ input#edit-search-block-form--2.spinner {
 
   .last {
     margin-bottom: 0;
-    border-bottom: none;
     padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
 .pane-ting-collection {
   h2 {
-    margin-bottom: 0;
     margin-top: 40px;
+    margin-bottom: 0;
 
     &:first-child {
       margin-top: 0;
@@ -749,14 +760,13 @@ input#edit-search-block-form--2.spinner {
   }
 
   .ting-collection-wrapper {
-    background: url('../images/pw_maze_white.png');
-    padding: 15px;
     margin-bottom: 20px;
+    padding: 15px;
+    background: url('../images/pw_maze_white.png');
   }
 
   .ting-collection-inner-wrapper {
     padding: 20px;
-
     background-color: transparentize($white, .1);
 
     h2 {
@@ -764,16 +774,15 @@ input#edit-search-block-form--2.spinner {
     }
 
     .view-mode-collection-list {
-      border-bottom: 1px solid $gray-light;
-
       margin-bottom: 40px;
       padding-bottom: 20px;
+      border-bottom: 1px solid $gray-light;
 
       &:last-child {
-        border-bottom: 0;
 
         margin-bottom: 0;
         padding-bottom: 0;
+        border-bottom: 0;
       }
     }
   }
@@ -791,9 +800,9 @@ input#edit-search-block-form--2.spinner {
 
   .field.field-name-ting-abstract,
   .field.field-name-ting-series {
-    border-bottom: 1px solid $gray-light;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid $gray-light;
   }
 
   .field-name-ting-type {
@@ -832,9 +841,8 @@ input#edit-search-block-form--2.spinner {
 
 .ting-cover {
   @extend .icon-camera;
-
-  min-height: 60px;
   position: relative;
+  min-height: 60px;
   width: 100%;
 
   img {
@@ -843,20 +851,22 @@ input#edit-search-block-form--2.spinner {
   }
 
   &:before {
-    color: $gray-dark;
-    font-family: $base-icon-library-font;
-    font-size: $font-size-giga;
     position: absolute;
     top: 50%;
     left: 30%;
+    color: $gray-dark;
+    font-size: $font-size-giga;
+    font-family: $base-icon-library-font;
   }
 
   /* Media queries */
+
   @include small {
+
     &:before {
-      font-size: $font-size-large;
-      left: 20%;
       top: 30%;
+      left: 20%;
+      font-size: $font-size-large;
     }
   }
 }
@@ -870,13 +880,11 @@ input#edit-search-block-form--2.spinner {
 /* Navigation */
 .pane-ting-ting-object-types {
   @extend .pane-ting-ting-collection-types;
-
   margin-bottom: 20px;
 }
 
 .pane-ting-ting-relation-anchors {
   @extend .pane-ting-ting-object-types;
-
   margin-bottom: 0;
 }
 
@@ -884,17 +892,15 @@ input#edit-search-block-form--2.spinner {
   @extend .pane-ting-collection;
 
   .ting-object-wrapper {
-    margin-bottom: 20px;
     overflow: hidden;
+    margin-bottom: 20px;
     padding: 15px;
-
     background: url('../images/pw_maze_white.png');
   }
 
   .ting-object-inner-wrapper {
     overflow: hidden;
     padding: 20px;
-
     background-color: transparentize($white, .1);
 
     h2 {
@@ -904,28 +910,24 @@ input#edit-search-block-form--2.spinner {
 
   .ting-object-left {
     @include zen-grid-item(3, 1);
-
-    min-height: 200px;
     padding-left: 0;
+    min-height: 200px;
   }
 
   .ting-object-right {
     @include zen-grid-item(9, 1, right);
-
     padding-right: 0;
   }
 
   .ting-object-related-item {
-    border-bottom: 1px solid $gray-light;
-
     margin-bottom: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid $gray-light;
 
     &.last {
-      border-bottom: 0;
-
       margin-bottom: 0;
       padding-bottom: 0;
+      border-bottom: 0;
     }
   }
 
@@ -935,22 +937,26 @@ input#edit-search-block-form--2.spinner {
   }
 
   .subjects {
+
     /* forget that clearfix */
+
     &:after {
       clear: none;
     }
   }
 
   /* Material Details - Collapsible */
+
   .collapsible .field-group-format-title,
   .ding-periodical-fold {
+
     &:before {
-      color: $link-color;
       float: left;
-      font-family: $base-icon-library-font;
-      font-size: $font-size-medium;
       margin-top: -2px;
       padding-right: 6px;
+      color: $link-color;
+      font-size: $font-size-medium;
+      font-family: $base-icon-library-font;
     }
   }
 
@@ -963,9 +969,10 @@ input#edit-search-block-form--2.spinner {
   }
 
   /* List of Issues - Collapsible */
+
   .ding-periodical-fold {
-    cursor: pointer;
     display: inline-block;
+    cursor: pointer;
   }
 
   .expand-more {
@@ -989,9 +996,9 @@ input#edit-search-block-form--2.spinner {
     }
 
     .field-label {
-      width: 25%;
-      min-width: 200px;
       margin-right: 10px;
+      min-width: 200px;
+      width: 25%;
     }
 
     .field-items {
@@ -1018,8 +1025,8 @@ input#edit-search-block-form--2.spinner {
     }
 
     .reserve-button {
-      margin-top: 10px;
       float: right;
+      margin-top: 10px;
     }
   }
 
@@ -1031,8 +1038,8 @@ input#edit-search-block-form--2.spinner {
       background-color: $gray-light;
 
       li {
-        border: none;
         padding: 0;
+        border: none;
 
         &:last-child {
           margin-bottom: 0;
@@ -1047,17 +1054,16 @@ input#edit-search-block-form--2.spinner {
 
     .loader {
       .icon {
-        height: auto;
         width: auto;
-
+        height: auto;
         font-size: $font-size-large;
       }
 
       .loader-text {
-        display: inline;
         position: relative;
         top: -1px;
         left: 8px;
+        display: inline;
       }
     }
 
@@ -1074,11 +1080,11 @@ input#edit-search-block-form--2.spinner {
     background-color: transparent;
 
     &>div {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 10px;
-      margin: 0;
       overflow: hidden;
+      margin: 0;
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
       background-color: $gray-light;
 
       &.clearfix {
@@ -1113,20 +1119,18 @@ input#edit-search-block-form--2.spinner {
   @include box-shadow(rgba(black, 0.35) 0 0 10px);
   @include border-radius(8px);
   @include box-sizing(border-box);
-
-  background-color: $white;
   margin-top: 10px;
-  max-width: 100%;
   padding: 10px;
+  max-width: 100%;
+  background-color: $white;
 
   li {
     a {
       @include border-radius(8px);
-
-      color: $font-color-primary;
-      cursor: pointer;
       margin-bottom: 5px;
       padding: 5px 10px;
+      color: $font-color-primary;
+      cursor: pointer;
 
       &.ui-state-hover {
         margin-top: 0;

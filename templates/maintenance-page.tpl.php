@@ -11,7 +11,7 @@
  * @see template_preprocess_maintenance_page()
  */
 //Site under opdatering
-//Vi er ved at opdatere DDBasic bibliotek. Vi er snart tilbage. Tak for din tålmodighed. 
+//Vi er ved at opdatere DDBasic bibliotek. Vi er snart tilbage. Tak for din tålmodighed.
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -26,22 +26,22 @@
 
 <body class="<?php print $classes; ?>">
   <div id="page" class="ding2-site-template">
-    
+
     <section class="topbar">
 
       <div class="topbar-inner">
-        
+
         <div class="panel-pane pane-pane-header">
           <div class="pane-content">
             <div class="topbar-inner">
               <div class="site-name-wrapper">
-                
+
                 <?php if (!empty($logo)): ?>
                   <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
                     <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
                   </a>
                 <?php endif; ?>
-                        
+
                 <?php if (!empty($site_name)): ?>
                   <h1 class="site-name">
                     <a href="<?php print $base_path ?>" title="<?php print t('Home'); ?>" rel="home">
@@ -52,11 +52,11 @@
               </div>
             </div>
           </div>
-        </div>         
+        </div>
       </div>
 
     </section>
-    
+
     <section style="top: 0px;" class="navigation-wrapper fixed">
       <div class="navigation-inner">
         <div class="main-menu-wrapper panel-pane pane-block pane-menu-block-1">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </section>
-    
+
     <div class="content-wrapper">
       <div class="grid-inner">
         <div class="panel-pane pane-page-content">
@@ -79,9 +79,9 @@
             <div class="empty-sidebars panel-content-wrapper">
               <div class="primary-content">
                 <div class="grid-inner">
-                
+
                   <?php if (!empty($messages)): print $messages; endif; ?>
-                
+
                   <article>
 
                     <header class="page-header">
@@ -95,15 +95,15 @@
                     </section>
 
                   </article>
-                
+
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
+
   </div> <!-- /page -->
 
 </body>
