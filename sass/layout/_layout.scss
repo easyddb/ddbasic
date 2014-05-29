@@ -40,7 +40,7 @@ body {
    ========================================================================== */
 .header-wrapper {
   @include box-sizing(border-box);
-
+  padding-bottom: 10px;
 
   &.js-topbar-toggled {
     display: inline-block;

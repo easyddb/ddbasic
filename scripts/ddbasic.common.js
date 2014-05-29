@@ -1,6 +1,21 @@
 (function ($) {
   'use strict';
 
+
+  /**
+   * Facebook block position.
+   */
+
+  Drupal.behaviors.facebookSharePosition = {
+    attach: function (context) {
+      var fb = $('.block-artesis-facebookshare', context);
+
+      if (fb.length !== 0) {
+        fb.prependTo($('.layout-wrapper', context));
+      }
+    }
+  };
+
   /**
    * Toggle opening hours
    */
