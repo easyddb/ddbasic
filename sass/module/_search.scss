@@ -206,6 +206,15 @@ input#edit-search-block-form--2.spinner {
   }
 }
 
+.pane-search-result .field-name-ding-entity-buttons {
+  overflow: hidden;
+
+  .reserve-button {
+    float: right;
+    margin-left: 0;
+  }
+}
+
 .button-see-online {
   @extend %button-action;
   margin-left: 10px;
