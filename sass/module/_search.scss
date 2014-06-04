@@ -208,10 +208,17 @@ input#edit-search-block-form--2.spinner {
 
 .pane-search-result .field-name-ding-entity-buttons {
   overflow: hidden;
+}
 
+.field-name-ding-entity-buttons {
   .reserve-button {
     float: right;
+    display: inline-block;
     margin-left: 0;
+  }
+
+  .action-button {
+    display: none;
   }
 }
 
