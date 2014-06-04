@@ -201,6 +201,8 @@ input#edit-search-block-form--2.spinner {
 
 
 .field-name-ding-entity-buttons {
+  clear: both;
+
   .reserve-button {
     @extend %button-action;
   }
