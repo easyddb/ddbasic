@@ -1160,3 +1160,36 @@ input#edit-search-block-form--2.spinner {
     }
   }
 }
+
+/* Reservations popup
+   ========================================================================== */
+
+.ding-popup-content {
+
+  // Material type
+
+  .view-mode-collection-popup .field-items .field-item > h2 {
+    display: none;
+  }
+
+  // Item
+
+  .ting-object.view-mode-collection-popup.clearfix:after {
+    height: auto !important;
+  }
+
+  .view-mode-collection-list {
+    border-top: 1px dotted $black;
+    padding: 10px 0;
+
+    &:first-of-type {
+      border: none;
+    }
+
+    // Title
+
+    h2 {
+      font-size: 130%;
+    }
+  }
+}
