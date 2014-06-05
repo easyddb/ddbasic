@@ -59,9 +59,7 @@ $search-border-type: solid;
 .header-wrapper {
   /* Add padding if the search is in the header */
   .search {
-    padding-top: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px;
   }
 }
 
@@ -201,8 +199,26 @@ input#edit-search-block-form--2.spinner {
 
 
 .field-name-ding-entity-buttons {
+  clear: both;
+
   .reserve-button {
     @extend %button-action;
+  }
+}
+
+.pane-search-result .field-name-ding-entity-buttons {
+  overflow: hidden;
+}
+
+.field-name-ding-entity-buttons {
+  .reserve-button {
+    float: right;
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .action-button {
+    display: none;
   }
 }
 
@@ -1150,7 +1166,17 @@ input#edit-search-block-form--2.spinner {
 
 .ding-popup-content {
 
+  // Material type
+
+  .view-mode-collection-popup .field-items .field-item > h2 {
+    display: none;
+  }
+
   // Item
+
+  .ting-object.view-mode-collection-popup.clearfix:after {
+    height: auto !important;
+  }
 
   .view-mode-collection-list {
     border-top: 1px dotted $black;

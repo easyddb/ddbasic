@@ -197,6 +197,15 @@
   }
 }
 
+#dibs-terms-of-sale {
+  font-size: 100%;
+}
+
+#dibs-cards-supported .card-logo,
+.form-item-cards-supported .card-logo {
+  margin-bottom: 15px;
+}
+
 .pane-debts {
   .left-column {
     @include zen-grid-item(1, 1);
@@ -344,7 +353,6 @@
 .header-wrapper {
   /* Add padding if the search is in the header */
   .user {
-    padding-top: 30px;
     padding-right: 20px;
     padding-left: 20px;
   }
