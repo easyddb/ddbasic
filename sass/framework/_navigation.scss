@@ -11,7 +11,9 @@
 .topbar-menu {
   @include zen-grid-item(8, 1, right);
 
-  margin-top: 45px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   text-align: right;
 
   li {
@@ -66,9 +68,6 @@
 
   @include small-medium() {
     @include zen-grid-item(6, 1, right);
-
-    margin-top: 0;
-    padding: 0;
 
     i[class^="icon-"] {
       margin-right: 0;

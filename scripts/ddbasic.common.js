@@ -7,7 +7,7 @@
    */
   Drupal.behaviors.facebookSharePosition = {
     attach: function (context) {
-      var fb = $('.block-artesis-facebookshare', context);
+      var fb = $('.block-facebookshare', context);
 
       if (fb.length !== 0) {
         fb.prependTo($('.layout-wrapper', context));

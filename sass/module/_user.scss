@@ -353,8 +353,11 @@
 .header-wrapper {
   /* Add padding if the search is in the header */
   .user {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+
+    @include small-medium() {
+      padding-left: 10px;
+    }
   }
 }
 
