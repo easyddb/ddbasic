@@ -5,7 +5,6 @@
   /**
    * Facebook block position.
    */
-
   Drupal.behaviors.facebookSharePosition = {
     attach: function (context) {
       var fb = $('.block-artesis-facebookshare', context);
