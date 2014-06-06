@@ -59,7 +59,8 @@ $search-border-type: solid;
 .header-wrapper {
   /* Add padding if the search is in the header */
   .search {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
