@@ -1020,6 +1020,29 @@ input#edit-search-block-form--2.spinner {
     .ting-material-detail {
       display: block;
     }
+
+    .field-name-ting-details-contributor {
+      .field-items {
+        margin-left: 210px;
+
+        @include small() {
+          margin-left: 0;
+        }
+      }
+
+      .ting-material-detail {
+        display: inline-block;
+        margin-right: 5px;
+
+        &:after {
+          content: ',';
+        }
+
+        &:last-of-type:after {
+          content: '';
+        }
+      }
+    }
   }
 
   .group-holdings-available {
