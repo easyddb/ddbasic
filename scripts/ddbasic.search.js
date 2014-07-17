@@ -1,7 +1,7 @@
 (function ($) {
   'use strict';
 
-  $(document).ready(function () {
+  $(function () {
     // Moves the search form into the search result page.
     if (window.location.href.indexOf('search/') > -1) {
       var search = $('.search-field-wrapper');
@@ -30,5 +30,9 @@
       // Hide top menu bar link.
       $('.topbar-link-search').hide();
     }
+
+    // Extended search button location.
+    $('.search .collapsible .fieldset-legend > a').insertBefore('.search .form-submit');
+
   });
 }(jQuery));

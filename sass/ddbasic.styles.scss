@@ -7,12 +7,15 @@
 
 
 // Include compass
+@import "compass";
 @import "compass/css3";
 
 
 // Grid - http://zengrids.com
 @import "../libraries/zen-grids/stylesheets/zen";
 
+// Susy grid
+@import "../libraries/susy/sass/susy";
 
 // Include configuration
 @import "configuration/_variables";
@@ -60,6 +63,7 @@
 @import "module/_tabroll";
 @import "module/_groups";
 @import "module/facebookshare";
+@import "module/_extended_search";
 
 
 // Custom font
