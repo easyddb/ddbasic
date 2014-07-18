@@ -46,6 +46,11 @@
   @else if $media == large {
     @media only screen and (min-width: $breakpoint-medium + 1) and (max-width: $breakpoint-large) { @content; }
   }
+
+  @else if $media == till-large {
+    @media only screen and (max-width: $breakpoint-large) { @content; }
+  }
+
   @else if $media == till-x-large {
     @media only screen and (max-width: $breakpoint-x-large) { @content; }
   }
@@ -97,6 +102,10 @@
 
 @mixin large {
   @include respond-to(large) { @content; }
+}
+
+@mixin till-large {
+  @include respond-to(till-large) { @content; }
 }
 
 @mixin till-x-large {
