@@ -1,0 +1,80 @@
+.pane-bibdk-subject-hierarchy-bibdk-subject-hierarchy {
+  background-color: #fff;
+
+  // Hide help text
+
+  .bibdk-subject-hierarchy-header,
+  .bibdk-subject-hierarchy-helptext {
+    display: none;
+  }
+
+  // Search bar
+
+  .searchfield-submit,
+  .form-item-search-hierarchy-input {
+    display: inline-block;
+
+    input {
+      margin: 0;
+    }
+  }
+
+  // Submit button
+
+  .searchfield-submit {
+    min-height: 42px;
+  }
+
+  .form-item-search-hierarchy-input {
+    @include box-sizing(border-box);
+    margin-right: 10px;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  // Columns
+
+  .themes_row {
+
+    // Media medium
+
+    @include medium() {
+      @include span-columns(1, 2);
+
+      &:nth-of-type(2n + 2) {
+        @include omega();
+      }
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    .header a {
+      display: block;
+      font-weight: 700;
+    }
+
+    .note a {
+      font-size: $font-size-small;
+    }
+
+    // Grid setup
+
+    .themes__item {
+
+      // Media large-x-large
+
+      @include large-x-large() {
+        @include span-columns(1, 4);
+
+        &:nth-of-type(4n + 4) {
+          @include omega();
+        }
+      }
+    }
+
+  }
+}
