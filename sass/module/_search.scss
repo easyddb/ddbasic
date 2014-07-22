@@ -203,6 +203,7 @@ input#edit-search-block-form--2.spinner {
   clear: both;
 
   .reserve-button {
+    float: right;
     @extend %button-action;
   }
 }
