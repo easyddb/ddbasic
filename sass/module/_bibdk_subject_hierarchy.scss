@@ -1,5 +1,5 @@
 .pane-bibdk-subject-hierarchy-bibdk-subject-hierarchy {
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 10px 20px;
   background-color: #fff;
 
@@ -221,6 +221,7 @@
 
     input {
       margin: 0;
+      text-transform: capitalize;
     }
   }
 
@@ -228,10 +229,12 @@
 
   .searchfield-submit {
     min-height: 42px;
+    text-transform: capitalize;
   }
 
   .form-item-search-hierarchy-input {
     @include box-sizing(border-box);
+    float: left;
     margin-right: 10px;
 
     input {
