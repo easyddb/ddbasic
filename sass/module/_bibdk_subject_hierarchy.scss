@@ -8,6 +8,29 @@
     font-size: $font-size-reset;
   }
 
+  // Try to hide empty lists
+
+  ul,
+  li,
+  a {
+    &:empty {
+      display: none;
+    }
+  }
+
+  // Search title
+
+  .header h1,
+  .header h2 {
+    font-size: 130%;
+  }
+
+  // Loading message
+
+  .message {
+    display: none;
+  }
+
   // Title
 
   .pane-title {
@@ -33,6 +56,7 @@
   .themes__item p {
     position: relative;
     margin: 0;
+    min-height: 85px;
   }
 
   // Reset for ul
@@ -132,6 +156,10 @@
 
   // Breadcrumbs
 
+  .bibdk-subject-hierarchy-searchresult .themes__breadcrumb {
+    margin-bottom: 0;
+  }
+
   .themes__breadcrumb {
     margin-right: 20px;
     margin-bottom: 20px;
@@ -168,6 +196,7 @@
 
   .themes__sublist {
     clear: both;
+    margin-bottom: 20px;
 
     li {
       overflow: hidden;
