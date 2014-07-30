@@ -1,11 +1,40 @@
 .pane-bibdk-subject-hierarchy-bibdk-subject-hierarchy {
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 10px 20px;
   background-color: #fff;
 
   &,
   a {
     font-size: $font-size-reset;
+  }
+
+  // Try to hide empty lists
+
+  ul,
+  li,
+  a {
+    &:empty {
+      display: none;
+    }
+  }
+
+  // Search title
+
+  .header h1,
+  .header h2 {
+    font-size: 130%;
+  }
+
+  // Loading message
+
+  .message {
+    display: none;
+  }
+
+  // Title
+
+  .pane-title {
+    float: left;
   }
 
   // Loader
@@ -27,6 +56,7 @@
   .themes__item p {
     position: relative;
     margin: 0;
+    min-height: 85px;
   }
 
   // Reset for ul
@@ -53,7 +83,6 @@
   .themes__sublists__wrapper {
     display: none;
     float: left;
-    margin-top: 10px;
     width: 100%;
   }
 
@@ -61,13 +90,34 @@
 
   #bibdk-subject-hierarchy .themes__item--active > p {
     text-decoration: underline;
+
+    // Media x-large
+
+    @include x-large() {
+      min-height: 85px;
+
+      // Arrow
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -5px;
+        width: 0;
+        height: 0;
+        border-width: 0 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent #999;
+        content: '';
+      }
+    }
   }
 
   .themes__sublists {
     position: relative;
     margin-bottom: 30px;
     padding: 15px;
-    border: solid 5px #efefef;
+    border: solid 5px #999;
     background-color: #fff;
 
     // Media large-x-large
@@ -83,7 +133,7 @@
 
       a {
         display: block;
-        padding-right: 20px;
+        padding-right: 15px;
       }
     }
   }
@@ -105,6 +155,10 @@
   }
 
   // Breadcrumbs
+
+  .bibdk-subject-hierarchy-searchresult .themes__breadcrumb {
+    margin-bottom: 0;
+  }
 
   .themes__breadcrumb {
     margin-right: 20px;
@@ -142,6 +196,7 @@
 
   .themes__sublist {
     clear: both;
+    margin-bottom: 20px;
 
     li {
       overflow: hidden;
@@ -195,6 +250,7 @@
 
     input {
       margin: 0;
+      text-transform: capitalize;
     }
   }
 
@@ -202,10 +258,12 @@
 
   .searchfield-submit {
     min-height: 42px;
+    text-transform: capitalize;
   }
 
   .form-item-search-hierarchy-input {
     @include box-sizing(border-box);
+    float: left;
     margin-right: 10px;
 
     input {

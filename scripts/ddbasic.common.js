@@ -1,7 +1,6 @@
 (function ($) {
   'use strict';
 
-
   /**
    * Facebook block position.
    */
@@ -16,7 +15,7 @@
   };
 
   /**
-   * Toggle opening hours
+   * Toggle opening hours.
    */
   function toggleOpeningHours() {
     // Create toggle link
@@ -75,8 +74,32 @@
     });
   }
 
+  /**
+   * Autofocus inputs.
+   */
+  function autofocusInpouts() {
+    // Search button click
+    $('.topbar-link-search').click(function() {
+      var input = $('input[name="search_block_form"]');
+      if ($(this).is('.active')) {
+        input.focus();
+      }
+    });
+
+    // Login button click
+    $('.topbar-link-user').click(function() {
+      var input = $('input[name="name"]');
+      if ($(this).is('.active')) {
+        input.focus();
+      }
+    });
+  }
+
   // When ready start the magic.
-  $(document).ready(function () {
+  $(document).ready(function() {
+    // Search form and login form autofocus inputs.
+    autofocusInpouts();
+
     // Toggle opening hours.
     toggleOpeningHours();
 
