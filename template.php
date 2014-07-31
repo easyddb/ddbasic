@@ -965,5 +965,4 @@ function ddbasic_views_pre_render(&$view){
       }
     }
   }
-  
 }
