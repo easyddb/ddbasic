@@ -157,7 +157,7 @@
      */
 
     if ($('.sub-menu-wrapper').length > 0) {
-      // $('.sub-menu-wrapper > .sub-menu').clone().appendTo('.main-menu > .active-trail');
+      $('.sub-menu-wrapper > .sub-menu').clone().appendTo('.main-menu > .active-trail');
 
       // Switch a few classes for style purposes.
       $('.main-menu .sub-menu a').addClass('menu-item');
