@@ -32,7 +32,5 @@ if ($val == $val2) {
   $output = date('H:s', strtotime($val)) . ' - ' . t('All day');
 }
 
-print $output; 
-
-?>
+print $output;
 
