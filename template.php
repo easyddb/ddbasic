@@ -949,3 +949,20 @@ function ddbasic_preprocess_ting_object(&$vars) {
     }
   }
 }
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * Rewrites view's ouput.
+ */
+function ddbasic_views_pre_render(&$view){
+  if ($view->name == 'ding_event') {
+    foreach ($view->result as &$item) {
+      $field = &$item->field_field_ding_event_date[0];
+      $val = $field['raw']['value'];
+      if ($val == $field['raw']['value2']) {
+        $field['rendered']['#markup'] = date('H:s', strtotime($val)) . ' - ' . t('All day');
+      }
+    }
+  }
+}
