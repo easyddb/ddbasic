@@ -949,15 +949,3 @@ function ddbasic_preprocess_ting_object(&$vars) {
     }
   }
 }
-
-/**
- * Implements hook_css_alter().
- */
-function ddbasic_css_alter(&$css) {
-  // Remove listed stylesheets
-  $exclude = array(
-    'profiles/ding2/modules/alma_item_list/css/alma_item_list.css' => FALSE,
-  );
-
-  $css = array_diff_key($css, $exclude);
-}
