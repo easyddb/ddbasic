@@ -1,0 +1,79 @@
+.ding-item-viewer {
+  margin: 10px 0;
+
+  // Items container
+
+  .browsebar-inner {
+    height: auto;
+  }
+
+  // Items
+  .browsebar-item {
+    line-height: 1.2;
+
+    // Title
+
+    h2 {
+      font-weight: 700;
+      font-size: 100%;
+      line-height: 1.1;
+    }
+
+    img {
+      position: relative;
+      float: left;
+      overflow: hidden;
+      width: 120px;
+    }
+
+    &.active {
+      max-height: 310px;
+      height: auto;
+
+      // Title
+
+      h2 {
+        font-size: 80%;
+
+        a {
+          font-weight: 700;
+        }
+      }
+
+      // Cover
+
+      img {
+        margin-right: 10px;
+        width: 140px;
+        max-height: 135px;
+      }
+
+      // Subject
+
+      .subject {
+        display: inline;
+        white-space: normal;
+      }
+
+      // Entity buttons
+
+      .field-type-ding-entity-buttons a {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  // Bottom tabs
+
+  .ui-tabs-nav {
+    // Active tab
+
+    .active {
+      background-color: $gray-dark;
+
+      a {
+        background: none;
+      }
+    }
+  }
+}
