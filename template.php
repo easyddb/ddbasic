@@ -11,6 +11,20 @@ include_once drupal_get_path('theme', 'ddbasic') . '/inc/functions.inc';
  * Implements hook_preprocess_html().
  */
 function ddbasic_preprocess_html(&$vars) {
+  // Load responsive.js file
+
+  $file_name = drupal_get_path('theme', 'ddbasic') . '/scripts/responsive.js';
+  drupal_add_js(
+    $file_name,
+    array(
+      'type' => 'file',
+      'group'=> JS_LIBRARY,
+      'every_page' => TRUE,
+      'scope' => 'header',
+      'weight' => -19.95,
+    )
+  );
+
   global $language;
 
   // Setup iOS logo if it's set.
