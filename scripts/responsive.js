@@ -4,7 +4,7 @@
   $(document).ready(function () {
 
     /**
-    * Mkopac responsive class in body tag.
+    * Responsive class in body tag.
     */
     function responsiveClass() {
 
