@@ -733,10 +733,6 @@ $label-color: #53514b;
   .ding_nodelist-items .news {
     background-color: $white;
     background-repeat: no-repeat;
-
-    .va-content {
-      display: none;
-    }
   }
 
   .item {
@@ -761,7 +757,6 @@ $label-color: #53514b;
     bottom: 10px;
     left: 10px;
     z-index: 2;
-    display: none;
     padding: 10px;
   }
 
