@@ -423,6 +423,12 @@ $label-color: #53514b;
 
     h3 {
       @include text-shadow(none);
+
+      // Media till-medium
+
+      @include till-medium() {
+        font-size: 120%;
+      }
     }
   }
 
@@ -452,18 +458,17 @@ $label-color: #53514b;
     height: auto;
   }
 
-  // Items container
-
-  .ding_nodelist-items {
-    margin: 10px;
-  }
-
   // Item
 
   .item {
     position: relative;
     overflow: hidden;
-    height: 381px;
+
+    // Media from-small
+
+    @include from-small() {
+      height: 381px;
+    }
 
     // Label
 
@@ -498,6 +503,16 @@ $label-color: #53514b;
       color: $white;
       text-align: center;
       font-size: 20px;
+    }
+
+    .event-label,
+    .event-date {
+
+      // Media small
+
+      @include small() {
+        visibility: hidden;
+      }
     }
 
     // Day
@@ -561,7 +576,12 @@ $label-color: #53514b;
     a {
       display: block;
       color: $white;
-      font-size: 48px;
+
+      // Media from-medium
+
+      @include from-medium() {
+        font-size: 48px;
+      }
     }
   }
 
@@ -726,9 +746,9 @@ $label-color: #53514b;
 //==========================================================================
 
 .va-wrapper {
-  border-bottom: 10px solid $white;
 
     position: relative;
+  border-bottom: 10px solid $white;
 
   .ding_nodelist-items .news {
     background-color: $white;
@@ -740,9 +760,9 @@ $label-color: #53514b;
     z-index: 10;
     display: block;
     overflow: hidden;
-    border-top: 10px solid $white;
     width: 100%;
     height: 500px;
+    border-top: 10px solid $white;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -787,6 +807,20 @@ $label-color: #53514b;
   .va-title {
     position: relative;
     z-index: 1;
+
+    // Media till-medium
+
+    @include till-medium() {
+      visibility: hidden;
+    }
+  }
+
+  .active .va-title {
+    // Media till-medium
+
+    @include till-medium() {
+      visibility: visible;
+    }
   }
 
   .event-label {
