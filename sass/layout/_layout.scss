@@ -464,3 +464,27 @@ body {
   color: $white;
   text-align: center;
 }
+
+
+
+/* Dibs cancel page
+   ========================================================================== */
+
+.dibs-cancel-page {
+  @include box-sizing(border-box);
+  margin: 0 auto 20px;
+  padding: 10px;
+  max-width: 1180px;
+  background-color: $white;
+
+  // Media till-x-large
+
+  @include till-x-large() {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  > p:first-of-type {
+    margin-top: 0;
+  }
+}
