@@ -467,10 +467,12 @@ body {
 
 
 
-/* Dibs cancel page
+/* Dibs accept/cancel/redirect page
    ========================================================================== */
 
-.dibs-cancel-page {
+.dibs-accept-page,
+.dibs-cancel-page,
+.dibs-redirect-page {
   @include box-sizing(border-box);
   margin: 0 auto 20px;
   padding: 10px;
