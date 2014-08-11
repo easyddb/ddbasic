@@ -185,10 +185,6 @@ body {
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
-
-    &:empty {
-      display: none;
-    }
   }
 
   .secondary-content {
@@ -436,6 +432,7 @@ body {
    ========================================================================== */
 
 .footer {
+  clear: both;
   overflow: hidden;
   padding-top: 30px;
 

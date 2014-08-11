@@ -95,8 +95,29 @@
     });
   }
 
+  /**
+   * Hide listed empty elements.
+   */
+  function hideElement() {
+    var selectors = [
+      '.layout-wrapper'
+    ];
+
+    for (var i = selectors.length - 1; i >= 0; i--) {
+      var $el = $(selectors[i]);
+
+      if($.trim($el.html()) === '') {
+        $el.hide();
+      }
+    }
+  }
+
   // When ready start the magic.
   $(document).ready(function() {
+
+    // Hide empty elements
+    hideElement();
+
     // Search form and login form autofocus inputs.
     autofocusInpouts();
 
