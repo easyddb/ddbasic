@@ -639,3 +639,45 @@
     @extend %button-danger;
   }
 }
+
+// Page user scheduler
+// ========================================================
+
+.page-user-scheduler {
+  #tabs {
+    margin-bottom: 0;
+  }
+
+  .pane-page-content {
+
+    // Media till-x-large()
+
+    @include till-x-large() {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+// Page user roles
+// ========================================================
+
+.page-user-roles {
+  #tabs {
+    margin-bottom: 0;
+  }
+
+  #role-delegation-roles-form {
+    clear: both;
+    overflow: hidden;
+    padding: 10px;
+    background-color: $white;
+
+    // Media x-large
+
+    @include till-x-large() {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
