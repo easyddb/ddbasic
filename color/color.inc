@@ -21,6 +21,7 @@ $info = array(
     'list_background_color_even' => t('List item background color (even)'),
     'list_text_color' => t('List text color'),
     'footer_background_color' => t('Footer background color'),
+    'bottom_background_color' => t('Bottom background color'),
   ),
   // Pre-defined color schemes.
   'schemes' => array(
@@ -44,6 +45,7 @@ $info = array(
         'list_background_color_even' => '#f2f2f2',
         'list_text_color' => '#4c4c4c',
         'footer_background_color' => '#262626',
+        'bottom_background_color' => '#191919',
       ),
     ),
     'classic' => array(
@@ -66,13 +68,14 @@ $info = array(
         'list_background_color_even' => '#f2f2f2',
         'list_text_color' => '#4c4c4c',
         'footer_background_color' => '#262626',
+        'bottom_background_color' => '#ffffff',
       ),
     ),
   ),
 
   // CSS files (excluding @import) to rewrite with new color scheme.
   'css' => array(
-    'css/ddbasic.styles.css',
+    'css/ddbasic.css',
   ),
 
   // Color areas to fill (x, y, width, height).
