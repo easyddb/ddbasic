@@ -79,6 +79,8 @@ $carousel-tab-color:                       $white;
   @include opacity(.25);
   background-color: $header-background-color;
   border: 2px solid $navigation-background-color;
+  background-image: url('../images/arrows-carousel.png');
+  border-radius: 40px;
 
   &.rs-carousel-action-active {
     @include opacity(1);
