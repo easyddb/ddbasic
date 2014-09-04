@@ -6,8 +6,8 @@
 
 
 
-/* Variables
-   ========================================================================== */
+// Variables
+// ==========================================================================
 
 $modal-overlay-color:             $black;
 $modal-overlay-transparency:      .8;
@@ -24,7 +24,7 @@ $modal-border-radius:             12px;
 }
 
 .ui-dialog {
-  @include box-shadow(rgba(black, 0.35) 0 0 10px);
+  @include box-shadow(rgba($black, .35) 0 0 10px);
   @include border-radius($button-border-radius);
   min-width: $modal-min-width;
   background-color: $content-background-color;
@@ -40,6 +40,8 @@ $modal-border-radius:             12px;
 .ui-dialog-title {
   @extend .page-title;
   color: $modal-text-color;
+  border-bottom: 1px solid $black;
+  padding-bottom: 20px;
 }
 
 
@@ -116,6 +118,30 @@ $modal-border-radius:             12px;
   .form-text {
     width: 100%;
   }
+
+  // Search results entity buttons
+
+  .field-name-ding-entity-buttons {
+    float: left;
+  }
+
+  .ting-object + h2 {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid $black;
+  }
+
+  .ting-cover {
+    visibility: hidden;
+  }
+
+  .field-item .ting-object:first-of-type .ting-cover {
+    visibility: visible;
+  }
+
+  .ting-object.view-mode-objects-in-popup {
+    padding-bottom: 10px;
+  }
 }
 
 .ui-state-hover,
@@ -127,3 +153,4 @@ $modal-border-radius:             12px;
   border: 0;
   background: none;
 }
+
