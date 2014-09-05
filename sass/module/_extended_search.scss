@@ -36,7 +36,6 @@
 
   .collapsible {
     @include zen-grid-container();
-    margin-top: 20px;
     margin-bottom: 0;
     background-color: $white;
 
@@ -48,6 +47,10 @@
 
     legend {
       display: none;
+    }
+
+    .description {
+      float: right;
     }
 
     .fieldset-wrapper > .form-item {
