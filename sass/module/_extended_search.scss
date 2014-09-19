@@ -10,6 +10,7 @@
     @extend %button-default;
     @include border-radius(0);
     display: inline-block;
+    margin: 0;
     padding-top: 0;
     padding-bottom: 0;
     min-width: 110px;
@@ -36,7 +37,6 @@
 
   .collapsible {
     @include zen-grid-container();
-    margin-top: 20px;
     margin-bottom: 0;
     background-color: $white;
 
@@ -48,6 +48,10 @@
 
     legend {
       display: none;
+    }
+
+    .description {
+      float: right;
     }
 
     .fieldset-wrapper > .form-item {

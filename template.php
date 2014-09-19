@@ -118,6 +118,13 @@ function ddbasic_process_html(&$vars) {
 function ddbasic_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'search_block_form':
+      // Do not show advanced form on search results.
+      if (isset($form['advanced'])) {
+        if (preg_match('/search\/ting/', current_path())) {
+          unset($form['advanced']);
+        }
+      }
+
       $form['search_block_form']['#attributes']['autofocus'] = true;
       $form['search_block_form']['#attributes']['placeholder'] = t('Search the library');
       $form['search_block_form']['#field_prefix'] = '<i class="icon-search"></i>';
