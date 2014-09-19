@@ -10,6 +10,7 @@
     @extend %button-default;
     @include border-radius(0);
     display: inline-block;
+    margin: 0;
     padding-top: 0;
     padding-bottom: 0;
     min-width: 110px;
