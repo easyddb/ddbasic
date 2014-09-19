@@ -5,6 +5,58 @@
  */
 
 
+/* /user/$uid/edit/*
+   ========================================================================== */
+
+.page-user-edit .field-name-field-alma-reservation-pause {
+
+  @include from-medium() {
+
+    // Hide labels
+
+    label {
+      display: none;
+    }
+
+    .start-date-wrapper {
+      @include span(1 of 2);
+
+      &:after {
+        position: absolute;
+        top: 10px;
+        right: -11%;
+        content: '-';
+        font-weight: 700;
+      }
+    }
+
+    .end-date-wrapper {
+      @include span(last 1 of 2);
+    }
+
+    .start-date-wrapper,
+    .end-date-wrapper {
+      position: relative;
+
+      .form-type-textfield:after {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #333;
+        content: '\f073';
+        font-weight: 700;
+        font-family: 'FontAwesome';
+        pointer-events:none;
+      }
+
+      input[type="text"] {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+
 /* /user/$uid/status/*
    ========================================================================== */
 
@@ -12,10 +64,10 @@
 .pane-loans,
 .pane-debts,
 .pane-bookmarks {
+  overflow: hidden;
+  margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid $gray;
-  margin-bottom: 30px;
-  overflow: hidden;
 
   .left-column {
     @include zen-grid-item(2, 1);
@@ -28,10 +80,10 @@
   .material-item,
   .total-amount {
     overflow: hidden;
+    margin-bottom: 10px;
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 10px;
 
     &.odd {
       background-color: $gray-light;
@@ -42,9 +94,9 @@
   }
 
   .total-amount {
+    margin-bottom: $large-spacing;
     background-color: $gray;
     font-size: $font-size-large;
-    margin-bottom: $large-spacing;
   }
 
   .item-checkbox {
@@ -61,9 +113,9 @@
     max-width: 75%;
 
     &:before {
-      font-size: 200%;
-      left: 25%;
       top: 5%;
+      left: 25%;
+      font-size: 200%;
     }
   }
 
@@ -72,8 +124,8 @@
     padding-left: 0;
 
     .item-information {
-      overflow: hidden;
       clear: left;
+      overflow: hidden;
     }
   }
 
@@ -113,12 +165,12 @@
   }
 
   .messages {
+
+    margin-bottom: 10px;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
     padding-left: 30px;
-
-    margin-bottom: 10px;
 
     &:before {
       left: 7px;
@@ -186,9 +238,9 @@
 
 .pane-ding-dibs-dibs-terms-of-sale,
 .pane-ding-dibs-dibs-cards-supported {
-  border-bottom: 1px solid $gray-light;
   margin-bottom: $large-spacing;
   padding-bottom: $large-spacing;
+  border-bottom: 1px solid $gray-light;
 
   #dibs-cards-supported {
     .card-name {
@@ -216,9 +268,9 @@
   }
 
   .pay-button {
+    float: left;
     margin-right: $large-spacing;
     margin-bottom: $large-spacing;
-    float: left;
 
     .form-submit {
       @extend %button-action;
@@ -246,11 +298,11 @@
     }
 
     .item-checkbox {
-      width: 100%;
-      clear: both;
       display: block;
       float: none;
+      clear: both;
       margin-right: 10px;
+      width: 100%;
     }
 
     .ting-cover {
@@ -269,8 +321,8 @@
     }
 
     .item-information-data {
-      padding: 0;
       margin-bottom: 10px;
+      padding: 0;
     }
 
     .action-buttons {
@@ -353,16 +405,53 @@
 .header-wrapper {
   /* Add padding if the search is in the header */
   .user {
-    padding-right: 10px;
 
     @include small-medium() {
       padding-left: 10px;
     }
+    padding-right: 10px;
   }
 }
 
 .user {
   @extend %search-user-header;
+
+  @include small() {
+    .form-item-name,
+    .form-item-pass {
+      @include zen-grid-item(12, 1);
+      @include zen-clear();
+    }
+
+    .form-actions {
+      margin-bottom: 0;
+    }
+
+    .form-submit {
+      margin-top: $medium-spacing;
+    }
+  }
+
+  @include small-medium() {
+    text-align: left;
+
+    .block-title {
+      display: block;
+      margin-top: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid transparentize($white, .75);
+      color: $white;
+    }
+
+    .user-field-wrapper {
+      position: relative;
+    }
+  }
+
+  @include small-medium {
+    width: auto;
+  }
   overflow: hidden;
 
   .user-field-wrapper {
@@ -390,85 +479,48 @@
   .block-title {
     display: none;
   }
-
-  @include small() {
-    .form-item-name,
-    .form-item-pass {
-      @include zen-grid-item(12, 1);
-      @include zen-clear();
-    }
-
-    .form-actions {
-      margin-bottom: 0;
-    }
-
-    .form-submit {
-      margin-top: $medium-spacing;
-    }
-  }
-
-  @include small-medium() {
-    text-align: left;
-
-    .block-title {
-      display: block;
-      color: $white;
-      margin-top: 10px;
-      border-bottom: 1px solid transparentize($white, .75);
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .user-field-wrapper {
-      position: relative;
-    }
-  }
-
-  @include small-medium {
-    width: auto;
-  }
 }
 
 
 .user-name {
-  color: $white;
-
-  .user-name-title {
-    font-size: $font-size-larger;
-    overflow: hidden;
-    max-height: 45px;
-  }
 
   @include small-medium() {
     .user-name-title {
       margin-bottom: 0;
     }
   }
+  color: $white;
+
+  .user-name-title {
+    overflow: hidden;
+    max-height: 45px;
+    font-size: $font-size-larger;
+  }
 }
 
 .user-name,
 .user-menu-loans,
 .user-menu {
-  border-bottom: 1px solid transparentize($white, .75);
+
+  @include small-medium() {
+    padding-bottom: 0;
+    border-bottom: 0;
+    text-align: left;
+  }
   display: none;
   padding-right: $medium-spacing;
   padding-bottom: $medium-spacing;
+  border-bottom: 1px solid transparentize($white, .75);
   text-align: right;
-
-  @include small-medium() {
-    border-bottom: 0;
-    padding-bottom: 0;
-    text-align: left;
-  }
 }
 
 .user-menu-loans,
 .user-menu {
-  padding-top: $medium-spacing;
 
   @include small-medium() {
     padding-top: 0;
   }
+  padding-top: $medium-spacing;
 }
 
 .user-menu {
@@ -479,9 +531,9 @@
 /* User WAYF login
    ========================================================================== */
 .ding-wayf--login-block {
-  bottom: 25px;
   position: absolute;
   right: -15px;
+  bottom: 25px;
 }
 
 .ding-wayf--login-info {
@@ -587,8 +639,8 @@
   }
 
   .notice-sms {
-    font-style: italic;
     padding-left: .5em;
+    font-style: italic;
   }
 
   /* Media queries */
