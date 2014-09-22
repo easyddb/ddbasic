@@ -186,6 +186,10 @@ function ddbasic_preprocess_panels_pane(&$vars) {
       $vars['content']['#theme_wrappers'] = array('menu_tree__sub_menu');
     }
   }
+
+  if ($vars['pane']->subtype == 'search-form' && $vars['pane']->panel != 'header') {
+    unset($vars['content']['advanced']);
+  }
 }
 
 /**
