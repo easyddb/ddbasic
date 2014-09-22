@@ -320,6 +320,12 @@ function ddbasic_preprocess_node(&$variables, $hook) {
       }
     }
 
+    // Add event start date to variables.
+    $variables['ddbasic_event_start_date'] = $variables['node']->field_ding_event_date[LANGUAGE_NONE][0]['value'];
+
+    // Add event end date to variables.
+    $variables['ddbasic_event_end_date'] = $variables['node']->field_ding_event_date[LANGUAGE_NONE][0]['value2'];
+
     // Add event date to variables. A render array is created based on the date
     // format "date_only".
     $event_date_ra = field_view_field('node', $variables['node'], 'field_ding_event_date', array(

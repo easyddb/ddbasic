@@ -77,8 +77,8 @@
  * - $ddbasic_updated: Information about latest update on the node created from
  *   $date during
  *   ddbasic_preprocess_node().
- * - $ddbasic_event_date: Event date or period, printed as date(s) 
- * - $ddbasic_event_time: Event time, printed as time(s) 
+ * - $ddbasic_event_date: Event date or period, printed as date(s)
+ * - $ddbasic_event_time: Event time, printed as time(s)
  * - $ddbasic_ding_event_tags: Tags, as a comma-separated list of links with
  *   leading text "Tags: "
  * - $ddbasic_event_location: String containing adress info for either
@@ -92,102 +92,106 @@
  * @see template_process()
  */
 ?>
-<article class="event">
-  <h1 class="page-title"><?php print $title; ?></h1>
-
-  <div class="event-lead">
-    <?php print render($content['field_ding_event_lead']); ?>
-  </div>
-  <div class="event-info">
-    <?php if (isset($ddbasic_event_date)) : ?>
-      <p><i class="icon-calendar"></i> <?php print $ddbasic_event_date; ?></p>
-    <?php endif; ?>
-    <?php if (isset($ddbasic_event_date)) : ?>
-      <p><i class="icon-time"></i> <?php print $ddbasic_event_time; ?></p>
-    <?php endif; ?>
-
-    <?php if (isset($ddbasic_event_location)): ?>
-      <p><i class="icon-home"></i> <?php print render($ddbasic_event_location); ?></p>
-    <?php endif; ?>
-
-    <?php if (isset($content['field_ding_event_target'])): ?>
-      <p><i class="icon-user"></i> <?php print render($content['field_ding_event_target']); ?></p>
-    <?php endif; ?>
-
-    <?php if (isset($content['field_ding_event_price'])): ?>
-      <p><i class="icon-tag"></i> <?php print render($content['field_ding_event_price']); ?></p>
-    <?php endif; ?>
-  </div>  
-  <div class="event-content">
-    <?php if (isset($content['field_ding_event_title_image'])) : ?>
-    <div class="event-image">
-      <?php print render($content['field_ding_event_title_image']); ?>
+<div itemscope itemtype="http://schema.org/Event">
+  <article class="event">
+    <h1 class="page-title" itemprop="name"><?php print $title; ?></h1>
+    <div class="event-lead">
+      <?php print render($content['field_ding_event_lead']); ?>
     </div>
-    <?php endif; ?>
-
-    <?php
-      // Hide fields we have already rendered.
-      hide($content['field_ding_event_category']);
-      hide($content['og_group_ref']);
-      hide($content['ding_event_groups_ref']);
-
-      // Field provided by optional module ding_place2book
-      hide($content['field_place2book_tickets']);
-      hide($content['field_ding_event_date']);
-      hide($content['field_ding_event_location']);
-      hide($content['field_ding_event_target']);
-      hide($content['field_ding_event_price']);
-
-      // Hide fields that will be displayed as panel panes instead.
-      hide($content['comments']);
-
-      // Hide fields now so that we can render them later.
-      hide($content['links']);
-      hide($content['field_ding_event_tags']);
-
-      print render($content);
-    ?>
-  </div>
-
-  <footer class="event-footer">
-    <section class="event-tags">
-      <span class="event-category"><?php print render($content['field_ding_event_category']); ?></span>
-      <?php if (isset($content['field_ding_event_tags'])) : ?>
-        <span class="event-tags"><?php print render($content['field_ding_event_tags']); ?></span>
+    <div class="event-info">
+      <?php if (isset($ddbasic_event_date)) : ?>
+        <meta itemprop="startDate" datetime="<?php print $ddbasic_event_start_date ?>" content="<?php print $ddbasic_event_start_date ?>">
+        <meta itemprop="endDate" datetime="<?php print $ddbasic_event_end_date ?>" content="<?php print $ddbasic_event_end_date ?>">
+        <p itemprop="duration"><i class="icon-calendar"></i><?php print $ddbasic_event_date; ?></p>
       <?php endif; ?>
-      <?php if (isset($content['og_group_ref']['#items'])) : ?>
-        <span class="library-ref label label-info"><?php print render($content['og_group_ref']); ?></span>
+      <?php if (isset($ddbasic_event_date)) : ?>
+        <p><i class="icon-time"></i> <?php print $ddbasic_event_time; ?></p>
       <?php endif; ?>
-      <?php if (isset($content['ding_event_groups_ref']['#items'])) : ?>
-        <span class="groups-ref"><?php print render($content['ding_event_groups_ref']); ?></span>
-      <?php endif; ?>
-    </section>
 
-    <?php if ($display_submitted) : ?>
-      <div class="signature">
-        <div class="signature-image"><?php print $user_picture; ?></div>
-        <div class="signature-info">
-          <p><span class="signature-label"><?php print t("Posted by:"); ?></span><?php print $name; ?></p>
-          <p><span class="signature-label"><?php print t("Posted at:"); ?></span><?php print $submitted ?></p>
-          <p><span class="signature-label"><?php print t("Last updated:"); ?></span><?php print $ddbasic_updated ?></p>
+      <?php if (isset($ddbasic_event_location)): ?>
+        <p itemprop="location"><i class="icon-home"></i> <?php print render($ddbasic_event_location); ?></p>
+      <?php endif; ?>
+
+      <?php if (isset($content['field_ding_event_target'])): ?>
+        <p itemprop="attendee"><i class="icon-user"></i> <?php print render($content['field_ding_event_target']); ?></p>
+      <?php endif; ?>
+
+      <?php if (isset($content['field_ding_event_price'])): ?>
+        <p itemprop="price"><i class="icon-tag"></i> <?php print render($content['field_ding_event_price']); ?></p>
+      <?php endif; ?>
+    </div>
+    <div class="event-content">
+      <?php if (isset($content['field_ding_event_title_image'])) : ?>
+      <div class="event-image">
+        <?php print render($content['field_ding_event_title_image']); ?>
+      </div>
+      <?php endif; ?>
+      <div class="description" itemprop="description">
+        <?php
+          // Hide fields we have already rendered.
+          hide($content['field_ding_event_category']);
+          hide($content['og_group_ref']);
+          hide($content['ding_event_groups_ref']);
+
+          // Field provided by optional module ding_place2book
+          hide($content['field_place2book_tickets']);
+          hide($content['field_ding_event_date']);
+          hide($content['field_ding_event_location']);
+          hide($content['field_ding_event_target']);
+          hide($content['field_ding_event_price']);
+
+          // Hide fields that will be displayed as panel panes instead.
+          hide($content['comments']);
+
+          // Hide fields now so that we can render them later.
+          hide($content['links']);
+          hide($content['field_ding_event_tags']);
+
+          print render($content);
+        ?>
+      </div>
+    </div>
+
+    <footer class="event-footer">
+      <section class="event-tags">
+        <span class="event-category"><?php print render($content['field_ding_event_category']); ?></span>
+        <?php if (isset($content['field_ding_event_tags'])) : ?>
+          <span class="event-tags"><?php print render($content['field_ding_event_tags']); ?></span>
+        <?php endif; ?>
+        <?php if (isset($content['og_group_ref']['#items'])) : ?>
+          <span class="library-ref label label-info"><?php print render($content['og_group_ref']); ?></span>
+        <?php endif; ?>
+        <?php if (isset($content['ding_event_groups_ref']['#items'])) : ?>
+          <span class="groups-ref"><?php print render($content['ding_event_groups_ref']); ?></span>
+        <?php endif; ?>
+      </section>
+
+      <?php if ($display_submitted) : ?>
+        <div class="signature">
+          <div class="signature-image"><?php print $user_picture; ?></div>
+          <div class="signature-info">
+            <p><span class="signature-label"><?php print t("Posted by:"); ?></span><?php print $name; ?></p>
+            <p><span class="signature-label"><?php print t("Posted at:"); ?></span><?php print $submitted ?></p>
+            <p><span class="signature-label"><?php print t("Last updated:"); ?></span><?php print $ddbasic_updated ?></p>
+          </div>
         </div>
-      </div>
-    <?php endif; ?>
-    
-    <?php
-      // Remove the "Add new comment" link on the teaser page or if the comment
-      // form is being displayed on the same page.
-      // @todo: this should be moved to field_preprocess.
-      if ($teaser || !empty($content['comments']['comment_form'])) :
-        unset($content['links']['comment']['#links']['comment-add']);
-      endif;
-    ?>
+      <?php endif; ?>
 
-    <?php if (!empty($content['links']['#links'])) : ?>
-      <div class="link-wrapper">
-        <?php print render($links); ?>
-      </div>
-    <?php endif; ?>
+      <?php
+        // Remove the "Add new comment" link on the teaser page or if the comment
+        // form is being displayed on the same page.
+        // @todo: this should be moved to field_preprocess.
+        if ($teaser || !empty($content['comments']['comment_form'])) :
+          unset($content['links']['comment']['#links']['comment-add']);
+        endif;
+      ?>
 
-  </footer>
-</article>
+      <?php if (!empty($content['links']['#links'])) : ?>
+        <div class="link-wrapper">
+          <?php print render($links); ?>
+        </div>
+      <?php endif; ?>
+
+    </footer>
+  </article>
+</div>
