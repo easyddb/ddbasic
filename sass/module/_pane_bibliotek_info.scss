@@ -1,0 +1,17 @@
+.pane-bibliotek-info {
+  padding: 15px;
+  background-image: url('../images/pw_maze_white.png');
+
+  .pane-content {
+    padding: 20px;
+    background-color: transparentize($white, .1);
+
+    // Media from-medium
+
+    @include from-medium() {
+      background-image: url('../images/dbc-logo-footer.png');
+      background-position: 95% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
