@@ -59,8 +59,8 @@ $search-border-type: solid;
 .header-wrapper {
   /* Add padding if the search is in the header */
   .search {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -204,8 +204,8 @@ input#edit-search-block-form--2.spinner {
   text-align: right;
 
   .reserve-button {
-    float: right;
     @extend %button-action;
+    float: right;
   }
 }
 
@@ -215,8 +215,8 @@ input#edit-search-block-form--2.spinner {
 
 .field-name-ding-entity-buttons {
   .reserve-button {
-    float: right;
     display: inline-block;
+    float: right;
   }
 }
 
@@ -628,6 +628,17 @@ input#edit-search-block-form--2.spinner {
             position: relative;
             padding: 15px;
             background-image: url('../images/pw_maze_white.png');
+
+            &:after {
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: block;
+              width: 100%;
+              height: 100%;
+              box-shadow: 1px -1px 2px #888;
+              content: '';
+            }
           }
         }
       }
@@ -1204,6 +1215,13 @@ input#edit-search-block-form--2.spinner {
   }
 }
 
+/* Collection popup
+   ========================================================================== */
+
+div[class^="collection-bg"] {
+  background-image: url('../images/pw_maze_white.png');
+}
+
 /* Reservations popup
    ========================================================================== */
 
@@ -1215,8 +1233,8 @@ input#edit-search-block-form--2.spinner {
   }
 
   .view-mode-collection-list {
-    border-top: 1px dotted $black;
     padding: 10px 0;
+    border-top: 1px dotted $black;
 
     &:first-of-type {
       border: none;
