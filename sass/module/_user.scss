@@ -8,49 +8,70 @@
 /* /user/$uid/edit/*
    ========================================================================== */
 
-.page-user-edit .field-name-field-alma-reservation-pause {
+.page-user-edit {
 
-  @include from-medium() {
+  .pane-profile2-form {
+    line-height: 1.1;
 
-    // Hide labels
-
-    label {
-      display: none;
+    label,
+    .form-item {
+      margin-bottom: 5px;
     }
 
-    .start-date-wrapper {
-      @include span(1 of 2);
-
-      &:after {
-        position: absolute;
-        top: 10px;
-        right: -11%;
-        content: '-';
-        font-weight: 700;
-      }
+    fieldset,
+    div[class^="field-type-"] {
+      margin-bottom: 10px;
     }
 
-    .end-date-wrapper {
-      @include span(last 1 of 2);
+    .form-submit {
+      margin-top: 10px;
     }
+  }
 
-    .start-date-wrapper,
-    .end-date-wrapper {
-      position: relative;
+  .field-name-field-alma-reservation-pause {
 
-      .form-type-textfield:after {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        color: #333;
-        content: '\f073';
-        font-weight: 700;
-        font-family: 'FontAwesome';
-        pointer-events:none;
+    @include from-medium() {
+
+      // Hide labels
+
+      label {
+        display: none;
       }
 
-      input[type="text"] {
-        padding-left: 30px;
+      .start-date-wrapper {
+        @include span(1 of 2);
+
+        &:after {
+          position: absolute;
+          top: 10px;
+          right: -11%;
+          content: '-';
+          font-weight: 700;
+        }
+      }
+
+      .end-date-wrapper {
+        @include span(last 1 of 2);
+      }
+
+      .start-date-wrapper,
+      .end-date-wrapper {
+        position: relative;
+
+        .form-type-textfield:after {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          color: #333;
+          content: '\f073';
+          font-weight: 700;
+          font-family: 'FontAwesome';
+          pointer-events:none;
+        }
+
+        input[type="text"] {
+          padding-left: 30px;
+        }
       }
     }
   }
