@@ -1222,6 +1222,12 @@ div[class^="collection-bg"] {
     height: auto !important;
   }
 
+  // Title
+
+  .field-name-ting-title h2 {
+    font-size: 140%;
+  }
+
   .view-mode-collection-list {
     padding: 10px 0;
     border-top: 1px dotted $black;
