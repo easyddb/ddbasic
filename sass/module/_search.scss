@@ -250,7 +250,8 @@ input#edit-search-block-form--2.spinner {
   }
 }
 
-.ting-object-right {
+.ting-object-right,
+.group-ting-right-col-collection {
   @include zen-grid-item(10, 1, right);
   padding-right: 0;
 
