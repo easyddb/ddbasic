@@ -42,7 +42,6 @@ $modal-border-radius:             12px;
 .ui-dialog-title {
   @extend .page-title;
   color: $dialog-text;
-  border-bottom: 1px solid $black;
   padding-bottom: 20px;
 }
 
@@ -154,7 +153,7 @@ $modal-border-radius:             12px;
     float: left;
   }
 
-  .ting-object + h2 {
+  .field-item > h2 {
     margin-top: 10px;
     padding-top: 10px;
     border-top: 1px solid $black;
@@ -182,4 +181,3 @@ $modal-border-radius:             12px;
   border: 0;
   background: none;
 }
-
