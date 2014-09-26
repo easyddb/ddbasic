@@ -626,17 +626,7 @@ input#edit-search-block-form--2.spinner {
             position: relative;
             padding: 15px;
             background-image: url('../images/pw_maze_white.png');
-
-            &:after {
-              position: absolute;
-              top: 0;
-              left: 0;
-              display: block;
-              width: 100%;
-              height: 100%;
-              box-shadow: 1px -1px 2px #888;
-              content: '';
-            }
+            box-shadow: 1px -1px 2px #888;
           }
         }
       }
@@ -1228,6 +1218,12 @@ div[class^="collection-bg"] {
 
   .ting-object.view-mode-collection-popup.clearfix:after {
     height: auto !important;
+  }
+
+  // Title
+
+  .field-name-ting-title h2 {
+    font-size: 140%;
   }
 
   .view-mode-collection-list {
