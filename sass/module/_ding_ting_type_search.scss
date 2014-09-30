@@ -17,7 +17,7 @@
 
   .submit-wrap {
     input {
-      min-height: 42px;
+      @include min-height(42px);
     }
   }
 

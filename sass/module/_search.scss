@@ -235,7 +235,7 @@ input#edit-search-block-form--2.spinner {
   @include zen-grid-item(2, 1);
 
   padding-left: 0;
-  min-height: 100px;
+  @include min-height(100px);
 
   /* Media queries */
 
@@ -630,6 +630,7 @@ input#edit-search-block-form--2.spinner {
             padding: 15px;
             background-image: url('../images/pw_maze_white.png');
             box-shadow: 1px -1px 2px #888;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=35, Color='#7c7c7c')";
           }
         }
       }
@@ -854,9 +855,9 @@ input#edit-search-block-form--2.spinner {
 }
 
 .ting-cover {
+  @include min-height(60px);
   @extend .icon-camera;
   position: relative;
-  min-height: 60px;
   width: 100%;
 
   img {
@@ -924,8 +925,8 @@ input#edit-search-block-form--2.spinner {
 
   .ting-object-left {
     @include zen-grid-item(3, 1);
+    @include min-height(200px);
     padding-left: 0;
-    min-height: 200px;
   }
 
   .ting-object-right {

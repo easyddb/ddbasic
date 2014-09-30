@@ -40,7 +40,7 @@ function ddbasic_preprocess_html(&$vars) {
   ddbasic_load_plugins();
 
   // Add conditional CSS for IE8.
-  drupal_add_css(path_to_theme() . '/css/ddbasic.ie8.css', array(
+  drupal_add_css(drupal_get_path('theme', 'ddbasic') . '/css/ddbasic.ie8.css', array(
     'group' => CSS_THEME,
     'browsers' => array(
       'IE' => 'lte IE 8',
@@ -51,7 +51,7 @@ function ddbasic_preprocess_html(&$vars) {
   ));
 
   // Add conditional CSS for IE9.
-  drupal_add_css(path_to_theme() . '/css/ddbasic.ie9.css', array(
+  drupal_add_css(drupal_get_path('theme', 'ddbasic') . '/css/ddbasic.ie9.css', array(
     'group' => CSS_THEME,
     'browsers' => array(
       'IE' => 'lte IE 9',

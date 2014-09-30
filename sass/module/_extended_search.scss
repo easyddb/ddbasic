@@ -16,10 +16,10 @@
     }
 
     > a {
+      @include min-height(60px);
       display: inline-block;
       margin: 27px 10px 0 0;
       line-height: 60px;
-      min-height: 60px;
 
       // Media from-medium
 
@@ -83,7 +83,7 @@
     input,
     select {
       @include border-radius(0);
-      min-height: 40px;
+      @include min-height(40px);
       width: 100%;
     }
 

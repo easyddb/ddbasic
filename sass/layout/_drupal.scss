@@ -119,7 +119,7 @@ html.js .search input.form-autocomplete {
  */
 .pane-ting-object .ting-reference-reverse-list .list .list-item .node .search-left,
 .pane-ting-object .ting-reference-reverse-list .list .list-item .node .search-right {
-  min-height: 0;
+  @include min-height(0);
   margin-bottom: 0;
 }
 

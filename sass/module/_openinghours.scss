@@ -42,7 +42,7 @@
 
 
 .block-opening-hours {
-  min-height: 279px;
+  @include min-height(279px);
 
   .read-more {
     margin-left: 3px;
