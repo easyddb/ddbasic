@@ -49,7 +49,7 @@ $carousel-tab-color:                       $white;
 
 .rs-carousel-inner {
   background-color: $carousel-background-color;
-  min-height: 225px;
+  @include min-height(225px);
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
@@ -57,7 +57,7 @@ $carousel-tab-color:                       $white;
 
   @include small-medium() {
     background-color: transparent;
-    min-height: 150px;
+    @include min-height(150px);
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;

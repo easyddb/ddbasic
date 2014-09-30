@@ -26,6 +26,10 @@
 // Include framework
 @import "framework/_mixins";
 @import "framework/_normalize";
+
+// Custom font
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic);
+
 @import "framework/_base";
 @import "framework/_framework";
 @import "framework/_forms";
@@ -72,7 +76,3 @@
 @import "module/_ding_item_list";
 @import "module/_ding_nodelist";
 @import "module/_pane_bibliotek_info";
-
-
-// Custom font
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic);

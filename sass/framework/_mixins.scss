@@ -209,3 +209,14 @@
 @mixin bshadow() {
   @include box-shadow($gray-dark 1px 1px 5px);
 }
+
+
+
+// Min height for all browsers including old IE
+//==========================================================================
+
+@mixin min-height($value) {
+  min-height: $value;
+  height: auto !important;
+  height: $value;
+}

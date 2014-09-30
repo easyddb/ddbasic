@@ -97,9 +97,9 @@ $label-color: #53514b;
     z-index: 48;
 
     .node {
+      @include min-height(32px);
       overflow: hidden;
       padding: 9px 7px;
-      min-height: 32px;
       width: 272px;
       background-color: $white;
       color: #505050;
@@ -532,9 +532,9 @@ $label-color: #53514b;
     // Node info wrapper
 
     .node {
+      @include min-height(40px);
       overflow: hidden;
       padding: 10px;
-      min-height: 40px;
       background-image: url('../images/p.png');
       color: $white;
       font-size: 11px;
