@@ -84,6 +84,11 @@ body {
   a {
     display: inline-block;
   }
+
+  img {
+    margin-top: 10px;
+    max-height: 70px;
+  }
 }
 
 .site-name-wrapper {
@@ -142,6 +147,9 @@ body {
   color: $white;
 }
 
+.logo {
+  @include zen-grid-item(5, 1);
+}
 
 
 /* Content

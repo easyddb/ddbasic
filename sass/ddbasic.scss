@@ -63,6 +63,9 @@
 @import "module/_staff";
 @import "module/_tabroll";
 @import "module/_groups";
+@import "module/_page";
+// easyDDB modules
+@import "module/facebookshare";
 @import "module/_extended_search";
 @import "module/_history_back";
 @import "module/_ding_ting_type_search";
@@ -72,7 +75,6 @@
 @import "module/_ding_item_list";
 @import "module/_ding_nodelist";
 @import "module/_pane_bibliotek_info";
-@import "module/_page";
 
 // Custom font
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic);
