@@ -198,6 +198,9 @@ input#edit-search-block-form--2.spinner {
   background-image: none;
 }
 
+header .search .form-actions {
+  top: 4px;
+}
 
 .field-name-ding-entity-buttons {
   clear: both;
@@ -417,11 +420,6 @@ input#edit-search-block-form--2.spinner {
   }
 }
 
-
-.pane-ding-facetbrowser {
-  @extend .pane-ding-facetbrowser;
-}
-
 /* Responsive styling for facet browser depending on context */
 
 .primary-content {
@@ -457,6 +455,9 @@ input#edit-search-block-form--2.spinner {
 
   .subject {
     @extend .label;
+
+    font-size: 14px;
+    white-space: normal;
   }
 }
 

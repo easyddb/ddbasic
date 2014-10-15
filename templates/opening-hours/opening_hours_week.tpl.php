@@ -4,9 +4,9 @@
  * Template for rendering opening hours week.
  */
 
-if (!empty($preface)) {
+if (!empty($preface)):
   print $preface;
-}
+endif;
 ?>
 
 <?php if (!$ding_library_overview): ?>

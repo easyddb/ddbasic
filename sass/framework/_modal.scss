@@ -15,8 +15,8 @@ $modal-text-color:                $black;
 $modal-background-color:          $black;
 $modal-background-transparency:   .25;
 $modal-min-width:                 450px;
+$modal-max-width:                 450px;
 $modal-border-radius:             12px;
-
 
 .ui-widget-overlay {
   @include opacity(1);
@@ -27,7 +27,9 @@ $modal-border-radius:             12px;
   @include box-shadow(rgba($black, .35) 0 0 10px);
   @include border-radius($button-border-radius);
   min-width: $modal-min-width;
-  background-color: $content-background-color;
+  background-color: $dialog-background;
+  min-width: $modal-min-width;
+  max-width: $modal-max-width;
 
   /* Media queries */
   @include small-medium() {
@@ -39,15 +41,14 @@ $modal-border-radius:             12px;
 
 .ui-dialog-title {
   @extend .page-title;
+  color: $dialog-text;
   padding-bottom: 20px;
-  border-bottom: 1px solid $black;
-  color: $modal-text-color;
 }
 
 
 .ui-widget-content {
+  color: $dialog-text;
   padding: 0;
-  color: $modal-text-color;
 }
 
 .ui-widget-header {
@@ -58,6 +59,10 @@ $modal-border-radius:             12px;
 .ui-dialog {
   @include box-sizing(border-box);
   padding: $large-spacing;
+
+  &:focus {
+    outline: none;
+  }
 
   .ui-dialog-title {
     width: 100%;
@@ -81,10 +86,14 @@ $modal-border-radius:             12px;
       float: right;
       padding: 0;
       width: auto;
+      background: none;
+      border: none;
 
       .ui-icon {
         @include font-bold();
         @extend .icon-remove;
+        color: $dialog-text;
+        background: none;
         height: 24px;
         background: none;
         text-indent: 0;
@@ -93,7 +102,7 @@ $modal-border-radius:             12px;
         &:hover {
           border: 0;
           background: none;
-          color: lighten($modal-text-color, 10%);
+          color: $dialog-text;
         }
       }
 
@@ -106,14 +115,18 @@ $modal-border-radius:             12px;
       &:link,
       &:visited,
       &:active {
-        color: $modal-text-color;
+        color: $dialog-text;
         text-decoration: none;
       }
 
       &:hover {
-        color: $modal-text-color;
+        color: $dialog-text;
         text-decoration: none;
       }
+    }
+
+    .ui-dialog-title {
+      float: none;
     }
 
     .form-item {
@@ -140,7 +153,7 @@ $modal-border-radius:             12px;
     float: left;
   }
 
-  .ting-object + h2 {
+  .field-item > h2 {
     margin-top: 10px;
     padding-top: 10px;
     border-top: 1px solid $black;
@@ -168,4 +181,3 @@ $modal-border-radius:             12px;
   border: 0;
   background: none;
 }
-
