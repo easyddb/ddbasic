@@ -221,6 +221,20 @@ body {
   }
 }
 
+.page-search .default-layout {
+
+  .primary-content,
+  .secondary-content,
+  .tertiary-content {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .primary-content {
+    @include zen-grid-item(9, 4);
+  }
+}
+
 .default-layout {
   margin-top: $large-spacing;
 
