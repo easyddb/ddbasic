@@ -142,20 +142,13 @@
       // If back button was pressed.
       if (window.location.hash !== '') {
         // id from previous page.
-        var storedId = decodeURIComponent(window.location.href).match(/\d+-\w+:\d+/)[0];
+        var regExp = /\d+$/;
+        var storedId = window.location.href.match(regExp)[0];
 
-        // Match stored id with id's from this page.
-        $('.search-result .heading a').each(function () {
-          var el = $(this);
-          var id = decodeURIComponent(el.attr('href')).match(/\d+-\w+:\d+/)[0];
-
-          // Scroll to item if match found.
-          if (id === storedId) {
-            $('html, body').animate({
-              scrollTop: el.closest('.search-result').offset().top
-            }, 'slow');
-          }
-        });
+        // Scroll to item if match found.
+        $('html, body').animate({
+          scrollTop: $('.search-result .heading a[href$="' + storedId + '"]').offset().top
+        }, 'slow');
       }
     }
   });
