@@ -125,11 +125,38 @@
     toggleOpeningHours();
 
     // Toggle footer menu.
-    $('.footer .pane-title').on('click', function () {
+    $('.footer .pane-title').on('click', function() {
       var element = $(this).parent();
       $('.menu', element).toggle();
       $(this).toggleClass('js-toggled');
     });
   });
 
+  /*
+   * Automatic scroll down to content.
+   */
+  $(window).load(function() {
+    // Search result page.
+    if (document.location.pathname.indexOf('/search/ting/') === 0) {
+
+      // If back button was pressed.
+      if (window.location.hash !== '') {
+        // id from previous page.
+        var storedId = decodeURIComponent(window.location.href).match(/\d+-\w+:\d+/)[0];
+
+        // Match stored id with id's from this page.
+        $('.search-result .heading a').each(function () {
+          var el = $(this);
+          var id = decodeURIComponent(el.attr('href')).match(/\d+-\w+:\d+/)[0];
+
+          // Scroll to item if match found.
+          if (id === storedId) {
+            $('html, body').animate({
+              scrollTop: el.closest('.search-result').offset().top
+            }, 'slow');
+          }
+        });
+      }
+    }
+  });
 })(jQuery);
