@@ -265,6 +265,13 @@ header .search .form-actions {
   }
 }
 
+// No covers layout width
+
+.no-cover .ting-object-right,
+.pane-search-result .search-results .list .no-cover + .search-result--availability {
+  @include zen-grid-item(12, 1, right);
+}
+
 .ding-format-short {
   .ting-object-right {
     @include zen-grid-item(12, 1, right);
