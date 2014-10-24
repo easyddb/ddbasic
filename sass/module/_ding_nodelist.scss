@@ -801,6 +801,7 @@ $label-bg: url('../images/p.png');
     bottom: 30px;
     left: 10px;
     z-index: 2;
+    visibility: hidden;
     padding: 10px;
     background-image: $label-bg;
 
@@ -809,6 +810,10 @@ $label-bg: url('../images/p.png');
     a {
       color: $white;
     }
+  }
+
+  .active .va-content {
+    visibility: visible;
   }
 
   .event-time,
@@ -847,6 +852,7 @@ $label-bg: url('../images/p.png');
   }
 
   .active .va-title {
+
     // Media till-medium
 
     @include till-medium() {
