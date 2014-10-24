@@ -203,13 +203,6 @@ body {
     @include zen-grid-item(4, 1, right);
   }
 
-  .attachments-wrapper {
-    @include zen-grid-container;
-    @include zen-clear(both);
-
-    margin-bottom: $large-spacing;
-  }
-
   /* Media queries */
   @include small-medium() {
     .primary-content,
@@ -219,6 +212,13 @@ body {
       @include zen-clear();
     }
   }
+}
+
+.attachments-wrapper {
+  @include zen-grid-container;
+  @include zen-clear(both);
+
+  margin-bottom: $large-spacing;
 }
 
 // Empty sidebars fulltext layout
