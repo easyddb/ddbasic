@@ -1,0 +1,128 @@
+// Print styles
+// ==========================================================================
+
+@media print {
+
+  @page {
+    margin: 2cm;
+  }
+
+  %default-color {
+    background-color: $white !important;
+    background-image: none;
+    color: $black !important;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust:exact;
+  }
+
+  body {
+    @extend %default-color;
+  }
+
+  .topbar {
+    background-color: $white;
+  }
+
+  #cccwr,
+  .step-back,
+  .topbar-menu,
+  .header-wrapper,
+  .navigation-wrapper,
+  .footer,
+  .page-user .default-layout .secondary-content,
+  .page-user .default-layout .form-type-checkbox,
+  .field-type-ding-entity-buttons,
+  .page-search .pane-search-per-page,
+  .page-search .secondary-content,
+  .more-info-wrapper,
+  .rs-carousel-wrapper,
+  .search-field-wrapper .form-submit,
+  .pane-import {
+    display: none;
+  }
+
+  .search input.form-autocomplete {
+    border: 0;
+  }
+
+  .html .user-loan-status-wrapper {
+    padding-top: 0;
+  }
+
+  .html .logo img {
+    margin-top: 0;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .html .site-name a {
+
+    &,
+    &:link {
+      color: $black !important;
+    }
+  }
+
+  .html .logo,
+  .html .site-name {
+    display: block;
+    float: none;
+  }
+
+  .bottom {
+    padding-top: 0;
+
+    &,
+    a {
+      @extend %default-color;
+    }
+  }
+
+  .frontpage-layout .layout-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .html .default-layout .layout-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .ding-group-news,
+  .ding-group-events,
+  .html .default-layout .primary-content,
+  .html .default-layout .secondary-content {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .search [class^="icon-"],
+  .search-field-in-content [class^="icon-"] {
+    left: 0;
+  }
+
+  html.js .search input.form-autocomplete,
+  html.js .search-field-in-content input.form-autocomplete {
+    padding-left: 34px;
+    box-shadow: none;
+    text-transform: uppercase;
+  }
+
+  .pane-search-result,
+  .view-node-search-result,
+  .ting-reference-reverse-list,
+  .pane-new-materials {
+    padding-top: 0;
+  }
+}
