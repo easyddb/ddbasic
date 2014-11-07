@@ -2,9 +2,11 @@
   margin: 10px 0;
 }
 
+.alma-item-list,
 .ding-item-list-item {
   overflow: hidden;
   margin-bottom: 10px;
+  font-size: $base-font-size;
 
   .item-cover {
     float: left;
@@ -21,5 +23,15 @@
   .reserve-button {
     margin-top: 10px;
     font-size: 100%;
+  }
+
+  .item-loan {
+
+    &,
+    a {
+      font-size: $font-size-reset;
+      font-family: inherit;
+      line-height: inherit;
+    }
   }
 }
