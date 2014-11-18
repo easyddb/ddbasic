@@ -73,11 +73,11 @@
       event.preventDefault();
     });
   }
-
+  
   /**
    * Autofocus inputs.
    */
-  function autofocusInpouts() {
+  function autofocusInputs() {
     // Search button click
     $('.topbar-link-search').click(function() {
       var input = $('input[name="search_block_form"]');
@@ -114,12 +114,11 @@
 
   // When ready start the magic.
   $(document).ready(function() {
+    // Autofocus inputs
+    autofocusInputs();
 
     // Hide empty elements
     hideElement();
-
-    // Search form and login form autofocus inputs.
-    autofocusInpouts();
 
     // Toggle opening hours.
     toggleOpeningHours();
@@ -130,26 +129,5 @@
       $('.menu', element).toggle();
       $(this).toggleClass('js-toggled');
     });
-  });
-
-  /*
-   * Automatic scroll down to content.
-   */
-  $(window).load(function() {
-    // Search result page.
-    if (document.location.pathname.indexOf('/search/ting/') === 0) {
-
-      // If back button was pressed.
-      if (window.location.hash !== '') {
-        // id from previous page.
-        var regExp = /\d+$/;
-        var storedId = window.location.href.match(regExp)[0];
-
-        // Scroll to item if match found.
-        $('html, body').animate({
-          scrollTop: $('.search-result .heading a[href$="' + storedId + '"]').offset().top
-        }, 'slow');
-      }
-    }
   });
 })(jQuery);
