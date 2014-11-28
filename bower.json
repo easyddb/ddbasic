@@ -1,8 +1,0 @@
-{
-  "name": "ddbasic theme",
-  "version": "0.0.1",
-  "dependencies": {
-    "zen-grids": "1.4",
-    "susy": "2.1.3"
-  }
-}

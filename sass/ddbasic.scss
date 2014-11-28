@@ -12,10 +12,10 @@
 
 
 // Grid - http://zengrids.com
-@import "../libraries/zen-grids/stylesheets/zen";
+@import "zen";
 
 // Susy grid
-@import "../libraries/susy/sass/susy";
+@import "susy";
 
 // Include configuration
 @import "configuration/_variables";
