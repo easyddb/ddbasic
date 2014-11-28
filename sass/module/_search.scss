@@ -216,13 +216,6 @@ header .search .form-actions {
   overflow: hidden;
 }
 
-.field-name-ding-entity-buttons {
-  .reserve-button {
-    display: inline-block;
-    float: right;
-  }
-}
-
 .button-see-online {
   @extend %button-action;
   margin-left: 10px;
