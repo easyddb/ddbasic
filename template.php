@@ -11,6 +11,9 @@ include_once drupal_get_path('theme', 'ddbasic') . '/inc/functions.inc';
  * Implements hook_preprocess_html().
  */
 function ddbasic_preprocess_html(&$vars) {
+  if (in_array('html_node_newsletter', $vars['theme_hook_suggestions'])) {
+    $vars['newsletter'] = $vars['page']['content']['system_main']['main']['#markup'];
+  }
   // Load responsive.js file
 
   $file_name = drupal_get_path('theme', 'ddbasic') . '/scripts/responsive.js';
