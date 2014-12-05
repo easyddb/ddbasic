@@ -1,0 +1,316 @@
+.pane-bibdk-subject-hierarchy-bibdk-subject-hierarchy {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #fff;
+
+  &,
+  a {
+    font-size: $font-size-reset;
+  }
+
+  // Try to hide empty lists
+
+  ul,
+  li,
+  a {
+    &:empty {
+      display: none;
+    }
+  }
+
+  // Search title
+
+  .header h1,
+  .header h2 {
+    font-size: 130%;
+  }
+
+  // Loading message
+
+  .message {
+    display: none;
+  }
+
+  // Title
+
+  .pane-title {
+    float: left;
+  }
+
+  // Loader
+
+  .ajax-progress, .ajax-progress-throbber {
+    position: relative;
+    float: right;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+
+  .ajax-progress .throbber {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+
+  .themes__item p {
+    @include min-height(85px);
+    position: relative;
+    margin: 0;
+  }
+
+  // Reset for ul
+
+  ul {
+    padding-left: 0;
+  }
+
+  // Search form
+
+  #bibdk-subject-hierarchy-searchfield-form {
+    float: right;
+  }
+
+  // Hide help text
+
+  .bibdk-subject-hierarchy-header,
+  .bibdk-subject-hierarchy-helptext {
+    display: none;
+  }
+
+  // Subitems menu
+
+  .themes__sublists__wrapper {
+    display: none;
+    float: left;
+    width: 100%;
+  }
+
+  // Active item pointer
+
+  #bibdk-subject-hierarchy .themes__item--active > p {
+    text-decoration: underline;
+
+    // Media x-large
+
+    @include x-large() {
+      @include min-height(85px);
+
+      // Arrow
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -5px;
+        width: 0;
+        height: 0;
+        border-width: 0 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent #999;
+        content: '';
+      }
+    }
+  }
+
+  .themes__sublists {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: solid 5px #999;
+    background-color: #fff;
+
+    // Media large-x-large
+
+    @include large-x-large() {
+      li {
+        display: inline-block;
+        margin-right: -4px;
+        margin-bottom: 5px;
+        width: 25%;
+        vertical-align: top;
+      }
+
+      a {
+        display: block;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  // Close button
+
+  .themes__close-button {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .icon-blue-x:before {
+    color: #333;
+    content: '\f05c';
+    font-size: 18px;
+  }
+
+  // Breadcrumbs
+
+  .bibdk-subject-hierarchy-searchresult .themes__breadcrumb {
+    margin-bottom: 0;
+  }
+
+  .themes__breadcrumb {
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    a {
+      display: inline-block;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:last-child {
+        font-weight: 700;
+      }
+
+      // Separator icon
+
+      &:before {
+        margin-right: 10px;
+        color: #333;
+        content: '\f105';
+        font-weight: 700;
+        font-family: 'FontAwesome';
+      }
+
+      &:first-of-type:before {
+        margin-right: 0;
+        content: '';
+      }
+    }
+  }
+
+  // Subitems popup
+
+  .themes__sublist {
+    clear: both;
+    margin-bottom: 20px;
+
+    li {
+      overflow: hidden;
+    }
+
+    // Spinner
+
+    .ajax-progress,
+    .ajax-progress-throbber {
+      float: left;
+    }
+
+    a {
+      float: left;
+
+      // Collapsed state
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      // Expand icon
+
+      &.nesting:after {
+        margin-left: 10px;
+        color: #333;
+        content: '\f055';
+        font-weight: 700;
+        font-family: 'FontAwesome';
+      }
+
+      // Spinner icon position
+
+      .throbber {
+        left: 0;
+      }
+    }
+  }
+
+  // Search form
+
+  .subject-hierarchy-searchfield {
+    text-align: right;
+  }
+
+  // Search bar
+
+  .searchfield-submit,
+  .form-item-search-hierarchy-input {
+    display: inline-block;
+
+    input {
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+
+  // Submit button
+
+  .searchfield-submit {
+    @include min-height(42px);
+    text-transform: capitalize;
+  }
+
+  .form-item-search-hierarchy-input {
+    @include box-sizing(border-box);
+    float: left;
+    margin-right: 10px;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  // Columns
+
+  .themes_row {
+
+    // Media medium
+
+    @include medium() {
+      @include span(1 of 2);
+
+      &:nth-of-type(2n + 2) {
+        @include omega();
+      }
+    }
+
+    .header a {
+      display: block;
+      font-weight: 700;
+    }
+
+    .note {
+      position: relative;
+
+      a {
+        font-size: $font-size-small;
+      }
+    }
+
+    // Grid setup
+
+    .themes__item {
+
+      // Media large-x-large
+
+      @include large-x-large() {
+        @include span(1 of 4);
+
+        &:nth-of-type(4n + 4) {
+          @include omega();
+        }
+      }
+    }
+  }
+}

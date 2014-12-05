@@ -28,7 +28,11 @@ body {
  *
  * This have to be specific because Drupal adds it inline
  */
+
 #page.ding2-site-template {
+
+  // Media small-medium
+
   @include small-medium() {
     background-image: none !important;
   }
@@ -38,9 +42,9 @@ body {
 
 /* Header wrapper
    ========================================================================== */
+
 .header-wrapper {
   @include box-sizing(border-box);
-
 
   &.js-topbar-toggled {
     display: inline-block;
@@ -48,63 +52,80 @@ body {
 
   .header-inner {
     position: relative;
-
-    margin-left: auto;
+    overflow: hidden;
     margin-right: auto;
+    margin-left: auto;
     max-width: 1200px;
-  }
 
-  //Media queries
-  @include small-medium() {
-    padding: 0;
+    > section {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 }
 
-/* Site header
-   ========================================================================== */
 
 
 /* Site name, slogan and logo
    ========================================================================== */
 
 .topbar-inner {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
 }
 
 .logo {
+  @include zen-grid-item(4, 1);
+  margin-bottom: 10px;
+
+  a {
+    display: inline-block;
+  }
+
   img {
-    height: 70px;
     margin-top: 10px;
+    max-height: 70px;
   }
 }
 
 .site-name-wrapper {
   @include zen-grid-item(4, 1);
-
   margin-top: 30px;
+
+  // Media small
 
   @include small() {
     @include zen-grid-item(6, 1);
-
     margin-top: 12px;
   }
 
+  // Media medium
+
   @include medium() {
     @include zen-grid-item(6, 1);
-
     margin-top: 8px;
   }
 }
 
 .site-name {
-  font-family: $font-bold;
-  font-size: $font-size-largest;
-  font-weight: $base-font-weight-bold;
   margin-bottom: 0;
+  font-weight: $base-font-weight-bold;
+  font-size: $font-size-largest;
+
+  // Media small-medium
+
+  @include small-medium() {
+    font-size: $font-size-larger;
+  }
+
+  // Media small
+
+  @include small() {
+    font-size: $font-size-reset;
+  }
 
   a,
   a:link,
@@ -114,14 +135,6 @@ body {
     color: $white;
     text-decoration: none;
   }
-
-  @include small-medium() {
-    font-size: $font-size-larger;
-  }
-
-  @include small() {
-    font-size: $font-size-reset;
-  }
 }
 
 .site-name-with-slogan {
@@ -129,13 +142,13 @@ body {
 }
 
 .site-slogan {
-  color: $white;
   margin-top: $medium-spacing;
   margin-left: 2px;
+  color: $white;
 }
 
 .logo {
-  @include zen-grid-item(4, 1);
+  @include zen-grid-item(5, 1);
 }
 
 
@@ -147,15 +160,17 @@ body {
 }
 
 .content-inner {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
   overflow: visible;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
 }
+
 
 
 /* Layouts
    ========================================================================== */
+
 .frontpage-layout {
   .primary-content,
   .secondary-content,
@@ -172,10 +187,9 @@ body {
 
   .layout-wrapper {
     @include zen-clear();
-
+    overflow: hidden;
     margin-right: 10px;
     margin-left: 10px;
-    overflow: hidden;
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
@@ -189,24 +203,31 @@ body {
     @include zen-grid-item(4, 1, right);
   }
 
-  .attachments-wrapper {
-    @include zen-grid-container;
-    @include zen-clear();
-
-    margin-bottom: $large-spacing;
-  }
-
   /* Media queries */
   @include small-medium() {
     .primary-content,
     .secondary-content,
-    .tertiary-content {
+    .tertiary-content, {
       @include zen-grid-item(12, 1);
       @include zen-clear();
     }
   }
 }
 
+.attachments-wrapper {
+  @include zen-grid-container;
+  @include zen-clear(both);
+
+  margin-bottom: $large-spacing;
+}
+
+// Empty sidebars fulltext layout
+
+.empty-sidebars .primary-content .pane-fulltext {
+  @include from-medium() {
+    @include zen-grid-item(6, 4);
+  }
+}
 
 .default-layout {
   margin-top: $large-spacing;
@@ -225,14 +246,13 @@ body {
 
   .layout-wrapper {
     @include zen-clear();
-
-    background-color: $white;
+    overflow: hidden;
     margin-right: 10px;
     margin-left: 10px;
-    overflow: hidden;
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
+    background-color: $white;
   }
 
   .secondary-content {
@@ -244,7 +264,8 @@ body {
     @include zen-clear();
   }
 
-  /* Media queries */
+  // Media small-medium
+
   @include small-medium() {
     .primary-content,
     .secondary-content,
@@ -255,7 +276,11 @@ body {
   }
 
   /* Sidebars! */
+
   &.sidebars {
+
+    // Media medium-large
+
     @include medium-large() {
       .primary-content {
         @include zen-grid-item(6, 4);
@@ -270,6 +295,9 @@ body {
         clear: none;
       }
     }
+
+    // Media x-large
+
     @include x-large() {
       .primary-content {
         @include zen-grid-item(6, 4);
@@ -287,6 +315,7 @@ body {
   }
 
   /* No sidebars... */
+
   &.empty-sidebars {
     .primary-content {
       @include zen-grid-item(12, 1);
@@ -303,7 +332,11 @@ body {
   }
 
   /* Left sidebar only */
+
   &.left-sidebar {
+
+    // Media large
+
     @include large() {
       .primary-content {
         @include zen-grid-item(9, 4);
@@ -315,6 +348,7 @@ body {
   }
 
   /* Right sidebar only */
+
   &.right-sidebar {
     @include medium-large() {
       .primary-content {
@@ -331,6 +365,7 @@ body {
 
 /* Attachments (aka. blocks/panes)
    ========================================================================== */
+
 .attachment-first {
   @include zen-grid-item(3, 1);
 }
@@ -354,7 +389,8 @@ body {
   }
 }
 
-/* Media queries */
+// Media small
+
 @include small() {
   .attachment-first,
   .attachment-third,
@@ -364,6 +400,8 @@ body {
     @include zen-grid-item(12, 1);
   }
 }
+
+// Media medium
 
 @include medium() {
   .attachment-first,
@@ -379,6 +417,7 @@ body {
 }
 
 /* Panel layout with 2 panes */
+
 .attachments-2-2 {
   .attachment-first {
     @include zen-grid-item(6, 1);
@@ -405,10 +444,12 @@ body {
 }
 
 
+
 /* Footer
    ========================================================================== */
 
 .footer {
+  clear: both;
   overflow: hidden;
   padding-top: 30px;
 
@@ -418,10 +459,10 @@ body {
 }
 
 .footer-inner {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
   overflow: visible;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
 }
 
 .footer-block {
@@ -430,10 +471,36 @@ body {
 }
 
 .bottom {
-  background-color: darken($footer-background-color, 5%);
   clear: both;
-  color: white;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: darken($footer-background-color, 5%);
+  color: $white;
   text-align: center;
+}
+
+
+
+/* Dibs accept/cancel/redirect page
+   ========================================================================== */
+
+.dibs-accept-page,
+.dibs-cancel-page,
+.dibs-redirect-page {
+  @include box-sizing(border-box);
+  margin: 0 auto 20px;
+  padding: 10px;
+  max-width: 1180px;
+  background-color: $white;
+
+  // Media till-x-large
+
+  @include till-x-large() {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  > p:first-of-type {
+    margin-top: 0;
+  }
 }

@@ -1,9 +1,23 @@
-(function($) {
+(function ($) {
+  'use strict';
 
   /**
-   * Toggle opening hours
+   * Facebook block position.
    */
-  function toggle_opening_hours() {
+  Drupal.behaviors.facebookSharePosition = {
+    attach: function (context) {
+      var fb = $('.block-facebookshare', context);
+
+      if (fb.length !== 0) {
+        fb.prependTo($('.layout-wrapper', context));
+      }
+    }
+  };
+
+  /**
+   * Toggle opening hours.
+   */
+  function toggleOpeningHours() {
     // Create toggle link
     $('<a />', {
       'class' : 'opening-hours-toggle js-opening-hours-toggle js-collapsed',
@@ -18,12 +32,12 @@
     var scrollToTarget;
 
     // Attach click
-    element.on('click touchstart', function(event) {
+    element.on('click touchstart', function (event) {
       // Store clicked element for later use
       var element = this;
 
       // Toggle
-      $(this).next('.js-opening-hours-toggle-element').slideToggle('fast', function() {
+      $(this).next('.js-opening-hours-toggle-element').slideToggle('fast', function () {
         // Toggle class
         $(element).toggleClass('js-collapsed js-expanded');
 
@@ -34,7 +48,7 @@
         } else {
           // Else the window is scrolled to the top and we have to multiply the
           // height by 2 because it get's position fixed
-          scrollOffset = $(siteHeader).height()*2;
+          scrollOffset = $(siteHeader).height() * 2;
         }
 
         // Scroll to the top of the element
@@ -59,11 +73,55 @@
       event.preventDefault();
     });
   }
+  
+  /**
+   * Autofocus inputs.
+   */
+  function autofocusInputs() {
+    // Search button click
+    $('.topbar-link-search').click(function() {
+      var input = $('input[name="search_block_form"]');
+      if ($(this).is('.active')) {
+        input.focus();
+      }
+    });
+
+    // Login button click
+    $('.topbar-link-user').click(function() {
+      var input = $('input[name="name"]');
+      if ($(this).is('.active')) {
+        input.focus();
+      }
+    });
+  }
+
+  /**
+   * Hide listed empty elements.
+   */
+  function hideElement() {
+    var selectors = [
+      '.layout-wrapper'
+    ];
+
+    for (var i = selectors.length - 1; i >= 0; i--) {
+      var $el = $(selectors[i]);
+
+      if($.trim($el.html()) === '') {
+        $el.hide();
+      }
+    }
+  }
 
   // When ready start the magic.
-  $(document).ready(function () {
+  $(document).ready(function() {
+    // Autofocus inputs
+    autofocusInputs();
+
+    // Hide empty elements
+    hideElement();
+
     // Toggle opening hours.
-    toggle_opening_hours();
+    toggleOpeningHours();
 
     // Toggle footer menu.
     $('.footer .pane-title').on('click', function() {
@@ -72,5 +130,4 @@
       $(this).toggleClass('js-toggled');
     });
   });
-
 })(jQuery);

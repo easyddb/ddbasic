@@ -11,7 +11,9 @@
 .topbar-menu {
   @include zen-grid-item(8, 1, right);
 
-  margin-top: 45px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   text-align: right;
 
   li {
@@ -22,7 +24,7 @@
     @include text-shadow(1px 1px 0 rgba(0, 0, 0, .5));
     @include font-bold();
 
-    color: $white;
+    color: $topbar-text-color;
     display: inline-block;
     font-size: $font-size-medium;
     margin-left: -4px;
@@ -32,12 +34,10 @@
     &:hover {
       background-color: $black;
 
-      color: $white;
       text-decoration: none;
     }
 
     &.active {
-      color: $white;
       text-decoration: none;
       background-color: $blue;
     }
@@ -66,9 +66,6 @@
 
   @include small-medium() {
     @include zen-grid-item(6, 1, right);
-
-    margin-top: 0;
-    padding: 0;
 
     i[class^="icon-"] {
       margin-right: 0;
@@ -223,18 +220,18 @@
   }
 
   .menu-item {
-    color: $gray-darker;
+    color: #959594;
     display: inline-block;
     margin-right: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
 
     &:hover {
-      color: $black;
+      color: #000002;
     }
 
     &.active {
-      color: $black;
+      color: #000002;
       text-decoration: underline;
     }
   }
@@ -358,7 +355,6 @@
       padding-left: 35px;
 
       &.active {
-        font-family: $font-bold;
         font-weight: $base-font-weight-bold;
       }
 
@@ -412,7 +408,7 @@
   .pane-title {
     @extend .icon-chevron-down;
 
-    color: white;
+    color: $footer-text-color;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #5b5b5b;
@@ -443,17 +439,13 @@
 
       &:before {
         float: left;
-        color: white;
+        color: $footer-text-color;
         font-family: $base-icon-library-font;
       }
 
       a {
-        color: white;
+        color: $footer-text-color;
         padding-left: 10px;
-
-        &.active {
-          color: darken(white, 0.1);
-        }
       }
     }
   }
@@ -493,7 +485,6 @@
     }
 
     a {
-      font-family: $base-font-family;
       margin-left: -$large-spacing;
       padding-left: 25px;
     }

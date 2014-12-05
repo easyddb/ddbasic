@@ -1,15 +1,15 @@
-(function($) {
-  "use strict";
+(function ($) {
+  'use strict';
 
-  $(document).ready(function() {
+  $(function () {
     // Moves the search form into the search result page.
-    if (window.location.href.indexOf("search/") > -1) {
-      var search = $('.search-field-wrapper');
+    if (window.location.href.indexOf('search/') > -1) {
+      var search = $('.site-header .search-field-wrapper');
       search.addClass('search-field-in-content');
       search.addClass('js-search-field-in-content');
 
       // Remove label.
-      search.find('label').remove();
+      search.find('.form-item-search-block-form label').remove();
 
       // Add the search field.
       var element = $('.pane-search-result-count');
@@ -30,5 +30,9 @@
       // Hide top menu bar link.
       $('.topbar-link-search').hide();
     }
+
+    // Extended search button location.
+    $('.search .collapsible .fieldset-legend > a').insertBefore('.site-header .search .form-submit');
+
   });
 }(jQuery));

@@ -2,13 +2,34 @@
 // Styling for Internet Explorer 8
 // =============================================================================
 //
+
+
+// Include compass
+@import "compass";
+@import "compass/css3";
+
+// Grid - http://zengrids.com
+@import "../libraries/zen-grids/stylesheets/zen";
+
+// Susy grid
+@import "../libraries/susy/sass/susy";
+
+// Include configuration
+@import "configuration/_variables";
+@import "configuration/_colors";
+@import "configuration/_configuration";
+
+
+// Include framework
+@import "framework/_mixins";
+
 img {
   width: auto;
 }
 
 .search {
   input[type="text"] {
-    min-height: 0;
+    @include min-height(0);
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -16,7 +37,7 @@ img {
 
 .topbar .search {
   input[type="text"] {
-    min-height: 0;
+    @include min-height(0);
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -34,7 +55,7 @@ img {
   .user {
     input[type="text"],
     input[type="password"] {
-      min-height: 0;
+      @include min-height(0);
       padding-top: 20px;
       padding-bottom: 19px;
     }
@@ -52,5 +73,30 @@ img {
 .pane-ding-facetbrowser {
   .expand {
     margin-left: 2px;
+  }
+}
+
+.rs-carousel-action-prev,
+.rs-carousel-action-next {
+  background-color: transparent;
+  border: 0;
+}
+
+.lt-ie9 {
+  .search-field-in-content .form-submit {
+    margin-top: 0;
+  }
+
+  .search-field-in-content .form-text {
+    height: 62px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pane-search-result .search-results .list .view-mode-teaser,
+  .view-node-search-result .search-results .list .view-mode-teaser,
+  .ting-reference-reverse-list .search-results .list .view-mode-teaser,
+  .pane-new-materials .search-results .list .view-mode-teaser {
+    background-color: $white;
   }
 }

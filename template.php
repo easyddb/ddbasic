@@ -11,6 +11,23 @@ include_once drupal_get_path('theme', 'ddbasic') . '/inc/functions.inc';
  * Implements hook_preprocess_html().
  */
 function ddbasic_preprocess_html(&$vars) {
+  if (in_array('html_node_newsletter', $vars['theme_hook_suggestions'])) {
+    $vars['newsletter'] = $vars['page']['content']['system_main']['main']['#markup'];
+  }
+  // Load responsive.js file
+
+  $file_name = drupal_get_path('theme', 'ddbasic') . '/scripts/responsive.js';
+  drupal_add_js(
+    $file_name,
+    array(
+      'type' => 'file',
+      'group'=> JS_LIBRARY,
+      'every_page' => TRUE,
+      'scope' => 'header',
+      'weight' => -19.95,
+    )
+  );
+
   global $language;
 
   // Setup iOS logo if it's set.
@@ -26,7 +43,7 @@ function ddbasic_preprocess_html(&$vars) {
   ddbasic_load_plugins();
 
   // Add conditional CSS for IE8.
-  drupal_add_css(path_to_theme() . '/css/ddbasic.ie8.css', array(
+  drupal_add_css(drupal_get_path('theme', 'ddbasic') . '/css/ddbasic.ie8.css', array(
     'group' => CSS_THEME,
     'browsers' => array(
       'IE' => 'lte IE 8',
@@ -37,7 +54,7 @@ function ddbasic_preprocess_html(&$vars) {
   ));
 
   // Add conditional CSS for IE9.
-  drupal_add_css(path_to_theme() . '/css/ddbasic.ie9.css', array(
+  drupal_add_css(drupal_get_path('theme', 'ddbasic') . '/css/ddbasic.ie9.css', array(
     'group' => CSS_THEME,
     'browsers' => array(
       'IE' => 'lte IE 9',
@@ -104,6 +121,14 @@ function ddbasic_process_html(&$vars) {
 function ddbasic_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'search_block_form':
+      // Do not show advanced form on search results.
+      if (isset($form['advanced'])) {
+        if (preg_match('/search\/ting/', current_path())) {
+          unset($form['advanced']);
+        }
+      }
+
+      $form['search_block_form']['#attributes']['autofocus'] = true;
       $form['search_block_form']['#attributes']['placeholder'] = t('Search the library');
       $form['search_block_form']['#field_prefix'] = '<i class="icon-search"></i>';
       $form['search_block_form']['#title'] = t('Search the library database and the website');
@@ -115,6 +140,7 @@ function ddbasic_form_alter(&$form, &$form_state, $form_id) {
     case 'user_login_block':
       $form['name']['#title'] = t('Loan or social security number');
       $form['name']['#field_prefix'] = '<i class="icon-user"></i>';
+      $form['name']['#attributes']['autofocus'] = true;
       $form['name']['#attributes']['placeholder'] = t('The number is 10 digits');
       $form['name']['#type'] = 'password';
 
@@ -140,6 +166,12 @@ function ddbasic_preprocess_panels_pane(&$vars) {
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . str_replace('-', '__', $vars['pane']->subtype);
   $vars['theme_hook_suggestions'][] = 'panels_pane__'  . $vars['pane']->panel . '__' . str_replace('-', '__', $vars['pane']->subtype);
 
+  if (isset($vars['content'])) {
+    if (isset($vars['content']['profile_ding_staff_profile']['#title']) && $vars['content']['profile_ding_staff_profile']['#title'] == 'Staff') {
+      $vars['theme_hook_suggestions'][] = 'panels_pane__user_profile_staff';
+    }
+  }
+
   // Suggestions on panel pane.
   $vars['theme_hook_suggestions'][] = 'panels_pane__' . $vars['pane']->panel;
 
@@ -162,6 +194,10 @@ function ddbasic_preprocess_panels_pane(&$vars) {
       // OG menu.
       $vars['content']['#theme_wrappers'] = array('menu_tree__sub_menu');
     }
+  }
+
+  if ($vars['pane']->subtype == 'search-form' && $vars['pane']->panel != 'header') {
+    unset($vars['content']['advanced']);
   }
 }
 
@@ -297,13 +333,19 @@ function ddbasic_preprocess_node(&$variables, $hook) {
       }
     }
 
+    // Add event start date to variables.
+    $variables['ddbasic_event_start_date'] = $variables['node']->field_ding_event_date[LANGUAGE_NONE][0]['value'];
+
+    // Add event end date to variables.
+    $variables['ddbasic_event_end_date'] = $variables['node']->field_ding_event_date[LANGUAGE_NONE][0]['value2'];
+
     // Add event date to variables. A render array is created based on the date
     // format "date_only".
     $event_date_ra = field_view_field('node', $variables['node'], 'field_ding_event_date', array(
       'label' => 'hidden',
       'type' => 'date_default',
       'settings' => array(
-        'format_type' => 'date_only',
+        'format_type' => 'ding_date_only',
         'fromto' => 'both',
       ),
     ));
@@ -315,7 +357,7 @@ function ddbasic_preprocess_node(&$variables, $hook) {
       'label' => 'hidden',
       'type' => 'date_default',
       'settings' => array(
-        'format_type' => 'time_only',
+        'format_type' => 'ding_time_only',
         'fromto' => 'both',
       ),
     ));
@@ -455,8 +497,20 @@ function ddbasic_preprocess_field(&$vars, $hook) {
   }
 
   // Ensure that all OG group ref field are the same.
-  if ($field_name == 'ding_event_groups_ref' || $field_name == 'ding_news_groups_ref') {
+  if ($field_name == 'ding_event_groups_ref' || $field_name == 'ding_news_groups_ref' || $field_name == 'og_group_ref') {
     $vars['theme_hook_suggestions'][] = 'field__og_group_ref';
+
+    // Add classes to get label correctly formatted.
+    foreach ($vars['items'] as $id => $item) {
+      $vars['items'][$id]['#options'] = array(
+        'attributes' => array(
+          'class' => array(
+            'label',
+            'label_info',
+          ),
+        ),
+      );
+    }
   }
 
   // Clean up fields in search result view mode aka. search result page.
@@ -543,6 +597,45 @@ function ddbasic_panels_default_style_render_region($vars) {
   $output .= implode('', $vars['panes']);
 
   return $output;
+}
+
+
+/**
+ * Implements template_preprocess_user_profile().
+ */
+function ddbasic_preprocess_user_profile(&$variables) {
+  $variables['user_profile']['summary']['member_for']['#access'] = FALSE;
+}
+
+
+/**
+ * Implements template_preprocess_entity().
+ *
+ * Runs an entity specific preprocess function, if it exists.
+ */
+function ddbasic_preprocess_entity(&$variables, $hook) {
+  $function = __FUNCTION__ . '_' . $variables['entity_type'];
+  if (function_exists($function)) {
+    $function($variables, $hook);
+  }
+}
+
+
+/**
+ * Profile2 specific implementation of template_preprocess_entity().
+ */
+function ddbasic_preprocess_entity_profile2(&$variables) {
+  // Add staff position as a renderable field without label for subheader.
+  if ($variables['profile2']->type == 'ding_staff_profile') {
+    if (isset($variables['content']['group_contactinfo']['field_ding_staff_position'])) {
+      $staff_position = $variables['content']['group_contactinfo']['field_ding_staff_position'];
+      $staff_position['#label_display'] = 'hidden';
+      $variables['position_no_label'] = $staff_position;
+    }
+    else {
+      $variables['position_no_label'] = FALSE;
+    }
+  }
 }
 
 
@@ -944,6 +1037,23 @@ function ddbasic_preprocess_ting_object(&$vars) {
           $type['#suffix'] = '</div></div>';
         }
         break;
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * Rewrites view's ouput.
+ */
+function ddbasic_views_pre_render(&$view){
+  if ($view->name == 'ding_event') {
+    foreach ($view->result as &$item) {
+      $field = &$item->field_field_ding_event_date[0];
+      $val = $field['raw']['value'];
+      if ($val == $field['raw']['value2']) {
+        $field['rendered']['#markup'] = date('H:s', strtotime($val)) . ' - ' . t('All day');
+      }
     }
   }
 }

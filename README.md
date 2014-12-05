@@ -13,4 +13,21 @@ files to be displayed properly:
     $conf['install_profile'] = 'ding2';
     $conf['maintenance_theme'] = 'ddbasic';
 
-    
+## Requirements
+Current project requires some libraries to be installed:
+ 1. latest version of http://nodejs.org/
+ 2. ruby
+### Windows installation:
+- download latest version of **ruby** from http://rubyinstaller.org/
+- download latest version of ruby **development kit**  from http://rubyinstaller.org/
+- see installation guide here https://github.com/oneclick/rubyinstaller/wiki/Development-Kit especially paragraph 4 
+3. type in cmd **gem install sass** and **gem install compass**
+### Unix installation:
+unix by default should have ruby preinstalled, so you can start downloading desired gems immediately.
+- type **gem install sass** and **gem install compass** in terminal
+
+### Project dependencies Installation
+- Go to theme folder
+- type in terminal **npm install**
+- next type **bower install**
+- and run working environment with command **grunt dev**

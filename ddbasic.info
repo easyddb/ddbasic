@@ -6,7 +6,7 @@
 
 
 ;----------// Stylesheets
-  stylesheets[all][] = css/ddbasic.styles.css
+  stylesheets[all][] = css/ddbasic.css
 
   ; Override stylesheets
   stylesheets[all][] = css/system.menus.css
@@ -24,13 +24,15 @@
   scripts[] = scripts/respond.min.js
   scripts[] = scripts/jquery.scrollto.js
   scripts[] = scripts/html5shiv.js
+  scripts[] = scripts/modernizr.js
   scripts[] = scripts/equalize.min.js
   scripts[] = scripts/scalefix.js
   scripts[] = scripts/selectivizr-min.js
-  scripts[] = scripts/ddbasic.topbar.menu.min.js
-  scripts[] = scripts/ddbasic.common.min.js
-  scripts[] = scripts/ddbasic.facet.min.js
-  scripts[] = scripts/ddbasic.search.min.js
+  scripts[] = scripts/ddbasic.topbar.menu.js
+  scripts[] = scripts/ddbasic.common.js
+  scripts[] = scripts/ddbasic.facet.js
+  scripts[] = scripts/ddbasic.search.js
+  ; scripts[] = scripts/scripts.min.js
 
 
 ;----------// Regions

@@ -13,15 +13,15 @@
 }
 
 .footable .staff-name {
-  
+
   img {
     position: absolute;
   }
-  
+
   a {
+    @include min-height(60px);
     display: block;
     margin-left: 60px;
-    min-height: 60px;
     padding-left: $medium-spacing;
   }
 
@@ -103,7 +103,6 @@
   background: $gray;
   padding: $medium-spacing;
   color: transparentize($black, .3);
-  font-family: $font-bold;
   font-size: $font-size-large;
   font-weight: $base-font-weight-bold;
   text-align: left;
@@ -152,12 +151,12 @@
     max-width: 40%;
   }
 
-  /* Media queries */  
+  /* Media queries */
   @include small() {
     .staff-image-wrapper {
       width: 20%;
     }
-        
+
     .staff-name-title,
     .staff-contact {
       margin-left:25%;
@@ -170,7 +169,7 @@
     .staff-image-wrapper {
       width: 15%;
     }
-        
+
     .staff-name-title {
       margin-left:18%;
     }
@@ -201,12 +200,12 @@
     display:block;
   }
 
-  /* Media queries */  
+  /* Media queries */
   @include small() {
     .staff-image-wrapper {
       width: 20%;
     }
-        
+
     .staff-name-title,
     .staff-contact,
     .staff-departments {
@@ -220,18 +219,18 @@
     .staff-image-wrapper {
       width: 15%;
     }
-        
+
     .staff-name-title,
     .staff-departments {
       margin-left:18%;
     }
-    
+
     .staff-name-title,
     .staff-contact {
       width: 38%;
       max-width: 38%;
     }
-    
+
     .staff-departments {
       width: 75%;
       max-width: 75%;

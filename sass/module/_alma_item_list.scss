@@ -1,0 +1,29 @@
+.alma-item-list {
+  margin: 10px 0;
+
+  .item-rating-star {
+    display: inline-block;
+  }
+}
+
+.alma-item-list-item {
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  .item-cover {
+    float: left;
+  }
+
+  .item-details {
+    margin-left: 65px;
+  }
+
+  .item-title a {
+    font-weight: 700;
+  }
+
+  .reserve-button {
+    margin-top: 10px;
+    font-size: 100%;
+  }
+}

@@ -1,0 +1,935 @@
+// Variables
+//==========================================================================
+
+$label-color: #53514b;
+$label-bg: url('../images/p.png');
+
+
+// All nodelists
+//==========================================================================
+
+.ding_nodelist {
+  @include box-sizing(border-box);
+  @include bshadow();
+  overflow: hidden;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: $white;
+}
+
+
+// Ding nodelist carousel
+//==========================================================================
+
+.ding_nodelist-carousel {
+  position: relative;
+  height: 436px;
+
+  // Item
+
+  .item {
+    position: relative;
+    height: 366px;
+  }
+
+  // Event label
+
+  .event-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 68px;
+    background-image: $label-bg;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  // Event date
+
+  .event-date {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    z-index: 49;
+    padding: 8px 0 10px;
+    width: 60px;
+    border: 5px solid $white;
+    background-image: $label-bg;
+    color: $white;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  h2 {
+    @include text-shadow(1px 1px 13px $black);
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 49;
+    margin: 0 20px 0 0;
+    color: $white;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  // More button
+
+  .more {
+    position: absolute;
+    padding: 0 7px 9px;
+    width: 272px;
+    background: $white;
+    font-size: 11px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  // Description section
+
+  .article-info {
+    position: absolute;
+    bottom: 67px;
+    left: 10px;
+    z-index: 48;
+
+    .node {
+      @include min-height(32px);
+      overflow: hidden;
+      padding: 9px 7px;
+      width: 272px;
+      background-color: $white;
+      color: #505050;
+      font-size: 11px;
+      line-height: 1.3;
+
+      p {
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Next / Previous buttons
+
+  .next-prev {
+    position: relative;
+    top: 10px;
+    left: 0;
+
+    span {
+      display: none;
+    }
+
+    .prev {
+      left: 10px;
+
+      &:after {
+        content: '\f053';
+      }
+    }
+
+    .next {
+      left: 40px;
+
+      &:after {
+        content: '\f054';
+      }
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 10px;
+
+      &:hover {
+        @include border-radius(50px);
+        background-color: $label-color;
+        text-decoration: none;
+
+        &:after {
+          color: $gray;
+        }
+      }
+
+      &:after {
+        @include inline-block;
+        width: 25px;
+        height: 25px;
+        color: $label-color;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'FontAwesome';
+        line-height: 25px;
+      }
+    }
+  }
+
+  // Pagination
+
+  .pagination {
+    right: 10px;
+    bottom: 20px;
+
+    a {
+      @include border-radius(50px);
+      display: block;
+      float: left;
+      width: 25px;
+      height: 25px;
+      color: $black;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 25px;
+    }
+
+    // Active
+
+    .selected {
+      background-color: $label-color;
+      color: $white;
+    }
+  }
+
+  // Category
+
+  .category a {
+    padding: 0 2px;
+    background-color: #53514b;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  h3 {
+    margin: 12px 0;
+    padding: 0;
+    text-align: left;
+
+    a {
+      @include text-shadow(1px 1px 13px $black);
+      margin-right: 10px;
+      color: $white;
+      font-size: 30px;
+      line-height: 1;
+    }
+  }
+
+  .article_image,
+  .event-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .field-type-image {
+    margin: 0 auto;
+  }
+
+  .article_image img,
+  .event-image img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .article_image .field-label,
+  .event-image .field-label {
+    display: none;
+  }
+}
+
+
+// Horizontal accordion
+//==========================================================================
+
+.ding_nodelist-horizontal_accordion {
+  overflow: hidden;
+  padding: 0 10px 0 0;
+
+  // Item
+
+  .item {
+    @include bshadow();
+    position: relative;
+    background-color: $white;
+  }
+
+  .item_content {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 10px;
+    left: 10px;
+    overflow: hidden;
+  }
+
+  // Icon
+
+  .expand {
+    @include border-radius(50px);
+    position: absolute;
+    bottom: 62px;
+    left: 10px;
+    z-index: 10;
+    display: block;
+    background-color: $label-color;
+    color: $white;
+    cursor: pointer;
+
+    &:after {
+      @include inline-block;
+      width: 30px;
+      height: 30px;
+      color: $white;
+      content: '\f054';
+      text-align: center;
+      font-size: 12px;
+      font-family: 'FontAwesome';
+      line-height: 30px;
+    }
+
+    a {
+      display: none;
+    }
+  }
+
+  .slide-open {
+
+    .expand {
+      right: 10px;
+      left: auto;
+
+      &:after {
+        content: '\f067';
+      }
+    }
+
+    .image img {
+      @include opacity(1);
+    }
+  }
+
+  // Label
+
+  .label {
+    @include border-radius(0);
+    position: relative;
+    z-index: 10;
+    float: left;
+    margin: 10px;
+    padding: 1px;
+    width: 68px;
+    height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 60%;
+    line-height: 18px;
+
+    &,
+    &:hover {
+      background-image: $label-bg;
+      color: $white;
+    }
+  }
+
+  // Date
+
+  .event-date {
+    position: relative;
+    z-index: 10;
+    clear: left;
+    margin-left: 10px;
+    padding: 5px 0;
+    width: 60px;
+    border: 5px solid $white;
+    background-image: $label-bg;
+    color: $white;
+    text-align: center;
+    font-size: 150%;
+  }
+
+  .event-day {
+    line-height: 1;
+  }
+
+  // Image
+
+  .image {
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      display: block;
+      background-color: $black;
+
+      // Media small
+
+      @include small() {
+        width: 310px;
+        height: 260px;
+      }
+
+      // Media medium
+
+      @include medium() {
+        width: 400px;
+        height: 300px;
+      }
+
+      // Media large-x-large
+
+      @include large-x-large() {
+        width: 450px;
+        height: 340px;
+      }
+    }
+
+    img {
+      @include opacity(.25);
+      min-width: 100%;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  // Data block
+
+  .data {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: $white;
+
+    span,
+    .event-fee {
+      margin-right: 5px;
+    }
+  }
+
+  // Caption
+
+  .caption {
+    overflow: hidden;
+    height: 30px;
+    font-size: 70%;
+
+    h3 {
+      @include text-shadow(none);
+      margin: 5px 0;
+
+      // Media till-medium
+
+      @include till-medium() {
+        font-size: 120%;
+      }
+    }
+  }
+
+  // Library info
+
+  .library {
+    overflow: hidden;
+    font-size: 80%;
+
+    > div {
+      float: left;
+    }
+  }
+}
+
+// Ding nodelist single item
+//==========================================================================
+
+.ding_nodelist-single {
+  overflow: hidden;
+  background-color: $white;
+
+  // Image
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  // Item
+
+  .item {
+    position: relative;
+    overflow: hidden;
+
+    // Media from-small
+
+    @include from-small() {
+      height: 381px;
+    }
+
+    // Label
+
+    .event-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 49;
+      margin: 0 0 12px;
+      padding: 1px;
+      width: 68px;
+      background-color: $label-color;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      font-size: 10px;
+      line-height: 18px;
+    }
+
+    // Date
+
+    .event-date {
+      position: absolute;
+      top: 40px;
+      left: 10px;
+      z-index: 49;
+      padding: 8px 0 10px;
+      width: 60px;
+      border: 5px solid $white;
+      background-image: $label-bg;
+      color: $white;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .event-label,
+    .event-date {
+
+      // Media small
+
+      @include small() {
+        visibility: hidden;
+      }
+    }
+
+    // Day
+
+    .event-day {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    // Month
+
+    .event-month {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    // Node info wrapper
+
+    .node {
+      @include min-height(40px);
+      overflow: hidden;
+      padding: 10px;
+      background-image: $label-bg;
+      color: $white;
+      font-size: 11px;
+      line-height: 1.3;
+    }
+
+    .more {
+      background-color: $white;
+
+      // More link
+
+      a {
+        display: block;
+        padding: 20px 0;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+  }
+
+  // Text wrapper
+
+  .article-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 49;
+    width: 100%;
+  }
+
+  // Category
+
+  .category {
+    padding: 0 0 10px 10px;
+
+    a {
+      padding: 0 2px;
+      background-color: $label-color;
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      font-size: 10px;
+    }
+  }
+
+  // Title
+
+  h3 {
+    margin: 0;
+
+    a {
+      display: block;
+      color: $white;
+
+      // Media from-medium
+
+      @include from-medium() {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+
+// Nodelist slider
+//==========================================================================
+
+.ding_nodelist-slider {
+  position: relative;
+
+  // Title
+
+  .legend {
+
+    // Media till-medium
+
+    @include till-medium() {
+      margin-bottom: 10px;
+      padding-right: 2em;
+    }
+
+    // Media from-medium
+
+    @include from-medium() {
+      @include span(4 of 12);
+      text-align: right;
+    }
+
+    h2 {
+
+      // Media from-medium
+
+      @include from-medium() {
+        font-size: 300%;
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  // Carousel
+
+  .ding_nodelist-items {
+
+    // Media till-medium
+
+    @include till-medium() {
+      padding-right: 2em;
+    }
+
+    // Media from-medium
+
+    @include from-medium() {
+      @include span(last 8 of 12 (border-box));
+      @include suffix(2em);
+    }
+  }
+
+  // Date
+
+  .date-created {
+    font-size: 80%;
+  }
+
+  // Node title
+
+  h3 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  // Node text
+
+  .node {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  // More link
+
+  .more {
+    margin-bottom: 5px;
+
+    a {
+      font-size: 80%;
+
+      // Media till-medium
+
+      @include till-medium() {
+        @include inline-block;
+        padding: 5px 15px;
+      }
+    }
+  }
+
+  // Next ... prev buttons
+
+  .next-prev {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 25px;
+
+    span {
+      display: none;
+    }
+
+    a {
+      @include border-radius(50px);
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: $label-color;
+      color: $white;
+
+      &:after {
+        @include inline-block;
+        width: 24px;
+        height: 24px;
+        color: $white;
+        content: '\f054';
+        text-align: center;
+        font-size: 12px;
+        font-family: 'FontAwesome';
+        line-height: 24px;
+      }
+    }
+
+    .next {
+      bottom: 10px;
+
+      &:after {
+        content: '\f107';
+      }
+    }
+
+    .prev {
+      top: 10px;
+
+      &:after {
+        content: '\f106';
+      }
+    }
+  }
+}
+
+// Nodelist vertical accordion
+//==========================================================================
+
+.ding_nodelist-vertical_accordion {
+  border-bottom: 10px solid $white;
+}
+
+.va-wrapper {
+  position: relative;
+  padding: 10px 0;
+
+  .ding_nodelist-items .news {
+    background-color: $white;
+    background-repeat: no-repeat;
+  }
+
+  .item {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    border-top: 10px solid $white;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+  }
+
+  .va-content {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    z-index: 2;
+    visibility: hidden;
+    padding: 10px;
+    background-image: $label-bg;
+
+    &,
+    h3,
+    a {
+      color: $white;
+    }
+  }
+
+  .active .va-content {
+    visibility: visible;
+  }
+
+  .event-time,
+  .field-name-group-audience,
+  .event-fee {
+    float: left;
+    margin: 1px 4px 0 0;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 10px;
+  }
+
+  .event-date {
+    position: absolute;
+    top: 44px;
+    left: 10px;
+    z-index: 49;
+    padding: 8px 0 10px;
+    width: 60px;
+    border: 5px solid $white;
+    background-image: $label-bg;
+    color: $white;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .va-title {
+    position: relative;
+    z-index: 1;
+
+    // Media till-medium
+
+    @include till-medium() {
+      visibility: hidden;
+    }
+  }
+
+  .active .va-title {
+
+    // Media till-medium
+
+    @include till-medium() {
+      visibility: visible;
+    }
+  }
+
+  .event-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 49;
+    margin: 0 0 12px;
+    padding: 1px;
+    width: 68px;
+    background-image: $label-bg;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 10px;
+  }
+}
+
+
+
+// Taxonomy nodelist
+//==========================================================================
+
+.ding_nodelist-taxonomy {
+
+  .item {
+    overflow: hidden;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+
+    .item-title {
+      font-size: $base-font-size;
+
+      a {
+        font-weight: 700;
+      }
+    }
+
+    .item-author {
+      display: none;
+    }
+
+    .item-body {
+      margin-top: 10px;
+    }
+
+    // Media from-medium
+
+    @include from-medium() {
+      display: table;
+      width: 100%;
+
+      .item-details,
+      .item-list-image {
+        display: table-cell;
+        vertical-align: top;
+      }
+
+      .item-list-image {
+        padding-right: 10px;
+        width: 159px;
+
+        img {
+          width: 159px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

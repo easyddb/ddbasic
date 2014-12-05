@@ -29,8 +29,8 @@
   }
 
   &:before {
-    font-family: $base-icon-library-font;
     margin-right: $small-spacing;
+    font-family: $base-icon-library-font;
   }
 
   /* Media queries */
@@ -42,7 +42,7 @@
 
 
 .block-opening-hours {
-  min-height: 279px;
+  @include min-height(279px);
 
   .read-more {
     margin-left: 3px;
@@ -56,11 +56,11 @@
 
   .header {
     @include font-bold();
+    padding: 0;
+    padding-bottom: $medium-spacing;
 
     background: $white;
     color: $gray-darker;
-    padding: 0;
-    padding-bottom: $medium-spacing;
   }
 
   .days {
@@ -71,7 +71,8 @@
     }
 
     .times {
-      margin-right: 0;
+      padding-right: 1em;
+      margin-right: .5em
     }
 
     .odd {
@@ -85,8 +86,8 @@
 
   .prev,
   .next {
-    font-family: $base-icon-library-font;
     font-size: $font-size-reset;
+    font-family: $base-icon-library-font;
 
     &:hover {
       text-decoration: none;
@@ -107,13 +108,31 @@
     @extend .icon-info-sign;
 
     visibility: hidden;
-    margin-right: 0;
-    padding-left: $small-spacing;
+    margin-right: -2em;
+    padding-left: .5em;
 
     // Icon placement and font-face.
     &:before {
       visibility: visible;
       font-family: $base-icon-library-font;
+    }
+  }
+}
+
+// Main widget
+// ==========================================================================
+
+.pane-ding-library-opening-hours-ding-library-opened-today {
+  ul {
+    padding-left: 0;
+
+    .library {
+      padding: 3px;
+      background-color: #f2f2f2;
+
+      &:nth-of-type(2n+2) {
+        background-color: #e8e8e8;
+      }
     }
   }
 }

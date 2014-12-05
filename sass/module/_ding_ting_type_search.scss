@@ -1,0 +1,75 @@
+// Standalone search container
+
+.pane-easyddb-search-ext-search-ext {
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #fff;
+
+  select {
+    height: 42px;
+    line-height: 42px;
+    -webkit-appearance: menulist-button;
+    min-width: 0;
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .submit-wrap {
+    input {
+      @include min-height(42px);
+    }
+  }
+
+  label {
+    text-align: left;
+    font-size: $font-size-larger;
+  }
+
+  // Media till-medium
+
+  @include till-medium() {
+    label {
+      margin-bottom: 10px;
+    }
+  }
+
+  // Media from-medium
+
+  @include from-medium() {
+
+    form > div {
+      display: table;
+      width: 100%;
+      text-align: right;
+    }
+
+    .select-wrap,
+    .submit-wrap {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .submit-wrap {
+      width: 5%;
+      text-align: right;
+      padding-left: 10px;
+    }
+
+    .form-item {
+      display: table;
+      margin-bottom: 0;
+      width: 100%;
+
+      label,
+      select {
+        display: table-cell;
+      }
+
+      label {
+        padding-right: 10px;
+        width: 35%;
+      }
+    }
+  }
+}

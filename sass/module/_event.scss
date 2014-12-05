@@ -60,7 +60,6 @@
   .event-list-fulldate {
     color: transparentize($black, .3);
     display: inline-block;
-    font-family: $font-bold;
     font-size: $font-size-large;
     font-weight: $base-font-weight-bold;
     margin-top: 17px;
@@ -132,8 +131,8 @@
   .event-arrow-link {
     @extend %arrow-link;
   }
-  
-  /* Media queries */  
+
+  /* Media queries */
   @include small-medium() {
     .event-list-description {
       display: none;
@@ -157,11 +156,6 @@
 
   .event-tags {
     margin-bottom: $large-spacing;
-
-    .event-category,
-    .event-library {
-      margin-right: $small-spacing;
-    }
   }
 
   .event-lead {
@@ -248,7 +242,6 @@
    ========================================================================== */
 
 %ticket {
-  font-family: $font-bold;
   font-weight: $base-font-weight-bold;
   margin-left: 10%;
   width: 70%;
