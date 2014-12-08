@@ -1,11 +1,100 @@
+/* Variables */
+
+.search,
+#Header .text,
+#SlidersDiv .accordeon,
+#SlidersDiv .singleCarousel,
+#SlidersDiv .verticalTicker,
+#SlidersDiv .extended-vertical-ticker,
+.rss-ct-container.horizontalTicker {
+  background: url("../img/grey-p.png") repeat !important; /* Grey transparent bg */
+}
+
+.filter-overlay {
+  background: url("../img/bg-filter.png") no-repeat right bottom; /* Grey transparent bg */
+  background-size: cover;
+}
+
+#Header .text,
+.text-and-image .title,
+#SlidersDiv .textandimage-ct-container .body ul,
+.simple-tpl .header p.category,
+.carousel-tpl .category,
+.simple-tpl .header p.date,
+.carousel-tpl .date,
+.single-ct-container .title,
+.carousel-tpl .title,
+.simple-tpl p.readMore,
+.carousel-tpl p.readMore,
+.art-popup-tpl .category,
+.vertical-ticker .rss-item .title,
+.vertical-ticker .rss-item .teaser,
+.rss-ct.extended-vertical-ticker .panel .title,
+.rss-ct.extended-vertical-ticker .panel .teaser,
+#SlidersDiv .extVerticalTicker .tab .title,
+.rss-ct.extended-vertical-ticker .tab .date,
+.rss-ct.single-carousel .rss-item .content,
+#SlidersDiv .accordeon .title,
+#SlidersDiv .accordeon .teaser {
+  color: #fff !important; /* White text color over transparent bg */
+}
+
+.search:before {
+  color: #ceccbd; /* Light grey text color over transparent bg */
+} 
+
+.header-ct-container:before,
+.count-down-bar,
+.simple-tpl p.readMore,
+.carousel-tpl p.readMore {
+  background: #37a19d; /* Blue color */
+}
+
+.header-ct-container {
+  background: url("../img/header-arrow.png") no-repeat 7% 8px; /* Blue header arrow */
+}
+
+.sliders-div:before,
+.text-and-image .title,
+.simple-tpl .header p.category,
+.carousel-tpl .category,
+.single-ct-container .title,
+.carousel-tpl .title,
+.art-popup-tpl .category,
+#SlidersDiv .ui-accordion-header {
+  background: #52514c; /* Dark grey bg */
+}
+
+.section-container.column3:last-child {
+  background: #ceccbd;
+  margin: 0;
+}
+
+.section-container.column3:last-child .horizontal-ticker {
+  color: #6b6b63;
+}
+
 body {
-  background-color: #efefef;
-  font-family: "Source Sans Pro", sans-serif;
+  background: url("../img/bg-1.jpg") no-repeat;
+  font-family: 'Soho Gothic W01 Regular', Arial, Helvetica, sans-serif;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.filter-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.sliders-div {
+  position: relative;
+  z-index: 2;
 }
 
 /* Theme main styles */
 .sliders-div {
-  color: #252525;
   font-size: 22px;
 }
 
@@ -20,64 +109,86 @@ body,
 
 .sliders-div:before {
   position: absolute;
-  bottom: 70px;
+  bottom: 15%;
   left: 0;
   z-index: 9;
   display: block;
   width: 100%;
   height: 10px;
-  background-color: #7c7c7c;
   content: "-";
   text-indent: -9000px;
 }
 
-#SlidersDiv .section-container .title {
-  font-weight: bold;
-  font-size: 24px;
-}
-
 .sliders-div > .section-container:first-child {
+  background: transparent;
   margin-top: 0;
   min-height: 100px;
-  background-color: #00caff;
 }
 
 /* Header */
-.header-ct-container {
-  padding: 1px 0;
-  background-color: #000;
+.header-ct-container:before {
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 #Header {
+  height: 70px;
+  padding: 25px 0 0 0;
   position: relative;
-  height: 100px;
-  background-image: url(../../logo.png);
-  background-position: 10px 50%;
-  background-size: auto 70px;
-  background-repeat: no-repeat;
 }
 
 #Header .text {
-  display: block;
-  margin: 0 0 0 200px;
-  color: #fff;
-  text-shadow: #445977 0 2px 0;
-  font-size: 36px;
-  line-height: 110px;
+  display: inline-block;
+  font-family: 'Soho Gothic W01 Bold', Arial, Helvetica, sans-serif;
+  font-size: 29px;
+  line-height: 34px;
+  margin-left: 7%;
+  padding: 0 8px;
+  width: 235px;
+  word-break: normal;
 }
 
 /* Search */
 .search {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 20px;
   display: block;
   float: right;
-  width: 90px;
-  height: 60px;
-  background: url('../img/search-icon.png') no-repeat center;
-  -webkit-background-size: cover;
-  background-size: cover;
+  width: 190px;
+  height: 70px;
+}
+
+.search:after {
+  background: url("../img/search-icon.png") no-repeat 0 0;
+  content: "";
+  display: block;
+  height: 28px;
+  position: absolute;
+  right: 27px;
+  top: 20px;
+  width: 27px;
+  z-index: 100;
+}
+
+.search:before {
+  content: "Tryk her for at søge i basen";
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  left: 15px;
+  position: absolute;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 20px;
+  width: 112px;
+  
 }
 
 /* Footer */
@@ -115,17 +226,13 @@ body,
 /* Countdown */
 .count-down-bar {
   position: absolute;
-  bottom: 71px;
+  bottom: 15%;
   left: 0;
-  z-index: 10;
+  z-index: 16;
   overflow: hidden;
   width: 100%;
-  height: 6px;
-  border-top: 1px solid #5b5b5b;
-  border-right: 1px solid #5b5b5b;
-  border-bottom: 1px solid #5b5b5b;
+  height: 10px;
   border-left: 0;
-  background-color: #262626;
   text-indent: -1000em;
 }
 
@@ -138,25 +245,269 @@ body,
   padding: 0;
   width: 100%;
   height: 80px;
-  background-color: #262626;
 }
 
 /* Horisontal ticker */
-.horizontal-ticker {
-  padding-top: 20px;
-  color: #fff;
-  font-size: 30px;
+.section-container.column3:last-child .horizontal-ticker {
+  font-size: 24px;
 }
 
-#SlidersDiv .horizontal-ticker .title,
-#SlidersDiv .horizontalTicker .title {
-  font-size: 30px;
+.section-container.column3:last-child #SlidersDiv .horizontal-ticker .title,
+.section-container.column3:last-child #SlidersDiv .horizontalTicker .title {
+  font-size: 24px;
 }
 
-.section-container.row4 {
-  border: 1px solid #a1b0b9;
-  background-color: rgba(255, 255, 255, 1) !important;
-  -webkit-box-shadow: 0 2px 5px 0 #999999;
-  -moz-box-shadow: 0 2px 5px 0 #999999;
-  box-shadow: 0 2px 5px 0 #999999;
+.section-container.column3:last-child .tickercontainer.horizontal ul.newsticker {
+  height: 50px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.section-container.column3:last-child .tickercontainer.horizontal ul.newsticker li {
+  height: 50px;
+}
+
+.single-ct-container {
+  background: none;
+}
+
+.single-ct-container .item-data,
+.carousel-tpl .item-data {
+  position: absolute;
+  z-index: 12;
+}
+
+.carousel-tpl .item-data {
+  left: 5%;
+  width: 90%;
+}
+
+.text-and-image .overlay,
+.simple-tpl .overlay,
+.carousel-tpl .overlay {
+  background: url("../img/grey-p.png") repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+.simple-tpl .item-data {
+  height: 100%;
+  margin: 25px;
+  position: relative;
+}
+
+.simple-tpl .header,
+.carousel-tpl .header {
+  position: absolute;
+  top: 0;
+}
+
+.simple-tpl .header p,
+.carousel-tpl .header p {
+  margin: 0;
+}
+
+.simple-tpl .header p.category,
+.carousel-tpl .category {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 2px 5px;
+  text-transform: uppercase;
+}
+
+.simple-tpl .header p.date,
+.carousel-tpl .date {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#SlidersDiv .textandimage-ct-container .content .title {
+  font-size: 48px;
+}
+
+#SlidersDiv .textandimage-ct-container .body ul {
+  font-size: 24px !important;
+}
+
+.simple-tpl .item-data .body,
+.carousel-tpl .item-data .body {
+  bottom: 25px;
+  position: absolute;
+}
+
+.single-ct-container .title,
+.carousel-tpl .title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+.single-ct-container .teaser {
+  display: block;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+.simple-tpl p.readMore {
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.section-container.column3:last-child  .rss-ct-container.horizontalTicker {
+  background: none !important;
+}
+
+.section-container:last-child {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+}
+
+.sliders-div > .section-container:first-child + .section-container.column3 {
+  height: 65.6%;
+  margin: 0 0 0 7%;
+  width: 84%;
+}
+
+.carousel-tpl {
+  padding: 0;
+}
+
+.carousel-tpl .image {
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.article-view-body {
+  width: 60%;
+}
+
+.art-popup-tpl .category {
+  display: inline-block;
+  font-size: 24px;
+  padding: 5px 7px;
+  text-transform: uppercase;
+}
+
+.art-popup-tpl .content-wrapper {
+  overflow: hidden;
+}
+
+.art-popup-tpl .date {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.art-popup-tpl h1.title {
+  font-size: 48px;
+  text-align: left;
+}
+
+.art-popup-tpl .content-wrapper img {
+  float: right;
+  margin: 0 0 30px 30px;
+}
+
+.art-popup-tpl .content-wrapper .summary {
+  font-weight: bold;
+}
+
+.art-popup-tpl .content-wrapper p {
+  margin-bottom: 30px;
+}
+
+.art-popup-tpl .content-wrapper .bodyContent,
+.art-popup-tpl .content-wrapper .bodyContent p {
+  line-height: 28px !important;
+}
+
+.article-view-contentdata-container {
+  height: 98%;
+  left: 1%;
+  position: relative;
+  top: 1%;
+  width: 98%;
+}
+
+#SlidersDiv .single-carousel,
+#SlidersDiv .verticalTicker .rss-item,
+#SlidersDiv .extVerticalTicker .tab {
+  background: none;
+}
+
+#SlidersDiv .single-carousel,
+#SlidersDiv .ui-accordion-header,
+#SlidersDiv .verticalTicker .rss-item,
+#SlidersDiv .extVerticalTicker .tab {
+  border-radius: 0;
+}
+
+#SlidersDiv .single-carousel,
+#SlidersDiv .ui-accordion-header,
+#SlidersDiv .verticalTicker .rss-item,
+#SlidersDiv .extVerticalTicker .tab {
+  border: none;
+  text-shadow: none;
+}
+
+.tickercontainer.vertical, .tickercontainer.vertical .mask {
+  height: 96%;
+  margin-top: 4%;
+}
+
+.vertical-ticker .rss-item .title,
+.rss-ct.extended-vertical-ticker .panel .title,
+.rss-ct.single-carousel .rss-item .content .title,
+#SlidersDiv .accordeon .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.vertical-ticker .rss-item .teaser,
+.rss-ct.extended-vertical-ticker .panel .teaser,
+.rss-ct.single-carousel .rss-item .content .teaser,
+#SlidersDiv .accordeon .teaser {
+  font-size: 24px;
+}
+
+#SlidersDiv .ui-accordion-header {
+  border-radius: none;
+  padding: 10px;
+}
+
+.section-container.row4 .horizontal-ticker {
+  height: 100%;
+}
+
+/* Temporary content */
+.single-ct-container .image,
+.carousel-tpl .image {
+  background: url("../img/im.jpg") no-repeat;
+  background-size: cover;
+}
+
+.art-popup-tpl .content-wrapper img {
+  height: 155px;
+  background: url(../img/im-1.jpg) no-repeat 0 0;
+  width: 324px;
+}
+
+.simple-tpl p.readMore:before {
+
 }
