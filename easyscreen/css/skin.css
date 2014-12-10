@@ -29,7 +29,7 @@
 .carousel-tpl .title,
 .simple-tpl p.readMore,
 .carousel-tpl p.readMore,
-.art-popup-tpl .category,
+.art-popup-tpl .category p,
 .vertical-ticker .rss-item .title,
 .vertical-ticker .rss-item .teaser,
 .rss-ct.extended-vertical-ticker .panel .title,
@@ -63,7 +63,7 @@
 .carousel-tpl .category,
 .single-ct-container .title,
 .carousel-tpl .title,
-.art-popup-tpl .category,
+.art-popup-tpl .category p,
 #SlidersDiv .ui-accordion-header {
   background: #52514c; /* Dark grey bg */
 }
@@ -406,7 +406,7 @@ body,
   width: 60%;
 }
 
-.art-popup-tpl .category {
+.art-popup-tpl .category p {
   display: inline-block;
   font-size: 24px;
   padding: 5px 7px;
@@ -519,9 +519,7 @@ ul.newsticker {
 /* Temporary content */
 
 .art-popup-tpl .content-wrapper img {
-  height: 155px;
-  background: url(../img/im-1.jpg) no-repeat 0 0;
-  width: 324px;
+
 }
 
 .simple-tpl p.readMore:before {
