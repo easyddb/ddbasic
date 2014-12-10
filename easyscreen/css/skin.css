@@ -352,6 +352,10 @@ body,
   position: absolute;
 }
 
+.carousel-tpl .item-data .body {
+  bottom: 90px;
+}
+
 .single-ct-container .title,
 .carousel-tpl .title {
   display: inline-block;
