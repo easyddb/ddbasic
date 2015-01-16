@@ -348,8 +348,8 @@ body,
 
 .simple-tpl .item-data .body,
 .carousel-tpl .item-data .body {
-  bottom: 25px;
   position: absolute;
+  top: 90px;
 }
 
 .carousel-tpl .item-data .body {
@@ -529,3 +529,4 @@ ul.newsticker {
 .simple-tpl p.readMore:before {
 
 }
+
