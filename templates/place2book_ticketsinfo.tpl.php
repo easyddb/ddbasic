@@ -25,6 +25,9 @@ switch ($type) {
   case 'closed-admission':
     print '<div class="ticket-info">' . t('Not open for ticket sale') . '</div>';
     break;
+  case 'sale-not-started':
+    print '<div class="ticket-info">' . t('Ticket sale has not yet started for this event') . '</div>';
+    break;    
   case 'no-tickets-left':
     print '<div class="ticket-info">' . t('Sold out') . '</div>';
     break;
