@@ -44,7 +44,7 @@ $label-bg: url('../images/p.png');
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .5px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 18px;
   }
 
@@ -52,7 +52,7 @@ $label-bg: url('../images/p.png');
 
   .event-date {
     position: absolute;
-    top: 40px;
+    top: 60px;
     left: 10px;
     z-index: 49;
     padding: 8px 0 10px;
@@ -67,7 +67,7 @@ $label-bg: url('../images/p.png');
   h2 {
     @include text-shadow(1px 1px 13px $black);
     position: absolute;
-    top: 15px;
+    top: 30px;
     left: 20px;
     z-index: 49;
     margin: 0 20px 0 0;
@@ -83,7 +83,7 @@ $label-bg: url('../images/p.png');
     padding: 0 7px 9px;
     width: 272px;
     background: $white;
-    font-size: 11px;
+    font-size: 18px;
 
     a {
       text-decoration: none;
@@ -94,12 +94,12 @@ $label-bg: url('../images/p.png');
 
   .article-info {
     position: absolute;
-    bottom: 67px;
+    bottom: 10px;
     left: 10px;
     z-index: 48;
 
     .node {
-      @include min-height(32px);
+      @include min-height(22px);
       overflow: hidden;
       padding: 9px 7px;
       width: 272px;
@@ -206,7 +206,7 @@ $label-bg: url('../images/p.png');
   // Category
 
   .category a {
-    padding: 0 2px;
+    padding: 5px;
     background-color: #53514b;
     color: $white;
     text-decoration: none;
@@ -509,7 +509,7 @@ $label-bg: url('../images/p.png');
 
     .event-date {
       position: absolute;
-      top: 40px;
+      top: 60px;
       left: 10px;
       z-index: 49;
       padding: 8px 0 10px;
@@ -564,7 +564,7 @@ $label-bg: url('../images/p.png');
 
       a {
         display: block;
-        padding: 20px 0;
+        padding: 5px;
         text-decoration: none;
         font-size: 18px;
       }
@@ -587,7 +587,7 @@ $label-bg: url('../images/p.png');
     padding: 0 0 10px 10px;
 
     a {
-      padding: 0 2px;
+      padding: 5px;
       background-color: $label-color;
       color: $white;
       text-decoration: none;
@@ -609,7 +609,7 @@ $label-bg: url('../images/p.png');
       // Media from-medium
 
       @include from-medium() {
-        font-size: 48px;
+        font-size: 16px;
       }
     }
   }
@@ -672,6 +672,12 @@ $label-bg: url('../images/p.png');
     }
   }
 
+  // Item
+
+  .item {
+    margin-bottom: 10px;
+  }
+
   // Date
 
   .date-created {
@@ -704,7 +710,7 @@ $label-bg: url('../images/p.png');
 
       @include till-medium() {
         @include inline-block;
-        padding: 5px 15px;
+        padding: 5px 10px;
       }
     }
   }
@@ -862,7 +868,7 @@ $label-bg: url('../images/p.png');
 
   .event-label {
     position: absolute;
-    top: 10px;
+    top: 30px;
     left: 10px;
     z-index: 49;
     margin: 0 0 12px;
@@ -877,7 +883,19 @@ $label-bg: url('../images/p.png');
   }
 }
 
+ Narrow section carousel fix
 
+  .frontpage-layout .tertiary-content .ding_nodelist-items {
+  
+    .article_image {
+      height: 100%;  
+    }
+
+    img {
+      max-width: 185%;
+      width: 185%;  
+    }
+  }
 
 // Taxonomy nodelist
 //==========================================================================
