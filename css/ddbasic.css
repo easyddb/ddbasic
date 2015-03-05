@@ -12038,31 +12038,45 @@ div[class^="collection-bg"] {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
 }
 /* line 241, ../sass/module/_ding_nodelist.scss */
+.ding_nodelist-carousel .article_image a,
+.ding_nodelist-carousel .event-image a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+/* line 255, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-carousel .field-type-image {
   margin: 0 auto;
 }
-/* line 245, ../sass/module/_ding_nodelist.scss */
+/* line 259, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-carousel .article_image img,
 .ding_nodelist-carousel .event-image img {
-  display: block;
+  display: none;
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
-/* line 253, ../sass/module/_ding_nodelist.scss */
+/* line 267, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-carousel .article_image .field-label,
 .ding_nodelist-carousel .event-image .field-label {
   display: none;
 }
 
-/* line 263, ../sass/module/_ding_nodelist.scss */
+/* line 277, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion {
   overflow: hidden;
   padding: 0 10px 0 0;
 }
-/* line 269, ../sass/module/_ding_nodelist.scss */
+/* line 283, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .item {
   -moz-box-shadow: #bcbcbc 1px 1px 5px;
   -webkit-box-shadow: #bcbcbc 1px 1px 5px;
@@ -12070,7 +12084,7 @@ div[class^="collection-bg"] {
   position: relative;
   background-color: #fff;
 }
-/* line 275, ../sass/module/_ding_nodelist.scss */
+/* line 289, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .item_content {
   position: absolute;
   top: 10px;
@@ -12079,7 +12093,7 @@ div[class^="collection-bg"] {
   left: 10px;
   overflow: hidden;
 }
-/* line 286, ../sass/module/_ding_nodelist.scss */
+/* line 300, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .expand, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect, .ding_nodelist-horizontal_accordion .pane-search-backends .selected-checkbox-group .unselect, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .expand-facets, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .expand-facets, .ding_nodelist-horizontal_accordion .pane-search-backends .expand-facets, .pane-search-backends .ding_nodelist-horizontal_accordion .expand-facets {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -12093,7 +12107,7 @@ div[class^="collection-bg"] {
   color: #fff;
   cursor: pointer;
 }
-/* line 297, ../sass/module/_ding_nodelist.scss */
+/* line 311, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .expand:after, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .selected-checkbox-group .unselect:after, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect:after, .ding_nodelist-horizontal_accordion .pane-search-backends .selected-checkbox-group .unselect:after, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect:after, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .expand-facets:after, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .expand-facets:after, .ding_nodelist-horizontal_accordion .pane-search-backends .expand-facets:after, .pane-search-backends .ding_nodelist-horizontal_accordion .expand-facets:after {
   display: inline-block;
   vertical-align: middle;
@@ -12109,25 +12123,25 @@ div[class^="collection-bg"] {
   font-family: 'FontAwesome';
   line-height: 30px;
 }
-/* line 309, ../sass/module/_ding_nodelist.scss */
+/* line 323, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .expand a, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .selected-checkbox-group .unselect a, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect a, .ding_nodelist-horizontal_accordion .pane-search-backends .selected-checkbox-group .unselect a, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect a, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .expand-facets a, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .expand-facets a, .ding_nodelist-horizontal_accordion .pane-search-backends .expand-facets a, .pane-search-backends .ding_nodelist-horizontal_accordion .expand-facets a {
   display: none;
 }
-/* line 316, ../sass/module/_ding_nodelist.scss */
+/* line 330, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .slide-open .expand, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .selected-checkbox-group .unselect, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .expand-facets, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .slide-open .expand-facets, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .expand-facets, .pane-search-backends .ding_nodelist-horizontal_accordion .slide-open .expand-facets {
   right: 10px;
   left: auto;
 }
-/* line 320, ../sass/module/_ding_nodelist.scss */
+/* line 334, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .slide-open .expand:after, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .selected-checkbox-group .unselect:after, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect:after, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .selected-checkbox-group .unselect:after, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect:after, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .expand-facets:after, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .slide-open .expand-facets:after, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .expand-facets:after, .pane-search-backends .ding_nodelist-horizontal_accordion .slide-open .expand-facets:after {
   content: '\f067';
 }
-/* line 325, ../sass/module/_ding_nodelist.scss */
+/* line 339, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .slide-open .image img {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 332, ../sass/module/_ding_nodelist.scss */
+/* line 346, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .label, .ding_nodelist-horizontal_accordion .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-horizontal_accordion a, .ding_nodelist-horizontal_accordion .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-horizontal_accordion a, .ding_nodelist-horizontal_accordion .subjects .subject, .subjects .ding_nodelist-horizontal_accordion .subject, .ding_nodelist-horizontal_accordion .news-list .news-label, .news-list .ding_nodelist-horizontal_accordion .news-label, .ding_nodelist-horizontal_accordion .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-horizontal_accordion .field-item {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -12145,12 +12159,12 @@ div[class^="collection-bg"] {
   font-size: 60%;
   line-height: 18px;
 }
-/* line 347, ../sass/module/_ding_nodelist.scss */
+/* line 361, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .label, .ding_nodelist-horizontal_accordion .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-horizontal_accordion a, .ding_nodelist-horizontal_accordion .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-horizontal_accordion a, .ding_nodelist-horizontal_accordion .subjects .subject, .subjects .ding_nodelist-horizontal_accordion .subject, .ding_nodelist-horizontal_accordion .news-list .news-label, .news-list .ding_nodelist-horizontal_accordion .news-label, .ding_nodelist-horizontal_accordion .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-horizontal_accordion .field-item, .ding_nodelist-horizontal_accordion .label:hover, .ding_nodelist-horizontal_accordion .view-node-search-result .list-item .field-type-taxonomy-term-reference a:hover, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-horizontal_accordion a:hover, .ding_nodelist-horizontal_accordion .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a:hover, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-horizontal_accordion a:hover, .ding_nodelist-horizontal_accordion .subjects .subject:hover, .subjects .ding_nodelist-horizontal_accordion .subject:hover, .ding_nodelist-horizontal_accordion .news-list .news-label:hover, .news-list .ding_nodelist-horizontal_accordion .news-label:hover, .ding_nodelist-horizontal_accordion .super-heading .field-name-field-ding-news-library .field-item:hover, .super-heading .field-name-field-ding-news-library .ding_nodelist-horizontal_accordion .field-item:hover {
   background-image: url("../images/p.png");
   color: #fff;
 }
-/* line 356, ../sass/module/_ding_nodelist.scss */
+/* line 370, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .event-date {
   position: relative;
   z-index: 10;
@@ -12164,11 +12178,11 @@ div[class^="collection-bg"] {
   text-align: center;
   font-size: 150%;
 }
-/* line 370, ../sass/module/_ding_nodelist.scss */
+/* line 384, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .event-day {
   line-height: 1;
 }
-/* line 378, ../sass/module/_ding_nodelist.scss */
+/* line 392, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .image a {
   position: absolute;
   top: 0;
@@ -12178,27 +12192,27 @@ div[class^="collection-bg"] {
   background-color: #000;
 }
 @media only screen and (max-width: 480px) {
-  /* line 378, ../sass/module/_ding_nodelist.scss */
+  /* line 392, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-horizontal_accordion .image a {
     width: 310px;
     height: 260px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 378, ../sass/module/_ding_nodelist.scss */
+  /* line 392, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-horizontal_accordion .image a {
     width: 400px;
     height: 300px;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 378, ../sass/module/_ding_nodelist.scss */
+  /* line 392, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-horizontal_accordion .image a {
     width: 450px;
     height: 340px;
   }
 }
-/* line 408, ../sass/module/_ding_nodelist.scss */
+/* line 422, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .image img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -12206,7 +12220,7 @@ div[class^="collection-bg"] {
   width: auto;
   height: 100%;
 }
-/* line 418, ../sass/module/_ding_nodelist.scss */
+/* line 432, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .data {
   position: absolute;
   bottom: 0;
@@ -12215,60 +12229,73 @@ div[class^="collection-bg"] {
   height: 50px;
   background-color: #fff;
 }
-/* line 426, ../sass/module/_ding_nodelist.scss */
+/* line 440, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .data span,
 .ding_nodelist-horizontal_accordion .data .event-fee {
   margin-right: 5px;
 }
-/* line 434, ../sass/module/_ding_nodelist.scss */
+/* line 448, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .caption {
   overflow: hidden;
   height: 30px;
   font-size: 70%;
 }
-/* line 439, ../sass/module/_ding_nodelist.scss */
+/* line 453, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .caption h3 {
   text-shadow: none;
   margin: 5px 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 439, ../sass/module/_ding_nodelist.scss */
+  /* line 453, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-horizontal_accordion .caption h3 {
     font-size: 120%;
   }
 }
-/* line 453, ../sass/module/_ding_nodelist.scss */
+/* line 467, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .library {
   overflow: hidden;
   font-size: 80%;
 }
-/* line 457, ../sass/module/_ding_nodelist.scss */
+/* line 471, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-horizontal_accordion .library > div {
   float: left;
 }
 
-/* line 466, ../sass/module/_ding_nodelist.scss */
+/* line 480, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single {
   overflow: hidden;
   background-color: #fff;
 }
-/* line 472, ../sass/module/_ding_nodelist.scss */
-.ding_nodelist-single img {
+/* line 489, ../sass/module/_ding_nodelist.scss */
+.ding_nodelist-single .article_image a,
+.ding_nodelist-single .event-image a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
-/* line 479, ../sass/module/_ding_nodelist.scss */
+/* line 501, ../sass/module/_ding_nodelist.scss */
+.ding_nodelist-single .article_image img,
+.ding_nodelist-single .event-image img {
+  display: none;
+}
+/* line 508, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item {
   position: relative;
   overflow: hidden;
 }
 @media only screen and (min-width: 481px) {
-  /* line 479, ../sass/module/_ding_nodelist.scss */
+  /* line 508, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-single .item {
     height: 381px;
   }
 }
-/* line 491, ../sass/module/_ding_nodelist.scss */
+/* line 520, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item .event-label {
   position: absolute;
   top: 10px;
@@ -12285,7 +12312,7 @@ div[class^="collection-bg"] {
   font-size: 10px;
   line-height: 18px;
 }
-/* line 510, ../sass/module/_ding_nodelist.scss */
+/* line 539, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item .event-date {
   position: absolute;
   top: 60px;
@@ -12300,23 +12327,23 @@ div[class^="collection-bg"] {
   font-size: 20px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 524, ../sass/module/_ding_nodelist.scss */
+  /* line 553, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-single .item .event-label,
   .ding_nodelist-single .item .event-date {
     visibility: hidden;
   }
 }
-/* line 536, ../sass/module/_ding_nodelist.scss */
+/* line 565, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item .event-day {
   font-size: 24px;
   line-height: 24px;
 }
-/* line 543, ../sass/module/_ding_nodelist.scss */
+/* line 572, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item .event-month {
   font-size: 20px;
   line-height: 20px;
 }
-/* line 550, ../sass/module/_ding_nodelist.scss */
+/* line 579, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item .node {
   min-height: 40px;
   height: auto !important;
@@ -12328,18 +12355,18 @@ div[class^="collection-bg"] {
   font-size: 11px;
   line-height: 1.3;
 }
-/* line 560, ../sass/module/_ding_nodelist.scss */
+/* line 589, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item .more {
   background-color: #fff;
 }
-/* line 565, ../sass/module/_ding_nodelist.scss */
+/* line 594, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .item .more a {
   display: block;
   padding: 5px;
   text-decoration: none;
   font-size: 18px;
 }
-/* line 576, ../sass/module/_ding_nodelist.scss */
+/* line 605, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .article-info {
   position: absolute;
   bottom: 0;
@@ -12347,11 +12374,11 @@ div[class^="collection-bg"] {
   z-index: 49;
   width: 100%;
 }
-/* line 586, ../sass/module/_ding_nodelist.scss */
+/* line 615, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .category {
   padding: 0 0 10px 10px;
 }
-/* line 589, ../sass/module/_ding_nodelist.scss */
+/* line 618, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single .category a {
   padding: 5px;
   background-color: #53514b;
@@ -12361,35 +12388,35 @@ div[class^="collection-bg"] {
   letter-spacing: .5px;
   font-size: 10px;
 }
-/* line 602, ../sass/module/_ding_nodelist.scss */
+/* line 631, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single h3 {
   margin: 0;
 }
-/* line 605, ../sass/module/_ding_nodelist.scss */
+/* line 634, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-single h3 a {
   display: block;
   color: #fff;
 }
 @media only screen and (min-width: 769px) {
-  /* line 605, ../sass/module/_ding_nodelist.scss */
+  /* line 634, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-single h3 a {
     font-size: 16px;
   }
 }
 
-/* line 622, ../sass/module/_ding_nodelist.scss */
+/* line 651, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider {
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  /* line 627, ../sass/module/_ding_nodelist.scss */
+  /* line 656, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-slider .legend {
     margin-bottom: 10px;
     padding-right: 2em;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 627, ../sass/module/_ding_nodelist.scss */
+  /* line 656, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-slider .legend {
     width: 32.20339%;
     float: left;
@@ -12398,23 +12425,23 @@ div[class^="collection-bg"] {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 643, ../sass/module/_ding_nodelist.scss */
+  /* line 672, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-slider .legend h2 {
     font-size: 300%;
   }
 }
-/* line 652, ../sass/module/_ding_nodelist.scss */
+/* line 681, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .legend span {
   display: block;
 }
 @media only screen and (max-width: 768px) {
-  /* line 659, ../sass/module/_ding_nodelist.scss */
+  /* line 688, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-slider .ding_nodelist-items {
     padding-right: 2em;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 659, ../sass/module/_ding_nodelist.scss */
+  /* line 688, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-slider .ding_nodelist-items {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -12425,34 +12452,34 @@ div[class^="collection-bg"] {
     padding-right: 2em;
   }
 }
-/* line 677, ../sass/module/_ding_nodelist.scss */
+/* line 706, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .item {
   margin-bottom: 10px;
 }
-/* line 683, ../sass/module/_ding_nodelist.scss */
+/* line 712, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .date-created {
   font-size: 80%;
 }
-/* line 689, ../sass/module/_ding_nodelist.scss */
+/* line 718, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider h3 {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-/* line 696, ../sass/module/_ding_nodelist.scss */
+/* line 725, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .node {
   margin-top: 0;
   padding: 0;
 }
-/* line 703, ../sass/module/_ding_nodelist.scss */
+/* line 732, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .more {
   margin-bottom: 5px;
 }
-/* line 706, ../sass/module/_ding_nodelist.scss */
+/* line 735, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .more a {
   font-size: 80%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 706, ../sass/module/_ding_nodelist.scss */
+  /* line 735, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-slider .more a {
     display: inline-block;
     vertical-align: middle;
@@ -12462,7 +12489,7 @@ div[class^="collection-bg"] {
     padding: 5px 10px;
   }
 }
-/* line 720, ../sass/module/_ding_nodelist.scss */
+/* line 749, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev {
   position: absolute;
   top: 0;
@@ -12470,11 +12497,11 @@ div[class^="collection-bg"] {
   bottom: 0;
   width: 25px;
 }
-/* line 727, ../sass/module/_ding_nodelist.scss */
+/* line 756, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev span {
   display: none;
 }
-/* line 731, ../sass/module/_ding_nodelist.scss */
+/* line 760, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev a {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -12486,7 +12513,7 @@ div[class^="collection-bg"] {
   background-color: #53514b;
   color: #fff;
 }
-/* line 740, ../sass/module/_ding_nodelist.scss */
+/* line 769, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev a:after {
   display: inline-block;
   vertical-align: middle;
@@ -12502,39 +12529,39 @@ div[class^="collection-bg"] {
   font-family: 'FontAwesome';
   line-height: 24px;
 }
-/* line 753, ../sass/module/_ding_nodelist.scss */
+/* line 782, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev .next {
   bottom: 10px;
 }
-/* line 756, ../sass/module/_ding_nodelist.scss */
+/* line 785, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev .next:after {
   content: '\f107';
 }
-/* line 761, ../sass/module/_ding_nodelist.scss */
+/* line 790, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev .prev {
   top: 10px;
 }
-/* line 764, ../sass/module/_ding_nodelist.scss */
+/* line 793, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-slider .next-prev .prev:after {
   content: '\f106';
 }
 
-/* line 774, ../sass/module/_ding_nodelist.scss */
+/* line 803, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-vertical_accordion {
   border-bottom: 10px solid #fff;
 }
 
-/* line 778, ../sass/module/_ding_nodelist.scss */
+/* line 807, ../sass/module/_ding_nodelist.scss */
 .va-wrapper {
   position: relative;
   padding: 10px 0;
 }
-/* line 782, ../sass/module/_ding_nodelist.scss */
+/* line 811, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .ding_nodelist-items .news {
   background-color: #fff;
   background-repeat: no-repeat;
 }
-/* line 787, ../sass/module/_ding_nodelist.scss */
+/* line 816, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .item {
   position: absolute;
   z-index: 10;
@@ -12548,11 +12575,11 @@ div[class^="collection-bg"] {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 800, ../sass/module/_ding_nodelist.scss */
+/* line 829, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .item:first-of-type {
   border-top: 0;
 }
-/* line 805, ../sass/module/_ding_nodelist.scss */
+/* line 834, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .va-content {
   position: absolute;
   bottom: 30px;
@@ -12562,17 +12589,17 @@ div[class^="collection-bg"] {
   padding: 10px;
   background-image: url("../images/p.png");
 }
-/* line 814, ../sass/module/_ding_nodelist.scss */
+/* line 843, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .va-content,
 .va-wrapper .va-content h3,
 .va-wrapper .va-content a {
   color: #fff;
 }
-/* line 821, ../sass/module/_ding_nodelist.scss */
+/* line 850, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .active .va-content {
   visibility: visible;
 }
-/* line 825, ../sass/module/_ding_nodelist.scss */
+/* line 854, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .event-time,
 .va-wrapper .field-name-group-audience,
 .va-wrapper .event-fee {
@@ -12582,7 +12609,7 @@ div[class^="collection-bg"] {
   letter-spacing: .5px;
   font-size: 10px;
 }
-/* line 835, ../sass/module/_ding_nodelist.scss */
+/* line 864, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .event-date {
   position: absolute;
   top: 44px;
@@ -12596,24 +12623,24 @@ div[class^="collection-bg"] {
   text-align: center;
   font-size: 20px;
 }
-/* line 849, ../sass/module/_ding_nodelist.scss */
+/* line 878, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .va-title {
   position: relative;
   z-index: 1;
 }
 @media only screen and (max-width: 768px) {
-  /* line 849, ../sass/module/_ding_nodelist.scss */
+  /* line 878, ../sass/module/_ding_nodelist.scss */
   .va-wrapper .va-title {
     visibility: hidden;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 860, ../sass/module/_ding_nodelist.scss */
+  /* line 889, ../sass/module/_ding_nodelist.scss */
   .va-wrapper .active .va-title {
     visibility: visible;
   }
 }
-/* line 869, ../sass/module/_ding_nodelist.scss */
+/* line 898, ../sass/module/_ding_nodelist.scss */
 .va-wrapper .event-label {
   position: absolute;
   top: 30px;
@@ -12630,62 +12657,50 @@ div[class^="collection-bg"] {
   font-size: 10px;
 }
 
-/* line 890, ../sass/module/_ding_nodelist.scss */
-Narrow section carousel fix
-.frontpage-layout .tertiary-content .ding_nodelist-items .article_image {
-  height: 100%;
-}
-/* line 894, ../sass/module/_ding_nodelist.scss */
-Narrow section carousel fix
-.frontpage-layout .tertiary-content .ding_nodelist-items img {
-  max-width: 185%;
-  width: 185%;
-}
-
-/* line 905, ../sass/module/_ding_nodelist.scss */
+/* line 920, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item {
   overflow: hidden;
   padding: 10px 0;
   border-top: 1px solid #ddd;
 }
-/* line 910, ../sass/module/_ding_nodelist.scss */
+/* line 925, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:first-of-type {
   border-top: 0;
 }
-/* line 914, ../sass/module/_ding_nodelist.scss */
+/* line 929, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 16px;
 }
-/* line 917, ../sass/module/_ding_nodelist.scss */
+/* line 932, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title a {
   font-weight: 700;
 }
-/* line 922, ../sass/module/_ding_nodelist.scss */
+/* line 937, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-author {
   display: none;
 }
-/* line 926, ../sass/module/_ding_nodelist.scss */
+/* line 941, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-body {
   margin-top: 10px;
 }
 @media only screen and (min-width: 769px) {
-  /* line 905, ../sass/module/_ding_nodelist.scss */
+  /* line 920, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item {
     display: table;
     width: 100%;
   }
-  /* line 936, ../sass/module/_ding_nodelist.scss */
+  /* line 951, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-details,
   .ding_nodelist-taxonomy .item .item-list-image {
     display: table-cell;
     vertical-align: top;
   }
-  /* line 942, ../sass/module/_ding_nodelist.scss */
+  /* line 957, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image {
     padding-right: 10px;
     width: 159px;
   }
-  /* line 946, ../sass/module/_ding_nodelist.scss */
+  /* line 961, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image img {
     width: 159px;
     height: auto;
