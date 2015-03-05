@@ -27,7 +27,7 @@
     }
 
     &.active {
-      max-height: 310px;
+      max-height: 410px;
       height: auto;
 
       // Title
@@ -45,16 +45,28 @@
       img {
         margin-right: 10px;
         width: 140px;
-        max-height: 135px;
       }
 
       // Subject
 
       .subject {
-        display: inline;
-        white-space: normal;
+        display: block;
+        float: left;
+        margin: 3px 3px 3px 0;
+        white-space: nowrap;
       }
 
+      .subjects {
+        max-height: 55px;
+        overflow: hidden;
+
+        strong {
+          display: block;
+          float: left;
+          line-height: 2em;
+          margin-right: 5px;
+        }
+      }
       // Entity buttons
 
       .field-type-ding-entity-buttons a {
@@ -76,4 +88,24 @@
       }
     }
   }
+  
+  // Header
+  .view-mode-ding-item-viewer-small h2 {
+    clear: both;
+    max-height: 35px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .view-mode-ding-item-viewer-small h2:before {
+    background-image: url('../images/grad-transp.png');
+    background-repeat: repeat-x;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 11px;
+    position: absolute;
+    width: 120px;
+  }
+  
 }
