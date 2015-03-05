@@ -11737,7 +11737,7 @@ div[class^="collection-bg"] {
 }
 /* line 29, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active {
-  max-height: 310px;
+  max-height: 410px;
   height: auto;
 }
 /* line 35, ../sass/module/_ding_item_viewer.scss */
@@ -11752,24 +11752,55 @@ div[class^="collection-bg"] {
 .ding-item-viewer .browsebar-item.active img {
   margin-right: 10px;
   width: 140px;
-  max-height: 135px;
 }
-/* line 53, ../sass/module/_ding_item_viewer.scss */
+/* line 52, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .subject {
-  display: inline;
-  white-space: normal;
+  display: block;
+  float: left;
+  margin: 3px 3px 3px 0;
+  white-space: nowrap;
 }
-/* line 60, ../sass/module/_ding_item_viewer.scss */
+/* line 59, ../sass/module/_ding_item_viewer.scss */
+.ding-item-viewer .browsebar-item.active .subjects {
+  max-height: 55px;
+  overflow: hidden;
+}
+/* line 63, ../sass/module/_ding_item_viewer.scss */
+.ding-item-viewer .browsebar-item.active .subjects strong {
+  display: block;
+  float: left;
+  line-height: 2em;
+  margin-right: 5px;
+}
+/* line 72, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .field-type-ding-entity-buttons a {
   margin-left: 5px;
 }
-/* line 71, ../sass/module/_ding_item_viewer.scss */
+/* line 83, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .ui-tabs-nav .active {
   background-color: #bcbcbc;
 }
-/* line 74, ../sass/module/_ding_item_viewer.scss */
+/* line 86, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .ui-tabs-nav .active a {
   background: none;
+}
+/* line 93, ../sass/module/_ding_item_viewer.scss */
+.ding-item-viewer .view-mode-ding-item-viewer-small h2 {
+  clear: both;
+  max-height: 35px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 100, ../sass/module/_ding_item_viewer.scss */
+.ding-item-viewer .view-mode-ding-item-viewer-small h2:before {
+  background-image: url("../images/grad-transp.png");
+  background-repeat: repeat-x;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 11px;
+  position: absolute;
+  width: 120px;
 }
 
 /* line 1, ../sass/module/_ding_item_list.scss */
