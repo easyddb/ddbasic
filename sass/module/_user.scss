@@ -240,6 +240,21 @@
     }
   }
   /* END BUTTONS */
+  
+  .ding-format-short {
+    .left-column {
+      @include zen-grid-item(1, 1);
+    }
+
+    .right-column {
+      @include zen-grid-item(11, 1, right);
+    }
+
+    .ting-cover,
+    .item-information-list {
+      display: none;
+    }
+  }
 }
 
 .pane-loans {

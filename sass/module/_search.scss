@@ -240,12 +240,6 @@ header .search .form-actions {
   }
 }
 
-.ding-format-short {
-  .ting-object-left {
-    display: none;
-  }
-}
-
 .ting-object-right,
 .group-ting-right-col-collection {
   @include zen-grid-item(10, 1, right);
@@ -260,7 +254,19 @@ header .search .form-actions {
 
 .ding-format-short {
   .ting-object-right {
-    @include zen-grid-item(12, 1, right);
+    @include zen-grid-item(8, 1);
+    margin-left: 8%;
+  }
+
+  .ting-object-left {
+    @include zen-grid-item(1, 1);
+    min-height: initial;
+  }
+
+  .ting-cover:before {
+    top: 20%;
+    left: 20%;
+    font-size: 160%;
   }
 }
 
@@ -540,8 +546,45 @@ header .search .form-actions {
   @extend .pane-ting-search-records-per-page;
   float: right;
 
+
+  .ding-toggle-format-label {
+    position: relative;
+    top: -2px;
+  }
+  
+  #ding-toggle-format {
+    background: none;
+    text-decoration: none;
+  }
+  
   #ding-toggle-format-image {
-    height: 0;
+    display: none;
+    height: 20px;
+  }
+  
+  #ding-toggle-format:before,
+  #ding-toggle-format:after,  {
+    color: #bcbcbc;
+    display: inline-block;
+    font-size: 100%;
+    height: 20px;
+    font-family: "FontAwesome";
+    margin-top: 5px;
+    text-decoration: none;
+    width: 20px;
+  }
+  
+  #ding-toggle-format:before {
+    content: "\f039";
+  }
+  
+  #ding-toggle-format:after {
+    content: "\f03a";
+  }
+  
+  #ding-toggle-format.ding-toggle-format-short:before,
+  #ding-toggle-format.ding-toggle-format-long:after  {
+    color: $link-color;
   }
 }
 
@@ -700,8 +743,12 @@ header .search .form-actions {
       }
 
       /* Compact search result display */
+      .ding-format-short.ding-search-collection div.field-type-ding-entity-buttons {
+        right: 30px;
+        bottom: 20px;
+      }
+
       .ding-format-short {
-        .ting-cover,
         .content,
         .field {
           display: none;
@@ -709,8 +756,14 @@ header .search .form-actions {
 
         /* Display the author */
         .heading + div.content {
-          display: inline;
-          margin-left: 5px;
+          display: block;
+        }
+
+        div.field-type-ding-entity-buttons {
+          display: block;
+          position: absolute;
+          right: 20px;
+          bottom: 10px;
         }
 
         .heading,
@@ -733,7 +786,7 @@ header .search .form-actions {
         }
 
         div.availability {
-          display: inline-block;
+          display: none;
           margin-top: 20px;
         }
       }
