@@ -95,6 +95,9 @@
     </div>
     <div class="super-heading">
       <span class="news-category label"><?php print render($content['field_ding_news_category']); ?></span>
+      <?php if (isset($content['field_editorial_base'])) : ?>
+        <span class="label"><?php print render($content['field_editorial_base']); ?></span>
+      <?php endif;?>
       <?php if (isset($content['og_group_ref']['#items'])) : ?>
         <span class="library-ref label"><?php print render($content['og_group_ref']); ?></span>
       <?php endif; ?>

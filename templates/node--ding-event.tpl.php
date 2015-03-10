@@ -154,6 +154,9 @@
     <footer class="event-footer">
       <section class="event-tags">
         <span class="event-category label"><?php print render($content['field_ding_event_category']); ?></span>
+        <?php if (isset($content['field_editorial_base'])) : ?>
+          <span class="label"><?php print render($content['field_editorial_base']); ?></span>
+        <?php endif;?>
         <?php if (isset($content['field_ding_event_tags'])) : ?>
           <span class="event-tags label"><?php print render($content['field_ding_event_tags']); ?></span>
         <?php endif; ?>
