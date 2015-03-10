@@ -272,6 +272,14 @@
   }
 }
 
+.page-user .primary-content {
+  position: relative;
+}
+
+.page-user .pane-ding-toggle-format-toggle {
+  position: absolute;
+  right: 0;
+}
 
 /* User debts specific
    ========================================================================== */
@@ -375,6 +383,9 @@
       }
     }
 
+  }
+  .pane-ding-toggle-format-toggle .ding-toggle-format-label {
+    display: none;
   }
 }
 

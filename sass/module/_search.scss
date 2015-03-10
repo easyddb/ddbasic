@@ -254,23 +254,42 @@ header .search .form-actions {
 
 .ding-format-short {
   .ting-object-right {
-    @include zen-grid-item(8, 1);
-    margin-left: 8%;
+    width: 100%;
+    margin-right: -75px;
+
+    @include small() {
+      @include zen-grid-item(12, 1, right);
+    }
+
   }
 
   .ting-object-left {
-    @include zen-grid-item(1, 1);
     min-height: initial;
+    width: 80px;
+    margin-right: -80px;
+	
+    @include small() {
+      @include zen-grid-item(0, 1);
+    }
+
   }
+
+  @include small() {
+    .ting-cover {
+      display: none;
+    }
+  } 
 
   .ting-cover:before {
     top: 20%;
     left: 20%;
     font-size: 160%;
   }
+  
+  .ting-cover img {
+    max-width: 60px;
+  }
 }
-
-
 
 /* Facet browser styling
    ========================================================================== */
@@ -743,10 +762,6 @@ header .search .form-actions {
       }
 
       /* Compact search result display */
-      .ding-format-short.ding-search-collection div.field-type-ding-entity-buttons {
-        right: 30px;
-        bottom: 20px;
-      }
 
       .ding-format-short {
         .content,
@@ -761,9 +776,6 @@ header .search .form-actions {
 
         div.field-type-ding-entity-buttons {
           display: block;
-          position: absolute;
-          right: 20px;
-          bottom: 10px;
         }
 
         .heading,
