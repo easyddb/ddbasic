@@ -199,15 +199,45 @@ body {
     @include zen-grid-item(8, 1);
   }
 
+  .secondary-content-right {
+    @include zen-grid-item(8, 1, right);
+  }
+
   .tertiary-content {
     @include zen-grid-item(4, 1, right);
+  }
+
+  .tertiary-content-left {
+    @include zen-grid-item(4, 1);
+  }
+
+  .half-page-content {
+    @include zen-grid-item(6, 1);
+  }
+
+  .quarter-content {
+    @include zen-grid-item(6, 1, right);
+  }
+
+  .quarter-content-left {
+    @include zen-grid-item(6, 1);
+  }
+
+  .inner-front-wrapper {
+    @include zen-grid-item(6, 1, right);
   }
 
   /* Media queries */
   @include small-medium() {
     .primary-content,
     .secondary-content,
-    .tertiary-content, {
+    .tertiary-content,
+    .quarter-content,
+    .half-page-content,
+    .tertiary-content-left,
+    .secondary-content-right,
+    .quarter-content-left,
+    .inner-front-wrapper {
       @include zen-grid-item(12, 1);
       @include zen-clear();
     }
