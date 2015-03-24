@@ -5764,11 +5764,11 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   padding-bottom: 1px;
   min-width: 110px;
 }
-/* line 126, ../sass/module/_module.scss */
+/* line 125, ../sass/module/_module.scss */
 .search input[class^="form-"], .search-field-in-content input[class^="form-"], .user input[class^="form-"] {
   margin-bottom: 0;
 }
-/* line 130, ../sass/module/_module.scss */
+/* line 129, ../sass/module/_module.scss */
 .search .form-actions, .search-field-in-content .form-actions, .user .form-actions {
   position: absolute;
   top: 0;
@@ -5776,22 +5776,22 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   text-align: right;
 }
 @media only screen and (max-width: 480px) {
-  /* line 139, ../sass/module/_module.scss */
+  /* line 138, ../sass/module/_module.scss */
   .search [class^="label-"], .search-field-in-content [class^="label-"], .user [class^="label-"] {
     font-size: 85%;
   }
-  /* line 143, ../sass/module/_module.scss */
+  /* line 142, ../sass/module/_module.scss */
   .search .form-actions, .search-field-in-content .form-actions, .user .form-actions {
     position: relative;
     clear: both;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 150, ../sass/module/_module.scss */
+  /* line 149, ../sass/module/_module.scss */
   .search i[class^="icon-"], .search-field-in-content i[class^="icon-"], .user i[class^="icon-"] {
     font-size: 130%;
   }
-  /* line 154, ../sass/module/_module.scss */
+  /* line 153, ../sass/module/_module.scss */
   .search .form-text, .search-field-in-content .form-text, .user .form-text {
     font-size: 110%;
     min-height: 50px;
@@ -5800,12 +5800,12 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
     min-width: 100%;
     padding-left: 42px;
   }
-  /* line 161, ../sass/module/_module.scss */
+  /* line 160, ../sass/module/_module.scss */
   .search .form-actions, .search-field-in-content .form-actions, .user .form-actions {
     position: relative;
     clear: both;
   }
-  /* line 166, ../sass/module/_module.scss */
+  /* line 165, ../sass/module/_module.scss */
   .search .form-submit, .search-field-in-content .form-submit, .user .form-submit {
     min-height: 44px;
     height: auto !important;
@@ -5818,24 +5818,24 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 
 /* Filter by library box
    ========================================================================== */
-/* line 180, ../sass/module/_module.scss */
+/* line 179, ../sass/module/_module.scss */
 .pane-library-list {
   background-color: #efefef;
   margin-bottom: 20px;
   padding: 20px;
   /* Media queries */
 }
-/* line 185, ../sass/module/_module.scss */
+/* line 184, ../sass/module/_module.scss */
 .pane-library-list .button {
   /* Make sure the button aligns vertically with the select */
   margin-top: -2px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 192, ../sass/module/_module.scss */
+  /* line 191, ../sass/module/_module.scss */
   .pane-library-list .choose-library-label {
     display: none;
   }
-  /* line 195, ../sass/module/_module.scss */
+  /* line 194, ../sass/module/_module.scss */
   .pane-library-list .form-select {
     max-width: 75%;
   }
@@ -5843,24 +5843,24 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 
 /* Filter by taxonomy box
    ========================================================================== */
-/* line 203, ../sass/module/_module.scss */
+/* line 202, ../sass/module/_module.scss */
 .taxonomy-dropdown {
   background-color: #efefef;
   margin-bottom: 20px;
   padding: 20px;
   /* Media queries */
 }
-/* line 208, ../sass/module/_module.scss */
+/* line 207, ../sass/module/_module.scss */
 .taxonomy-dropdown .button {
   /* Make sure the button aligns vertically with the select */
   margin-top: -2px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 215, ../sass/module/_module.scss */
+  /* line 214, ../sass/module/_module.scss */
   .taxonomy-dropdown .choose-library-label {
     display: none;
   }
-  /* line 218, ../sass/module/_module.scss */
+  /* line 217, ../sass/module/_module.scss */
   .taxonomy-dropdown .form-select {
     max-width: 75%;
   }
@@ -5868,17 +5868,17 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 
 /* Pager
    ========================================================================== */
-/* line 226, ../sass/module/_module.scss */
+/* line 225, ../sass/module/_module.scss */
 .pager {
   padding-left: 0;
 }
-/* line 229, ../sass/module/_module.scss */
+/* line 228, ../sass/module/_module.scss */
 .pager li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 234, ../sass/module/_module.scss */
+/* line 233, ../sass/module/_module.scss */
 .pager li.pager-current,
 .pager li a {
   background-color: #efefef;
@@ -5888,17 +5888,17 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 245, ../sass/module/_module.scss */
+/* line 244, ../sass/module/_module.scss */
 .pager .active a,
 .pager .active a:hover {
   cursor: default;
   text-decoration: underline;
 }
-/* line 251, ../sass/module/_module.scss */
+/* line 250, ../sass/module/_module.scss */
 .pager .disabled {
   background-color: #fbfbfb;
 }
-/* line 254, ../sass/module/_module.scss */
+/* line 253, ../sass/module/_module.scss */
 .pager .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -5906,7 +5906,7 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 
 /* Signature
    ========================================================================== */
-/* line 264, ../sass/module/_module.scss */
+/* line 263, ../sass/module/_module.scss */
 .signature {
   border-top: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
@@ -5914,32 +5914,32 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 273, ../sass/module/_module.scss */
+/* line 272, ../sass/module/_module.scss */
 .signature .signature-image img {
   float: left;
   margin-top: 5px;
   margin-right: 20px;
 }
-/* line 280, ../sass/module/_module.scss */
+/* line 279, ../sass/module/_module.scss */
 .signature .signature-label {
   display: inline-block;
   min-width: 125px;
 }
 
-/* line 286, ../sass/module/_module.scss */
+/* line 285, ../sass/module/_module.scss */
 .signature .tags a {
   display: inline-block;
   margin-right: 0.3em;
 }
 
-/* line 291, ../sass/module/_module.scss */
+/* line 290, ../sass/module/_module.scss */
 .signature .tags a:not(:last-child):after {
   content: ",";
 }
 
 /* Action buttons
    ========================================================================== */
-/* line 299, ../sass/module/_module.scss */
+/* line 298, ../sass/module/_module.scss */
 .action-buttons {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5948,13 +5948,13 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   padding: 20px;
 }
 
-/* line 307, ../sass/module/_module.scss */
+/* line 306, ../sass/module/_module.scss */
 .action-buttons-is-visible {
   background: rgba(0, 0, 0, 0.15);
   display: block;
 }
 
-/* line 313, ../sass/module/_module.scss */
+/* line 312, ../sass/module/_module.scss */
 .action-buttons-is-scrolling {
   background: rgba(0, 0, 0, 0.85);
   left: 0;
@@ -5966,7 +5966,7 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 
 /* Extends
    ========================================================================== */
-/* line 325, ../sass/module/_module.scss */
+/* line 324, ../sass/module/_module.scss */
 .view-node-search-result .node-ding-event .group-right-col-search .event-arrow-link, .ting-reference-reverse-list .node-ding-event .group-right-col-search .event-arrow-link, .event-list .event-arrow-link, .groups-list .groups-arrow-link {
   display: inline-block;
   position: absolute;
@@ -5976,7 +5976,7 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 
 /* Sub-menu "drop-down" menu in Organic groups
    ========================================================================== */
-/* line 335, ../sass/module/_module.scss */
+/* line 334, ../sass/module/_module.scss */
 .js-og-sub-menu-responsive {
   background-color: #efefef;
   display: none;
@@ -5984,7 +5984,7 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   padding: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 335, ../sass/module/_module.scss */
+  /* line 334, ../sass/module/_module.scss */
   .js-og-sub-menu-responsive {
     display: block;
     padding-top: 10px;
