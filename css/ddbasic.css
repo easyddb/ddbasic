@@ -4170,12 +4170,12 @@ body {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -4615,12 +4615,12 @@ body {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 45, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:before, .attachments-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:after {
   clear: both;
 }
@@ -5463,12 +5463,12 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:before, .ting-reference-reverse-list .list-item:before, .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   clear: both;
 }
@@ -5761,7 +5761,6 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   -moz-border-radius: 12px;
   border-radius: 12px;
   font-size: 160%;
-  margin-top: 29px;
   padding-bottom: 1px;
   min-width: 110px;
 }
@@ -7769,7 +7768,7 @@ div[class^="collection-bg"] {
  * New Materials search result
  *
  *
- * @author ├ürni Loftsson
+ * @author Árni Loftsson
  */
 /**
  * Carousel
@@ -7785,12 +7784,12 @@ div[class^="collection-bg"] {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:before, .rs-carousel-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:after {
   clear: both;
 }
@@ -11182,12 +11181,12 @@ div[class^="collection-bg"] {
   padding-bottom: 20px;
   padding-left: 10px;
 }
-/* line 45, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:before, .group-blocks--wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:after {
   clear: both;
 }
@@ -11492,7 +11491,7 @@ div[class^="collection-bg"] {
   height: auto !important;
   height: 60px;
   display: inline-block;
-  margin: 23px 10px 0 0;
+  margin: -2px 10px 0 0;
   line-height: 60px;
 }
 @media only screen and (min-width: 769px) {
@@ -11516,12 +11515,12 @@ div[class^="collection-bg"] {
   margin-bottom: 0;
   background-color: #fff;
 }
-/* line 45, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:before, .search-field-in-content .collapsible:before, .search .collapsible:after, .search-field-in-content .collapsible:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:after, .search-field-in-content .collapsible:after {
   clear: both;
 }
