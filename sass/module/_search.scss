@@ -619,10 +619,6 @@ header .search .form-actions {
 
   /* Media queries */
 
-  @include x-large() {
-    float: right;
-  }
-
   .availability-legend {
     padding: 0;
     border: none;
