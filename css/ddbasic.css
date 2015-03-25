@@ -10016,11 +10016,16 @@ div[class^="collection-bg"] {
 }
 
 /* line 467, ../sass/module/_user.scss */
+.pane-user-login .form-actions {
+  top: 29px;
+}
+
+/* line 471, ../sass/module/_user.scss */
 .user {
   overflow: hidden;
 }
 @media only screen and (max-width: 480px) {
-  /* line 471, ../sass/module/_user.scss */
+  /* line 475, ../sass/module/_user.scss */
   .user .form-item-name,
   .user .form-item-pass {
     float: left;
@@ -10040,21 +10045,21 @@ div[class^="collection-bg"] {
     _overflow-y: visible;
     clear: left;
   }
-  /* line 477, ../sass/module/_user.scss */
+  /* line 481, ../sass/module/_user.scss */
   .user .form-actions {
     margin-bottom: 0;
   }
-  /* line 481, ../sass/module/_user.scss */
+  /* line 485, ../sass/module/_user.scss */
   .user .form-submit {
     margin-top: 10px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 467, ../sass/module/_user.scss */
+  /* line 471, ../sass/module/_user.scss */
   .user {
     text-align: left;
   }
-  /* line 489, ../sass/module/_user.scss */
+  /* line 493, ../sass/module/_user.scss */
   .user .block-title {
     display: block;
     margin-top: 10px;
@@ -10063,22 +10068,22 @@ div[class^="collection-bg"] {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     color: #fff;
   }
-  /* line 498, ../sass/module/_user.scss */
+  /* line 502, ../sass/module/_user.scss */
   .user .user-field-wrapper {
     position: relative;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 467, ../sass/module/_user.scss */
+  /* line 471, ../sass/module/_user.scss */
   .user {
     width: auto;
   }
 }
-/* line 508, ../sass/module/_user.scss */
+/* line 512, ../sass/module/_user.scss */
 .user .user-field-wrapper {
   position: relative;
 }
-/* line 512, ../sass/module/_user.scss */
+/* line 516, ../sass/module/_user.scss */
 .user .form-item-name {
   float: left;
   width: 50%;
@@ -10097,11 +10102,11 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   margin-bottom: 0;
 }
-/* line 516, ../sass/module/_user.scss */
+/* line 520, ../sass/module/_user.scss */
 .user .form-item-name .form-text {
   padding-left: 45px;
 }
-/* line 521, ../sass/module/_user.scss */
+/* line 525, ../sass/module/_user.scss */
 .user .form-item-pass {
   float: right;
   width: 50%;
@@ -10120,33 +10125,33 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   margin-bottom: 0;
 }
-/* line 525, ../sass/module/_user.scss */
+/* line 529, ../sass/module/_user.scss */
 .user .form-item-pass .form-text {
   padding-left: 42px;
 }
-/* line 530, ../sass/module/_user.scss */
+/* line 534, ../sass/module/_user.scss */
 .user .block-title {
   display: none;
 }
 
-/* line 536, ../sass/module/_user.scss */
+/* line 540, ../sass/module/_user.scss */
 .user-name {
   color: #fff;
 }
 @media only screen and (max-width: 768px) {
-  /* line 539, ../sass/module/_user.scss */
+  /* line 543, ../sass/module/_user.scss */
   .user-name .user-name-title {
     margin-bottom: 0;
   }
 }
-/* line 545, ../sass/module/_user.scss */
+/* line 549, ../sass/module/_user.scss */
 .user-name .user-name-title {
   overflow: hidden;
   max-height: 45px;
   font-size: 160%;
 }
 
-/* line 552, ../sass/module/_user.scss */
+/* line 556, ../sass/module/_user.scss */
 .user-name,
 .user-menu-loans,
 .user-menu {
@@ -10157,7 +10162,7 @@ div[class^="collection-bg"] {
   text-align: right;
 }
 @media only screen and (max-width: 768px) {
-  /* line 552, ../sass/module/_user.scss */
+  /* line 556, ../sass/module/_user.scss */
   .user-name,
   .user-menu-loans,
   .user-menu {
@@ -10167,50 +10172,50 @@ div[class^="collection-bg"] {
   }
 }
 
-/* line 568, ../sass/module/_user.scss */
+/* line 572, ../sass/module/_user.scss */
 .user-menu-loans,
 .user-menu {
   padding-top: 10px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 568, ../sass/module/_user.scss */
+  /* line 572, ../sass/module/_user.scss */
   .user-menu-loans,
   .user-menu {
     padding-top: 0;
   }
 }
 
-/* line 577, ../sass/module/_user.scss */
+/* line 581, ../sass/module/_user.scss */
 .user-menu {
   font-weight: 600;
 }
 
 /* User WAYF login
    ========================================================================== */
-/* line 584, ../sass/module/_user.scss */
+/* line 588, ../sass/module/_user.scss */
 .ding-wayf--login-block {
   position: absolute;
   right: -15px;
   bottom: 25px;
 }
 
-/* line 590, ../sass/module/_user.scss */
+/* line 594, ../sass/module/_user.scss */
 .ding-wayf--login-info {
   padding-right: 20px;
 }
-/* line 593, ../sass/module/_user.scss */
+/* line 597, ../sass/module/_user.scss */
 .ding-wayf--login-info img {
   height: 20px;
 }
 
 /* User profile
    ========================================================================== */
-/* line 602, ../sass/module/_user.scss */
+/* line 606, ../sass/module/_user.scss */
 .user-loan-status-wrapper {
   padding-top: 20px;
 }
 
-/* line 606, ../sass/module/_user.scss */
+/* line 610, ../sass/module/_user.scss */
 .user-status-loan,
 .user-status-reservation,
 .user-status-debt,
@@ -10223,14 +10228,14 @@ div[class^="collection-bg"] {
   margin-bottom: 10px;
   padding: 10px 20px;
 }
-/* line 618, ../sass/module/_user.scss */
+/* line 622, ../sass/module/_user.scss */
 .user-status-loan:hover,
 .user-status-reservation:hover,
 .user-status-debt:hover,
 .user-status-ready-pickup:hover {
   text-decoration: none;
 }
-/* line 622, ../sass/module/_user.scss */
+/* line 626, ../sass/module/_user.scss */
 .user-status-loan:before,
 .user-status-reservation:before,
 .user-status-debt:before,
@@ -10239,20 +10244,20 @@ div[class^="collection-bg"] {
   font-family: "FontAwesome";
 }
 
-/* line 629, ../sass/module/_user.scss */
+/* line 633, ../sass/module/_user.scss */
 .user-status-loan,
 .user-status-reservation {
   background-color: #efefef;
   color: #00b7e7;
 }
-/* line 634, ../sass/module/_user.scss */
+/* line 638, ../sass/module/_user.scss */
 .user-status-loan:focus, .user-status-loan:hover,
 .user-status-reservation:focus,
 .user-status-reservation:hover {
   background-color: #e2e2e2;
 }
 
-/* line 642, ../sass/module/_user.scss */
+/* line 646, ../sass/module/_user.scss */
 .user-status-debt:link, .user-status-debt:visited, .user-status-debt:focus, .user-status-debt:active,
 .user-status-ready-pickup:link,
 .user-status-ready-pickup:visited,
@@ -10261,36 +10266,36 @@ div[class^="collection-bg"] {
   color: #fff;
 }
 
-/* line 650, ../sass/module/_user.scss */
+/* line 654, ../sass/module/_user.scss */
 .user-status-debt {
   background-color: #a32e10;
 }
-/* line 653, ../sass/module/_user.scss */
+/* line 657, ../sass/module/_user.scss */
 .user-status-debt:focus, .user-status-debt:hover {
   background-color: #8c270e;
 }
 
-/* line 659, ../sass/module/_user.scss */
+/* line 663, ../sass/module/_user.scss */
 .user-status-ready-pickup {
   background-color: #528c10;
 }
-/* line 662, ../sass/module/_user.scss */
+/* line 666, ../sass/module/_user.scss */
 .user-status-ready-pickup:focus, .user-status-ready-pickup:hover {
   background-color: #45750d;
 }
 
-/* line 668, ../sass/module/_user.scss */
+/* line 672, ../sass/module/_user.scss */
 .pane-profile2 {
   border-top: 1px solid #efefef;
   /* Media queries */
 }
-/* line 671, ../sass/module/_user.scss */
+/* line 675, ../sass/module/_user.scss */
 .pane-profile2 .field {
   border-right: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
   border-left: 1px solid #efefef;
 }
-/* line 677, ../sass/module/_user.scss */
+/* line 681, ../sass/module/_user.scss */
 .pane-profile2 .field-label,
 .pane-profile2 .field-item {
   -moz-box-sizing: border-box;
@@ -10302,17 +10307,17 @@ div[class^="collection-bg"] {
   padding-bottom: 10px;
   padding-left: 10px;
 }
-/* line 688, ../sass/module/_user.scss */
+/* line 692, ../sass/module/_user.scss */
 .pane-profile2 .field-label {
   min-width: 200px;
 }
-/* line 692, ../sass/module/_user.scss */
+/* line 696, ../sass/module/_user.scss */
 .pane-profile2 .notice-sms {
   padding-left: .5em;
   font-style: italic;
 }
 @media only screen and (max-width: 480px) {
-  /* line 699, ../sass/module/_user.scss */
+  /* line 703, ../sass/module/_user.scss */
   .pane-profile2 .field-label {
     margin-bottom: -8px;
     padding-bottom: 0;
@@ -10321,14 +10326,14 @@ div[class^="collection-bg"] {
 
 /* User loans
    ========================================================================== */
-/* line 712, ../sass/module/_user.scss */
+/* line 716, ../sass/module/_user.scss */
 .pane-loans ul,
 .pane-reservations ul,
 .pane-bookmarks ul {
   margin: 0;
   padding: 0;
 }
-/* line 717, ../sass/module/_user.scss */
+/* line 721, ../sass/module/_user.scss */
 .pane-loans .form-checkbox,
 .pane-reservations .form-checkbox,
 .pane-bookmarks .form-checkbox {
@@ -10337,7 +10342,7 @@ div[class^="collection-bg"] {
   margin-bottom: 0;
   margin-left: 0;
 }
-/* line 724, ../sass/module/_user.scss */
+/* line 728, ../sass/module/_user.scss */
 .pane-loans .order-id,
 .pane-reservations .order-id,
 .pane-bookmarks .order-id {
@@ -10346,29 +10351,29 @@ div[class^="collection-bg"] {
   margin-left: 47px;
 }
 
-/* line 735, ../sass/module/_user.scss */
+/* line 739, ../sass/module/_user.scss */
 .pane-bookmarks .action-button {
   margin-top: 10px;
   margin-right: 0;
 }
 
-/* line 750, ../sass/module/_user.scss */
+/* line 754, ../sass/module/_user.scss */
 .page-user-scheduler #tabs {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 1210px) {
-  /* line 754, ../sass/module/_user.scss */
+  /* line 758, ../sass/module/_user.scss */
   .page-user-scheduler .pane-page-content {
     padding-right: 10px;
     padding-left: 10px;
   }
 }
 
-/* line 769, ../sass/module/_user.scss */
+/* line 773, ../sass/module/_user.scss */
 .page-user-roles #tabs {
   margin-bottom: 0;
 }
-/* line 773, ../sass/module/_user.scss */
+/* line 777, ../sass/module/_user.scss */
 .page-user-roles #role-delegation-roles-form {
   clear: both;
   overflow: hidden;
@@ -10376,7 +10381,7 @@ div[class^="collection-bg"] {
   background-color: #fff;
 }
 @media only screen and (max-width: 1210px) {
-  /* line 773, ../sass/module/_user.scss */
+  /* line 777, ../sass/module/_user.scss */
   .page-user-roles #role-delegation-roles-form {
     margin-right: 10px;
     margin-left: 10px;

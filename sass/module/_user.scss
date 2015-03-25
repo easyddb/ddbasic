@@ -464,6 +464,10 @@
   }
 }
 
+.pane-user-login .form-actions {
+  top: 29px;
+}
+
 .user {
   @extend %search-user-header;
 
