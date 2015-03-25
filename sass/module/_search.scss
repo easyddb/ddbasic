@@ -200,6 +200,10 @@ input#edit-search-block-form--2.spinner {
 
 header .search .form-actions {
   top: 29px;
+  
+  @include small-medium() {
+    top: 0;
+  }
 }
 
 .field-name-ding-entity-buttons {
