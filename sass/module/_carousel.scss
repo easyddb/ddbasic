@@ -161,16 +161,16 @@ $carousel-tab-color:                       $white;
       padding-left: 15px;
       position: absolute;
     }
-	
-	.rs-carousel-item-type {
+    
+    .rs-carousel-item-type {
       background-color: transparentize($black, .25);
-	  color: $white;
-	  line-height: 1.2em;
+      color: $white;
+      line-height: 1.2em;
       padding: 0px 4px;
-	  position: absolute;
-	  right: 5px;
+      position: absolute;
+      right: 5px;
       top: 5px;
-	  width: initial;
+      width: initial;
     }
   }
 
