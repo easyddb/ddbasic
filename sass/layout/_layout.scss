@@ -184,6 +184,11 @@ body {
     @include zen-clear();
     @include zen-grid-item(12, 1);
   }
+  
+  .col12 {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
 
   .layout-wrapper {
     @include zen-clear();
@@ -195,11 +200,53 @@ body {
     padding-left: 10px;
   }
 
-  .secondary-content {
+  .col3 {
+    @include zen-grid-item(3, 1);
+  }
+  
+  .col3.right {
+    @include zen-grid-item(3, 1, right);
+  }
+  
+  .col4 {
+    @include zen-grid-item(4, 1);
+  }
+  
+  .col4.right {
+    @include zen-grid-item(4, 1, right);
+  }
+  
+  .col6 {
+    @include zen-grid-item(6, 1);
+  }
+  
+  .col6.right {
+    @include zen-grid-item(6, 1, right);
+  }
+  
+  .col7 {
+    @include zen-grid-item(7, 1);
+  }
+  
+  .col7.right {
+    @include zen-grid-item(7, 1, right);
+  }
+  
+  .secondary-content,
+  .col8 {
     @include zen-grid-item(8, 1);
   }
+  
+  .col9 {
+    @include zen-grid-item(9, 1);
+  }
+  
+  .col9.right {
+    @include zen-grid-item(9, 1, right);
+  }
 
-  .secondary-content-right {
+  .secondary-content-right,
+  .col8.right {
     @include zen-grid-item(8, 1, right);
   }
 
@@ -207,37 +254,24 @@ body {
     @include zen-grid-item(4, 1, right);
   }
 
-  .tertiary-content-left {
-    @include zen-grid-item(4, 1);
-  }
-
-  .half-page-content {
-    @include zen-grid-item(6, 1);
-  }
-
-  .quarter-content {
-    @include zen-grid-item(6, 1, right);
-  }
-
-  .quarter-content-left {
-    @include zen-grid-item(6, 1);
-  }
-
-  .inner-front-wrapper {
-    @include zen-grid-item(6, 1, right);
-  }
-
   /* Media queries */
   @include small-medium() {
     .primary-content,
     .secondary-content,
     .tertiary-content,
-    .quarter-content,
-    .half-page-content,
-    .tertiary-content-left,
-    .secondary-content-right,
-    .quarter-content-left,
-    .inner-front-wrapper {
+    .inner-front-wrapper,
+    .layout-wrapper,
+    .col12,
+    .col9,
+	.col9.right,
+    .col8,
+    .col8.right,
+    .col6,
+    .col6.right,
+    .col4,
+    .col4.right,
+    .col3,
+    .col3.right {
       @include zen-grid-item(12, 1);
       @include zen-clear();
     }
