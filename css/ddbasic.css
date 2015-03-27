@@ -7959,37 +7959,48 @@ div[class^="collection-bg"] {
   padding-left: 15px;
   position: absolute;
 }
+/* line 165, ../sass/module/_carousel.scss */
+.rs-carousel-mask li .rs-carousel-item-type {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  line-height: 1.2em;
+  padding: 0px 4px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: initial;
+}
 @media only screen and (max-width: 480px) {
-  /* line 167, ../sass/module/_carousel.scss */
+  /* line 178, ../sass/module/_carousel.scss */
   .rs-carousel-mask li {
     width: 67.5px;
   }
-  /* line 170, ../sass/module/_carousel.scss */
+  /* line 181, ../sass/module/_carousel.scss */
   .rs-carousel-mask li a {
     max-height: 125px;
     width: 67.5px;
   }
-  /* line 175, ../sass/module/_carousel.scss */
+  /* line 186, ../sass/module/_carousel.scss */
   .rs-carousel-mask li .rs-carousel-item-title {
     display: none;
   }
 }
 
-/* line 182, ../sass/module/_carousel.scss */
+/* line 193, ../sass/module/_carousel.scss */
 .rs-carousel-runner {
   padding-left: 0;
 }
 
 /* Carousel tabs
    ========================================================================== */
-/* line 192, ../sass/module/_carousel.scss */
+/* line 203, ../sass/module/_carousel.scss */
 .rs-carousel-tabs .rs-carousel-list-tabs {
   margin: 0;
   padding: 0;
   position: relative;
   text-align: center;
 }
-/* line 201, ../sass/module/_carousel.scss */
+/* line 212, ../sass/module/_carousel.scss */
 .rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -7998,17 +8009,17 @@ div[class^="collection-bg"] {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 209, ../sass/module/_carousel.scss */
+/* line 220, ../sass/module/_carousel.scss */
 .rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a:hover {
   background-color: #000;
   text-decoration: none;
 }
-/* line 216, ../sass/module/_carousel.scss */
+/* line 227, ../sass/module/_carousel.scss */
 .rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a {
   font-weight: 600;
   background-color: #000;
 }
-/* line 221, ../sass/module/_carousel.scss */
+/* line 232, ../sass/module/_carousel.scss */
 .rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a:before {
   border: 10px solid transparent;
   content: "";
@@ -8020,16 +8031,16 @@ div[class^="collection-bg"] {
   margin-left: -10px;
   left: 50%;
 }
-/* line 227, ../sass/module/_carousel.scss */
+/* line 238, ../sass/module/_carousel.scss */
 .rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item:before {
   display: none;
 }
-/* line 233, ../sass/module/_carousel.scss */
+/* line 244, ../sass/module/_carousel.scss */
 .rs-carousel-tabs .rs-carousel-select-tabs {
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 191, ../sass/module/_carousel.scss */
+  /* line 202, ../sass/module/_carousel.scss */
   .rs-carousel-tabs {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -8038,16 +8049,16 @@ div[class^="collection-bg"] {
     padding-bottom: 20px;
     padding-left: 20px;
   }
-  /* line 244, ../sass/module/_carousel.scss */
+  /* line 255, ../sass/module/_carousel.scss */
   .rs-carousel-tabs .rs-carousel-list-tabs {
     display: none;
   }
-  /* line 248, ../sass/module/_carousel.scss */
+  /* line 259, ../sass/module/_carousel.scss */
   .rs-carousel-tabs .rs-carousel-select-tabs {
     display: block;
     width: 100%;
   }
-  /* line 252, ../sass/module/_carousel.scss */
+  /* line 263, ../sass/module/_carousel.scss */
   .rs-carousel-tabs .rs-carousel-select-tabs .rs-carousel-item {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -8058,7 +8069,7 @@ div[class^="collection-bg"] {
     padding-left: 20px;
     text-align: left;
   }
-  /* line 261, ../sass/module/_carousel.scss */
+  /* line 272, ../sass/module/_carousel.scss */
   .rs-carousel-tabs .rs-carousel-select-tabs .rs-carousel-item:before {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -8076,11 +8087,11 @@ div[class^="collection-bg"] {
     right: 0;
     z-index: 99;
   }
-  /* line 278, ../sass/module/_carousel.scss */
+  /* line 289, ../sass/module/_carousel.scss */
   .rs-carousel-tabs .rs-carousel-select-tabs .rs-carousel-item.js-tab-hidden {
     display: none;
   }
-  /* line 282, ../sass/module/_carousel.scss */
+  /* line 293, ../sass/module/_carousel.scss */
   .rs-carousel-tabs .rs-carousel-select-tabs .rs-carousel-item.js-tab-visible {
     display: block;
   }
