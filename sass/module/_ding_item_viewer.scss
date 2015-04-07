@@ -1,6 +1,10 @@
 .ding-item-viewer {
   margin: 10px 0;
 
+  .ui-tabs-nav {
+    background: darken($footer-background-color, 5%);
+  }
+
   // Items container
 
   .browsebar-inner {
@@ -8,8 +12,11 @@
   }
 
   // Items
+  
   .browsebar-item {
+    background: $white;
     line-height: 1.2;
+    height: 260px;
 
     // Title
 
@@ -18,7 +25,7 @@
       font-size: 100%;
       line-height: 1.1;
     }
-
+    
     img {
       position: relative;
       float: left;
@@ -90,22 +97,38 @@
   }
   
   // Header
-  .view-mode-ding-item-viewer-small h2 {
-    clear: both;
-    max-height: 35px;
-    overflow: hidden;
-    position: relative;
-  }
+  .view-mode-ding-item-viewer-small {
+    h2 {
+      clear: both;
+      height: 35px;
+      max-height: 35px;
+      overflow: hidden;
+      position: relative;
+    }
   
-  .view-mode-ding-item-viewer-small h2:before {
-    background-image: url('../images/grad-transp.png');
-    background-repeat: repeat-x;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 11px;
-    position: absolute;
-    width: 120px;
+    h2:before {
+      background-image: url('../images/grad-transp.png');
+      background-repeat: repeat-x;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 11px;
+      position: absolute;
+      width: 120px;
+    }
+    
+    .image-wrapper {
+      background: darken($footer-background-color, 5%);
+      height: 170px;
+      margin-bottom: 10px;
+      max-height: 170px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .field-name-ting-author {
+      height: 38px;
+      overflow: hidden;
+    }
   }
-  
 }
