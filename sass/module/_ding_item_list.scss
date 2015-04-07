@@ -21,10 +21,10 @@
   }
 
   .reserve-button {
-    margin-top: 10px;
+    @extend %button-action;
+	margin-top: 10px;
     font-size: 100%;
   }
-
   .item-loan {
 
     &,
