@@ -200,55 +200,30 @@ body {
     padding-left: 10px;
   }
 
-  .col3 {
-    @include zen-grid-item(3, 1);
-  }
+
+  .col3       { @include zen-grid-item(3, 1); }
+  .col3.right { @include zen-grid-item(3, 1, right); }
+  .col3.pre3  { @include zen-grid-item(3, 4); }
+  .col3.pre6  { @include zen-grid-item(3, 7); }
   
-  .col3.right {
-    @include zen-grid-item(3, 1, right);
-  }
+  .col4       { @include zen-grid-item(4, 1); }
+  .col4.right { @include zen-grid-item(4, 1, right); }
+  .col4.pre4  { @include zen-grid-item(4, 5); }
   
-  .col4 {
-    @include zen-grid-item(4, 1);
-  }
+  .col6       { @include zen-grid-item(6, 1); }
+  .col6.right { @include zen-grid-item(6, 1, right); }
+  .col6.pre3  { @include zen-grid-item(6, 4); }
   
-  .col4.right {
-    @include zen-grid-item(4, 1, right);
-  }
-  
-  .col6 {
-    @include zen-grid-item(6, 1);
-  }
-  
-  .col6.right {
-    @include zen-grid-item(6, 1, right);
-  }
-  
-  .col7 {
-    @include zen-grid-item(7, 1);
-  }
-  
-  .col7.right {
-    @include zen-grid-item(7, 1, right);
-  }
+  .col7       { @include zen-grid-item(7, 1); }
+  .col7.right { @include zen-grid-item(7, 1, right); }
   
   .secondary-content,
-  .col8 {
-    @include zen-grid-item(8, 1);
-  }
-  
-  .col9 {
-    @include zen-grid-item(9, 1);
-  }
-  
-  .col9.right {
-    @include zen-grid-item(9, 1, right);
-  }
-
+  .col8       { @include zen-grid-item(8, 1); }
   .secondary-content-right,
-  .col8.right {
-    @include zen-grid-item(8, 1, right);
-  }
+  .col8.right { @include zen-grid-item(8, 1, right); }
+
+  .col9       { @include zen-grid-item(9, 1); }
+  .col9.right { @include zen-grid-item(9, 1, right); }
 
   .tertiary-content {
     @include zen-grid-item(4, 1, right);
