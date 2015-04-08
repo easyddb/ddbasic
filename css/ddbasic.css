@@ -4184,12 +4184,12 @@ body {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -4819,12 +4819,12 @@ body {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:before, .attachments-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:after {
   clear: both;
 }
@@ -5667,12 +5667,12 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:before, .ting-reference-reverse-list .list-item:before, .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   clear: both;
 }
@@ -8014,12 +8014,12 @@ div[class^="collection-bg"] {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:before, .rs-carousel-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:after {
   clear: both;
 }
@@ -11433,12 +11433,12 @@ div[class^="collection-bg"] {
   padding-bottom: 20px;
   padding-left: 10px;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:before, .group-blocks--wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:after {
   clear: both;
 }
@@ -11767,12 +11767,12 @@ div[class^="collection-bg"] {
   margin-bottom: 0;
   background-color: #fff;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:before, .search-field-in-content .collapsible:before, .search .collapsible:after, .search-field-in-content .collapsible:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:after, .search-field-in-content .collapsible:after {
   clear: both;
 }
@@ -12250,65 +12250,74 @@ div[class^="collection-bg"] {
 .ding-item-viewer .browsebar-item h2 {
   font-weight: 700;
   font-size: 100%;
-  line-height: 1.1;
 }
-/* line 29, ../sass/module/_ding_item_viewer.scss */
+/* line 28, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item img {
   position: relative;
   float: left;
   overflow: hidden;
   width: 120px;
+  max-height: 193px;
 }
 /* line 36, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active {
   max-height: 410px;
   height: auto;
 }
-/* line 42, ../sass/module/_ding_item_viewer.scss */
+/* line 41, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active h2 {
   font-size: 80%;
 }
-/* line 45, ../sass/module/_ding_item_viewer.scss */
+/* line 44, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active h2 a {
   font-weight: 700;
 }
-/* line 52, ../sass/module/_ding_item_viewer.scss */
+/* line 50, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active img {
   margin-right: 10px;
   width: 140px;
 }
-/* line 59, ../sass/module/_ding_item_viewer.scss */
+/* line 56, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .subject {
   display: block;
   float: left;
   margin: 3px 3px 3px 0;
   white-space: nowrap;
 }
-/* line 66, ../sass/module/_ding_item_viewer.scss */
+/* line 63, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .subjects {
   max-height: 55px;
   overflow: hidden;
 }
-/* line 70, ../sass/module/_ding_item_viewer.scss */
+/* line 67, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .subjects strong {
   display: block;
   float: left;
   line-height: 2em;
   margin-right: 5px;
 }
-/* line 79, ../sass/module/_ding_item_viewer.scss */
+/* line 76, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .field-type-ding-entity-buttons a {
   margin-left: 5px;
 }
-/* line 90, ../sass/module/_ding_item_viewer.scss */
+/* line 81, ../sass/module/_ding_item_viewer.scss */
+.ding-item-viewer .browsebar-item.active .field-type-ting-author {
+  font-weight: bold;
+}
+/* line 86, ../sass/module/_ding_item_viewer.scss */
+.ding-item-viewer .browsebar-item.active .field-type-ting-abstract {
+  max-height: 117px;
+  overflow: hidden;
+}
+/* line 99, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .ui-tabs-nav .active {
   background-color: #bcbcbc;
 }
-/* line 93, ../sass/module/_ding_item_viewer.scss */
+/* line 102, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .ui-tabs-nav .active a {
   background: none;
 }
-/* line 101, ../sass/module/_ding_item_viewer.scss */
+/* line 110, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .view-mode-ding-item-viewer-small h2 {
   clear: both;
   height: 35px;
@@ -12316,18 +12325,7 @@ div[class^="collection-bg"] {
   overflow: hidden;
   position: relative;
 }
-/* line 109, ../sass/module/_ding_item_viewer.scss */
-.ding-item-viewer .view-mode-ding-item-viewer-small h2:before {
-  background-image: url("../images/grad-transp.png");
-  background-repeat: repeat-x;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 11px;
-  position: absolute;
-  width: 120px;
-}
-/* line 120, ../sass/module/_ding_item_viewer.scss */
+/* line 118, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .view-mode-ding-item-viewer-small .image-wrapper {
   background: #191919;
   height: 170px;
@@ -12336,10 +12334,11 @@ div[class^="collection-bg"] {
   overflow: hidden;
   width: 100%;
 }
-/* line 129, ../sass/module/_ding_item_viewer.scss */
+/* line 127, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .view-mode-ding-item-viewer-small .field-name-ting-author {
   height: 38px;
   overflow: hidden;
+  font-size: 80%;
 }
 
 /* line 1, ../sass/module/_ding_item_list.scss */
