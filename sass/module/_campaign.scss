@@ -25,6 +25,10 @@
     padding: 10px;
   }
 
+  .ding-campaign.ding-campaign--content > p {
+    margin-top: 0;
+  }
+
   .ding-campaign.ding-campaign--image {
     img {
       width: 100%;
@@ -39,10 +43,6 @@
 
   .ding-campaign.ding-campaign--content {
     padding: 0;
-  }
-
-  .ding-campaign.ding-campaign--content > p {
-    margin-top: 0;
   }
 }
 
