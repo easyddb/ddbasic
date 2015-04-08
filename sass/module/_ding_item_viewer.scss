@@ -23,7 +23,6 @@
     h2 {
       font-weight: 700;
       font-size: 100%;
-      line-height: 1.1;
     }
     
     img {
@@ -31,6 +30,7 @@
       float: left;
       overflow: hidden;
       width: 120px;
+      max-height: 193px;
     }
 
     &.active {
@@ -38,7 +38,6 @@
       height: auto;
 
       // Title
-
       h2 {
         font-size: 80%;
 
@@ -48,14 +47,12 @@
       }
 
       // Cover
-
       img {
         margin-right: 10px;
         width: 140px;
       }
 
       // Subject
-
       .subject {
         display: block;
         float: left;
@@ -74,11 +71,23 @@
           margin-right: 5px;
         }
       }
-      // Entity buttons
 
+      // Entity buttons
       .field-type-ding-entity-buttons a {
         margin-left: 5px;
       }
+
+      // Author
+      .field-type-ting-author {
+        font-weight: bold;
+      }
+
+      // Abstract
+      .field-type-ting-abstract {
+        max-height: 117px;
+        overflow: hidden;
+      }
+
     }
   }
 
@@ -106,17 +115,6 @@
       position: relative;
     }
   
-    h2:before {
-      background-image: url('../images/grad-transp.png');
-      background-repeat: repeat-x;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 11px;
-      position: absolute;
-      width: 120px;
-    }
-    
     .image-wrapper {
       background: darken($footer-background-color, 5%);
       height: 170px;
@@ -129,6 +127,7 @@
     .field-name-ting-author {
       height: 38px;
       overflow: hidden;
+      font-size: 80%;
     }
   }
 }
