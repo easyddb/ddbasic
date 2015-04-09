@@ -1,39 +1,85 @@
 // Variables
 //==========================================================================
 
-$label-color: #53514b;
 $label-bg: url('../images/p.png');
 
 
 // All nodelists
 //==========================================================================
 
-.ding_nodelist {
-  @include box-sizing(border-box);
-  @include bshadow();
-  overflow: hidden;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: $white;
+.col3 .ding_nodelist-taxonomy .item .item-list-image,
+.col4 .ding_nodelist-taxonomy .item .item-list-image {
+  display: none;
 }
 
+.ding_nodelist {
+  overflow: hidden;
+  margin-bottom: 20px;
 
-// Ding nodelist carousel
-//==========================================================================
+  .node .item-date,
+  .node .library,
+  .node .item-price,
+  .data .event-timestamp,
+  .data .event-details,
+  .item-details .item-date,
+  .item-details .item-library,
+  .item-details .item-price {
+    font-size: 80%;
+  }
 
-.ding_nodelist-carousel {
-  position: relative;
-  height: 436px;
+  .node > p {
+    margin: 10px 0;
+  }
 
-  // Item
+  .node-title {
+    text-decoration: underline
+  }
 
-  .item {
-    position: relative;
-    height: 366px;
+  .more {
+    display: none;
+  }
+
+  // Event timestamp
+  .event-time {
+    @include bshadow();
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 49;
+    padding: 0 0 5px;
+    width: 60px;
+    background-color: $white;
+    text-align: center;
+
+    // Event day 
+    .event-day {
+      background: $link-color;
+      color: $white;
+      margin-bottom: 5px;
+      font-size: 80%;
+      line-height: 1.4;
+
+      a {
+        color: $white;
+      }
+      
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+    // Day
+    .event-date,
+    .event-month {
+      line-height: 1;
+    }
+
+    .event-date  { font-size: 120%; }
+    .event-month { font-size:  80%; }
+ 
   }
 
   // Event label
-
   .event-label {
     position: absolute;
     top: 10px;
@@ -44,86 +90,83 @@ $label-bg: url('../images/p.png');
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .5px;
-    font-size: 10px;
-    line-height: 18px;
   }
 
-  // Event date
+  // Category
 
-  .event-date {
-    position: absolute;
-    top: 40px;
-    left: 10px;
-    z-index: 49;
-    padding: 8px 0 10px;
-    width: 60px;
-    border: 5px solid $white;
+  .label {
+    margin: 10px 5px;
+  }
+  
+  .label-wrapper {
+    margin: 10px 0;
+  }
+  
+  // Node info wrapper
+
+  .node,
+  &.ding_nodelist-horizontal_accordion .data {
+    @include min-height(40px);
+    overflow: hidden;
     background-image: $label-bg;
     color: $white;
-    text-align: center;
-    font-size: 20px;
+    padding: 10px !important;
+  }
+
+  .node {
+  }
+
+  .more {
+
+    // More link
+
+    a {
+      color: $white;
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      font-size: 120%;
+    }
+  }
+  
+  // Text wrapper
+
+  .article-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 49;
+    width: 100%;
+  }
+}
+
+// Ding nodelist carousel
+//==========================================================================
+
+.ding_nodelist-carousel {
+  position: relative;
+  height: 391px;
+
+  // Item
+
+  .item {
+    position: relative;
+    height: 391px;
   }
 
   h2 {
     @include text-shadow(1px 1px 13px $black);
     position: absolute;
-    top: 15px;
-    left: 20px;
+    top: 40px;
+    right: 10px;
     z-index: 49;
-    margin: 0 20px 0 0;
     color: $white;
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  // More button
-
-  .more {
-    position: absolute;
-    padding: 0 7px 9px;
-    width: 272px;
-    background: $white;
-    font-size: 11px;
-
-    a {
-      text-decoration: none;
-    }
-  }
-
-  // Description section
-
-  .article-info {
-    position: absolute;
-    bottom: 67px;
-    left: 10px;
-    z-index: 48;
-
-    .node {
-      @include min-height(32px);
-      overflow: hidden;
-      padding: 9px 7px;
-      width: 272px;
-      background-color: $white;
-      color: #505050;
-      font-size: 11px;
-      line-height: 1.3;
-
-      p {
-
-        &:first-of-type {
-          margin-top: 0;
-        }
-
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-    }
   }
 
   // Next / Previous buttons
 
   .next-prev {
+    display: none;
     position: relative;
     top: 10px;
     left: 0;
@@ -155,7 +198,7 @@ $label-bg: url('../images/p.png');
 
       &:hover {
         @include border-radius(50px);
-        background-color: $label-color;
+        background-color: $link-color;
         text-decoration: none;
 
         &:after {
@@ -167,11 +210,10 @@ $label-bg: url('../images/p.png');
         @include inline-block;
         width: 25px;
         height: 25px;
-        color: $label-color;
+        line-height: 20px;
+        color: $link-color;
         text-align: center;
-        font-size: 12px;
         font-family: 'FontAwesome';
-        line-height: 25px;
       }
     }
   }
@@ -180,44 +222,32 @@ $label-bg: url('../images/p.png');
 
   .pagination {
     right: 10px;
-    bottom: 20px;
+    top: 10px;
+    position: absolute;
 
     a {
       @include border-radius(50px);
+      background-color: $gray;
       display: block;
       float: left;
       width: 25px;
       height: 25px;
-      color: $black;
+      color: $white;
       text-align: center;
       text-decoration: none;
-      font-size: 12px;
-      line-height: 25px;
+      margin-left: 5px;
     }
 
     // Active
 
     .selected {
-      background-color: $label-color;
+      background-color: $link-color;
       color: $white;
     }
   }
 
-  // Category
-
-  .category a {
-    padding: 0 2px;
-    background-color: #53514b;
-    color: $white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .2px;
-    font-size: 10px;
-    line-height: 1;
-  }
-
   h3 {
-    margin: 12px 0;
+    margin: 3px 0;
     padding: 0;
     text-align: left;
 
@@ -225,8 +255,6 @@ $label-bg: url('../images/p.png');
       @include text-shadow(1px 1px 13px $black);
       margin-right: 10px;
       color: $white;
-      font-size: 30px;
-      line-height: 1;
     }
   }
 
@@ -236,6 +264,20 @@ $label-bg: url('../images/p.png');
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+
   }
 
   .field-type-image {
@@ -244,7 +286,7 @@ $label-bg: url('../images/p.png');
 
   .article_image img,
   .event-image img {
-    display: block;
+    display: none;
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -261,23 +303,21 @@ $label-bg: url('../images/p.png');
 //==========================================================================
 
 .ding_nodelist-horizontal_accordion {
+  background: $black;
   overflow: hidden;
-  padding: 0 10px 0 0;
 
   // Item
 
   .item {
-    @include bshadow();
     position: relative;
-    background-color: $white;
   }
 
   .item_content {
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 0;
-    bottom: 10px;
-    left: 10px;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
   }
 
@@ -286,11 +326,11 @@ $label-bg: url('../images/p.png');
   .expand {
     @include border-radius(50px);
     position: absolute;
-    bottom: 62px;
+    bottom: 75px;
     left: 10px;
     z-index: 10;
     display: block;
-    background-color: $label-color;
+    background-color: $link-color;
     color: $white;
     cursor: pointer;
 
@@ -298,12 +338,11 @@ $label-bg: url('../images/p.png');
       @include inline-block;
       width: 30px;
       height: 30px;
+      line-height: 32px;
       color: $white;
       content: '\f054';
       text-align: center;
-      font-size: 12px;
       font-family: 'FontAwesome';
-      line-height: 30px;
     }
 
     a {
@@ -325,50 +364,6 @@ $label-bg: url('../images/p.png');
     .image img {
       @include opacity(1);
     }
-  }
-
-  // Label
-
-  .label {
-    @include border-radius(0);
-    position: relative;
-    z-index: 10;
-    float: left;
-    margin: 10px;
-    padding: 1px;
-    width: 68px;
-    height: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    font-size: 60%;
-    line-height: 18px;
-
-    &,
-    &:hover {
-      background-image: $label-bg;
-      color: $white;
-    }
-  }
-
-  // Date
-
-  .event-date {
-    position: relative;
-    z-index: 10;
-    clear: left;
-    margin-left: 10px;
-    padding: 5px 0;
-    width: 60px;
-    border: 5px solid $white;
-    background-image: $label-bg;
-    color: $white;
-    text-align: center;
-    font-size: 150%;
-  }
-
-  .event-day {
-    line-height: 1;
   }
 
   // Image
@@ -420,12 +415,16 @@ $label-bg: url('../images/p.png');
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
-    background-color: $white;
+    padding: 10px;
+    color: $white;
 
     span,
     .event-fee {
       margin-right: 5px;
+    }
+    
+    a {
+      color: $white;
     }
   }
 
@@ -433,17 +432,15 @@ $label-bg: url('../images/p.png');
 
   .caption {
     overflow: hidden;
-    height: 30px;
-    font-size: 70%;
 
     h3 {
+      max-height: 30px;
       @include text-shadow(none);
       margin: 5px 0;
 
       // Media till-medium
 
       @include till-medium() {
-        font-size: 120%;
       }
     }
   }
@@ -452,7 +449,7 @@ $label-bg: url('../images/p.png');
 
   .library {
     overflow: hidden;
-    font-size: 80%;
+    max-height: 24px;
 
     > div {
       float: left;
@@ -469,9 +466,24 @@ $label-bg: url('../images/p.png');
 
   // Image
 
-  img {
-    width: 100%;
-    height: auto;
+  .article_image,
+  .event-image {
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      display: none;
+    }
   }
 
   // Item
@@ -486,43 +498,10 @@ $label-bg: url('../images/p.png');
       height: 381px;
     }
 
-    // Label
-
-    .event-label {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 49;
-      margin: 0 0 12px;
-      padding: 1px;
-      width: 68px;
-      background-color: $label-color;
-      color: $white;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      font-size: 10px;
-      line-height: 18px;
-    }
-
     // Date
 
-    .event-date {
-      position: absolute;
-      top: 40px;
-      left: 10px;
-      z-index: 49;
-      padding: 8px 0 10px;
-      width: 60px;
-      border: 5px solid $white;
-      background-image: $label-bg;
-      color: $white;
-      text-align: center;
-      font-size: 20px;
-    }
-
     .event-label,
-    .event-date {
+    .event-time {
 
       // Media small
 
@@ -531,76 +510,13 @@ $label-bg: url('../images/p.png');
       }
     }
 
-    // Day
-
-    .event-day {
-      font-size: 24px;
-      line-height: 24px;
-    }
-
-    // Month
-
-    .event-month {
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    // Node info wrapper
-
-    .node {
-      @include min-height(40px);
-      overflow: hidden;
-      padding: 10px;
-      background-image: $label-bg;
-      color: $white;
-      font-size: 11px;
-      line-height: 1.3;
-    }
-
-    .more {
-      background-color: $white;
-
-      // More link
-
-      a {
-        display: block;
-        padding: 20px 0;
-        text-decoration: none;
-        font-size: 18px;
-      }
-    }
-  }
-
-  // Text wrapper
-
-  .article-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 49;
-    width: 100%;
-  }
-
-  // Category
-
-  .category {
-    padding: 0 0 10px 10px;
-
-    a {
-      padding: 0 2px;
-      background-color: $label-color;
-      color: $white;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      font-size: 10px;
-    }
+   
   }
 
   // Title
 
   h3 {
-    margin: 0;
+    margin: 0 0 10px 0;
 
     a {
       display: block;
@@ -609,7 +525,6 @@ $label-bg: url('../images/p.png');
       // Media from-medium
 
       @include from-medium() {
-        font-size: 48px;
       }
     }
   }
@@ -621,8 +536,37 @@ $label-bg: url('../images/p.png');
 
 .ding_nodelist-slider {
   position: relative;
+  background-color: $white;
+  padding-top: 10px;
+
+  .item {
+    min-height: 122px;
+  }
 
   // Title
+
+  .node {
+    background: none;
+    color: $black;
+    padding: 0 !important;
+  }
+
+  .item-body {
+    margin-top: 10px;
+  }
+  
+  .more a {
+    color: $black;
+  }
+  
+  .label {
+    margin-left: 0;
+  }
+ 
+  .category {
+    float: right;
+    margin-top: 4px;
+  }
 
   .legend {
 
@@ -645,7 +589,6 @@ $label-bg: url('../images/p.png');
       // Media from-medium
 
       @include from-medium() {
-        font-size: 300%;
       }
     }
 
@@ -672,17 +615,21 @@ $label-bg: url('../images/p.png');
     }
   }
 
+  // Item
+
+  .item {
+    margin-bottom: 10px;
+  }
+
   // Date
 
   .date-created {
-    font-size: 80%;
   }
 
   // Node title
 
   h3 {
     margin-bottom: 5px;
-    text-transform: uppercase;
   }
 
   // Node text
@@ -698,13 +645,12 @@ $label-bg: url('../images/p.png');
     margin-bottom: 5px;
 
     a {
-      font-size: 80%;
 
       // Media till-medium
 
       @include till-medium() {
         @include inline-block;
-        padding: 5px 15px;
+        padding: 5px 10px;
       }
     }
   }
@@ -728,8 +674,12 @@ $label-bg: url('../images/p.png');
       display: block;
       width: 24px;
       height: 24px;
-      background-color: $label-color;
+      background-color: $gray;
       color: $white;
+
+      &:hover {
+        background-color: $link-color;
+      }
 
       &:after {
         @include inline-block;
@@ -738,9 +688,7 @@ $label-bg: url('../images/p.png');
         color: $white;
         content: '\f054';
         text-align: center;
-        font-size: 12px;
         font-family: 'FontAwesome';
-        line-height: 24px;
       }
     }
 
@@ -765,13 +713,8 @@ $label-bg: url('../images/p.png');
 // Nodelist vertical accordion
 //==========================================================================
 
-.ding_nodelist-vertical_accordion {
-  border-bottom: 10px solid $white;
-}
-
 .va-wrapper {
   position: relative;
-  padding: 10px 0;
 
   .ding_nodelist-items .news {
     background-color: $white;
@@ -786,7 +729,6 @@ $label-bg: url('../images/p.png');
     box-sizing: border-box;
     width: 100%;
     height: 500px;
-    border-top: 10px solid $white;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -798,46 +740,30 @@ $label-bg: url('../images/p.png');
 
   .va-content {
     position: absolute;
-    bottom: 30px;
-    left: 10px;
+    bottom: 0;
+    left: 0;
     z-index: 2;
     visibility: hidden;
-    padding: 10px;
     background-image: $label-bg;
+    width: 100%;
 
     &,
     h3,
     a {
       color: $white;
     }
+    
+    .label {
+      margin-left: 0;
+    }
+    
+    .inner-wrapper {
+      margin: 10px;
+    }
   }
 
   .active .va-content {
     visibility: visible;
-  }
-
-  .event-time,
-  .field-name-group-audience,
-  .event-fee {
-    float: left;
-    margin: 1px 4px 0 0;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    font-size: 10px;
-  }
-
-  .event-date {
-    position: absolute;
-    top: 44px;
-    left: 10px;
-    z-index: 49;
-    padding: 8px 0 10px;
-    width: 60px;
-    border: 5px solid $white;
-    background-image: $label-bg;
-    color: $white;
-    text-align: center;
-    font-size: 20px;
   }
 
   .va-title {
@@ -860,51 +786,52 @@ $label-bg: url('../images/p.png');
     }
   }
 
-  .event-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 49;
-    margin: 0 0 12px;
-    padding: 1px;
-    width: 68px;
-    background-image: $label-bg;
-    color: $white;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    font-size: 10px;
-  }
 }
-
-
 
 // Taxonomy nodelist
 //==========================================================================
 
+.attachments-3-3 .ding_nodelist-taxonomy .item .item-list-image,
+.tertiary-content .ding_nodelist-taxonomy .item .item-list-image,
+.attachments-4-4 .ding_nodelist-taxonomy .item .item-list-image {
+  display: none;
+}
+
 .ding_nodelist-taxonomy {
+  .item:nth-child(odd) {
+    background-color: $list-item-background-color-odd;
+  }
 
   .item {
+    background-color: $list-item-background-color-even;
+    margin-bottom: 10px;
     overflow: hidden;
-    padding: 10px 0;
-    border-top: 1px solid #ddd;
+    padding: 20px;
 
     &:first-of-type {
       border-top: 0;
     }
 
     .item-title {
-      font-size: $base-font-size;
+      font-size: $font-size-large;
 
       a {
         font-weight: 700;
       }
+    }
+    
+    .item-date {
+      color: $gray-darker;
     }
 
     .item-author {
       display: none;
     }
 
+    .label {
+      margin-left: 0;
+    }
+    
     .item-body {
       margin-top: 10px;
     }
@@ -913,7 +840,6 @@ $label-bg: url('../images/p.png');
 
     @include from-medium() {
       display: table;
-      width: 100%;
 
       .item-details,
       .item-list-image {

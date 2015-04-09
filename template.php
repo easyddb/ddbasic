@@ -157,6 +157,18 @@ function ddbasic_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
+/**
+ * Implements hook_node_view_alter().
+ *
+ * Add opening hours toggle to opening hours field if present.
+ */
+function ddbasic_node_view_alter(&$build) {
+  if (!empty($build['opening_hours_week'])) {
+    $build['opening_hours_week'][0]['#prefix'] = '<div class="libraries-opening-hours js-opening-hours-toggle-element">';
+    $build['opening_hours_week'][0]['#suffix'] = '</div>';
+  }
+}
+
 
 /**
  * Implements hook_preprocess_panels_pane().
@@ -307,15 +319,6 @@ function ddbasic_preprocess_user_picture(&$variables) {
  * Override or insert variables into the node templates.
  */
 function ddbasic_preprocess_node(&$variables, $hook) {
-  // Opening hours on library list. but not on the search page.
-  $path = drupal_get_path_alias();
-  if (!(strpos($path, 'search', 0) === 0)) {
-    $hooks = theme_get_registry(FALSE);
-    if (isset($hooks['opening_hours_week']) && $variables['type'] == 'ding_library') {
-      $variables['opening_hours'] = theme('opening_hours_week', array('node' => $variables['node']));
-    }
-  }
-
   // Add ddbasic_byline to variables.
   $variables['ddbasic_byline'] = t('By: ');
 
@@ -957,6 +960,7 @@ function ddbasic_preprocess_ting_object(&$vars) {
               'left_column' => $content['group_ting_object_left_column'],
               'right_column' => $content['group_ting_object_right_column'],
             ),
+            '#weight' => $content['group_ting_object_left_column']['#weight'],
           );
 
           unset($content['group_ting_object_left_column']);
@@ -972,6 +976,7 @@ function ddbasic_preprocess_ting_object(&$vars) {
               '#suffix' => '</div>',
               'details' => $content['group_material_details'],
             ),
+            '#weight' => $content['group_material_details']['#weight'],
           );
           unset($content['group_material_details']);
         }
@@ -985,6 +990,7 @@ function ddbasic_preprocess_ting_object(&$vars) {
               '#suffix' => '</div>',
               'details' => $content['group_holdings_available'],
             ),
+            '#weight' => $content['group_holdings_available']['#weight'],
           );
           unset($content['group_holdings_available']);
         }
@@ -998,6 +1004,7 @@ function ddbasic_preprocess_ting_object(&$vars) {
               '#suffix' => '</div>',
               'details' => $content['group_periodical_issues'],
             ),
+            '#weight' => $content['group_periodical_issues']['#weight'],
           );
           unset($content['group_periodical_issues']);
         }
@@ -1011,6 +1018,7 @@ function ddbasic_preprocess_ting_object(&$vars) {
               '#suffix' => '</div>',
               'details' => $content['group_on_this_site'],
             ),
+            '#weight' => $content['group_on_this_site']['#weight'],
           );
           unset($content['group_on_this_site']);
         }
@@ -1020,6 +1028,7 @@ function ddbasic_preprocess_ting_object(&$vars) {
             'content' => array(
               'details' => $content['ting_relations'],
             ),
+            '#weight' => $content['ting_relations']['#weight'],
           );
           unset($content['ting_relations']);
         }
