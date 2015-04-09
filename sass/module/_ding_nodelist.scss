@@ -18,7 +18,7 @@ $label-bg: url('../images/p.png');
   margin: 10px 0;
   background-color: $white;
   
-  .event-library {
+  .event-day {
     background: $link-color;
     color: $white;
     font-size: 13px;
@@ -118,7 +118,7 @@ $label-bg: url('../images/p.png');
 
   // Event date
 
-  .event-date {
+  .event-time {
     @include bshadow();
     position: absolute;
     top: 35px;
@@ -354,7 +354,7 @@ $label-bg: url('../images/p.png');
 
   // Date
 
-  .event-date {
+  .event-time {
     @include bshadow();
     position: relative;
     z-index: 10;
@@ -368,7 +368,7 @@ $label-bg: url('../images/p.png');
     font-size: 150%;
   }
 
-  .event-day {
+  .event-date {
     line-height: 1;
   }
 
@@ -528,7 +528,7 @@ $label-bg: url('../images/p.png');
 
     // Date
 
-    .event-date {
+    .event-time {
       @include bshadow();
       position: absolute;
       top: 10px;
@@ -543,7 +543,7 @@ $label-bg: url('../images/p.png');
     }
 
     .event-label,
-    .event-date {
+    .event-time {
 
       // Media small
 
@@ -554,7 +554,7 @@ $label-bg: url('../images/p.png');
 
     // Day
 
-    .event-day {
+    .event-date {
       font-size: 20px;
       line-height: 20px;
     }
@@ -829,7 +829,7 @@ $label-bg: url('../images/p.png');
     font-size: 10px;
   }
 
-  .event-date {
+  .event-time {
     @include bshadow();
     position: absolute;
     top: 10px;
