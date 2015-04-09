@@ -8,6 +8,11 @@ $label-bg: url('../images/p.png');
 // All nodelists
 //==========================================================================
 
+.col3 .ding_nodelist-taxonomy .item .item-list-image,
+.col4 .ding_nodelist-taxonomy .item .item-list-image {
+  display: none;
+}
+
 .ding_nodelist {
   overflow: hidden;
   margin: 10px 0;
