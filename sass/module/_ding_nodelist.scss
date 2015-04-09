@@ -51,7 +51,7 @@ $label-bg: url('../images/p.png');
     background-color: $white;
     text-align: center;
 
-    // Event day 
+    // Event day
     .event-day {
       background: $link-color;
       color: $white;
@@ -62,7 +62,7 @@ $label-bg: url('../images/p.png');
       a {
         color: $white;
       }
-      
+
       a:hover {
         text-decoration: none;
       }
@@ -76,7 +76,7 @@ $label-bg: url('../images/p.png');
 
     .event-date  { font-size: 120%; }
     .event-month { font-size:  80%; }
- 
+
   }
 
   // Event label
@@ -97,11 +97,11 @@ $label-bg: url('../images/p.png');
   .label {
     margin: 10px 5px;
   }
-  
+
   .label-wrapper {
     margin: 10px 0;
   }
-  
+
   // Node info wrapper
 
   .node,
@@ -128,7 +128,7 @@ $label-bg: url('../images/p.png');
       font-size: 120%;
     }
   }
-  
+
   // Text wrapper
 
   .article-info {
@@ -422,7 +422,7 @@ $label-bg: url('../images/p.png');
     .event-fee {
       margin-right: 5px;
     }
-    
+
     a {
       color: $white;
     }
@@ -510,7 +510,7 @@ $label-bg: url('../images/p.png');
       }
     }
 
-   
+
   }
 
   // Title
@@ -554,15 +554,15 @@ $label-bg: url('../images/p.png');
   .item-body {
     margin-top: 10px;
   }
-  
+
   .more a {
     color: $black;
   }
-  
+
   .label {
     margin-left: 0;
   }
- 
+
   .category {
     float: right;
     margin-top: 4px;
@@ -752,11 +752,11 @@ $label-bg: url('../images/p.png');
     a {
       color: $white;
     }
-    
+
     .label {
       margin-left: 0;
     }
-    
+
     .inner-wrapper {
       margin: 10px;
     }
@@ -819,7 +819,7 @@ $label-bg: url('../images/p.png');
         font-weight: 700;
       }
     }
-    
+
     .item-date {
       color: $gray-darker;
     }
@@ -831,7 +831,7 @@ $label-bg: url('../images/p.png');
     .label {
       margin-left: 0;
     }
-    
+
     .item-body {
       margin-top: 10px;
     }

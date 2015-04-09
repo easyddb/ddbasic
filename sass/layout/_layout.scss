@@ -157,15 +157,18 @@ body {
 
 .content-wrapper {
   margin-top: $large-spacing;
-}
 
-.content-inner {
-  overflow: visible;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-}
+  .content-inner {
+    overflow: visible;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
 
+    .pane-content .panel-pane {
+      margin-bottom: 20px;
+    }
+  }
+}
 
 
 /* Layouts
@@ -184,7 +187,7 @@ body {
     @include zen-clear();
     @include zen-grid-item(12, 1);
   }
-  
+
   .col12 {
     @include zen-clear();
     @include zen-grid-item(12, 1);
@@ -195,28 +198,31 @@ body {
     overflow: hidden;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 20px;
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
   }
 
+  .col12        { padding-left: 0;    padding-right: 0;    }
+  .col12 .col12 { padding-left: 10px; padding-right: 10px; }
 
   .col3       { @include zen-grid-item(3, 1); }
   .col3.right { @include zen-grid-item(3, 1, right); }
   .col3.pre3  { @include zen-grid-item(3, 4); }
   .col3.pre6  { @include zen-grid-item(3, 7); }
-  
+
   .col4       { @include zen-grid-item(4, 1); }
   .col4.right { @include zen-grid-item(4, 1, right); }
   .col4.pre4  { @include zen-grid-item(4, 5); }
-  
+
   .col6       { @include zen-grid-item(6, 1); }
   .col6.right { @include zen-grid-item(6, 1, right); }
   .col6.pre3  { @include zen-grid-item(6, 4); }
-  
+
   .col7       { @include zen-grid-item(7, 1); }
   .col7.right { @include zen-grid-item(7, 1, right); }
-  
+
   .secondary-content,
   .col8       { @include zen-grid-item(8, 1); }
   .secondary-content-right,
@@ -238,7 +244,7 @@ body {
     .layout-wrapper,
     .col12,
     .col9,
-	.col9.right,
+    .col9.right,
     .col8,
     .col8.right,
     .col6,

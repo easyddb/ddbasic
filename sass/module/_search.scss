@@ -200,7 +200,7 @@ input#edit-search-block-form--2.spinner {
 
 header .search .form-actions {
   top: 29px;
-  
+
   @include small-medium() {
     top: 0;
   }
@@ -271,7 +271,7 @@ header .search .form-actions {
     min-height: initial;
     width: 80px;
     margin-right: -80px;
-	
+
     @include small() {
       @include zen-grid-item(0, 1);
     }
@@ -282,14 +282,14 @@ header .search .form-actions {
     .ting-cover {
       display: none;
     }
-  } 
+  }
 
   .ting-cover:before {
     top: 20%;
     left: 20%;
     font-size: 160%;
   }
-  
+
   .ting-cover img {
     max-width: 60px;
   }
@@ -574,17 +574,17 @@ header .search .form-actions {
     position: relative;
     top: -2px;
   }
-  
+
   #ding-toggle-format {
     background: none;
     text-decoration: none;
   }
-  
+
   #ding-toggle-format-image {
     display: none;
     height: 20px;
   }
-  
+
   #ding-toggle-format:before,
   #ding-toggle-format:after,  {
     color: #bcbcbc;
@@ -596,15 +596,15 @@ header .search .form-actions {
     text-decoration: none;
     width: 20px;
   }
-  
+
   #ding-toggle-format:before {
     content: "\f039";
   }
-  
+
   #ding-toggle-format:after {
     content: "\f03a";
   }
-  
+
   #ding-toggle-format.ding-toggle-format-short:before,
   #ding-toggle-format.ding-toggle-format-long:after  {
     color: $link-color;
