@@ -81,13 +81,14 @@ $label-bg: url('../images/p.png');
 
 .ding_nodelist-carousel {
   position: relative;
-  height: 436px;
+  height: 391px;
+  margin: 0;
 
   // Item
 
   .item {
     position: relative;
-    height: 366px;
+    height: 391px;
   }
 
   // Event label
@@ -873,6 +874,12 @@ $label-bg: url('../images/p.png');
 // Taxonomy nodelist
 //==========================================================================
 
+.attachments-3-3 .ding_nodelist-taxonomy .item .item-list-image,
+.tertiary-content .ding_nodelist-taxonomy .item .item-list-image,
+.attachments-4-4 .ding_nodelist-taxonomy .item .item-list-image {
+  display: none;
+}
+
 .ding_nodelist-taxonomy {
   .item:nth-child(odd) {
     background-color: $list-item-background-color-odd;
@@ -910,6 +917,11 @@ $label-bg: url('../images/p.png');
     
     .item-body {
       margin-top: 10px;
+    }
+
+    .date-display-start,
+    .date-display-end {
+      display: block;
     }
 
     // Media from-medium
