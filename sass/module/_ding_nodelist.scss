@@ -105,7 +105,7 @@ $label-bg: url('../images/p.png');
   // Node info wrapper
 
   .node,
-  .ding_nodelist-horizontal_accordion .data {
+  &.ding_nodelist-horizontal_accordion .data {
     @include min-height(40px);
     overflow: hidden;
     background-image: $label-bg;
@@ -157,8 +157,8 @@ $label-bg: url('../images/p.png');
   h2 {
     @include text-shadow(1px 1px 13px $black);
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 40px;
+    right: 10px;
     z-index: 49;
     color: $white;
   }
@@ -539,6 +539,10 @@ $label-bg: url('../images/p.png');
   background-color: $white;
   padding-top: 10px;
 
+  .item {
+    min-height: 122px;
+  }
+
   // Title
 
   .node {
@@ -626,7 +630,6 @@ $label-bg: url('../images/p.png');
 
   h3 {
     margin-bottom: 5px;
-    text-transform: uppercase;
   }
 
   // Node text
@@ -761,15 +764,6 @@ $label-bg: url('../images/p.png');
 
   .active .va-content {
     visibility: visible;
-  }
-
-  .event-time,
-  .field-name-group-audience,
-  .event-fee {
-    float: left;
-    margin: 1px 4px 0 0;
-    text-transform: uppercase;
-    letter-spacing: .5px;
   }
 
   .va-title {
