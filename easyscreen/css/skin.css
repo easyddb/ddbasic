@@ -1,6 +1,6 @@
 /* Variables */
 
-.search,
+.search, .search-scan,
 #SlidersDiv .accordeon,
 #SlidersDiv .singleCarousel,
 #SlidersDiv .verticalTicker,
@@ -44,7 +44,7 @@
   color: #fff !important; /* White text color over transparent bg */
 }
 
-.search:before {
+.search:before, .search-scan:before {
   color: #ceccbd; /* Light grey text color over transparent bg */
 } 
 
@@ -188,6 +188,31 @@ body,
   top: 20px;
   width: 112px;
   
+}
+
+.search-scan {
+  position: absolute;
+  top: 25px;
+  right: 220px;
+  display: block;
+  float: right;
+  width: 190px;
+  height: 70px;
+}
+
+.search-scan:before {
+    content: "scan book";
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    left: 15px;
+    position: absolute;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 20px;
+    width: 112px;
+
 }
 
 /* Footer */
