@@ -1,5 +1,6 @@
 .ding-item-viewer {
   margin: 10px 0;
+  height: 420px;
 
   .ui-tabs-nav {
     background: darken($footer-background-color, 5%);
@@ -8,11 +9,11 @@
   // Items container
 
   .browsebar-inner {
-    height: auto;
+    height: 360px;
   }
 
   // Items
-  
+
   .browsebar-item {
     background: $white;
     line-height: 1.2;
@@ -24,7 +25,7 @@
       font-weight: 700;
       font-size: 100%;
     }
-    
+
     img {
       position: relative;
       float: left;
@@ -104,7 +105,7 @@
       }
     }
   }
-  
+
   // Header
   .view-mode-ding-item-viewer-small {
     h2 {
@@ -114,7 +115,7 @@
       overflow: hidden;
       position: relative;
     }
-  
+
     .image-wrapper {
       background: darken($footer-background-color, 5%);
       height: 170px;
