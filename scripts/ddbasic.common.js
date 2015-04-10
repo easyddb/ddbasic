@@ -112,10 +112,24 @@
     }
   }
 
+  /**
+   * Sets sarousel image as background.
+   */
+  function setCarouselBg() {
+    $('.ding_nodelist-carousel img, .ding_nodelist-single img').each( function() {
+      var imageSrc = $(this).attr("src");
+      var bgItem = $(this).parent();
+      bgItem.css('background-image', 'url(' + imageSrc + ')');
+    });
+  }
+  
   // When ready start the magic.
   $(document).ready(function() {
     // Autofocus inputs
     autofocusInputs();
+
+    // Carousel bg
+    setCarouselBg();
 
     // Hide empty elements
     hideElement();

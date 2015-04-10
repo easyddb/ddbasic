@@ -240,6 +240,21 @@
     }
   }
   /* END BUTTONS */
+  
+  .ding-format-short {
+    .left-column {
+      @include zen-grid-item(1, 1);
+    }
+
+    .right-column {
+      @include zen-grid-item(11, 1, right);
+    }
+
+    .ting-cover,
+    .item-information-list {
+      display: none;
+    }
+  }
 }
 
 .pane-loans {
@@ -257,6 +272,14 @@
   }
 }
 
+.page-user .primary-content {
+  position: relative;
+}
+
+.page-user .pane-ding-toggle-format-toggle {
+  position: absolute;
+  right: 0;
+}
 
 /* User debts specific
    ========================================================================== */
@@ -361,6 +384,9 @@
     }
 
   }
+  .pane-ding-toggle-format-toggle .ding-toggle-format-label {
+    display: none;
+  }
 }
 
 @include medium() {
@@ -435,6 +461,14 @@
       padding-left: 10px;
     }
     padding-right: 10px;
+  }
+}
+
+.pane-user-login .form-actions {
+  top: 29px;
+
+  @include small-medium() {
+    top: 0;
   }
 }
 
