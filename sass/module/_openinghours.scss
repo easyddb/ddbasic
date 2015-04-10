@@ -123,6 +123,8 @@
 // ==========================================================================
 
 .pane-ding-library-opening-hours-ding-library-opened-today {
+  background-color: $content-background-color;
+  padding: 10px;
   ul {
     padding-left: 0;
 
@@ -136,3 +138,9 @@
     }
   }
 }
+
+.layout-wrapper .pane-ding-library-opening-hours-ding-library-opened-today {
+  background-color: transparent;
+  padding: 0;
+}
+

@@ -754,7 +754,7 @@ legend {
 /**
  * Framework
  *
- * Shared framework styling 
+ * Shared framework styling
  *
  * @author magnify
  */
@@ -1103,8 +1103,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit,
 .pane-debts .renew-loan-button .form-submit,
 .pane-bookmarks .update-reservations .form-submit,
-.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .reserve-button,
-.ding-item-list-item .reserve-button, .ticket-info, .pane-reservations .renew-loan-button .not-renewable,
+.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .item-details .reserve-button,
+.ding-item-list-item .item-details .reserve-button, .ticket-info, .pane-reservations .renew-loan-button .not-renewable,
 .pane-loans .renew-loan-button .not-renewable,
 .pane-debts .renew-loan-button .not-renewable,
 .pane-bookmarks .renew-loan-button .not-renewable, .pane-reservations .delete-reservation .form-submit,
@@ -1146,8 +1146,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit:focus,
 .pane-debts .renew-loan-button .form-submit:focus,
 .pane-bookmarks .update-reservations .form-submit:focus,
-.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .reserve-button:focus,
-.ding-item-list-item .reserve-button:focus, .ticket-info:focus, .pane-reservations .renew-loan-button .not-renewable:focus,
+.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .item-details .reserve-button:focus,
+.ding-item-list-item .item-details .reserve-button:focus, .ticket-info:focus, .pane-reservations .renew-loan-button .not-renewable:focus,
 .pane-loans .renew-loan-button .not-renewable:focus,
 .pane-debts .renew-loan-button .not-renewable:focus,
 .pane-bookmarks .renew-loan-button .not-renewable:focus, .pane-reservations .delete-reservation .form-submit:focus,
@@ -1174,8 +1174,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit:hover,
 .pane-debts .renew-loan-button .form-submit:hover,
 .pane-bookmarks .update-reservations .form-submit:hover,
-.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .reserve-button:hover,
-.ding-item-list-item .reserve-button:hover, .ticket-info:hover, .pane-reservations .renew-loan-button .not-renewable:hover,
+.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .item-details .reserve-button:hover,
+.ding-item-list-item .item-details .reserve-button:hover, .ticket-info:hover, .pane-reservations .renew-loan-button .not-renewable:hover,
 .pane-loans .renew-loan-button .not-renewable:hover,
 .pane-debts .renew-loan-button .not-renewable:hover,
 .pane-bookmarks .renew-loan-button .not-renewable:hover, .pane-reservations .delete-reservation .form-submit:hover,
@@ -1202,8 +1202,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit:active,
 .pane-debts .renew-loan-button .form-submit:active,
 .pane-bookmarks .update-reservations .form-submit:active,
-.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .reserve-button:active,
-.ding-item-list-item .reserve-button:active, .ticket-info:active, .pane-reservations .renew-loan-button .not-renewable:active,
+.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .item-details .reserve-button:active,
+.ding-item-list-item .item-details .reserve-button:active, .ticket-info:active, .pane-reservations .renew-loan-button .not-renewable:active,
 .pane-loans .renew-loan-button .not-renewable:active,
 .pane-debts .renew-loan-button .not-renewable:active,
 .pane-bookmarks .renew-loan-button .not-renewable:active, .pane-reservations .delete-reservation .form-submit:active,
@@ -1234,8 +1234,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .disabled.form-submit,
 .pane-debts .renew-loan-button .disabled.form-submit,
 .pane-bookmarks .update-reservations .disabled.form-submit,
-.pane-bookmarks .renew-loan-button .disabled.form-submit, .pane-debts .pay-button .disabled.form-submit, .alma-item-list .disabled.reserve-button,
-.ding-item-list-item .disabled.reserve-button, .disabled.ticket-info, .pane-reservations .renew-loan-button .disabled.not-renewable,
+.pane-bookmarks .renew-loan-button .disabled.form-submit, .pane-debts .pay-button .disabled.form-submit, .alma-item-list .item-details .disabled.reserve-button,
+.ding-item-list-item .item-details .disabled.reserve-button, .disabled.ticket-info, .pane-reservations .renew-loan-button .disabled.not-renewable,
 .pane-loans .renew-loan-button .disabled.not-renewable,
 .pane-debts .renew-loan-button .disabled.not-renewable,
 .pane-bookmarks .renew-loan-button .disabled.not-renewable, .pane-reservations .delete-reservation .disabled.form-submit,
@@ -1262,8 +1262,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations [disabled].form-submit,
 .pane-debts .renew-loan-button [disabled].form-submit,
 .pane-bookmarks .update-reservations [disabled].form-submit,
-.pane-bookmarks .renew-loan-button [disabled].form-submit, .pane-debts .pay-button [disabled].form-submit, .alma-item-list [disabled].reserve-button,
-.ding-item-list-item [disabled].reserve-button, [disabled].ticket-info, .pane-reservations .renew-loan-button [disabled].not-renewable,
+.pane-bookmarks .renew-loan-button [disabled].form-submit, .pane-debts .pay-button [disabled].form-submit, .alma-item-list .item-details [disabled].reserve-button,
+.ding-item-list-item .item-details [disabled].reserve-button, [disabled].ticket-info, .pane-reservations .renew-loan-button [disabled].not-renewable,
 .pane-loans .renew-loan-button [disabled].not-renewable,
 .pane-debts .renew-loan-button [disabled].not-renewable,
 .pane-bookmarks .renew-loan-button [disabled].not-renewable, .pane-reservations .delete-reservation [disabled].form-submit,
@@ -1404,8 +1404,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit,
 .pane-debts .renew-loan-button .form-submit,
 .pane-bookmarks .update-reservations .form-submit,
-.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .reserve-button,
-.ding-item-list-item .reserve-button {
+.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .item-details .reserve-button,
+.ding-item-list-item .item-details .reserve-button {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYTUwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzNTkwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #60a500), color-stop(100%, #335900));
@@ -1431,8 +1431,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:link,
 .pane-debts .renew-loan-button .form-submit:link,
 .pane-bookmarks .update-reservations .form-submit:link,
-.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .reserve-button:link,
-.ding-item-list-item .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
+.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .item-details .reserve-button:link,
+.ding-item-list-item .item-details .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
 .pane-loans .renew-loan-button .renewable:visited,
 .pane-debts .renew-loan-button .renewable:visited,
 .pane-bookmarks .renew-loan-button .renewable:visited, .pane-reservations .reserve-button:visited,
@@ -1445,8 +1445,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:visited,
 .pane-debts .renew-loan-button .form-submit:visited,
 .pane-bookmarks .update-reservations .form-submit:visited,
-.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .reserve-button:visited,
-.ding-item-list-item .reserve-button:visited {
+.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .item-details .reserve-button:visited,
+.ding-item-list-item .item-details .reserve-button:visited {
   color: #fff;
 }
 /* line 84, ../sass/framework/_buttons.scss */
@@ -1463,8 +1463,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:link,
 .pane-debts .renew-loan-button .form-submit:link,
 .pane-bookmarks .update-reservations .form-submit:link,
-.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .reserve-button:link,
-.ding-item-list-item .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
+.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .item-details .reserve-button:link,
+.ding-item-list-item .item-details .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
 .pane-loans .renew-loan-button .renewable:visited,
 .pane-debts .renew-loan-button .renewable:visited,
 .pane-bookmarks .renew-loan-button .renewable:visited, .pane-reservations .reserve-button:visited,
@@ -1477,8 +1477,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:visited,
 .pane-debts .renew-loan-button .form-submit:visited,
 .pane-bookmarks .update-reservations .form-submit:visited,
-.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .reserve-button:visited,
-.ding-item-list-item .reserve-button:visited, .field-name-ding-entity-buttons .reserve-button:focus, .button-see-online:focus, .ticket-available:focus, .pane-reservations .renew-loan-button .renewable:focus,
+.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .item-details .reserve-button:visited,
+.ding-item-list-item .item-details .reserve-button:visited, .field-name-ding-entity-buttons .reserve-button:focus, .button-see-online:focus, .ticket-available:focus, .pane-reservations .renew-loan-button .renewable:focus,
 .pane-loans .renew-loan-button .renewable:focus,
 .pane-debts .renew-loan-button .renewable:focus,
 .pane-bookmarks .renew-loan-button .renewable:focus, .pane-reservations .reserve-button:focus,
@@ -1491,8 +1491,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:focus,
 .pane-debts .renew-loan-button .form-submit:focus,
 .pane-bookmarks .update-reservations .form-submit:focus,
-.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .reserve-button:focus,
-.ding-item-list-item .reserve-button:focus, .field-name-ding-entity-buttons .reserve-button:hover, .button-see-online:hover, .ticket-available:hover, .pane-reservations .renew-loan-button .renewable:hover,
+.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .item-details .reserve-button:focus,
+.ding-item-list-item .item-details .reserve-button:focus, .field-name-ding-entity-buttons .reserve-button:hover, .button-see-online:hover, .ticket-available:hover, .pane-reservations .renew-loan-button .renewable:hover,
 .pane-loans .renew-loan-button .renewable:hover,
 .pane-debts .renew-loan-button .renewable:hover,
 .pane-bookmarks .renew-loan-button .renewable:hover, .pane-reservations .reserve-button:hover,
@@ -1505,8 +1505,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:hover,
 .pane-debts .renew-loan-button .form-submit:hover,
 .pane-bookmarks .update-reservations .form-submit:hover,
-.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .reserve-button:hover,
-.ding-item-list-item .reserve-button:hover, .field-name-ding-entity-buttons .reserve-button:active, .button-see-online:active, .ticket-available:active, .pane-reservations .renew-loan-button .renewable:active,
+.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .item-details .reserve-button:hover,
+.ding-item-list-item .item-details .reserve-button:hover, .field-name-ding-entity-buttons .reserve-button:active, .button-see-online:active, .ticket-available:active, .pane-reservations .renew-loan-button .renewable:active,
 .pane-loans .renew-loan-button .renewable:active,
 .pane-debts .renew-loan-button .renewable:active,
 .pane-bookmarks .renew-loan-button .renewable:active, .pane-reservations .reserve-button:active,
@@ -1519,8 +1519,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:active,
 .pane-debts .renew-loan-button .form-submit:active,
 .pane-bookmarks .update-reservations .form-submit:active,
-.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .reserve-button:active,
-.ding-item-list-item .reserve-button:active {
+.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .item-details .reserve-button:active,
+.ding-item-list-item .item-details .reserve-button:active {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxOGIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1M2YwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
@@ -4396,22 +4396,25 @@ body {
 .content-wrapper {
   margin-top: 20px;
 }
-
-/* line 162, ../sass/layout/_layout.scss */
-.content-inner {
+/* line 161, ../sass/layout/_layout.scss */
+.content-wrapper .content-inner {
   overflow: visible;
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
 }
+/* line 167, ../sass/layout/_layout.scss */
+.content-wrapper .content-inner .pane-content .panel-pane {
+  margin-bottom: 20px;
+}
 
 /* Layouts
    ========================================================================== */
-/* line 174, ../sass/layout/_layout.scss */
+/* line 177, ../sass/layout/_layout.scss */
 .frontpage-layout {
   /* Media queries */
 }
-/* line 175, ../sass/layout/_layout.scss */
+/* line 178, ../sass/layout/_layout.scss */
 .frontpage-layout .primary-content,
 .frontpage-layout .secondary-content,
 .frontpage-layout .tertiary-content {
@@ -4419,7 +4422,7 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 183, ../sass/layout/_layout.scss */
+/* line 186, ../sass/layout/_layout.scss */
 .frontpage-layout .primary-content {
   clear: left;
   float: left;
@@ -4438,7 +4441,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 188, ../sass/layout/_layout.scss */
+/* line 191, ../sass/layout/_layout.scss */
 .frontpage-layout .col12 {
   clear: left;
   float: left;
@@ -4457,17 +4460,28 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 193, ../sass/layout/_layout.scss */
+/* line 196, ../sass/layout/_layout.scss */
 .frontpage-layout .layout-wrapper {
   clear: left;
   overflow: hidden;
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 20px;
   padding-top: 20px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 204, ../sass/layout/_layout.scss */
+/* line 207, ../sass/layout/_layout.scss */
+.frontpage-layout .col12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 208, ../sass/layout/_layout.scss */
+.frontpage-layout .col12 .col12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 210, ../sass/layout/_layout.scss */
 .frontpage-layout .col3 {
   float: left;
   width: 25%;
@@ -4485,7 +4499,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 205, ../sass/layout/_layout.scss */
+/* line 211, ../sass/layout/_layout.scss */
 .frontpage-layout .col3.right {
   float: right;
   width: 25%;
@@ -4503,7 +4517,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 206, ../sass/layout/_layout.scss */
+/* line 212, ../sass/layout/_layout.scss */
 .frontpage-layout .col3.pre3 {
   float: left;
   width: 25%;
@@ -4521,7 +4535,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 207, ../sass/layout/_layout.scss */
+/* line 213, ../sass/layout/_layout.scss */
 .frontpage-layout .col3.pre6 {
   float: left;
   width: 25%;
@@ -4539,7 +4553,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 209, ../sass/layout/_layout.scss */
+/* line 215, ../sass/layout/_layout.scss */
 .frontpage-layout .col4 {
   float: left;
   width: 33.33333%;
@@ -4557,7 +4571,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 210, ../sass/layout/_layout.scss */
+/* line 216, ../sass/layout/_layout.scss */
 .frontpage-layout .col4.right {
   float: right;
   width: 33.33333%;
@@ -4575,7 +4589,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 211, ../sass/layout/_layout.scss */
+/* line 217, ../sass/layout/_layout.scss */
 .frontpage-layout .col4.pre4 {
   float: left;
   width: 33.33333%;
@@ -4593,7 +4607,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 213, ../sass/layout/_layout.scss */
+/* line 219, ../sass/layout/_layout.scss */
 .frontpage-layout .col6 {
   float: left;
   width: 50%;
@@ -4611,7 +4625,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 214, ../sass/layout/_layout.scss */
+/* line 220, ../sass/layout/_layout.scss */
 .frontpage-layout .col6.right {
   float: right;
   width: 50%;
@@ -4629,7 +4643,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 215, ../sass/layout/_layout.scss */
+/* line 221, ../sass/layout/_layout.scss */
 .frontpage-layout .col6.pre3 {
   float: left;
   width: 50%;
@@ -4647,7 +4661,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 217, ../sass/layout/_layout.scss */
+/* line 223, ../sass/layout/_layout.scss */
 .frontpage-layout .col7 {
   float: left;
   width: 58.33333%;
@@ -4665,7 +4679,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 218, ../sass/layout/_layout.scss */
+/* line 224, ../sass/layout/_layout.scss */
 .frontpage-layout .col7.right {
   float: right;
   width: 58.33333%;
@@ -4683,7 +4697,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 220, ../sass/layout/_layout.scss */
+/* line 226, ../sass/layout/_layout.scss */
 .frontpage-layout .secondary-content,
 .frontpage-layout .col8 {
   float: left;
@@ -4702,7 +4716,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 222, ../sass/layout/_layout.scss */
+/* line 228, ../sass/layout/_layout.scss */
 .frontpage-layout .secondary-content-right,
 .frontpage-layout .col8.right {
   float: right;
@@ -4721,7 +4735,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 225, ../sass/layout/_layout.scss */
+/* line 231, ../sass/layout/_layout.scss */
 .frontpage-layout .col9 {
   float: left;
   width: 75%;
@@ -4739,7 +4753,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 226, ../sass/layout/_layout.scss */
+/* line 232, ../sass/layout/_layout.scss */
 .frontpage-layout .col9.right {
   float: right;
   width: 75%;
@@ -4757,7 +4771,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 228, ../sass/layout/_layout.scss */
+/* line 234, ../sass/layout/_layout.scss */
 .frontpage-layout .tertiary-content {
   float: right;
   width: 33.33333%;
@@ -4776,7 +4790,7 @@ body {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 234, ../sass/layout/_layout.scss */
+  /* line 240, ../sass/layout/_layout.scss */
   .frontpage-layout .primary-content,
   .frontpage-layout .secondary-content,
   .frontpage-layout .tertiary-content,
@@ -4812,7 +4826,7 @@ body {
   }
 }
 
-/* line 256, ../sass/layout/_layout.scss */
+/* line 262, ../sass/layout/_layout.scss */
 .attachments-wrapper {
   *position: relative;
   *zoom: 1;
@@ -4830,7 +4844,7 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 265, ../sass/layout/_layout.scss */
+  /* line 271, ../sass/layout/_layout.scss */
   .empty-sidebars .primary-content .pane-fulltext {
     float: left;
     width: 50%;
@@ -4850,7 +4864,7 @@ body {
   }
 }
 
-/* line 271, ../sass/layout/_layout.scss */
+/* line 277, ../sass/layout/_layout.scss */
 .default-layout {
   margin-top: 20px;
   /* Sidebars! */
@@ -4858,7 +4872,7 @@ body {
   /* Left sidebar only */
   /* Right sidebar only */
 }
-/* line 274, ../sass/layout/_layout.scss */
+/* line 280, ../sass/layout/_layout.scss */
 .default-layout .primary-content,
 .default-layout .secondary-content,
 .default-layout .tertiary-content {
@@ -4866,7 +4880,7 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 282, ../sass/layout/_layout.scss */
+/* line 288, ../sass/layout/_layout.scss */
 .default-layout .primary-content {
   float: left;
   width: 75%;
@@ -4884,7 +4898,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 286, ../sass/layout/_layout.scss */
+/* line 292, ../sass/layout/_layout.scss */
 .default-layout .layout-wrapper {
   clear: left;
   overflow: hidden;
@@ -4895,7 +4909,7 @@ body {
   padding-left: 10px;
   background-color: #fff;
 }
-/* line 297, ../sass/layout/_layout.scss */
+/* line 303, ../sass/layout/_layout.scss */
 .default-layout .secondary-content {
   float: left;
   width: 25%;
@@ -4913,7 +4927,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 301, ../sass/layout/_layout.scss */
+/* line 307, ../sass/layout/_layout.scss */
 .default-layout .tertiary-content {
   float: left;
   width: 100%;
@@ -4933,7 +4947,7 @@ body {
   clear: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 309, ../sass/layout/_layout.scss */
+  /* line 315, ../sass/layout/_layout.scss */
   .default-layout .primary-content,
   .default-layout .secondary-content,
   .default-layout .tertiary-content {
@@ -4956,7 +4970,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 940px) {
-  /* line 324, ../sass/layout/_layout.scss */
+  /* line 330, ../sass/layout/_layout.scss */
   .default-layout.sidebars .primary-content {
     float: left;
     width: 50%;
@@ -4974,7 +4988,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 328, ../sass/layout/_layout.scss */
+  /* line 334, ../sass/layout/_layout.scss */
   .default-layout.sidebars .secondary-content {
     float: left;
     width: 25%;
@@ -4992,7 +5006,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 332, ../sass/layout/_layout.scss */
+  /* line 338, ../sass/layout/_layout.scss */
   .default-layout.sidebars .tertiary-content {
     float: right;
     width: 25%;
@@ -5013,7 +5027,7 @@ body {
   }
 }
 @media only screen and (min-width: 1211px) {
-  /* line 341, ../sass/layout/_layout.scss */
+  /* line 347, ../sass/layout/_layout.scss */
   .default-layout.sidebars .primary-content {
     float: left;
     width: 50%;
@@ -5031,7 +5045,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 345, ../sass/layout/_layout.scss */
+  /* line 351, ../sass/layout/_layout.scss */
   .default-layout.sidebars .secondary-content {
     float: left;
     width: 25%;
@@ -5049,7 +5063,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 349, ../sass/layout/_layout.scss */
+  /* line 355, ../sass/layout/_layout.scss */
   .default-layout.sidebars .tertiary-content {
     float: right;
     width: 25%;
@@ -5069,7 +5083,7 @@ body {
     clear: none;
   }
 }
-/* line 359, ../sass/layout/_layout.scss */
+/* line 365, ../sass/layout/_layout.scss */
 .default-layout.empty-sidebars .primary-content {
   float: left;
   width: 100%;
@@ -5087,7 +5101,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 363, ../sass/layout/_layout.scss */
+/* line 369, ../sass/layout/_layout.scss */
 .default-layout.empty-sidebars .secondary-content {
   clear: both;
   float: left;
@@ -5106,7 +5120,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 368, ../sass/layout/_layout.scss */
+/* line 374, ../sass/layout/_layout.scss */
 .default-layout.empty-sidebars .tertiary-content {
   float: right;
   width: 50%;
@@ -5125,7 +5139,7 @@ body {
   _overflow-y: visible;
 }
 @media only screen and (min-width: 769px) and (max-width: 940px) {
-  /* line 380, ../sass/layout/_layout.scss */
+  /* line 386, ../sass/layout/_layout.scss */
   .default-layout.left-sidebar .primary-content {
     float: left;
     width: 75%;
@@ -5143,7 +5157,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 383, ../sass/layout/_layout.scss */
+  /* line 389, ../sass/layout/_layout.scss */
   .default-layout.left-sidebar .secondary-content {
     float: left;
     width: 25%;
@@ -5163,7 +5177,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 940px) {
-  /* line 393, ../sass/layout/_layout.scss */
+  /* line 399, ../sass/layout/_layout.scss */
   .default-layout.right-sidebar .primary-content {
     float: left;
     width: 66.66667%;
@@ -5181,7 +5195,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 397, ../sass/layout/_layout.scss */
+  /* line 403, ../sass/layout/_layout.scss */
   .default-layout.right-sidebar .tertiary-content {
     float: right;
     width: 33.33333%;
@@ -5203,7 +5217,7 @@ body {
 
 /* Attachments (aka. blocks/panes)
    ========================================================================== */
-/* line 408, ../sass/layout/_layout.scss */
+/* line 414, ../sass/layout/_layout.scss */
 .attachment-first {
   float: left;
   width: 25%;
@@ -5222,7 +5236,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 412, ../sass/layout/_layout.scss */
+/* line 418, ../sass/layout/_layout.scss */
 .attachment-second {
   float: left;
   width: 25%;
@@ -5241,7 +5255,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 416, ../sass/layout/_layout.scss */
+/* line 422, ../sass/layout/_layout.scss */
 .attachment-third {
   float: right;
   width: 25%;
@@ -5260,7 +5274,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 420, ../sass/layout/_layout.scss */
+/* line 426, ../sass/layout/_layout.scss */
 .attachment-fourth {
   float: right;
   width: 25%;
@@ -5279,7 +5293,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 425, ../sass/layout/_layout.scss */
+/* line 431, ../sass/layout/_layout.scss */
 .attachments-1-1 .attachment-first {
   clear: left;
   float: left;
@@ -5300,7 +5314,7 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 434, ../sass/layout/_layout.scss */
+  /* line 440, ../sass/layout/_layout.scss */
   .attachment-first,
   .attachment-third,
   .attachment-second,
@@ -5324,7 +5338,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 446, ../sass/layout/_layout.scss */
+  /* line 452, ../sass/layout/_layout.scss */
   .attachment-first,
   .attachment-third {
     clear: left;
@@ -5345,7 +5359,7 @@ body {
     _overflow-y: visible;
   }
 
-  /* line 452, ../sass/layout/_layout.scss */
+  /* line 458, ../sass/layout/_layout.scss */
   .attachment-second,
   .attachment-fourth {
     float: right;
@@ -5366,7 +5380,7 @@ body {
   }
 }
 /* Panel layout with 2 panes */
-/* line 461, ../sass/layout/_layout.scss */
+/* line 467, ../sass/layout/_layout.scss */
 .attachments-2-2 .attachment-first {
   float: left;
   width: 50%;
@@ -5384,7 +5398,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 465, ../sass/layout/_layout.scss */
+/* line 471, ../sass/layout/_layout.scss */
 .attachments-2-2 .attachment-second {
   float: right;
   width: 50%;
@@ -5404,7 +5418,7 @@ body {
 }
 
 /* Panel layout with 3 panes */
-/* line 472, ../sass/layout/_layout.scss */
+/* line 478, ../sass/layout/_layout.scss */
 .attachments-3-3 .attachment-first {
   float: left;
   width: 33.33333%;
@@ -5422,7 +5436,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 476, ../sass/layout/_layout.scss */
+/* line 482, ../sass/layout/_layout.scss */
 .attachments-3-3 .attachment-second {
   float: left;
   width: 33.33333%;
@@ -5440,7 +5454,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 480, ../sass/layout/_layout.scss */
+/* line 486, ../sass/layout/_layout.scss */
 .attachments-3-3 .attachment-third {
   float: right;
   width: 33.33333%;
@@ -5461,18 +5475,18 @@ body {
 
 /* Footer
    ========================================================================== */
-/* line 490, ../sass/layout/_layout.scss */
+/* line 496, ../sass/layout/_layout.scss */
 .footer {
   clear: both;
   overflow: hidden;
   padding-top: 30px;
 }
-/* line 495, ../sass/layout/_layout.scss */
+/* line 501, ../sass/layout/_layout.scss */
 .footer .pane-title {
   font-size: 110%;
 }
 
-/* line 500, ../sass/layout/_layout.scss */
+/* line 506, ../sass/layout/_layout.scss */
 .footer-inner {
   overflow: visible;
   margin-right: auto;
@@ -5480,13 +5494,13 @@ body {
   max-width: 1200px;
 }
 
-/* line 507, ../sass/layout/_layout.scss */
+/* line 513, ../sass/layout/_layout.scss */
 .footer-block {
   background-color: transparent;
   color: #fff;
 }
 
-/* line 512, ../sass/layout/_layout.scss */
+/* line 518, ../sass/layout/_layout.scss */
 .bottom {
   clear: both;
   padding-top: 20px;
@@ -5498,7 +5512,7 @@ body {
 
 /* Dibs accept/cancel/redirect page
    ========================================================================== */
-/* line 526, ../sass/layout/_layout.scss */
+/* line 532, ../sass/layout/_layout.scss */
 .dibs-accept-page,
 .dibs-cancel-page,
 .dibs-redirect-page {
@@ -5511,7 +5525,7 @@ body {
   background-color: #fff;
 }
 @media only screen and (max-width: 1210px) {
-  /* line 526, ../sass/layout/_layout.scss */
+  /* line 532, ../sass/layout/_layout.scss */
   .dibs-accept-page,
   .dibs-cancel-page,
   .dibs-redirect-page {
@@ -5519,7 +5533,7 @@ body {
     margin-right: 10px;
   }
 }
-/* line 542, ../sass/layout/_layout.scss */
+/* line 548, ../sass/layout/_layout.scss */
 .dibs-accept-page > p:first-of-type,
 .dibs-cancel-page > p:first-of-type,
 .dibs-redirect-page > p:first-of-type {
@@ -9483,18 +9497,29 @@ div[class^="collection-bg"] {
   font-family: "FontAwesome";
 }
 
-/* line 126, ../sass/module/_openinghours.scss */
+/* line 125, ../sass/module/_openinghours.scss */
+.pane-ding-library-opening-hours-ding-library-opened-today {
+  background-color: #fffffe;
+  padding: 10px;
+}
+/* line 128, ../sass/module/_openinghours.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul {
   padding-left: 0;
 }
-/* line 129, ../sass/module/_openinghours.scss */
+/* line 131, ../sass/module/_openinghours.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library {
   padding: 3px;
   background-color: #f2f2f2;
 }
-/* line 133, ../sass/module/_openinghours.scss */
+/* line 135, ../sass/module/_openinghours.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library:nth-of-type(2n+2) {
   background-color: #e8e8e8;
+}
+
+/* line 142, ../sass/module/_openinghours.scss */
+.layout-wrapper .pane-ding-library-opening-hours-ding-library-opened-today {
+  background-color: transparent;
+  padding: 0;
 }
 
 /**
@@ -12227,27 +12252,28 @@ div[class^="collection-bg"] {
 /* line 1, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer {
   margin: 10px 0;
+  height: 420px;
 }
-/* line 4, ../sass/module/_ding_item_viewer.scss */
+/* line 5, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .ui-tabs-nav {
   background: #191919;
 }
-/* line 10, ../sass/module/_ding_item_viewer.scss */
+/* line 11, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-inner {
-  height: auto;
+  height: 360px;
 }
-/* line 16, ../sass/module/_ding_item_viewer.scss */
+/* line 17, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item {
   background: #fff;
   line-height: 1.2;
   height: 260px;
 }
-/* line 23, ../sass/module/_ding_item_viewer.scss */
+/* line 24, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item h2 {
   font-weight: 700;
   font-size: 100%;
 }
-/* line 28, ../sass/module/_ding_item_viewer.scss */
+/* line 29, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item img {
   position: relative;
   float: left;
@@ -12255,65 +12281,65 @@ div[class^="collection-bg"] {
   width: 120px;
   max-height: 193px;
 }
-/* line 36, ../sass/module/_ding_item_viewer.scss */
+/* line 37, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active {
   max-height: 410px;
   height: auto;
 }
-/* line 41, ../sass/module/_ding_item_viewer.scss */
+/* line 42, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active h2 {
   font-size: 80%;
 }
-/* line 44, ../sass/module/_ding_item_viewer.scss */
+/* line 45, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active h2 a {
   font-weight: 700;
 }
-/* line 50, ../sass/module/_ding_item_viewer.scss */
+/* line 51, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active img {
   margin-right: 10px;
   width: 140px;
 }
-/* line 56, ../sass/module/_ding_item_viewer.scss */
+/* line 57, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .subject {
   display: block;
   float: left;
   margin: 3px 3px 3px 0;
   white-space: nowrap;
 }
-/* line 63, ../sass/module/_ding_item_viewer.scss */
+/* line 64, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .subjects {
   max-height: 55px;
   overflow: hidden;
 }
-/* line 67, ../sass/module/_ding_item_viewer.scss */
+/* line 68, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .subjects strong {
   display: block;
   float: left;
   line-height: 2em;
   margin-right: 5px;
 }
-/* line 76, ../sass/module/_ding_item_viewer.scss */
+/* line 77, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .field-type-ding-entity-buttons a {
   margin-left: 5px;
 }
-/* line 81, ../sass/module/_ding_item_viewer.scss */
+/* line 82, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .field-type-ting-author {
   font-weight: bold;
 }
-/* line 86, ../sass/module/_ding_item_viewer.scss */
+/* line 87, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .browsebar-item.active .field-type-ting-abstract {
   max-height: 117px;
   overflow: hidden;
 }
-/* line 99, ../sass/module/_ding_item_viewer.scss */
+/* line 100, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .ui-tabs-nav .active {
   background-color: #bcbcbc;
 }
-/* line 102, ../sass/module/_ding_item_viewer.scss */
+/* line 103, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .ui-tabs-nav .active a {
   background: none;
 }
-/* line 110, ../sass/module/_ding_item_viewer.scss */
+/* line 111, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .view-mode-ding-item-viewer-small h2 {
   clear: both;
   height: 35px;
@@ -12321,7 +12347,7 @@ div[class^="collection-bg"] {
   overflow: hidden;
   position: relative;
 }
-/* line 118, ../sass/module/_ding_item_viewer.scss */
+/* line 119, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .view-mode-ding-item-viewer-small .image-wrapper {
   background: #191919;
   height: 170px;
@@ -12330,7 +12356,7 @@ div[class^="collection-bg"] {
   overflow: hidden;
   width: 100%;
 }
-/* line 127, ../sass/module/_ding_item_viewer.scss */
+/* line 128, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer .view-mode-ding-item-viewer-small .field-name-ting-author {
   height: 38px;
   overflow: hidden;
@@ -12343,38 +12369,61 @@ div[class^="collection-bg"] {
 }
 
 /* line 5, ../sass/module/_ding_item_list.scss */
+.pane-ding-item-list {
+  background-color: #fffffe;
+  padding: 10px;
+}
+/* line 9, ../sass/module/_ding_item_list.scss */
+.pane-ding-item-list .pane-title {
+  margin-bottom: 0;
+}
+
+/* line 14, ../sass/module/_ding_item_list.scss */
+.layout-wrapper .pane-ding-item-list {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* line 19, ../sass/module/_ding_item_list.scss */
 .alma-item-list,
 .ding-item-list-item {
   overflow: hidden;
   margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #d5d5d5;
   font-size: 16px;
 }
-/* line 11, ../sass/module/_ding_item_list.scss */
+/* line 27, ../sass/module/_ding_item_list.scss */
 .alma-item-list .item-cover,
 .ding-item-list-item .item-cover {
   float: left;
 }
-/* line 15, ../sass/module/_ding_item_list.scss */
+/* line 31, ../sass/module/_ding_item_list.scss */
 .alma-item-list .item-details,
 .ding-item-list-item .item-details {
   margin-left: 65px;
 }
-/* line 19, ../sass/module/_ding_item_list.scss */
-.alma-item-list .item-title a,
-.ding-item-list-item .item-title a {
+/* line 34, ../sass/module/_ding_item_list.scss */
+.alma-item-list .item-details .item-author,
+.ding-item-list-item .item-details .item-author {
+  font-size: 90%;
+}
+/* line 38, ../sass/module/_ding_item_list.scss */
+.alma-item-list .item-details .item-title a,
+.ding-item-list-item .item-details .item-title a {
   font-weight: 700;
 }
-/* line 23, ../sass/module/_ding_item_list.scss */
-.alma-item-list .reserve-button,
-.ding-item-list-item .reserve-button {
+/* line 42, ../sass/module/_ding_item_list.scss */
+.alma-item-list .item-details .reserve-button,
+.ding-item-list-item .item-details .reserve-button {
   margin-top: 10px;
   font-size: 100%;
 }
-/* line 30, ../sass/module/_ding_item_list.scss */
-.alma-item-list .item-loan,
-.alma-item-list .item-loan a,
-.ding-item-list-item .item-loan,
-.ding-item-list-item .item-loan a {
+/* line 49, ../sass/module/_ding_item_list.scss */
+.alma-item-list .item-details .item-loan,
+.alma-item-list .item-details .item-loan a,
+.ding-item-list-item .item-details .item-loan,
+.ding-item-list-item .item-details .item-loan a {
   font-size: 100%;
   font-family: inherit;
   line-height: inherit;
@@ -13102,32 +13151,33 @@ div[class^="collection-bg"] {
   margin-bottom: 10px;
   overflow: hidden;
   padding: 20px;
+  width: 100%;
 }
-/* line 811, ../sass/module/_ding_nodelist.scss */
+/* line 812, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:first-of-type {
   border-top: 0;
 }
-/* line 815, ../sass/module/_ding_nodelist.scss */
+/* line 816, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 130%;
 }
-/* line 818, ../sass/module/_ding_nodelist.scss */
+/* line 819, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title a {
   font-weight: 700;
 }
-/* line 823, ../sass/module/_ding_nodelist.scss */
+/* line 824, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-date {
   color: #959595;
 }
-/* line 827, ../sass/module/_ding_nodelist.scss */
+/* line 828, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-author {
   display: none;
 }
-/* line 831, ../sass/module/_ding_nodelist.scss */
+/* line 832, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .label, .ding_nodelist-taxonomy .item .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .subjects .subject, .subjects .ding_nodelist-taxonomy .item .subject, .ding_nodelist-taxonomy .item .news-list .news-label, .news-list .ding_nodelist-taxonomy .item .news-label, .ding_nodelist-taxonomy .item .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-taxonomy .item .field-item {
   margin-left: 0;
 }
-/* line 835, ../sass/module/_ding_nodelist.scss */
+/* line 836, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-body {
   margin-top: 10px;
 }
@@ -13136,18 +13186,18 @@ div[class^="collection-bg"] {
   .ding_nodelist-taxonomy .item {
     display: table;
   }
-  /* line 844, ../sass/module/_ding_nodelist.scss */
+  /* line 845, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-details,
   .ding_nodelist-taxonomy .item .item-list-image {
     display: table-cell;
     vertical-align: top;
   }
-  /* line 850, ../sass/module/_ding_nodelist.scss */
+  /* line 851, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image {
     padding-right: 10px;
     width: 159px;
   }
-  /* line 854, ../sass/module/_ding_nodelist.scss */
+  /* line 855, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image img {
     width: 159px;
     height: auto;

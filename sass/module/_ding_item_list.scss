@@ -2,10 +2,26 @@
   margin: 10px 0;
 }
 
+.pane-ding-item-list {
+  background-color: $content-background-color;
+  padding: 10px;
+
+  .pane-title {
+    margin-bottom: 0;
+  }
+}
+
+.layout-wrapper .pane-ding-item-list {
+  background-color: transparent;
+  padding: 0;
+}
+
 .alma-item-list,
 .ding-item-list-item {
   overflow: hidden;
   margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed $gray;
   font-size: $base-font-size;
 
   .item-cover {
@@ -14,24 +30,28 @@
 
   .item-details {
     margin-left: 65px;
-  }
 
-  .item-title a {
-    font-weight: 700;
-  }
+    .item-author {
+      font-size: 90%;
+    }
 
-  .reserve-button {
-    @extend %button-action;
-    margin-top: 10px;
-    font-size: 100%;
-  }
-  .item-loan {
+    .item-title a {
+      font-weight: 700;
+    }
 
-    &,
-    a {
-      font-size: $font-size-reset;
-      font-family: inherit;
-      line-height: inherit;
+    .reserve-button {
+      @extend %button-action;
+      margin-top: 10px;
+      font-size: 100%;
+    }
+    .item-loan {
+
+      &,
+      a {
+        font-size: $font-size-reset;
+        font-family: inherit;
+        line-height: inherit;
+      }
     }
   }
 }
