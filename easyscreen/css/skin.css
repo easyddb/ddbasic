@@ -321,7 +321,6 @@ body,
 .section-container .carousel-ct-bodycontent .title {
   display: block;
   clear: both;
-  float: left;
 }
 
 .carousel-tpl .item-data {
@@ -397,14 +396,21 @@ body,
   font-size: 24px !important;
 }
 
-.simple-tpl .item-data .body,
+
 .carousel-tpl .item-data .body {
+  position: absolute;
+  top: 40px;
+}
+
+.simple-tpl .item-data .body {
   position: absolute;
   top: 186px;
 }
 
 .carousel-tpl .item-data .body {
   bottom: 100%;
+  width: 100%;
+
 }
 
 .single-ct-container .title,
