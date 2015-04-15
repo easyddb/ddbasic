@@ -443,6 +443,7 @@ body,
   background: #ceccbd !important;
   margin: 0;
   bottom: 0;
+  right: 0;
   position: absolute;
   width: 100%;
   z-index: 8;
