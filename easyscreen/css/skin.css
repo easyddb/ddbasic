@@ -585,6 +585,9 @@ ul.newsticker {
 .simple-tpl .header p.event-time {
   margin-left: 0;
 }
+.events-list-wrapper .page {
+  height: 100%;
+}
 .events-list-wrapper .page:not(.active) {
   display: none;
 }
