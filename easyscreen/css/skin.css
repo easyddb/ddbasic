@@ -642,11 +642,11 @@ ul.newsticker {
 }
 
 .events-list-wrapper {
-  height: 80%;
+  height: 90%;
 }
 
 .event-details {
-  height: 24%;
+  height: 10%;
   line-height: 40px;
   margin-top: 1%;
   overflow: hidden;
