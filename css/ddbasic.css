@@ -70,66 +70,62 @@
 }
 
 /* Links */
-/* line 31, ../sass/configuration/_configuration.scss */
-a {
-  font-weight: 400;
-}
-/* line 34, ../sass/configuration/_configuration.scss */
+/* line 32, ../sass/configuration/_configuration.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 39, ../sass/configuration/_configuration.scss */
+/* line 37, ../sass/configuration/_configuration.scss */
 a:visited {
   color: #007a9b;
   text-decoration: none;
 }
-/* line 44, ../sass/configuration/_configuration.scss */
+/* line 42, ../sass/configuration/_configuration.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 48, ../sass/configuration/_configuration.scss */
+/* line 46, ../sass/configuration/_configuration.scss */
 a:hover i[class^="icon-"] {
   text-decoration: none;
 }
-/* line 53, ../sass/configuration/_configuration.scss */
+/* line 51, ../sass/configuration/_configuration.scss */
 a:focus {
   color: #006681;
 }
 
 /* Layout background color */
-/* line 61, ../sass/configuration/_configuration.scss */
+/* line 59, ../sass/configuration/_configuration.scss */
 .layout-wrapper {
   background-color: #fffffe;
 }
 
 /* Article background extends */
-/* line 68, ../sass/configuration/_configuration.scss */
+/* line 66, ../sass/configuration/_configuration.scss */
 .field-name-field-ding-news-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, #ding-library-front .opening-hours-week .header, .groups-list .groups-list-item {
   background-color: #ebebeb;
 }
 
-/* line 72, ../sass/configuration/_configuration.scss */
+/* line 70, ../sass/configuration/_configuration.scss */
 .field-name-field-ding-news-materials .field-item:nth-child(odd), .library-list .views-row:nth-child(odd), .field-name-field-ding-page-materials .field-item:nth-child(odd), .news-list .news-list-item:nth-child(odd), .event-list .event-list-item:nth-child(odd), .opening-hours-week .days .odd, .staff-list .staff-list-item:nth-child(odd),
 .staff-list-all .staff-list-item:nth-child(odd), .groups-list .groups-list-item:nth-child(odd) {
   background-color: #e8e8e8;
 }
 
-/* line 76, ../sass/configuration/_configuration.scss */
+/* line 74, ../sass/configuration/_configuration.scss */
 .field-name-field-ding-news-materials .field-item:nth-child(even), .library-list .views-row:nth-child(even), .field-name-field-ding-page-materials .field-item:nth-child(even), .news-list .news-list-item:nth-child(even), .event-list .event-list-item:nth-child(even), .opening-hours-week .days .even, .staff-list .staff-list-item:nth-child(even),
 .staff-list-all .staff-list-item:nth-child(even), .groups-list .groups-list-item:nth-child(even) {
   background-color: #f2f2f2;
 }
 
 /* Footer background color */
-/* line 83, ../sass/configuration/_configuration.scss */
+/* line 81, ../sass/configuration/_configuration.scss */
 .footer {
   background-color: #262626;
 }
 
 /* Bottom background color */
-/* line 90, ../sass/configuration/_configuration.scss */
+/* line 88, ../sass/configuration/_configuration.scss */
 .bottom {
   background-color: #191919;
 }
