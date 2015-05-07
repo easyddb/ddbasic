@@ -990,7 +990,7 @@ function ddbasic_preprocess_ting_object(&$vars) {
               '#suffix' => '</div>',
               'details' => $content['group_holdings_available'],
             ),
-            '#weight' => $content['group_holdings_available']['#weight'],
+            '#weight' => $vars['content']['material-details']['#weight'] - 1,
           );
           unset($content['group_holdings_available']);
         }
