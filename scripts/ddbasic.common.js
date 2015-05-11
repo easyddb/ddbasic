@@ -15,22 +15,6 @@
   };
 
   /**
-   * Expanded holdings section by default on object page.
-   */
-  Drupal.behaviors.expandHoldings = {
-    attach: function (context, settings) {
-      $(function () {
-        var objectPage = $('.page-ting-object', context);
-        var holdingsSection = objectPage.find('.group-holdings-available .field-group-format-title');
-
-        if (holdingsSection.length !== 0) {
-          holdingsSection.trigger('click');
-        }
-      });
-    }
-  };
-
-  /**
    * Toggle opening hours.
    */
   function toggleOpeningHours() {
