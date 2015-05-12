@@ -3142,6 +3142,9 @@ ul.icons li [class*=" icon-"] {
   content: "\f030";
 }
 
+.libraries.library-cover-exist:before {
+  display: none;
+}
 /* line 318, ../sass/framework/_fontawesome.scss */
 .icon-font:before {
   content: "\f031";
@@ -8960,6 +8963,7 @@ div[class^="collection-bg"] {
 
 /* line 66, ../sass/module/_libraries.scss */
 .libraries {
+  min-height: 120px;
   float: left;
   width: 100%;
   margin-left: 0%;
