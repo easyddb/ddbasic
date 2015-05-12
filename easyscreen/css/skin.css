@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'ApexBold';
+  src: url('../fonts/ApexSans-Extrabold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ApexSans-Extrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ApexSans-Extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ApexSans-Extrabold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ApexSans-Extrabold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ApexSans-Extrabold.svg#ApexBold') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'ApexMedium';
+  src: url('../fonts/ApexSans-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ApexSans-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ApexSans-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ApexSans-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ApexSans-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ApexSans-Medium.svg#ApexMedium') format('svg'); /* Legacy iOS */
+}
+
 /* Variables */
 
 .search, .search-scan,
@@ -73,8 +93,8 @@
 }
 
 body {
-  background: url("../img/bg-1.jpg") no-repeat;
-  font-family: 'Soho Gothic W01 Regular', Arial, Helvetica, sans-serif;
+  background: url("../img/baggrund_easyscreen2.jpg") no-repeat;
+  font-family: 'ApexMedium', Arial, Helvetica, sans-serif;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -144,13 +164,15 @@ body,
 
 #Header .text {
   display: inline-block;
-  height: 95px;
+  font-family: 'ApexBold', Arial, Helvetica, sans-serif;
   font-size: 32px;
+  height: 95px;
   letter-spacing: 0.1px;
   line-height: 80px;
   margin-left: 7%;
   width: 400px;
 }
+
 .nodelist-title,
 .carousel-ct-container .title {
   font-family: 'ApexBold', Arial, Helvetica, sans-serif;
@@ -171,7 +193,7 @@ body,
   position: absolute;
   top: 25px;
   right: 20px;
-  display: block;
+  display: none;
   float: right;
   width: 190px;
   height: 70px;
@@ -180,7 +202,7 @@ body,
 .search:after {
   background: url("../img/search-icon.png") no-repeat 0 0;
   content: "";
-  display: block;
+  display: none;
   height: 28px;
   position: absolute;
   right: 27px;
@@ -191,7 +213,7 @@ body,
 
 .search:before {
   content: "Tryk her for at søge i basen";
-  display: block;
+  display: none;
   font-size: 12px;
   font-weight: bold;
   left: 15px;
@@ -208,7 +230,7 @@ body,
   position: absolute;
   top: 25px;
   right: 220px;
-  display: block;
+  display: none;
   float: right;
   width: 190px;
   height: 70px;
@@ -388,6 +410,11 @@ body,
   font-size: 20px;
 }
 
+.single-ct-container .location,
+.carousel-ct-container .location {
+  font-family: 'ApexMedium', Arial, Helvetica, sans-serif;
+}
+
 #SlidersDiv .textandimage-ct-container .content .title {
   font-size: 48px;
 }
@@ -402,20 +429,21 @@ body,
   top: 40px;
 }
 
-.simple-tpl .item-data .body {
+.simple-tpl .item-data .body,
+.carousel-tpl .item-data .body {
   position: absolute;
   top: 186px;
 }
 
 .carousel-tpl .item-data .body {
-  bottom: 100%;
+  bottom: 90px;
   width: 100%;
-
 }
 
 .single-ct-container .title,
 .carousel-tpl .title {
   display: inline-block;
+  font-family: 'ApexBold', Arial, Helvetica, sans-serif;
   font-size: 27px;
   font-weight: bold;
   padding: 3px 5px;
@@ -489,6 +517,7 @@ body,
 }
 
 .art-popup-tpl h1.title {
+  font-family: 'ApexBold', Arial, Helvetica, sans-serif;
   font-size: 48px;
   text-align: left;
 }
@@ -549,6 +578,7 @@ body,
 .rss-ct.extended-vertical-ticker .panel .title,
 .rss-ct.single-carousel .rss-item .content .title,
 #SlidersDiv .accordeon .title {
+  font-family: 'ApexBold', Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: bold;
 }
