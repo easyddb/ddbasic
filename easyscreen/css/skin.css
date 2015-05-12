@@ -120,7 +120,7 @@ body,
 #SlidersDiv,
 .section-container .carousel-ct-bodycontent .teaser,
 .single-ct-container .teaser {
-  -ms-word-break: break-all;
+  -ms-word-break: normal;
   word-break: normal;
   font-size: 26px;
 }
@@ -432,7 +432,7 @@ body,
 .simple-tpl .item-data .body,
 .carousel-tpl .item-data .body {
   position: absolute;
-  top: 186px;
+  top: 145px;
 }
 
 .carousel-tpl .item-data .body {
