@@ -89,9 +89,8 @@ if ($view_mode == 'teaser') {
   $content['group_ding_library_right_column']['title'][0]['#markup'] = '<h2 class="page-title library-title"><a href="' . $node_url . '">' . $title . '</a></h2>';
   $content['group_ding_library_right_column']['title']['#weight'] = '0';
 }
-?>
 
-<?php
+// Check if library list image present.
 $image_exist_class = (!empty($content['group_ding_library_left_column'])) ? ' library-cover-exist' : '';
 ?>
 
