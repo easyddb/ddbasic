@@ -3142,9 +3142,6 @@ ul.icons li [class*=" icon-"] {
   content: "\f030";
 }
 
-.libraries.library-cover-exist:before {
-  display: none;
-}
 /* line 318, ../sass/framework/_fontawesome.scss */
 .icon-font:before {
   content: "\f031";
@@ -4187,12 +4184,12 @@ body {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -4836,12 +4833,12 @@ body {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:before, .attachments-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:after {
   clear: both;
 }
@@ -5684,12 +5681,12 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:before, .ting-reference-reverse-list .list-item:before, .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   clear: both;
 }
@@ -8015,7 +8012,7 @@ div[class^="collection-bg"] {
  * New Materials search result
  *
  *
- * @author Árni Loftsson
+ * @author ├ürni Loftsson
  */
 /**
  * Carousel
@@ -8031,12 +8028,12 @@ div[class^="collection-bg"] {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:before, .rs-carousel-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:after {
   clear: both;
 }
@@ -8963,7 +8960,6 @@ div[class^="collection-bg"] {
 
 /* line 66, ../sass/module/_libraries.scss */
 .libraries {
-  min-height: 120px;
   float: left;
   width: 100%;
   margin-left: 0%;
@@ -8979,11 +8975,12 @@ div[class^="collection-bg"] {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  min-height: 120px;
   position: relative;
   padding: 0;
   /* Media queries */
 }
-/* line 74, ../sass/module/_libraries.scss */
+/* line 75, ../sass/module/_libraries.scss */
 .libraries:before {
   color: #bcbcbc;
   font-family: "FontAwesome";
@@ -8995,7 +8992,11 @@ div[class^="collection-bg"] {
   width: 16.67%;
   z-index: 25;
 }
-/* line 86, ../sass/module/_libraries.scss */
+/* line 87, ../sass/module/_libraries.scss */
+.libraries.library-cover-exist:before {
+  display: none;
+}
+/* line 91, ../sass/module/_libraries.scss */
 .libraries .ding-library-left {
   float: left;
   width: 16.66667%;
@@ -9014,7 +9015,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding: 0;
 }
-/* line 92, ../sass/module/_libraries.scss */
+/* line 97, ../sass/module/_libraries.scss */
 .libraries .ding-library-right {
   float: left;
   width: 50%;
@@ -9032,7 +9033,7 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 96, ../sass/module/_libraries.scss */
+/* line 101, ../sass/module/_libraries.scss */
 .libraries .ding-library-aside {
   float: right;
   width: 33.33333%;
@@ -9051,7 +9052,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 102, ../sass/module/_libraries.scss */
+  /* line 107, ../sass/module/_libraries.scss */
   .libraries .ding-library-aside {
     float: left;
     width: 100%;
@@ -9071,16 +9072,16 @@ div[class^="collection-bg"] {
     clear: left;
   }
 }
-/* line 108, ../sass/module/_libraries.scss */
+/* line 113, ../sass/module/_libraries.scss */
 .libraries .library-title {
   font-size: 110%;
 }
-/* line 112, ../sass/module/_libraries.scss */
+/* line 117, ../sass/module/_libraries.scss */
 .libraries .field,
 .libraries .library-title {
   margin-bottom: 5px;
 }
-/* line 117, ../sass/module/_libraries.scss */
+/* line 122, ../sass/module/_libraries.scss */
 .libraries .field.field-name-field-ding-library-list-image,
 .libraries .library-title.field-name-field-ding-library-list-image {
   -moz-box-sizing: border-box;
@@ -9089,7 +9090,7 @@ div[class^="collection-bg"] {
   position: relative;
   z-index: 26;
 }
-/* line 127, ../sass/module/_libraries.scss */
+/* line 132, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-label {
   float: left;
   width: 25%;
@@ -9108,7 +9109,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 133, ../sass/module/_libraries.scss */
+/* line 138, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-items {
   float: left;
   width: 75%;
@@ -9126,15 +9127,15 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 138, ../sass/module/_libraries.scss */
+/* line 143, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse {
   margin-bottom: 10px;
 }
-/* line 142, ../sass/module/_libraries.scss */
+/* line 147, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div {
   display: inline;
 }
-/* line 147, ../sass/module/_libraries.scss */
+/* line 152, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div .street-block:after,
 .libraries .field-name-field-ding-library-addresse div .addressfield-container-inline:after {
   content: ',';
@@ -9160,12 +9161,12 @@ div[class^="collection-bg"] {
     _overflow-y: visible;
     padding: 0;
   }
-  /* line 161, ../sass/module/_libraries.scss */
+  /* line 166, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 30px;
     top: 0.8em;
   }
-  /* line 166, ../sass/module/_libraries.scss */
+  /* line 171, ../sass/module/_libraries.scss */
   .libraries .field-name-field-ding-library-phone-number,
   .libraries .field-name-field-ding-library-fax-number,
   .libraries .field-name-field-ding-library-mail,
@@ -9174,14 +9175,14 @@ div[class^="collection-bg"] {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 176, ../sass/module/_libraries.scss */
+  /* line 181, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 50px;
     top: 0.4em;
   }
 }
 
-/* line 183, ../sass/module/_libraries.scss */
+/* line 188, ../sass/module/_libraries.scss */
 .library-link {
   padding-top: 20px;
   padding-left: 20px;
@@ -9190,11 +9191,11 @@ div[class^="collection-bg"] {
 /* Library page
    ========================================================================== */
 /* Using id, can't remove and add better wrapper class */
-/* line 195, ../sass/module/_libraries.scss */
+/* line 200, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-image {
   margin-bottom: 20px;
 }
-/* line 199, ../sass/module/_libraries.scss */
+/* line 204, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact {
   float: left;
   width: 50%;
@@ -9213,7 +9214,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 205, ../sass/module/_libraries.scss */
+/* line 210, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-address {
   float: right;
   width: 50%;
@@ -9232,12 +9233,12 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 211, ../sass/module/_libraries.scss */
+/* line 216, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact,
 #ding-library-front .ding-library-address {
   margin-bottom: 10px;
 }
-/* line 215, ../sass/module/_libraries.scss */
+/* line 220, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact .pane-title,
 #ding-library-front .ding-library-address .pane-title {
   font-weight: 600;
@@ -9245,7 +9246,7 @@ div[class^="collection-bg"] {
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 211, ../sass/module/_libraries.scss */
+  /* line 216, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-contact,
   #ding-library-front .ding-library-address {
     clear: left;
@@ -9268,11 +9269,11 @@ div[class^="collection-bg"] {
     background-color: #efefef;
   }
 }
-/* line 232, ../sass/module/_libraries.scss */
+/* line 237, ../sass/module/_libraries.scss */
 #ding-library-front .library-address-postal-code {
   margin-right: 5px;
 }
-/* line 236, ../sass/module/_libraries.scss */
+/* line 241, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-toggle {
   float: left;
   width: 50%;
@@ -9294,12 +9295,12 @@ div[class^="collection-bg"] {
   width: auto;
 }
 @media only screen and (max-width: 768px) {
-  /* line 236, ../sass/module/_libraries.scss */
+  /* line 241, ../sass/module/_libraries.scss */
   #ding-library-front .opening-hours-toggle {
     display: none;
   }
 }
-/* line 248, ../sass/module/_libraries.scss */
+/* line 253, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-opening-hours {
   clear: both;
   /* Toggle opening hours with javascript */
@@ -9307,29 +9308,29 @@ div[class^="collection-bg"] {
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 248, ../sass/module/_libraries.scss */
+  /* line 253, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-opening-hours {
     display: block;
     padding-top: 20px;
   }
 }
-/* line 262, ../sass/module/_libraries.scss */
+/* line 267, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 266, ../sass/module/_libraries.scss */
+/* line 271, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .header {
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 274, ../sass/module/_libraries.scss */
+/* line 279, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .day {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 280, ../sass/module/_libraries.scss */
+/* line 285, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news {
   clear: both;
   float: left;
@@ -9349,7 +9350,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 286, ../sass/module/_libraries.scss */
+/* line 291, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-events {
   float: right;
   width: 41.66667%;
@@ -9368,14 +9369,14 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 291, ../sass/module/_libraries.scss */
+/* line 296, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news,
 #ding-library-front .ding-library-events {
   border-top: 1px solid #efefef;
   padding-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 291, ../sass/module/_libraries.scss */
+  /* line 296, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-news,
   #ding-library-front .ding-library-events {
     clear: both;
@@ -11458,12 +11459,12 @@ div[class^="collection-bg"] {
   padding-bottom: 20px;
   padding-left: 10px;
 }
-/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:before, .group-blocks--wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:after {
   clear: both;
 }
@@ -11792,12 +11793,12 @@ div[class^="collection-bg"] {
   margin-bottom: 0;
   background-color: #fff;
 }
-/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:before, .search-field-in-content .collapsible:before, .search .collapsible:after, .search-field-in-content .collapsible:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:after, .search-field-in-content .collapsible:after {
   clear: both;
 }
