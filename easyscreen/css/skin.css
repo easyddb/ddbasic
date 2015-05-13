@@ -691,8 +691,8 @@ ul.newsticker {
 }
 
 .event-details {
-  height: 10%;
-  line-height: 40px;
+  height: 14%;
+  line-height: 36px;
   margin-top: 1%;
   overflow: hidden;
 }
@@ -702,7 +702,10 @@ ul.newsticker {
   float: left;
 }
 
-.event-details .c1,
+.event-details .c1 {
+  width: 10%;
+}
+
 .event-details .c2 {
   width: 10%;
 }
@@ -736,7 +739,8 @@ ul.newsticker {
 }
 
 .event-details .c4 {
-  width: 40%;
+  line-height: 30px;
+  width: 30%;
 }
 
 .event-details i {
@@ -763,7 +767,7 @@ ul.newsticker {
 }
 
 .column1 .event-details .col {
-  line-height: 30px;
+  line-height: 18px;
   width: 20%;
 }
 
