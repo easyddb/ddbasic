@@ -79,6 +79,7 @@
 ?>
 <div class="<?php print $classes; ?>">
   <div class="content"<?php print $content_attributes; ?>>
-    <?php print render($content); ?>
+    <?php print render($content['group_left_col_search']); ?>
+    <?php print render($content['group_right_col_search']); ?>
   </div>
 </div>
