@@ -76,22 +76,23 @@
     color: $gray-dark;
     font-family: $base-icon-library-font;
     font-size: 74px;
-    left: 0;
     position: absolute;
-    text-align: center;
-    top: 1em;
-    width: 16.67%;
-    z-index: 25;
-  }
-
-  &.library-cover-exist:before {
-    display: none;
+    top: 50%;
+    left: 5%;
+    margin-right: -5%;
+    transform: translate(-5%, -50%);
   }
 
   .ding-library-left {
     @include zen-grid-item(2, 1);
-
     padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &.library-cover-exist:before {
+    display: none;
   }
 
   .ding-library-right {
