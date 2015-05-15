@@ -13141,17 +13141,23 @@ div[class^="collection-bg"] {
 }
 
 /* line 794, ../sass/module/_ding_nodelist.scss */
+fieldset legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 803, ../sass/module/_ding_nodelist.scss */
 .attachments-3-3 .ding_nodelist-taxonomy .item .item-list-image,
 .tertiary-content .ding_nodelist-taxonomy .item .item-list-image,
 .attachments-4-4 .ding_nodelist-taxonomy .item .item-list-image {
   display: none;
 }
 
-/* line 801, ../sass/module/_ding_nodelist.scss */
+/* line 810, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:nth-child(odd) {
   background-color: #e8e8e8;
 }
-/* line 805, ../sass/module/_ding_nodelist.scss */
+/* line 814, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item {
   background-color: #f2f2f2;
   margin-bottom: 10px;
@@ -13159,51 +13165,51 @@ div[class^="collection-bg"] {
   padding: 20px;
   width: 100%;
 }
-/* line 812, ../sass/module/_ding_nodelist.scss */
+/* line 821, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:first-of-type {
   border-top: 0;
 }
-/* line 816, ../sass/module/_ding_nodelist.scss */
+/* line 825, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 130%;
 }
-/* line 819, ../sass/module/_ding_nodelist.scss */
+/* line 828, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title a {
   font-weight: 700;
 }
-/* line 824, ../sass/module/_ding_nodelist.scss */
+/* line 833, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-date {
   color: #959595;
 }
-/* line 828, ../sass/module/_ding_nodelist.scss */
+/* line 837, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-author {
   display: none;
 }
-/* line 832, ../sass/module/_ding_nodelist.scss */
+/* line 841, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .label, .ding_nodelist-taxonomy .item .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .subjects .subject, .subjects .ding_nodelist-taxonomy .item .subject, .ding_nodelist-taxonomy .item .news-list .news-label, .news-list .ding_nodelist-taxonomy .item .news-label, .ding_nodelist-taxonomy .item .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-taxonomy .item .field-item {
   margin-left: 0;
 }
-/* line 836, ../sass/module/_ding_nodelist.scss */
+/* line 845, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-body {
   margin-top: 10px;
 }
 @media only screen and (min-width: 769px) {
-  /* line 805, ../sass/module/_ding_nodelist.scss */
+  /* line 814, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item {
     display: table;
   }
-  /* line 845, ../sass/module/_ding_nodelist.scss */
+  /* line 854, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-details,
   .ding_nodelist-taxonomy .item .item-list-image {
     display: table-cell;
     vertical-align: top;
   }
-  /* line 851, ../sass/module/_ding_nodelist.scss */
+  /* line 860, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image {
     padding-right: 10px;
     width: 159px;
   }
-  /* line 855, ../sass/module/_ding_nodelist.scss */
+  /* line 864, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image img {
     width: 159px;
     height: auto;
