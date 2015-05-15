@@ -1063,7 +1063,7 @@ function ddbasic_views_pre_render(&$view){
       if ($val == $field['raw']['value2']) {
          $date = new DateTime($val, new DateTimeZone($field['raw']['timezone_db']));
          $date->setTimezone(new DateTimeZone($field['raw']['timezone']));
-         $date = $date->format('H:s');
+         $date = $date->format('H:i');
          $field['rendered']['#markup'] = $date . ' - ' . t('All day');
       }
     }
