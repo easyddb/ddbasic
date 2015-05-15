@@ -8975,21 +8975,21 @@ div[class^="collection-bg"] {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  min-height: 120px;
   position: relative;
   padding: 0;
   /* Media queries */
 }
-/* line 74, ../sass/module/_libraries.scss */
+/* line 75, ../sass/module/_libraries.scss */
 .libraries:before {
   color: #bcbcbc;
   font-family: "FontAwesome";
   font-size: 74px;
-  left: 0;
   position: absolute;
-  text-align: center;
-  top: 1em;
-  width: 25%;
-  z-index: 25;
+  top: 50%;
+  left: 5%;
+  margin-right: -5%;
+  transform: translate(-5%, -50%);
 }
 /* line 86, ../sass/module/_libraries.scss */
 .libraries .ding-library-left {
@@ -9009,8 +9009,15 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
   padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
-/* line 92, ../sass/module/_libraries.scss */
+/* line 94, ../sass/module/_libraries.scss */
+.libraries.library-cover-exist:before {
+  display: none;
+}
+/* line 98, ../sass/module/_libraries.scss */
 .libraries .ding-library-right {
   float: left;
   width: 50%;
@@ -9028,7 +9035,7 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 96, ../sass/module/_libraries.scss */
+/* line 102, ../sass/module/_libraries.scss */
 .libraries .ding-library-aside {
   float: right;
   width: 33.33333%;
@@ -9047,7 +9054,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 102, ../sass/module/_libraries.scss */
+  /* line 108, ../sass/module/_libraries.scss */
   .libraries .ding-library-aside {
     float: left;
     width: 100%;
@@ -9067,16 +9074,16 @@ div[class^="collection-bg"] {
     clear: left;
   }
 }
-/* line 108, ../sass/module/_libraries.scss */
+/* line 114, ../sass/module/_libraries.scss */
 .libraries .library-title {
   font-size: 110%;
 }
-/* line 112, ../sass/module/_libraries.scss */
+/* line 118, ../sass/module/_libraries.scss */
 .libraries .field,
 .libraries .library-title {
   margin-bottom: 5px;
 }
-/* line 117, ../sass/module/_libraries.scss */
+/* line 123, ../sass/module/_libraries.scss */
 .libraries .field.field-name-field-ding-library-list-image,
 .libraries .library-title.field-name-field-ding-library-list-image {
   -moz-box-sizing: border-box;
@@ -9085,7 +9092,7 @@ div[class^="collection-bg"] {
   position: relative;
   z-index: 26;
 }
-/* line 127, ../sass/module/_libraries.scss */
+/* line 133, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-label {
   float: left;
   width: 25%;
@@ -9104,7 +9111,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 133, ../sass/module/_libraries.scss */
+/* line 139, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-items {
   float: left;
   width: 75%;
@@ -9122,15 +9129,15 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 138, ../sass/module/_libraries.scss */
+/* line 144, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse {
   margin-bottom: 10px;
 }
-/* line 142, ../sass/module/_libraries.scss */
+/* line 148, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div {
   display: inline;
 }
-/* line 147, ../sass/module/_libraries.scss */
+/* line 153, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div .street-block:after,
 .libraries .field-name-field-ding-library-addresse div .addressfield-container-inline:after {
   content: ',';
@@ -9156,12 +9163,12 @@ div[class^="collection-bg"] {
     _overflow-y: visible;
     padding: 0;
   }
-  /* line 161, ../sass/module/_libraries.scss */
+  /* line 167, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 30px;
     top: 0.8em;
   }
-  /* line 166, ../sass/module/_libraries.scss */
+  /* line 172, ../sass/module/_libraries.scss */
   .libraries .field-name-field-ding-library-phone-number,
   .libraries .field-name-field-ding-library-fax-number,
   .libraries .field-name-field-ding-library-mail,
@@ -9170,14 +9177,14 @@ div[class^="collection-bg"] {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 176, ../sass/module/_libraries.scss */
+  /* line 182, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 50px;
     top: 0.4em;
   }
 }
 
-/* line 183, ../sass/module/_libraries.scss */
+/* line 189, ../sass/module/_libraries.scss */
 .library-link {
   padding-top: 20px;
   padding-left: 20px;
@@ -9186,11 +9193,11 @@ div[class^="collection-bg"] {
 /* Library page
    ========================================================================== */
 /* Using id, can't remove and add better wrapper class */
-/* line 195, ../sass/module/_libraries.scss */
+/* line 201, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-image {
   margin-bottom: 20px;
 }
-/* line 199, ../sass/module/_libraries.scss */
+/* line 205, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact {
   float: left;
   width: 50%;
@@ -9209,7 +9216,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 205, ../sass/module/_libraries.scss */
+/* line 211, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-address {
   float: right;
   width: 50%;
@@ -9228,12 +9235,12 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 211, ../sass/module/_libraries.scss */
+/* line 217, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact,
 #ding-library-front .ding-library-address {
   margin-bottom: 10px;
 }
-/* line 215, ../sass/module/_libraries.scss */
+/* line 221, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact .pane-title,
 #ding-library-front .ding-library-address .pane-title {
   font-weight: 600;
@@ -9241,7 +9248,7 @@ div[class^="collection-bg"] {
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 211, ../sass/module/_libraries.scss */
+  /* line 217, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-contact,
   #ding-library-front .ding-library-address {
     clear: left;
@@ -9264,11 +9271,11 @@ div[class^="collection-bg"] {
     background-color: #efefef;
   }
 }
-/* line 232, ../sass/module/_libraries.scss */
+/* line 238, ../sass/module/_libraries.scss */
 #ding-library-front .library-address-postal-code {
   margin-right: 5px;
 }
-/* line 236, ../sass/module/_libraries.scss */
+/* line 242, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-toggle {
   float: left;
   width: 50%;
@@ -9290,12 +9297,12 @@ div[class^="collection-bg"] {
   width: auto;
 }
 @media only screen and (max-width: 768px) {
-  /* line 236, ../sass/module/_libraries.scss */
+  /* line 242, ../sass/module/_libraries.scss */
   #ding-library-front .opening-hours-toggle {
     display: none;
   }
 }
-/* line 248, ../sass/module/_libraries.scss */
+/* line 254, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-opening-hours {
   clear: both;
   /* Toggle opening hours with javascript */
@@ -9303,29 +9310,29 @@ div[class^="collection-bg"] {
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 248, ../sass/module/_libraries.scss */
+  /* line 254, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-opening-hours {
     display: block;
     padding-top: 20px;
   }
 }
-/* line 262, ../sass/module/_libraries.scss */
+/* line 268, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 266, ../sass/module/_libraries.scss */
+/* line 272, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .header {
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 274, ../sass/module/_libraries.scss */
+/* line 280, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .day {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 280, ../sass/module/_libraries.scss */
+/* line 286, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news {
   clear: both;
   float: left;
@@ -9345,7 +9352,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 286, ../sass/module/_libraries.scss */
+/* line 292, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-events {
   float: right;
   width: 41.66667%;
@@ -9364,14 +9371,14 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 291, ../sass/module/_libraries.scss */
+/* line 297, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news,
 #ding-library-front .ding-library-events {
   border-top: 1px solid #efefef;
   padding-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 291, ../sass/module/_libraries.scss */
+  /* line 297, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-news,
   #ding-library-front .ding-library-events {
     clear: both;
