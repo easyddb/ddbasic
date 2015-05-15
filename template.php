@@ -1061,7 +1061,10 @@ function ddbasic_views_pre_render(&$view){
       $field = &$item->field_field_ding_event_date[0];
       $val = $field['raw']['value'];
       if ($val == $field['raw']['value2']) {
-        $field['rendered']['#markup'] = date('H:s', strtotime($val)) . ' - ' . t('All day');
+         $date = new DateTime($val, new DateTimeZone($field['raw']['timezone_db']));
+         $date->setTimezone(new DateTimeZone($field['raw']['timezone']));
+         $date = $date->format('H:s');
+         $field['rendered']['#markup'] = $date . ' - ' . t('All day');
       }
     }
   }
