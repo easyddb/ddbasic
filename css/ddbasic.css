@@ -3337,7 +3337,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* line 359, ../sass/framework/_fontawesome.scss */
-.icon-info-sign:before, .opening-hours-week .notice-star:before {
+.icon-info-sign:before, .opening-hours-week .notice-star:before, .hours .day-notice-star:before {
   content: "\f05a";
 }
 
@@ -8970,21 +8970,21 @@ div[class^="collection-bg"] {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  min-height: 120px;
   position: relative;
   padding: 0;
   /* Media queries */
 }
-/* line 74, ../sass/module/_libraries.scss */
+/* line 75, ../sass/module/_libraries.scss */
 .libraries:before {
   color: #bcbcbc;
   font-family: "FontAwesome";
   font-size: 74px;
-  left: 0;
   position: absolute;
-  text-align: center;
-  top: 1em;
-  width: 25%;
-  z-index: 25;
+  top: 50%;
+  left: 5%;
+  margin-right: -5%;
+  transform: translate(-5%, -50%);
 }
 /* line 86, ../sass/module/_libraries.scss */
 .libraries .ding-library-left {
@@ -9004,8 +9004,15 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
   padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
-/* line 92, ../sass/module/_libraries.scss */
+/* line 94, ../sass/module/_libraries.scss */
+.libraries.library-cover-exist:before {
+  display: none;
+}
+/* line 98, ../sass/module/_libraries.scss */
 .libraries .ding-library-right {
   float: left;
   width: 50%;
@@ -9023,7 +9030,7 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 96, ../sass/module/_libraries.scss */
+/* line 102, ../sass/module/_libraries.scss */
 .libraries .ding-library-aside {
   float: right;
   width: 33.33333%;
@@ -9042,7 +9049,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 102, ../sass/module/_libraries.scss */
+  /* line 108, ../sass/module/_libraries.scss */
   .libraries .ding-library-aside {
     float: left;
     width: 100%;
@@ -9062,16 +9069,16 @@ div[class^="collection-bg"] {
     clear: left;
   }
 }
-/* line 108, ../sass/module/_libraries.scss */
+/* line 114, ../sass/module/_libraries.scss */
 .libraries .library-title {
   font-size: 110%;
 }
-/* line 112, ../sass/module/_libraries.scss */
+/* line 118, ../sass/module/_libraries.scss */
 .libraries .field,
 .libraries .library-title {
   margin-bottom: 5px;
 }
-/* line 117, ../sass/module/_libraries.scss */
+/* line 123, ../sass/module/_libraries.scss */
 .libraries .field.field-name-field-ding-library-list-image,
 .libraries .library-title.field-name-field-ding-library-list-image {
   -moz-box-sizing: border-box;
@@ -9080,7 +9087,7 @@ div[class^="collection-bg"] {
   position: relative;
   z-index: 26;
 }
-/* line 127, ../sass/module/_libraries.scss */
+/* line 133, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-label {
   float: left;
   width: 25%;
@@ -9099,7 +9106,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 133, ../sass/module/_libraries.scss */
+/* line 139, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-items {
   float: left;
   width: 75%;
@@ -9117,15 +9124,15 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 138, ../sass/module/_libraries.scss */
+/* line 144, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse {
   margin-bottom: 10px;
 }
-/* line 142, ../sass/module/_libraries.scss */
+/* line 148, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div {
   display: inline;
 }
-/* line 147, ../sass/module/_libraries.scss */
+/* line 153, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div .street-block:after,
 .libraries .field-name-field-ding-library-addresse div .addressfield-container-inline:after {
   content: ',';
@@ -9151,12 +9158,12 @@ div[class^="collection-bg"] {
     _overflow-y: visible;
     padding: 0;
   }
-  /* line 161, ../sass/module/_libraries.scss */
+  /* line 167, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 30px;
     top: 0.8em;
   }
-  /* line 166, ../sass/module/_libraries.scss */
+  /* line 172, ../sass/module/_libraries.scss */
   .libraries .field-name-field-ding-library-phone-number,
   .libraries .field-name-field-ding-library-fax-number,
   .libraries .field-name-field-ding-library-mail,
@@ -9165,14 +9172,14 @@ div[class^="collection-bg"] {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 176, ../sass/module/_libraries.scss */
+  /* line 182, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 50px;
     top: 0.4em;
   }
 }
 
-/* line 183, ../sass/module/_libraries.scss */
+/* line 189, ../sass/module/_libraries.scss */
 .library-link {
   padding-top: 20px;
   padding-left: 20px;
@@ -9181,11 +9188,11 @@ div[class^="collection-bg"] {
 /* Library page
    ========================================================================== */
 /* Using id, can't remove and add better wrapper class */
-/* line 195, ../sass/module/_libraries.scss */
+/* line 201, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-image {
   margin-bottom: 20px;
 }
-/* line 199, ../sass/module/_libraries.scss */
+/* line 205, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact {
   float: left;
   width: 50%;
@@ -9204,7 +9211,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 205, ../sass/module/_libraries.scss */
+/* line 211, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-address {
   float: right;
   width: 50%;
@@ -9223,12 +9230,12 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 211, ../sass/module/_libraries.scss */
+/* line 217, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact,
 #ding-library-front .ding-library-address {
   margin-bottom: 10px;
 }
-/* line 215, ../sass/module/_libraries.scss */
+/* line 221, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact .pane-title,
 #ding-library-front .ding-library-address .pane-title {
   font-weight: 600;
@@ -9236,7 +9243,7 @@ div[class^="collection-bg"] {
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 211, ../sass/module/_libraries.scss */
+  /* line 217, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-contact,
   #ding-library-front .ding-library-address {
     clear: left;
@@ -9259,11 +9266,11 @@ div[class^="collection-bg"] {
     background-color: #efefef;
   }
 }
-/* line 232, ../sass/module/_libraries.scss */
+/* line 238, ../sass/module/_libraries.scss */
 #ding-library-front .library-address-postal-code {
   margin-right: 5px;
 }
-/* line 236, ../sass/module/_libraries.scss */
+/* line 242, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-toggle {
   float: left;
   width: 50%;
@@ -9285,12 +9292,12 @@ div[class^="collection-bg"] {
   width: auto;
 }
 @media only screen and (max-width: 768px) {
-  /* line 236, ../sass/module/_libraries.scss */
+  /* line 242, ../sass/module/_libraries.scss */
   #ding-library-front .opening-hours-toggle {
     display: none;
   }
 }
-/* line 248, ../sass/module/_libraries.scss */
+/* line 254, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-opening-hours {
   clear: both;
   /* Toggle opening hours with javascript */
@@ -9298,29 +9305,29 @@ div[class^="collection-bg"] {
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 248, ../sass/module/_libraries.scss */
+  /* line 254, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-opening-hours {
     display: block;
     padding-top: 20px;
   }
 }
-/* line 262, ../sass/module/_libraries.scss */
+/* line 268, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 266, ../sass/module/_libraries.scss */
+/* line 272, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .header {
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 274, ../sass/module/_libraries.scss */
+/* line 280, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .day {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 280, ../sass/module/_libraries.scss */
+/* line 286, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news {
   clear: both;
   float: left;
@@ -9340,7 +9347,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 286, ../sass/module/_libraries.scss */
+/* line 292, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-events {
   float: right;
   width: 41.66667%;
@@ -9359,14 +9366,14 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 291, ../sass/module/_libraries.scss */
+/* line 297, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news,
 #ding-library-front .ding-library-events {
   border-top: 1px solid #efefef;
   padding-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 291, ../sass/module/_libraries.scss */
+  /* line 297, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-news,
   #ding-library-front .ding-library-events {
     clear: both;
@@ -9512,6 +9519,23 @@ div[class^="collection-bg"] {
 }
 
 /* line 142, ../sass/module/_openinghours.scss */
+.hours {
+  padding-right: 0.9em;
+  width: 45%;
+}
+/* line 146, ../sass/module/_openinghours.scss */
+.hours .day-notice-star {
+  visibility: hidden;
+  margin-right: -1.5em;
+  padding-left: .5em;
+}
+/* line 154, ../sass/module/_openinghours.scss */
+.hours .day-notice-star:before {
+  visibility: visible;
+  font-family: "FontAwesome";
+}
+
+/* line 161, ../sass/module/_openinghours.scss */
 .layout-wrapper .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: transparent;
   padding: 0;
@@ -12244,6 +12268,12 @@ div[class^="collection-bg"] {
   font-size: 100%;
 }
 
+/* line 31, ../sass/module/_alma_item_list.scss */
+.pane-alma-item-list {
+  background-color: #fff;
+  padding: 10px;
+}
+
 /* line 1, ../sass/module/_ding_item_viewer.scss */
 .ding-item-viewer {
   margin: 10px 0;
@@ -13130,72 +13160,78 @@ div[class^="collection-bg"] {
 }
 
 /* line 794, ../sass/module/_ding_nodelist.scss */
+fieldset legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 803, ../sass/module/_ding_nodelist.scss */
 .attachments-3-3 .ding_nodelist-taxonomy .item .item-list-image,
 .tertiary-content .ding_nodelist-taxonomy .item .item-list-image,
 .attachments-4-4 .ding_nodelist-taxonomy .item .item-list-image {
   display: none;
 }
 
-/* line 801, ../sass/module/_ding_nodelist.scss */
+/* line 810, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:nth-child(odd) {
   background-color: #e8e8e8;
 }
-/* line 805, ../sass/module/_ding_nodelist.scss */
+/* line 814, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item {
   background-color: #f2f2f2;
   margin-bottom: 10px;
   overflow: hidden;
   padding: 20px;
 }
-/* line 811, ../sass/module/_ding_nodelist.scss */
+/* line 820, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:first-of-type {
   border-top: 0;
 }
-/* line 815, ../sass/module/_ding_nodelist.scss */
+/* line 824, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-details {
   width: 100%;
 }
-/* line 819, ../sass/module/_ding_nodelist.scss */
+/* line 828, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 130%;
 }
-/* line 822, ../sass/module/_ding_nodelist.scss */
+/* line 831, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title a {
   font-weight: 700;
 }
-/* line 827, ../sass/module/_ding_nodelist.scss */
+/* line 836, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-date {
   color: #959595;
 }
-/* line 831, ../sass/module/_ding_nodelist.scss */
+/* line 840, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-author {
   display: none;
 }
-/* line 835, ../sass/module/_ding_nodelist.scss */
+/* line 844, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .label, .ding_nodelist-taxonomy .item .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .subjects .subject, .subjects .ding_nodelist-taxonomy .item .subject, .ding_nodelist-taxonomy .item .news-list .news-label, .news-list .ding_nodelist-taxonomy .item .news-label, .ding_nodelist-taxonomy .item .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-taxonomy .item .field-item {
   margin-left: 0;
 }
-/* line 839, ../sass/module/_ding_nodelist.scss */
+/* line 848, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-body {
   margin-top: 10px;
 }
 @media only screen and (min-width: 769px) {
-  /* line 805, ../sass/module/_ding_nodelist.scss */
+  /* line 814, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item {
     display: table;
   }
-  /* line 848, ../sass/module/_ding_nodelist.scss */
+  /* line 857, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-details,
   .ding_nodelist-taxonomy .item .item-list-image {
     display: table-cell;
     vertical-align: top;
   }
-  /* line 854, ../sass/module/_ding_nodelist.scss */
+  /* line 863, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image {
     padding-right: 10px;
     width: 159px;
   }
-  /* line 858, ../sass/module/_ding_nodelist.scss */
+  /* line 867, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image img {
     width: 159px;
     height: auto;
