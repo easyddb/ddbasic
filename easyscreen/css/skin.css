@@ -694,6 +694,7 @@ ul.newsticker {
   line-height: 36px;
   margin-top: 1%;
   overflow: hidden;
+  height: 2.8em;
 }
 
 .event-details .col {
