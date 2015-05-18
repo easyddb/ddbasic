@@ -498,10 +498,12 @@ function ddbasic_preprocess_field(&$vars, $hook) {
   if (strpos($vars['element']['#field_name'], '_tags') !== FALSE) {
     $vars['theme_hook_suggestions'][] = 'field__ddbasic_tags__' . $view_mode;
 
-    $tid = $vars['element']['#object']->field_editorial_base[LANGUAGE_NONE][0]['tid'];
-    $term = taxonomy_term_load($tid);
-    $uri = entity_uri('taxonomy_term', $term);
-    array_unshift($vars['items'], l($term->name, $uri['path'], array('attributes' => array('class' => array('label', 'label-info')))));
+    if (isset($vars['element']['#object']->field_editorial_base[LANGUAGE_NONE][0]['tid'])) {
+      $tid = $vars['element']['#object']->field_editorial_base[LANGUAGE_NONE][0]['tid'];
+      $term = taxonomy_term_load($tid);
+      $uri = entity_uri('taxonomy_term', $term);
+      array_unshift($vars['items'], l($term->name, $uri['path'], array('attributes' => array('class' => array('label', 'label-info')))));
+    }
   }
 
   // Stream line category in view modes using the same tpl.
