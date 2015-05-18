@@ -127,26 +127,7 @@
       <?php endif; ?>
       <div class="description" itemprop="description">
         <?php
-          // Hide fields we have already rendered.
-          hide($content['field_ding_event_category']);
-          hide($content['og_group_ref']);
-          hide($content['ding_event_groups_ref']);
-
-          // Field provided by optional module ding_place2book
-          hide($content['field_place2book_tickets']);
-          hide($content['field_ding_event_date']);
-          hide($content['field_ding_event_location']);
-          hide($content['field_ding_event_target']);
-          hide($content['field_ding_event_price']);
-
-          // Hide fields that will be displayed as panel panes instead.
-          hide($content['comments']);
-
-          // Hide fields now so that we can render them later.
-          hide($content['links']);
-          hide($content['field_ding_event_tags']);
-
-          print render($content);
+          print render($content['field_ding_event_body']);
         ?>
       </div>
     </div>
@@ -154,9 +135,6 @@
     <footer class="event-footer">
       <section class="event-tags">
         <span class="event-category label"><?php print render($content['field_ding_event_category']); ?></span>
-        <?php if (isset($content['field_editorial_base'])) : ?>
-          <span class="label"><?php print render($content['field_editorial_base']); ?></span>
-        <?php endif;?>
         <?php if (isset($content['field_ding_event_tags'])) : ?>
           <span class="event-tags label"><?php print render($content['field_ding_event_tags']); ?></span>
         <?php endif; ?>
