@@ -139,6 +139,25 @@
   }
 }
 
+.hours{
+  padding-right: 0.9em;
+  width: 45%;
+
+  .day-notice-star {
+    @extend .icon-info-sign;
+
+    visibility: hidden;
+    margin-right: -1.5em;
+    padding-left: .5em;
+
+    // Icon placement and font-face.
+    &:before {
+      visibility: visible;
+      font-family: $base-icon-library-font;
+    }
+  }
+}
+
 .layout-wrapper .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: transparent;
   padding: 0;

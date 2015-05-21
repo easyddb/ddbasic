@@ -11,7 +11,7 @@ include_once drupal_get_path('theme', 'ddbasic') . '/inc/functions.inc';
  * Implements hook_preprocess_html().
  */
 function ddbasic_preprocess_html(&$vars) {
-  if (in_array('html_node_newsletter', $vars['theme_hook_suggestions'])) {
+  if (in_array('html__node__newsletter', $vars['theme_hook_suggestions'])) {
     $vars['newsletter'] = $vars['page']['content']['system_main']['main']['#markup'];
   }
   // Load responsive.js file
@@ -389,7 +389,7 @@ function ddbasic_preprocess_node(&$variables, $hook) {
           ),
           '#prefix' => '<div class="event-arrow-link">',
           '#surfix' => '</div>',
-          '#weight' => 6,
+          '#weight' => 99,
         );
 
         $variables['content']['group_right_col_search']['more_link'] = $more_link;
@@ -408,7 +408,7 @@ function ddbasic_preprocess_node(&$variables, $hook) {
           ),
           '#prefix' => '<span class="news-link">',
           '#surfix' => '</span>',
-          '#weight' => 6,
+          '#weight' => 99,
         );
 
         $variables['content']['group_right_col_search']['more_link'] = $more_link;
@@ -427,7 +427,7 @@ function ddbasic_preprocess_node(&$variables, $hook) {
           ),
           '#prefix' => '<span class="eresource-link">',
           '#surfix' => '</span>',
-          '#weight' => 6,
+          '#weight' => 99,
         );
 
         $variables['content']['group_right_col_search']['more_link'] = $more_link;
@@ -495,8 +495,20 @@ function ddbasic_preprocess_field(&$vars, $hook) {
   $vars['theme_hook_suggestions'][] = 'field__ddbasic_' . $view_mode;
 
   // Stream line tags in view modes using the same tpl.
-  if ($vars['element']['#field_type'] == 'taxonomy_term_reference') {
+  if (strpos($vars['element']['#field_name'], '_tags') !== FALSE) {
     $vars['theme_hook_suggestions'][] = 'field__ddbasic_tags__' . $view_mode;
+
+    if (isset($vars['element']['#object']->field_editorial_base[LANGUAGE_NONE][0]['tid'])) {
+      $tid = $vars['element']['#object']->field_editorial_base[LANGUAGE_NONE][0]['tid'];
+      $term = taxonomy_term_load($tid);
+      $uri = entity_uri('taxonomy_term', $term);
+      array_unshift($vars['items'], l($term->name, $uri['path'], array('attributes' => array('class' => array('label', 'label-info')))));
+    }
+  }
+
+  // Stream line category in view modes using the same tpl.
+  if (strpos($vars['element']['#field_name'], '_category') !== FALSE) {
+    $vars['theme_hook_suggestions'][] = 'field__ddbasic_category__' . $view_mode;
   }
 
   // Ensure that all OG group ref field are the same.
@@ -1061,7 +1073,10 @@ function ddbasic_views_pre_render(&$view){
       $field = &$item->field_field_ding_event_date[0];
       $val = $field['raw']['value'];
       if ($val == $field['raw']['value2']) {
-        $field['rendered']['#markup'] = date('H:s', strtotime($val)) . ' - ' . t('All day');
+         $date = new DateTime($val, new DateTimeZone($field['raw']['timezone_db']));
+         $date->setTimezone(new DateTimeZone($field['raw']['timezone']));
+         $date = $date->format('H:i');
+         $field['rendered']['#markup'] = $date . ' - ' . t('All day');
       }
     }
   }

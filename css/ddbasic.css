@@ -70,66 +70,62 @@
 }
 
 /* Links */
-/* line 31, ../sass/configuration/_configuration.scss */
-a {
-  font-weight: 400;
-}
-/* line 34, ../sass/configuration/_configuration.scss */
+/* line 32, ../sass/configuration/_configuration.scss */
 a:link {
   color: #00b7e7;
   text-decoration: none;
 }
-/* line 39, ../sass/configuration/_configuration.scss */
+/* line 37, ../sass/configuration/_configuration.scss */
 a:visited {
   color: #007a9b;
   text-decoration: none;
 }
-/* line 44, ../sass/configuration/_configuration.scss */
+/* line 42, ../sass/configuration/_configuration.scss */
 a:hover {
   color: #006681;
   text-decoration: underline;
 }
-/* line 48, ../sass/configuration/_configuration.scss */
+/* line 46, ../sass/configuration/_configuration.scss */
 a:hover i[class^="icon-"] {
   text-decoration: none;
 }
-/* line 53, ../sass/configuration/_configuration.scss */
+/* line 51, ../sass/configuration/_configuration.scss */
 a:focus {
   color: #006681;
 }
 
 /* Layout background color */
-/* line 61, ../sass/configuration/_configuration.scss */
+/* line 59, ../sass/configuration/_configuration.scss */
 .layout-wrapper {
   background-color: #fffffe;
 }
 
 /* Article background extends */
-/* line 68, ../sass/configuration/_configuration.scss */
+/* line 66, ../sass/configuration/_configuration.scss */
 .field-name-field-ding-news-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, #ding-library-front .opening-hours-week .header, .groups-list .groups-list-item {
   background-color: #ebebeb;
 }
 
-/* line 72, ../sass/configuration/_configuration.scss */
+/* line 70, ../sass/configuration/_configuration.scss */
 .field-name-field-ding-news-materials .field-item:nth-child(odd), .library-list .views-row:nth-child(odd), .field-name-field-ding-page-materials .field-item:nth-child(odd), .news-list .news-list-item:nth-child(odd), .event-list .event-list-item:nth-child(odd), .opening-hours-week .days .odd, .staff-list .staff-list-item:nth-child(odd),
 .staff-list-all .staff-list-item:nth-child(odd), .groups-list .groups-list-item:nth-child(odd) {
   background-color: #e8e8e8;
 }
 
-/* line 76, ../sass/configuration/_configuration.scss */
+/* line 74, ../sass/configuration/_configuration.scss */
 .field-name-field-ding-news-materials .field-item:nth-child(even), .library-list .views-row:nth-child(even), .field-name-field-ding-page-materials .field-item:nth-child(even), .news-list .news-list-item:nth-child(even), .event-list .event-list-item:nth-child(even), .opening-hours-week .days .even, .staff-list .staff-list-item:nth-child(even),
 .staff-list-all .staff-list-item:nth-child(even), .groups-list .groups-list-item:nth-child(even) {
   background-color: #f2f2f2;
 }
 
 /* Footer background color */
-/* line 83, ../sass/configuration/_configuration.scss */
+/* line 81, ../sass/configuration/_configuration.scss */
 .footer {
   background-color: #262626;
 }
 
 /* Bottom background color */
-/* line 90, ../sass/configuration/_configuration.scss */
+/* line 88, ../sass/configuration/_configuration.scss */
 .bottom {
   background-color: #191919;
 }
@@ -3341,7 +3337,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* line 359, ../sass/framework/_fontawesome.scss */
-.icon-info-sign:before, .opening-hours-week .notice-star:before {
+.icon-info-sign:before, .opening-hours-week .notice-star:before, .hours .day-notice-star:before {
   content: "\f05a";
 }
 
@@ -4184,12 +4180,12 @@ body {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -4268,10 +4264,9 @@ body {
 /* line 88, ../sass/layout/_layout.scss */
 .logo img {
   margin-top: 10px;
-  max-height: 70px;
 }
 
-/* line 94, ../sass/layout/_layout.scss */
+/* line 93, ../sass/layout/_layout.scss */
 .site-name-wrapper {
   float: left;
   width: 33.33333%;
@@ -4291,7 +4286,7 @@ body {
   margin-top: 30px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 94, ../sass/layout/_layout.scss */
+  /* line 93, ../sass/layout/_layout.scss */
   .site-name-wrapper {
     float: left;
     width: 50%;
@@ -4312,7 +4307,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 94, ../sass/layout/_layout.scss */
+  /* line 93, ../sass/layout/_layout.scss */
   .site-name-wrapper {
     float: left;
     width: 50%;
@@ -4333,25 +4328,25 @@ body {
   }
 }
 
-/* line 113, ../sass/layout/_layout.scss */
+/* line 112, ../sass/layout/_layout.scss */
 .site-name, .site-name-with-slogan {
   margin-bottom: 0;
   font-weight: 600;
   font-size: 180%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 113, ../sass/layout/_layout.scss */
+  /* line 112, ../sass/layout/_layout.scss */
   .site-name, .site-name-with-slogan {
     font-size: 160%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 113, ../sass/layout/_layout.scss */
+  /* line 112, ../sass/layout/_layout.scss */
   .site-name, .site-name-with-slogan {
     font-size: 100%;
   }
 }
-/* line 130, ../sass/layout/_layout.scss */
+/* line 129, ../sass/layout/_layout.scss */
 .site-name a, .site-name-with-slogan a,
 .site-name a:link,
 .site-name-with-slogan a:link,
@@ -4364,14 +4359,14 @@ body {
   text-decoration: none;
 }
 
-/* line 144, ../sass/layout/_layout.scss */
+/* line 143, ../sass/layout/_layout.scss */
 .site-slogan {
   margin-top: 10px;
   margin-left: 2px;
   color: #fff;
 }
 
-/* line 150, ../sass/layout/_layout.scss */
+/* line 149, ../sass/layout/_layout.scss */
 .logo {
   float: left;
   width: 41.66667%;
@@ -4392,29 +4387,29 @@ body {
 
 /* Content
    ========================================================================== */
-/* line 158, ../sass/layout/_layout.scss */
+/* line 157, ../sass/layout/_layout.scss */
 .content-wrapper {
   margin-top: 20px;
 }
-/* line 161, ../sass/layout/_layout.scss */
+/* line 160, ../sass/layout/_layout.scss */
 .content-wrapper .content-inner {
   overflow: visible;
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
 }
-/* line 167, ../sass/layout/_layout.scss */
+/* line 166, ../sass/layout/_layout.scss */
 .content-wrapper .content-inner .pane-content .panel-pane {
   margin-bottom: 20px;
 }
 
 /* Layouts
    ========================================================================== */
-/* line 177, ../sass/layout/_layout.scss */
+/* line 176, ../sass/layout/_layout.scss */
 .frontpage-layout {
   /* Media queries */
 }
-/* line 178, ../sass/layout/_layout.scss */
+/* line 177, ../sass/layout/_layout.scss */
 .frontpage-layout .primary-content,
 .frontpage-layout .secondary-content,
 .frontpage-layout .tertiary-content {
@@ -4422,7 +4417,7 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 186, ../sass/layout/_layout.scss */
+/* line 185, ../sass/layout/_layout.scss */
 .frontpage-layout .primary-content {
   clear: left;
   float: left;
@@ -4441,7 +4436,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 191, ../sass/layout/_layout.scss */
+/* line 190, ../sass/layout/_layout.scss */
 .frontpage-layout .col12 {
   clear: left;
   float: left;
@@ -4460,7 +4455,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 196, ../sass/layout/_layout.scss */
+/* line 195, ../sass/layout/_layout.scss */
 .frontpage-layout .layout-wrapper {
   clear: left;
   overflow: hidden;
@@ -4471,17 +4466,17 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 207, ../sass/layout/_layout.scss */
+/* line 206, ../sass/layout/_layout.scss */
 .frontpage-layout .col12 {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 208, ../sass/layout/_layout.scss */
+/* line 207, ../sass/layout/_layout.scss */
 .frontpage-layout .col12 .col12 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 210, ../sass/layout/_layout.scss */
+/* line 209, ../sass/layout/_layout.scss */
 .frontpage-layout .col3 {
   float: left;
   width: 25%;
@@ -4499,7 +4494,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 211, ../sass/layout/_layout.scss */
+/* line 210, ../sass/layout/_layout.scss */
 .frontpage-layout .col3.right {
   float: right;
   width: 25%;
@@ -4517,7 +4512,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 212, ../sass/layout/_layout.scss */
+/* line 211, ../sass/layout/_layout.scss */
 .frontpage-layout .col3.pre3 {
   float: left;
   width: 25%;
@@ -4535,7 +4530,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 213, ../sass/layout/_layout.scss */
+/* line 212, ../sass/layout/_layout.scss */
 .frontpage-layout .col3.pre6 {
   float: left;
   width: 25%;
@@ -4553,7 +4548,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 215, ../sass/layout/_layout.scss */
+/* line 214, ../sass/layout/_layout.scss */
 .frontpage-layout .col4 {
   float: left;
   width: 33.33333%;
@@ -4571,7 +4566,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 216, ../sass/layout/_layout.scss */
+/* line 215, ../sass/layout/_layout.scss */
 .frontpage-layout .col4.right {
   float: right;
   width: 33.33333%;
@@ -4589,7 +4584,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 217, ../sass/layout/_layout.scss */
+/* line 216, ../sass/layout/_layout.scss */
 .frontpage-layout .col4.pre4 {
   float: left;
   width: 33.33333%;
@@ -4607,7 +4602,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 219, ../sass/layout/_layout.scss */
+/* line 218, ../sass/layout/_layout.scss */
 .frontpage-layout .col6 {
   float: left;
   width: 50%;
@@ -4625,7 +4620,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 220, ../sass/layout/_layout.scss */
+/* line 219, ../sass/layout/_layout.scss */
 .frontpage-layout .col6.right {
   float: right;
   width: 50%;
@@ -4643,7 +4638,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 221, ../sass/layout/_layout.scss */
+/* line 220, ../sass/layout/_layout.scss */
 .frontpage-layout .col6.pre3 {
   float: left;
   width: 50%;
@@ -4661,7 +4656,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 223, ../sass/layout/_layout.scss */
+/* line 222, ../sass/layout/_layout.scss */
 .frontpage-layout .col7 {
   float: left;
   width: 58.33333%;
@@ -4679,7 +4674,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 224, ../sass/layout/_layout.scss */
+/* line 223, ../sass/layout/_layout.scss */
 .frontpage-layout .col7.right {
   float: right;
   width: 58.33333%;
@@ -4697,7 +4692,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 226, ../sass/layout/_layout.scss */
+/* line 225, ../sass/layout/_layout.scss */
 .frontpage-layout .secondary-content,
 .frontpage-layout .col8 {
   float: left;
@@ -4716,7 +4711,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 228, ../sass/layout/_layout.scss */
+/* line 227, ../sass/layout/_layout.scss */
 .frontpage-layout .secondary-content-right,
 .frontpage-layout .col8.right {
   float: right;
@@ -4735,7 +4730,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 231, ../sass/layout/_layout.scss */
+/* line 230, ../sass/layout/_layout.scss */
 .frontpage-layout .col9 {
   float: left;
   width: 75%;
@@ -4753,7 +4748,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 232, ../sass/layout/_layout.scss */
+/* line 231, ../sass/layout/_layout.scss */
 .frontpage-layout .col9.right {
   float: right;
   width: 75%;
@@ -4771,7 +4766,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 234, ../sass/layout/_layout.scss */
+/* line 233, ../sass/layout/_layout.scss */
 .frontpage-layout .tertiary-content {
   float: right;
   width: 33.33333%;
@@ -4790,7 +4785,7 @@ body {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 240, ../sass/layout/_layout.scss */
+  /* line 239, ../sass/layout/_layout.scss */
   .frontpage-layout .primary-content,
   .frontpage-layout .secondary-content,
   .frontpage-layout .tertiary-content,
@@ -4826,25 +4821,25 @@ body {
   }
 }
 
-/* line 262, ../sass/layout/_layout.scss */
+/* line 261, ../sass/layout/_layout.scss */
 .attachments-wrapper {
   *position: relative;
   *zoom: 1;
   clear: both;
   margin-bottom: 20px;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:before, .attachments-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .attachments-wrapper:after {
   clear: both;
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 271, ../sass/layout/_layout.scss */
+  /* line 270, ../sass/layout/_layout.scss */
   .empty-sidebars .primary-content .pane-fulltext {
     float: left;
     width: 50%;
@@ -4864,7 +4859,7 @@ body {
   }
 }
 
-/* line 277, ../sass/layout/_layout.scss */
+/* line 276, ../sass/layout/_layout.scss */
 .default-layout {
   margin-top: 20px;
   /* Sidebars! */
@@ -4872,7 +4867,7 @@ body {
   /* Left sidebar only */
   /* Right sidebar only */
 }
-/* line 280, ../sass/layout/_layout.scss */
+/* line 279, ../sass/layout/_layout.scss */
 .default-layout .primary-content,
 .default-layout .secondary-content,
 .default-layout .tertiary-content {
@@ -4880,7 +4875,7 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 288, ../sass/layout/_layout.scss */
+/* line 287, ../sass/layout/_layout.scss */
 .default-layout .primary-content {
   float: left;
   width: 75%;
@@ -4898,7 +4893,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 292, ../sass/layout/_layout.scss */
+/* line 291, ../sass/layout/_layout.scss */
 .default-layout .layout-wrapper {
   clear: left;
   overflow: hidden;
@@ -4909,7 +4904,7 @@ body {
   padding-left: 10px;
   background-color: #fff;
 }
-/* line 303, ../sass/layout/_layout.scss */
+/* line 302, ../sass/layout/_layout.scss */
 .default-layout .secondary-content {
   float: left;
   width: 25%;
@@ -4927,7 +4922,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 307, ../sass/layout/_layout.scss */
+/* line 306, ../sass/layout/_layout.scss */
 .default-layout .tertiary-content {
   float: left;
   width: 100%;
@@ -4947,7 +4942,7 @@ body {
   clear: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 315, ../sass/layout/_layout.scss */
+  /* line 314, ../sass/layout/_layout.scss */
   .default-layout .primary-content,
   .default-layout .secondary-content,
   .default-layout .tertiary-content {
@@ -4970,7 +4965,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 940px) {
-  /* line 330, ../sass/layout/_layout.scss */
+  /* line 329, ../sass/layout/_layout.scss */
   .default-layout.sidebars .primary-content {
     float: left;
     width: 50%;
@@ -4988,7 +4983,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 334, ../sass/layout/_layout.scss */
+  /* line 333, ../sass/layout/_layout.scss */
   .default-layout.sidebars .secondary-content {
     float: left;
     width: 25%;
@@ -5006,7 +5001,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 338, ../sass/layout/_layout.scss */
+  /* line 337, ../sass/layout/_layout.scss */
   .default-layout.sidebars .tertiary-content {
     float: right;
     width: 25%;
@@ -5027,7 +5022,7 @@ body {
   }
 }
 @media only screen and (min-width: 1211px) {
-  /* line 347, ../sass/layout/_layout.scss */
+  /* line 346, ../sass/layout/_layout.scss */
   .default-layout.sidebars .primary-content {
     float: left;
     width: 50%;
@@ -5045,7 +5040,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 351, ../sass/layout/_layout.scss */
+  /* line 350, ../sass/layout/_layout.scss */
   .default-layout.sidebars .secondary-content {
     float: left;
     width: 25%;
@@ -5063,7 +5058,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 355, ../sass/layout/_layout.scss */
+  /* line 354, ../sass/layout/_layout.scss */
   .default-layout.sidebars .tertiary-content {
     float: right;
     width: 25%;
@@ -5083,7 +5078,7 @@ body {
     clear: none;
   }
 }
-/* line 365, ../sass/layout/_layout.scss */
+/* line 364, ../sass/layout/_layout.scss */
 .default-layout.empty-sidebars .primary-content {
   float: left;
   width: 100%;
@@ -5101,7 +5096,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 369, ../sass/layout/_layout.scss */
+/* line 368, ../sass/layout/_layout.scss */
 .default-layout.empty-sidebars .secondary-content {
   clear: both;
   float: left;
@@ -5120,7 +5115,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 374, ../sass/layout/_layout.scss */
+/* line 373, ../sass/layout/_layout.scss */
 .default-layout.empty-sidebars .tertiary-content {
   float: right;
   width: 50%;
@@ -5139,7 +5134,7 @@ body {
   _overflow-y: visible;
 }
 @media only screen and (min-width: 769px) and (max-width: 940px) {
-  /* line 386, ../sass/layout/_layout.scss */
+  /* line 385, ../sass/layout/_layout.scss */
   .default-layout.left-sidebar .primary-content {
     float: left;
     width: 75%;
@@ -5157,7 +5152,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 389, ../sass/layout/_layout.scss */
+  /* line 388, ../sass/layout/_layout.scss */
   .default-layout.left-sidebar .secondary-content {
     float: left;
     width: 25%;
@@ -5177,7 +5172,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 940px) {
-  /* line 399, ../sass/layout/_layout.scss */
+  /* line 398, ../sass/layout/_layout.scss */
   .default-layout.right-sidebar .primary-content {
     float: left;
     width: 66.66667%;
@@ -5195,7 +5190,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 403, ../sass/layout/_layout.scss */
+  /* line 402, ../sass/layout/_layout.scss */
   .default-layout.right-sidebar .tertiary-content {
     float: right;
     width: 33.33333%;
@@ -5217,7 +5212,7 @@ body {
 
 /* Attachments (aka. blocks/panes)
    ========================================================================== */
-/* line 414, ../sass/layout/_layout.scss */
+/* line 413, ../sass/layout/_layout.scss */
 .attachment-first {
   float: left;
   width: 25%;
@@ -5236,7 +5231,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 418, ../sass/layout/_layout.scss */
+/* line 417, ../sass/layout/_layout.scss */
 .attachment-second {
   float: left;
   width: 25%;
@@ -5255,7 +5250,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 422, ../sass/layout/_layout.scss */
+/* line 421, ../sass/layout/_layout.scss */
 .attachment-third {
   float: right;
   width: 25%;
@@ -5274,7 +5269,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 426, ../sass/layout/_layout.scss */
+/* line 425, ../sass/layout/_layout.scss */
 .attachment-fourth {
   float: right;
   width: 25%;
@@ -5293,7 +5288,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 431, ../sass/layout/_layout.scss */
+/* line 430, ../sass/layout/_layout.scss */
 .attachments-1-1 .attachment-first {
   clear: left;
   float: left;
@@ -5314,7 +5309,7 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 440, ../sass/layout/_layout.scss */
+  /* line 439, ../sass/layout/_layout.scss */
   .attachment-first,
   .attachment-third,
   .attachment-second,
@@ -5338,7 +5333,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 452, ../sass/layout/_layout.scss */
+  /* line 451, ../sass/layout/_layout.scss */
   .attachment-first,
   .attachment-third {
     clear: left;
@@ -5359,7 +5354,7 @@ body {
     _overflow-y: visible;
   }
 
-  /* line 458, ../sass/layout/_layout.scss */
+  /* line 457, ../sass/layout/_layout.scss */
   .attachment-second,
   .attachment-fourth {
     float: right;
@@ -5380,7 +5375,7 @@ body {
   }
 }
 /* Panel layout with 2 panes */
-/* line 467, ../sass/layout/_layout.scss */
+/* line 466, ../sass/layout/_layout.scss */
 .attachments-2-2 .attachment-first {
   float: left;
   width: 50%;
@@ -5398,7 +5393,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 471, ../sass/layout/_layout.scss */
+/* line 470, ../sass/layout/_layout.scss */
 .attachments-2-2 .attachment-second {
   float: right;
   width: 50%;
@@ -5418,7 +5413,7 @@ body {
 }
 
 /* Panel layout with 3 panes */
-/* line 478, ../sass/layout/_layout.scss */
+/* line 477, ../sass/layout/_layout.scss */
 .attachments-3-3 .attachment-first {
   float: left;
   width: 33.33333%;
@@ -5436,7 +5431,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 482, ../sass/layout/_layout.scss */
+/* line 481, ../sass/layout/_layout.scss */
 .attachments-3-3 .attachment-second {
   float: left;
   width: 33.33333%;
@@ -5454,7 +5449,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 486, ../sass/layout/_layout.scss */
+/* line 485, ../sass/layout/_layout.scss */
 .attachments-3-3 .attachment-third {
   float: right;
   width: 33.33333%;
@@ -5475,18 +5470,18 @@ body {
 
 /* Footer
    ========================================================================== */
-/* line 496, ../sass/layout/_layout.scss */
+/* line 495, ../sass/layout/_layout.scss */
 .footer {
   clear: both;
   overflow: hidden;
   padding-top: 30px;
 }
-/* line 501, ../sass/layout/_layout.scss */
+/* line 500, ../sass/layout/_layout.scss */
 .footer .pane-title {
   font-size: 110%;
 }
 
-/* line 506, ../sass/layout/_layout.scss */
+/* line 505, ../sass/layout/_layout.scss */
 .footer-inner {
   overflow: visible;
   margin-right: auto;
@@ -5494,13 +5489,13 @@ body {
   max-width: 1200px;
 }
 
-/* line 513, ../sass/layout/_layout.scss */
+/* line 512, ../sass/layout/_layout.scss */
 .footer-block {
   background-color: transparent;
   color: #fff;
 }
 
-/* line 518, ../sass/layout/_layout.scss */
+/* line 517, ../sass/layout/_layout.scss */
 .bottom {
   clear: both;
   padding-top: 20px;
@@ -5512,7 +5507,7 @@ body {
 
 /* Dibs accept/cancel/redirect page
    ========================================================================== */
-/* line 532, ../sass/layout/_layout.scss */
+/* line 531, ../sass/layout/_layout.scss */
 .dibs-accept-page,
 .dibs-cancel-page,
 .dibs-redirect-page {
@@ -5525,7 +5520,7 @@ body {
   background-color: #fff;
 }
 @media only screen and (max-width: 1210px) {
-  /* line 532, ../sass/layout/_layout.scss */
+  /* line 531, ../sass/layout/_layout.scss */
   .dibs-accept-page,
   .dibs-cancel-page,
   .dibs-redirect-page {
@@ -5533,7 +5528,7 @@ body {
     margin-right: 10px;
   }
 }
-/* line 548, ../sass/layout/_layout.scss */
+/* line 547, ../sass/layout/_layout.scss */
 .dibs-accept-page > p:first-of-type,
 .dibs-cancel-page > p:first-of-type,
 .dibs-redirect-page > p:first-of-type {
@@ -5681,12 +5676,12 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:before, .ting-reference-reverse-list .list-item:before, .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .view-node-search-result .list-item:after, .ting-reference-reverse-list .list-item:after {
   clear: both;
 }
@@ -8028,12 +8023,12 @@ div[class^="collection-bg"] {
   *position: relative;
   *zoom: 1;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:before, .rs-carousel-wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .rs-carousel-wrapper:after {
   clear: both;
 }
@@ -8975,21 +8970,21 @@ div[class^="collection-bg"] {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  min-height: 120px;
   position: relative;
   padding: 0;
   /* Media queries */
 }
-/* line 74, ../sass/module/_libraries.scss */
+/* line 75, ../sass/module/_libraries.scss */
 .libraries:before {
   color: #bcbcbc;
   font-family: "FontAwesome";
   font-size: 74px;
-  left: 0;
   position: absolute;
-  text-align: center;
-  top: 1em;
-  width: 25%;
-  z-index: 25;
+  top: 50%;
+  left: 5%;
+  margin-right: -5%;
+  transform: translate(-5%, -50%);
 }
 /* line 86, ../sass/module/_libraries.scss */
 .libraries .ding-library-left {
@@ -9009,8 +9004,15 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
   padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
-/* line 92, ../sass/module/_libraries.scss */
+/* line 94, ../sass/module/_libraries.scss */
+.libraries.library-cover-exist:before {
+  display: none;
+}
+/* line 98, ../sass/module/_libraries.scss */
 .libraries .ding-library-right {
   float: left;
   width: 50%;
@@ -9028,7 +9030,7 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 96, ../sass/module/_libraries.scss */
+/* line 102, ../sass/module/_libraries.scss */
 .libraries .ding-library-aside {
   float: right;
   width: 33.33333%;
@@ -9047,7 +9049,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 102, ../sass/module/_libraries.scss */
+  /* line 108, ../sass/module/_libraries.scss */
   .libraries .ding-library-aside {
     float: left;
     width: 100%;
@@ -9067,16 +9069,16 @@ div[class^="collection-bg"] {
     clear: left;
   }
 }
-/* line 108, ../sass/module/_libraries.scss */
+/* line 114, ../sass/module/_libraries.scss */
 .libraries .library-title {
   font-size: 110%;
 }
-/* line 112, ../sass/module/_libraries.scss */
+/* line 118, ../sass/module/_libraries.scss */
 .libraries .field,
 .libraries .library-title {
   margin-bottom: 5px;
 }
-/* line 117, ../sass/module/_libraries.scss */
+/* line 123, ../sass/module/_libraries.scss */
 .libraries .field.field-name-field-ding-library-list-image,
 .libraries .library-title.field-name-field-ding-library-list-image {
   -moz-box-sizing: border-box;
@@ -9085,7 +9087,7 @@ div[class^="collection-bg"] {
   position: relative;
   z-index: 26;
 }
-/* line 127, ../sass/module/_libraries.scss */
+/* line 133, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-label {
   float: left;
   width: 25%;
@@ -9104,7 +9106,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 133, ../sass/module/_libraries.scss */
+/* line 139, ../sass/module/_libraries.scss */
 .libraries .field-label-inline .field-items {
   float: left;
   width: 75%;
@@ -9122,15 +9124,15 @@ div[class^="collection-bg"] {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 138, ../sass/module/_libraries.scss */
+/* line 144, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse {
   margin-bottom: 10px;
 }
-/* line 142, ../sass/module/_libraries.scss */
+/* line 148, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div {
   display: inline;
 }
-/* line 147, ../sass/module/_libraries.scss */
+/* line 153, ../sass/module/_libraries.scss */
 .libraries .field-name-field-ding-library-addresse div .street-block:after,
 .libraries .field-name-field-ding-library-addresse div .addressfield-container-inline:after {
   content: ',';
@@ -9156,12 +9158,12 @@ div[class^="collection-bg"] {
     _overflow-y: visible;
     padding: 0;
   }
-  /* line 161, ../sass/module/_libraries.scss */
+  /* line 167, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 30px;
     top: 0.8em;
   }
-  /* line 166, ../sass/module/_libraries.scss */
+  /* line 172, ../sass/module/_libraries.scss */
   .libraries .field-name-field-ding-library-phone-number,
   .libraries .field-name-field-ding-library-fax-number,
   .libraries .field-name-field-ding-library-mail,
@@ -9170,14 +9172,14 @@ div[class^="collection-bg"] {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 176, ../sass/module/_libraries.scss */
+  /* line 182, ../sass/module/_libraries.scss */
   .libraries:before {
     font-size: 50px;
     top: 0.4em;
   }
 }
 
-/* line 183, ../sass/module/_libraries.scss */
+/* line 189, ../sass/module/_libraries.scss */
 .library-link {
   padding-top: 20px;
   padding-left: 20px;
@@ -9186,11 +9188,11 @@ div[class^="collection-bg"] {
 /* Library page
    ========================================================================== */
 /* Using id, can't remove and add better wrapper class */
-/* line 195, ../sass/module/_libraries.scss */
+/* line 201, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-image {
   margin-bottom: 20px;
 }
-/* line 199, ../sass/module/_libraries.scss */
+/* line 205, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact {
   float: left;
   width: 50%;
@@ -9209,7 +9211,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 205, ../sass/module/_libraries.scss */
+/* line 211, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-address {
   float: right;
   width: 50%;
@@ -9228,12 +9230,12 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 211, ../sass/module/_libraries.scss */
+/* line 217, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact,
 #ding-library-front .ding-library-address {
   margin-bottom: 10px;
 }
-/* line 215, ../sass/module/_libraries.scss */
+/* line 221, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-contact .pane-title,
 #ding-library-front .ding-library-address .pane-title {
   font-weight: 600;
@@ -9241,7 +9243,7 @@ div[class^="collection-bg"] {
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 211, ../sass/module/_libraries.scss */
+  /* line 217, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-contact,
   #ding-library-front .ding-library-address {
     clear: left;
@@ -9264,11 +9266,11 @@ div[class^="collection-bg"] {
     background-color: #efefef;
   }
 }
-/* line 232, ../sass/module/_libraries.scss */
+/* line 238, ../sass/module/_libraries.scss */
 #ding-library-front .library-address-postal-code {
   margin-right: 5px;
 }
-/* line 236, ../sass/module/_libraries.scss */
+/* line 242, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-toggle {
   float: left;
   width: 50%;
@@ -9290,12 +9292,12 @@ div[class^="collection-bg"] {
   width: auto;
 }
 @media only screen and (max-width: 768px) {
-  /* line 236, ../sass/module/_libraries.scss */
+  /* line 242, ../sass/module/_libraries.scss */
   #ding-library-front .opening-hours-toggle {
     display: none;
   }
 }
-/* line 248, ../sass/module/_libraries.scss */
+/* line 254, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-opening-hours {
   clear: both;
   /* Toggle opening hours with javascript */
@@ -9303,29 +9305,29 @@ div[class^="collection-bg"] {
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 248, ../sass/module/_libraries.scss */
+  /* line 254, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-opening-hours {
     display: block;
     padding-top: 20px;
   }
 }
-/* line 262, ../sass/module/_libraries.scss */
+/* line 268, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 266, ../sass/module/_libraries.scss */
+/* line 272, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .header {
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 274, ../sass/module/_libraries.scss */
+/* line 280, ../sass/module/_libraries.scss */
 #ding-library-front .opening-hours-week .day {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 280, ../sass/module/_libraries.scss */
+/* line 286, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news {
   clear: both;
   float: left;
@@ -9345,7 +9347,7 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-left: 0;
 }
-/* line 286, ../sass/module/_libraries.scss */
+/* line 292, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-events {
   float: right;
   width: 41.66667%;
@@ -9364,14 +9366,14 @@ div[class^="collection-bg"] {
   _overflow-y: visible;
   padding-right: 0;
 }
-/* line 291, ../sass/module/_libraries.scss */
+/* line 297, ../sass/module/_libraries.scss */
 #ding-library-front .ding-library-news,
 #ding-library-front .ding-library-events {
   border-top: 1px solid #efefef;
   padding-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 291, ../sass/module/_libraries.scss */
+  /* line 297, ../sass/module/_libraries.scss */
   #ding-library-front .ding-library-news,
   #ding-library-front .ding-library-events {
     clear: both;
@@ -9517,6 +9519,23 @@ div[class^="collection-bg"] {
 }
 
 /* line 142, ../sass/module/_openinghours.scss */
+.hours {
+  padding-right: 0.9em;
+  width: 45%;
+}
+/* line 146, ../sass/module/_openinghours.scss */
+.hours .day-notice-star {
+  visibility: hidden;
+  margin-right: -1.5em;
+  padding-left: .5em;
+}
+/* line 154, ../sass/module/_openinghours.scss */
+.hours .day-notice-star:before {
+  visibility: visible;
+  font-family: "FontAwesome";
+}
+
+/* line 161, ../sass/module/_openinghours.scss */
 .layout-wrapper .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: transparent;
   padding: 0;
@@ -11454,12 +11473,12 @@ div[class^="collection-bg"] {
   padding-bottom: 20px;
   padding-left: 10px;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:before, .group-blocks--wrapper:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .group-blocks--wrapper:after {
   clear: both;
 }
@@ -11788,12 +11807,12 @@ div[class^="collection-bg"] {
   margin-bottom: 0;
   background-color: #fff;
 }
-/* line 45, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:before, .search-field-in-content .collapsible:before, .search .collapsible:after, .search-field-in-content .collapsible:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../usr/local/rvm/gems/ruby-2.1.2/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .search .collapsible:after, .search-field-in-content .collapsible:after {
   clear: both;
 }
@@ -13141,69 +13160,78 @@ div[class^="collection-bg"] {
 }
 
 /* line 794, ../sass/module/_ding_nodelist.scss */
+fieldset legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 803, ../sass/module/_ding_nodelist.scss */
 .attachments-3-3 .ding_nodelist-taxonomy .item .item-list-image,
 .tertiary-content .ding_nodelist-taxonomy .item .item-list-image,
 .attachments-4-4 .ding_nodelist-taxonomy .item .item-list-image {
   display: none;
 }
 
-/* line 801, ../sass/module/_ding_nodelist.scss */
+/* line 810, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:nth-child(odd) {
   background-color: #e8e8e8;
 }
-/* line 805, ../sass/module/_ding_nodelist.scss */
+/* line 814, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item {
   background-color: #f2f2f2;
   margin-bottom: 10px;
   overflow: hidden;
   padding: 20px;
-  width: 100%;
 }
-/* line 812, ../sass/module/_ding_nodelist.scss */
+/* line 820, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item:first-of-type {
   border-top: 0;
 }
-/* line 816, ../sass/module/_ding_nodelist.scss */
+/* line 824, ../sass/module/_ding_nodelist.scss */
+.ding_nodelist-taxonomy .item .item-details {
+  width: 100%;
+}
+/* line 828, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 130%;
 }
-/* line 819, ../sass/module/_ding_nodelist.scss */
+/* line 831, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-title a {
   font-weight: 700;
 }
-/* line 824, ../sass/module/_ding_nodelist.scss */
+/* line 836, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-date {
   color: #959595;
 }
-/* line 828, ../sass/module/_ding_nodelist.scss */
+/* line 840, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-author {
   display: none;
 }
-/* line 832, ../sass/module/_ding_nodelist.scss */
+/* line 844, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .label, .ding_nodelist-taxonomy .item .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .subjects .subject, .subjects .ding_nodelist-taxonomy .item .subject, .ding_nodelist-taxonomy .item .news-list .news-label, .news-list .ding_nodelist-taxonomy .item .news-label, .ding_nodelist-taxonomy .item .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-taxonomy .item .field-item {
   margin-left: 0;
 }
-/* line 836, ../sass/module/_ding_nodelist.scss */
+/* line 848, ../sass/module/_ding_nodelist.scss */
 .ding_nodelist-taxonomy .item .item-body {
   margin-top: 10px;
 }
 @media only screen and (min-width: 769px) {
-  /* line 805, ../sass/module/_ding_nodelist.scss */
+  /* line 814, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item {
     display: table;
   }
-  /* line 845, ../sass/module/_ding_nodelist.scss */
+  /* line 857, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-details,
   .ding_nodelist-taxonomy .item .item-list-image {
     display: table-cell;
     vertical-align: top;
   }
-  /* line 851, ../sass/module/_ding_nodelist.scss */
+  /* line 863, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image {
     padding-right: 10px;
     width: 159px;
   }
-  /* line 855, ../sass/module/_ding_nodelist.scss */
+  /* line 867, ../sass/module/_ding_nodelist.scss */
   .ding_nodelist-taxonomy .item .item-list-image img {
     width: 159px;
     height: auto;
