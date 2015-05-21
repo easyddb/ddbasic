@@ -11589,6 +11589,7 @@ fieldset legend {
   .ding_nodelist-taxonomy .item .item-list-image img {
     width: 159px;
     height: auto;
+    min-width: 159px;
   }
 }
 
