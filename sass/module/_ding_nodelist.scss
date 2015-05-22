@@ -788,6 +788,15 @@ $label-bg: url('../images/p.png');
 
 }
 
+// Nodelist fieldset
+//==========================================================================
+fieldset {
+  legend {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 // Taxonomy nodelist
 //==========================================================================
 
@@ -855,6 +864,7 @@ $label-bg: url('../images/p.png');
         img {
           width: 159px;
           height: auto;
+          min-width: 159px;
         }
       }
     }

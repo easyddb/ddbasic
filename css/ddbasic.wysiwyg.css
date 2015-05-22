@@ -70,7 +70,6 @@
  * Correct `block` display not defined in IE 8/9.
  */
 @import url(../font/source-sans/stylesheet.css);
-/* line 11, ../sass/framework/_normalize.scss */
 article,
 aside,
 details,
@@ -89,7 +88,6 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 30, ../sass/framework/_normalize.scss */
 audio,
 canvas,
 video {
@@ -100,7 +98,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, ../sass/framework/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -109,7 +106,6 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 50, ../sass/framework/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -122,7 +118,6 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 64, ../sass/framework/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -135,7 +130,6 @@ html {
 /**
  * Remove default margin.
  */
-/* line 74, ../sass/framework/_normalize.scss */
 body {
   margin: 0;
 }
@@ -146,7 +140,6 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 86, ../sass/framework/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -154,7 +147,6 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 94, ../sass/framework/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -167,7 +159,6 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 108, ../sass/framework/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -176,7 +167,6 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 117, ../sass/framework/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -184,7 +174,6 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 125, ../sass/framework/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -193,7 +182,6 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 134, ../sass/framework/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -201,7 +189,6 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 142, ../sass/framework/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -211,7 +198,6 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 152, ../sass/framework/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -220,7 +206,6 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 161, ../sass/framework/_normalize.scss */
 code,
 kbd,
 pre,
@@ -232,7 +217,6 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 173, ../sass/framework/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -240,7 +224,6 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 181, ../sass/framework/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -248,7 +231,6 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 189, ../sass/framework/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -256,7 +238,6 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 197, ../sass/framework/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -265,12 +246,10 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 205, ../sass/framework/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 209, ../sass/framework/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -281,7 +260,6 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 221, ../sass/framework/_normalize.scss */
 img {
   border: 0;
 }
@@ -289,7 +267,6 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 229, ../sass/framework/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -300,7 +277,6 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 241, ../sass/framework/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -311,7 +287,6 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 253, ../sass/framework/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -322,7 +297,6 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 264, ../sass/framework/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -335,7 +309,6 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 275, ../sass/framework/_normalize.scss */
 button,
 input,
 select,
@@ -352,7 +325,6 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 289, ../sass/framework/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -364,7 +336,6 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 301, ../sass/framework/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -377,7 +348,6 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 314, ../sass/framework/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -391,7 +361,6 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 326, ../sass/framework/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -401,7 +370,6 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 336, ../sass/framework/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -415,7 +383,6 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 348, ../sass/framework/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -429,7 +396,6 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 360, ../sass/framework/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -438,7 +404,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 369, ../sass/framework/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -449,7 +414,6 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 380, ../sass/framework/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -463,7 +427,6 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 393, ../sass/framework/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -474,7 +437,6 @@ table {
  *
  * @author magnify
  */
-/* line 8, ../sass/framework/_base.scss */
 body {
   background-color: #efefef;
   color: rgba(0, 0, 0, 0.7);
@@ -483,7 +445,6 @@ body {
   line-height: 24px;
 }
 
-/* line 17, ../sass/framework/_base.scss */
 h1,
 h2,
 h3,
@@ -498,7 +459,6 @@ h6 {
   /* Voodoo to enable ligatures and kerning */
   text-rendering: optimizeLegibility;
 }
-/* line 35, ../sass/framework/_base.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
@@ -508,7 +468,6 @@ h6 a:link {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
-/* line 40, ../sass/framework/_base.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -517,7 +476,6 @@ h5 a:visited,
 h6 a:visited {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 44, ../sass/framework/_base.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -526,7 +484,6 @@ h5 a:hover,
 h6 a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 48, ../sass/framework/_base.scss */
 h1 a:focus,
 h2 a:focus,
 h3 a:focus,
@@ -535,7 +492,6 @@ h5 a:focus,
 h6 a:focus {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 52, ../sass/framework/_base.scss */
 h1 a:active,
 h2 a:active,
 h3 a:active,
@@ -546,54 +502,44 @@ h6 a:active {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 60, ../sass/framework/_base.scss */
 h1 {
   font-size: 200%;
 }
 
-/* line 64, ../sass/framework/_base.scss */
 h2 {
   font-size: 180%;
 }
 
-/* line 68, ../sass/framework/_base.scss */
 h3 {
   font-size: 160%;
 }
 
-/* line 72, ../sass/framework/_base.scss */
 h4 {
   font-size: 130%;
 }
 
-/* line 76, ../sass/framework/_base.scss */
 h5 {
   font-size: 110%;
 }
 
-/* line 80, ../sass/framework/_base.scss */
 h6 {
   font-size: 100%;
 }
 
-/* line 85, ../sass/framework/_base.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 90, ../sass/framework/_base.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
-/* line 93, ../sass/framework/_base.scss */
 em strong {
   font-weight: 600;
 }
 
 /* Image
    ========================================================================== */
-/* line 103, ../sass/framework/_base.scss */
 img {
   display: inline;
   height: auto;
@@ -603,23 +549,19 @@ img {
 
 /* Lists
    ========================================================================== */
-/* line 115, ../sass/framework/_base.scss */
 ol {
   padding-left: 20px;
 }
 
-/* line 119, ../sass/framework/_base.scss */
 ul {
   margin: 0;
   padding-left: 20px;
 }
-/* line 123, ../sass/framework/_base.scss */
 ul li {
   list-style: none;
 }
 
 /* Make sure lists in content get the icon */
-/* line 133, ../sass/framework/_base.scss */
 .field-type-text-long ul li,
 .page-content ul li {
   list-style: disc outside;
@@ -627,7 +569,6 @@ ul li {
 
 /* Fieldset
    ========================================================================== */
-/* line 144, ../sass/framework/_base.scss */
 fieldset {
   border-color: #efefef;
   margin-top: 0;
@@ -640,7 +581,6 @@ fieldset {
   padding-left: 20px;
 }
 
-/* line 156, ../sass/framework/_base.scss */
 legend {
   font-weight: 600;
   display: block;
@@ -653,7 +593,6 @@ legend {
 
 /* Selection color
    ========================================================================== */
-/* line 172, ../sass/framework/_base.scss */
 ::-moz-selection,
 ::selection {
   background-color: #ffff99;
@@ -672,7 +611,6 @@ legend {
    ========================================================================== */
 /* Base tables
    ========================================================================== */
-/* line 20, ../sass/framework/_tables.scss */
 table {
   max-width: 100%;
   border-collapse: collapse;
@@ -680,7 +618,6 @@ table {
   /* Use bordered table styling as default for tables */
 }
 
-/* line 31, ../sass/framework/_tables.scss */
 th {
   background-color: #efefef;
   /* Drupal system stylesheet adds bottom border */
@@ -688,23 +625,19 @@ th {
 }
 
 /* Drupal uses these */
-/* line 39, ../sass/framework/_tables.scss */
 tr.even {
   background-color: #efefef;
 }
 
-/* line 43, ../sass/framework/_tables.scss */
 tr.odd {
   background-color: #e4e4e4;
 }
 
 /* Baseline styling
    ========================================================================== */
-/* line 51, ../sass/framework/_tables.scss */
 .table, table {
   width: 100%;
 }
-/* line 54, ../sass/framework/_tables.scss */
 .table th, table th,
 .table td,
 table td {
@@ -713,7 +646,6 @@ table td {
   text-align: left;
   vertical-align: top;
 }
-/* line 62, ../sass/framework/_tables.scss */
 .table th, table th {
   font-weight: 600;
   padding-top: 10px;
@@ -721,11 +653,9 @@ table td {
   padding-bottom: 10px;
   padding-left: 10px;
 }
-/* line 70, ../sass/framework/_tables.scss */
 .table thead th, table thead th {
   vertical-align: bottom;
 }
-/* line 74, ../sass/framework/_tables.scss */
 .table caption + thead tr:first-child th, table caption + thead tr:first-child th,
 .table caption + thead tr:first-child td,
 table caption + thead tr:first-child td,
@@ -741,13 +671,11 @@ table tbody:first-child tr:first-child th,
 table thead:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 85, ../sass/framework/_tables.scss */
 .table tbody + tbody, table tbody + tbody {
   border-top: 2px solid #d5d5d5;
 }
 
 /* Condensed table w/ half padding */
-/* line 92, ../sass/framework/_tables.scss */
 .table-condensed th,
 .table-condensed td {
   padding: 3px;
@@ -755,7 +683,6 @@ table thead:first-child tr:first-child td {
 
 /* Bordered version
    ========================================================================== */
-/* line 101, ../sass/framework/_tables.scss */
 .table-bordered, table {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -767,13 +694,11 @@ table thead:first-child tr:first-child td {
   *border-collapse: collapsed;
   border-left: 0;
 }
-/* line 111, ../sass/framework/_tables.scss */
 .table-bordered th, table th,
 .table-bordered td,
 table td {
   border-left: 1px solid #d5d5d5;
 }
-/* line 116, ../sass/framework/_tables.scss */
 .table-bordered caption + thead tr:first-child th, table caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
 table caption + tbody tr:first-child th,
@@ -793,7 +718,6 @@ table tbody:first-child tr:first-child th,
 table tbody:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 128, ../sass/framework/_tables.scss */
 .table-bordered thead:first-child tr:first-child th:first-child, table thead:first-child tr:first-child th:first-child,
 .table-bordered tbody:first-child tr:first-child th:first-child,
 table tbody:first-child tr:first-child th:first-child,
@@ -803,7 +727,6 @@ table tbody:first-child tr:first-child td:first-child {
   -webkit-border-radius: 4px;
   border-radius: 4px 0 0;
 }
-/* line 135, ../sass/framework/_tables.scss */
 .table-bordered thead:first-child tr:first-child th:last-child, table thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child th:last-child,
 table tbody:first-child tr:first-child th:last-child,
@@ -813,7 +736,6 @@ table tbody:first-child tr:first-child td:last-child {
   -webkit-border-radius: 0;
   border-radius: 0 4px 0 0;
 }
-/* line 142, ../sass/framework/_tables.scss */
 .table-bordered thead:last-child tr:last-child th:first-child, table thead:last-child tr:last-child th:first-child,
 .table-bordered tbody:last-child tr:last-child th:first-child,
 table tbody:last-child tr:last-child th:first-child,
@@ -823,7 +745,6 @@ table tbody:last-child tr:last-child td:first-child {
   -webkit-border-radius: 0;
   border-radius: 0 0 0 4px;
 }
-/* line 148, ../sass/framework/_tables.scss */
 .table-bordered thead:last-child tr:last-child th:last-child, table thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child th:last-child,
 table tbody:last-child tr:last-child th:last-child,
@@ -836,12 +757,10 @@ table tbody:last-child tr:last-child td:last-child {
 
 /* Zebra-striping
    ========================================================================== */
-/* line 161, ../sass/framework/_tables.scss */
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
   background-color: #fbfbfb;
 }
-/* line 165, ../sass/framework/_tables.scss */
 .table-striped tbody tr:nth-child(odd) td:hover,
 .table-striped tbody tr:nth-child(odd) th:hover {
   background-color: auto;
@@ -849,24 +768,19 @@ table tbody:last-child tr:last-child td:last-child {
 
 /* Borderless table.
    ========================================================================== */
-/* line 175, ../sass/framework/_tables.scss */
 .table-borderless {
   border: 0;
 }
-/* line 178, ../sass/framework/_tables.scss */
 .table-borderless tbody {
   border: 0;
 }
-/* line 181, ../sass/framework/_tables.scss */
 .table-borderless tbody tr {
   background-color: auto;
   border: 0;
 }
-/* line 185, ../sass/framework/_tables.scss */
 .table-borderless tbody tr:hover {
   background-color: initial;
 }
-/* line 190, ../sass/framework/_tables.scss */
 .table-borderless tbody td {
   border: 0;
   padding-left: 0;
@@ -880,19 +794,16 @@ table tbody:last-child tr:last-child td:last-child {
  */
 /* Extends
    ========================================================================== */
-/* line 10, ../sass/layout/_typography.scss */
 .page-title {
   font-weight: 600;
   font-size: 200%;
 }
 @media only screen and (max-width: 480px) {
-  /* line 10, ../sass/layout/_typography.scss */
   .page-title {
     font-size: 130%;
   }
 }
 
-/* line 20, ../sass/layout/_typography.scss */
 .pane-title {
   font-weight: 600;
   font-size: 160%;
@@ -900,40 +811,33 @@ table tbody:last-child tr:last-child td:last-child {
 
 /* Header variants
    ========================================================================== */
-/* line 31, ../sass/layout/_typography.scss */
 .page-title {
   margin-bottom: 20px;
 }
 
-/* line 37, ../sass/layout/_typography.scss */
 .pane-title {
   margin-bottom: 10px;
 }
 
 /* Content and elements
    ========================================================================== */
-/* line 47, ../sass/layout/_typography.scss */
 .page-image {
   margin-bottom: 10px;
 }
 
-/* line 51, ../sass/layout/_typography.scss */
 .page-lead {
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-/* line 57, ../sass/layout/_typography.scss */
 .page-content {
   margin-bottom: 10px;
 }
 
-/* line 29, ../sass/ddbasic.wysiwyg.scss */
 body {
   background: #fff;
 }
 
-/* line 33, ../sass/ddbasic.wysiwyg.scss */
 .cke_dialog_ui_hbox_last {
   display: none;
 }
