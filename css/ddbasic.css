@@ -7204,7 +7204,7 @@ div[class^="collection-bg"] {
   position: absolute;
   right: 5px;
   top: 5px;
-  width: initial;
+  width: auto;
 }
 @media only screen and (max-width: 480px) {
   .rs-carousel-mask li {
