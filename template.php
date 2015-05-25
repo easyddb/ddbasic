@@ -501,8 +501,10 @@ function ddbasic_preprocess_field(&$vars, $hook) {
     if (isset($vars['element']['#object']->field_editorial_base[LANGUAGE_NONE][0]['tid'])) {
       $tid = $vars['element']['#object']->field_editorial_base[LANGUAGE_NONE][0]['tid'];
       $term = taxonomy_term_load($tid);
-      $uri = entity_uri('taxonomy_term', $term);
-      array_unshift($vars['items'], l($term->name, $uri['path'], array('attributes' => array('class' => array('label', 'label-info')))));
+      if (false !== $term) {
+        $uri = entity_uri('taxonomy_term', $term);
+        array_unshift($vars['items'], l($term->name, $uri['path'], array('attributes' => array('class' => array('label', 'label-info')))));
+      }
     }
   }
 
