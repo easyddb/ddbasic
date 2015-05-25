@@ -256,11 +256,12 @@ a.button,
 
 /* Action Links
    ========================================================================== */
-
-li {
-  color: $link-color;
-  &:before {
+.action-links {
+  li {
     color: $link-color;
+    &:before {
+      color: $link-color;
+    }
   }
 }
 
