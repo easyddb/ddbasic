@@ -32,6 +32,7 @@
  * Every color settings MUST be in HEX format..
  * @author magnify
  */
+/* Body */
 /* Topbar */
 /* Header */
 /* Navigation */
@@ -8356,14 +8357,9 @@ div[class^="collection-bg"] {
   background-color: #e8e8e8;
 }
 
-.hours {
-  padding-right: 0.9em;
-  width: 45%;
-}
 .hours .day-notice-star {
   visibility: hidden;
-  margin-right: -1.5em;
-  padding-left: .5em;
+  margin-right: .5em;
 }
 .hours .day-notice-star:before {
   visibility: visible;
