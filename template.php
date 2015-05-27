@@ -198,7 +198,7 @@ function ddbasic_preprocess_panels_pane(&$vars) {
     $vars['classes_array'][] = 'sub-menu-wrapper';
 
     // Change the theme wrapper for both menu-block and OG menu.
-    if (isset($vars['content']['#content'])) {
+    if (isset($vars['content']['#content']) && is_array($vars['content']['#content'])) {
       // Menu-block.
       $vars['content']['#content']['#theme_wrappers'] = array('menu_tree__sub_menu');
     }
