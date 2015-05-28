@@ -11609,3 +11609,159 @@ fieldset legend {
     background-repeat: no-repeat;
   }
 }
+
+/**
+ * Ding search related
+ *
+ * @author ac
+ */
+div.primary-content .view-ting-search-related-content {
+  *position: relative;
+  *zoom: 1;
+}
+div.primary-content .view-ting-search-related-content:before, div.primary-content .view-ting-search-related-content:after {
+  content: "";
+  display: table;
+}
+div.primary-content .view-ting-search-related-content:after {
+  clear: both;
+}
+div.primary-content .view-ting-search-related-content div.view-content > div {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  max-height: inherit;
+}
+@media only screen and (max-width: 480px) {
+  div.primary-content .view-ting-search-related-content div.view-content > div {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  div.primary-content .view-ting-search-related-content div.view-content > div {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+div.primary-content .view-ting-search-related-content div.view-content > div.even {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+@media only screen and (max-width: 480px) {
+  div.primary-content .view-ting-search-related-content div.view-content > div.even {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  div.primary-content .view-ting-search-related-content div.view-content > div.even {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+
+.view-ting-search-related-content {
+  background-color: #e8e8e8;
+}
+.view-ting-search-related-content div.view-content > div {
+  padding: 10px;
+}
+.view-ting-search-related-content .views-field-field-ding-event-list-image {
+  max-width: 159px;
+  max-height: 159px;
+}
+.view-ting-search-related-content .views-field-title {
+  font-size: 130%;
+  font-weight: 700;
+}
+.view-ting-search-related-content .views-field-title a:link,
+.view-ting-search-related-content .views-field-title a:hover,
+.view-ting-search-related-content .views-field-title a:visited {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+.view-ting-search-related-content .views-field-field-ding-event-body {
+  margin-top: 10px;
+}
