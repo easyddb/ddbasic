@@ -8371,6 +8371,11 @@ div[class^="collection-bg"] {
   padding: 0;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .hours .day-notice-star {
+    visibility: visible;
+  }
+}
 /**
  * User
  *

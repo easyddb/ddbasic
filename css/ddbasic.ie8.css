@@ -31,6 +31,7 @@
  * Every color settings MUST be in HEX format..
  * @author magnify
  */
+/* Body */
 /* Topbar */
 /* Header */
 /* Navigation */
@@ -182,4 +183,8 @@ img {
 .lt-ie9 .ting-reference-reverse-list .search-results .list .view-mode-teaser,
 .lt-ie9 .pane-new-materials .search-results .list .view-mode-teaser {
   background-color: #fff;
+}
+
+.hours .day-notice-star {
+  visibility: visible;
 }
