@@ -97,7 +97,7 @@
   <div class="newsletter-news">
     <h1><?php print t('News'); ?></h1>
     <?php if (isset($newsletter_nodes['ding_news'])) :?>
-      <?php foreach($newsletter_nodes['ding_news'] as $nid => $news) :?>
+      <?php foreach ($newsletter_nodes['ding_news'] as $nid => $news) :?>
         <div class="news-node">
           <div class="news-image">
             <?php print $news->image; ?>
@@ -117,7 +117,7 @@
   <div class="newsletter-events">
     <h1><?php print t('Events'); ?></h1>
     <?php if (isset($newsletter_nodes['ding_event'])) :?>
-      <?php foreach($newsletter_nodes['ding_event'] as $nid => $event) :?>
+      <?php foreach ($newsletter_nodes['ding_event'] as $nid => $event) :?>
         <div class="event-node">
           <div class="event-calendar">
             <p class="event-day">
