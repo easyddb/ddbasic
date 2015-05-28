@@ -575,3 +575,21 @@ a.button,
 .user-status-reservation {
   color: $link-color;
 }
+
+/**
+ * Ding search related
+ *
+ * @author ac
+ */
+
+.view-ting-search-related-content {
+  background-color: $list-item-background-color-odd;
+  
+  .views-field-title {
+    a:link,
+    a:hover,
+    a:visited {
+      color: $font-color-primary;
+    }
+  }
+}
