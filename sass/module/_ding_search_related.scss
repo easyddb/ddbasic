@@ -10,32 +10,32 @@ div.primary-content .view-ting-search-related-content {
   
   div.view-content > div {
     @include zen-grid-item(6, 1);
-	
-	max-height: inherit;
-	
-	@include small() {
-	  @include zen-clear();
+    
+    max-height: inherit;
+    
+    @include small() {
+      @include zen-clear();
       @include zen-grid-item(12, 1);
-	}
-	
-	@include medium() {
-	  @include zen-clear();
+    }
+    
+    @include medium() {
+      @include zen-clear();
       @include zen-grid-item(12, 1);
-	}
+    }
   }
   
   div.view-content > div.even {
     @include zen-grid-item(6, 1, right);
-	
-	@include small() {
-	  @include zen-clear();
+    
+    @include small() {
+      @include zen-clear();
       @include zen-grid-item(12, 1);
-	}
-	
-	@include medium() {
-	  @include zen-clear();
+    }
+    
+    @include medium() {
+      @include zen-clear();
       @include zen-grid-item(12, 1);
-	}
+    }
   }
 }
 
@@ -43,24 +43,24 @@ div.primary-content .view-ting-search-related-content {
   background-color: $list-item-background-color-odd;
 
   div.view-content > div {
-	padding: 10px;
+    padding: 10px;
   }
   
   .views-field-field-ding-event-list-image {
     max-width: 159px;
-	max-height: 159px;
+    max-height: 159px;
   }
   
   .views-field-title {
     font-size: $font-size-large;
-	font-weight: 700;
-	
+    font-weight: 700;
+    
     a:link,
     a:hover,
     a:visited {
-	  color: $font-color-primary;
+      color: $font-color-primary;
       text-decoration: none;
-	}
+    }
   }
   
   .views-field-field-ding-event-body {
