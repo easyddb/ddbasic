@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * DDBasic's theme implementation to display news nodes.
@@ -80,70 +79,75 @@
  *   leading text "Tags: "
  * - $ddbasic_news_location: String containing address info for either
  *   field_address or group_audience,
- *   as relevant for the news node 
- * - $ddbasic_byline: outputs byline to be used before $name  
- * 
+ *   as relevant for the news node
+ * - $ddbasic_byline: outputs byline to be used before $name
+ *
  * @see template_preprocess()
  * @see template_preprocess_node()
  * @see template_process()
  */
 ?>
-<article class="news">
-  <header class="page-header">
-    <div class="image-container">
-      <?php print render($content['field_ding_news_title_image']); ?>
-    </div>
-    <div class="super-heading">
-      <span class="news-category label"><?php print render($content['field_ding_news_category']); ?></span>
-      <?php if (isset($content['og_group_ref']['#items'])) : ?>
-        <span class="library-ref label"><?php print render($content['og_group_ref']); ?></span>
-      <?php endif; ?>
-      <?php if (isset($content['ding_news_groups_ref']['#items'])) : ?>
-        <span class="groups-ref label"><?php print render($content['ding_news_groups_ref']); ?></span>
-      <?php endif; ?>
-      <?php if (isset($content['field_ding_news_tags'])) : ?>
-        <span class="news-tags label">
-            <?php print render($content['field_ding_news_tags']); ?>
-          </span>
-      <?php endif; ?>
-    </div>
-    <h1 class="page-title"><?php print $title; ?></h1>
-    <div class="page-lead"><?php print render($content['field_ding_news_lead']); ?></div>
-  </header>
 
-  <section class="news-content">
-    <?php
-      print render($content['field_ding_news_body']);
-      print render($content['field_ding_news_materials']);
-    ?>
-  </section>
+<div class="newsletter">
+  <?php print render($content['field_newsletter_image']); ?>
+  <p class="newsletter-body">
+    <?php print render($content['body']); ?>
+  </p>
 
-  <footer class="news-footer">
-    <?php if ($display_submitted): ?>
-      <section class="signature">
-        <div class="signature-image"><?php print $user_picture; ?></div>
-        <div class="signature-info">
-          <p><span class="signature-label"><?php print t("Posted by:"); ?></span><?php print $name; ?></p>
-          <p><span class="signature-label"><?php print t("Posted at:"); ?></span><?php print $submitted ?></p>
-          <p><span class="signature-label"><?php print t("Last updated:"); ?></span><?php print $ddbasic_updated ?></p>
+  <div class="newsletter-news">
+    <h1><?php print t('News'); ?></h1>
+    <?php if (isset($newsletter_nodes['ding_news'])) :?>
+      <?php foreach ($newsletter_nodes['ding_news'] as $nid => $news) :?>
+        <div class="news-node">
+          <div class="news-image">
+            <?php print $news->image; ?>
+          </div>
+          <div class="news-title">
+            <a href="<?php print $news->url; ?>">
+              <h1>
+                <?php print $news->title; ?>
+              </h1>
+            </a>
+          </div>
         </div>
-      </section>
+      <?php endforeach; ?>
     <?php endif; ?>
+  </div>
 
-    <?php
-    // Remove the "Add new comment" link on the teaser page or if the comment
-    // form is being displayed on the same page.
-    if ($teaser || !empty($content['comments']['comment_form'])) :
-      unset($content['links']['comment']['#links']['comment-add']);
-    endif;
-    ?>
-
-    <?php if (!empty($content['links']['#links'])) : ?>
-      <div class="link-wrapper">
-        <?php print render($links); ?>
-      </div>
+  <div class="newsletter-events">
+    <h1><?php print t('Events'); ?></h1>
+    <?php if (isset($newsletter_nodes['ding_event'])) :?>
+      <?php foreach ($newsletter_nodes['ding_event'] as $nid => $event) :?>
+        <div class="event-node">
+          <div class="event-calendar">
+            <p class="event-day">
+              <?php print $event->date_number; ?>
+            </p>
+            <p class="event-month">
+              <?php print $event->date_month; ?>
+            </p>
+          </div>
+          <div class="event-title">
+            <a href="<?php print $event->url; ?>">
+              <h1><?php print $event->title; ?></h1>
+            </a>
+          </div>
+          <div class="event-libraires">
+            <?php print $event->libraries; ?>
+          </div>
+          <div class="event-date-fee">
+            <div class="event-date">
+              <?php print $event->date; ?>
+              <?php if (isset($event->fee)) :?>
+                - <?php print $event->fee; ?> KR.
+              <?php endif; ?>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
     <?php endif; ?>
-
-    <?php print render($content['comments']); ?>
-  </footer>
-</article>
+  </div>
+  <div class="newsletter-footer">
+    <p><?php print render($content['field_footer']); ?></p>
+  </div>
+</div>

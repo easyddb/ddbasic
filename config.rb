@@ -22,3 +22,6 @@ output_style = :expanded
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the firesass config variable above is true.
 sass_options =  {:debug_info => false}
+
+# Ignore line comments when compiling, in order to avoid confusion.
+line_comments = false
