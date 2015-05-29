@@ -114,6 +114,7 @@
   <section class="news-content">
     <?php
       print render($content['field_ding_news_body']);
+      print render($content['field_ding_news_materials']);
     ?>
   </section>
 
