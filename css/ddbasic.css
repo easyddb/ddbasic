@@ -7809,15 +7809,29 @@ div[class^="collection-bg"] {
 }
 .library-list .opening-hours-toggle {
   float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
   padding-bottom: 10px;
   text-align: right;
 }
 @media only screen and (max-width: 768px) {
   .library-list .opening-hours-toggle {
     float: left;
-    width: 50%;
-    margin-left: 16.66667%;
-    margin-right: -66.66667%;
+    width: 75%;
+    margin-left: 25%;
+    margin-right: -100%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
@@ -7837,12 +7851,42 @@ div[class^="collection-bg"] {
 }
 
 .libraries-opening-hours {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
   clear: right;
   display: none;
   /* Media queries */
 }
 @media only screen and (max-width: 768px) {
   .libraries-opening-hours {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
     clear: both;
     margin-top: 20px;
   }
@@ -7850,9 +7894,9 @@ div[class^="collection-bg"] {
 
 .libraries {
   float: left;
-  width: 100%;
+  width: 66.66667%;
   margin-left: 0%;
-  margin-right: -100%;
+  margin-right: -66.66667%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -7867,7 +7911,6 @@ div[class^="collection-bg"] {
   min-height: 120px;
   position: relative;
   padding: 0;
-  /* Media queries */
 }
 .libraries:before {
   color: #bcbcbc;
@@ -7881,9 +7924,9 @@ div[class^="collection-bg"] {
 }
 .libraries .ding-library-left {
   float: left;
-  width: 16.66667%;
+  width: 25%;
   margin-left: 0%;
-  margin-right: -16.66667%;
+  margin-right: -25%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -7905,9 +7948,9 @@ div[class^="collection-bg"] {
 }
 .libraries .ding-library-right {
   float: left;
-  width: 50%;
-  margin-left: 16.66667%;
-  margin-right: -66.66667%;
+  width: 75%;
+  margin-left: 25%;
+  margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -7919,43 +7962,6 @@ div[class^="collection-bg"] {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-}
-.libraries .ding-library-aside {
-  float: right;
-  width: 33.33333%;
-  margin-right: 0%;
-  margin-left: -33.33333%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-@media only screen and (max-width: 768px) {
-  .libraries .ding-library-aside {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-    clear: left;
-  }
 }
 .libraries .library-title {
   font-size: 110%;
