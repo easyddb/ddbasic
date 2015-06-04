@@ -113,8 +113,14 @@
 
   <section class="news-content">
     <?php
-      print render($content['field_ding_news_body']);
-      print render($content['field_ding_news_materials']);
+      // Hide fields that will be displayed as panel panes instead.
+      hide($content['comments']);
+
+      // Hide fields now so that we can render them later.
+      hide($content['links']);
+      hide($content['field_ding_news_tags']);
+
+      print render($content);
     ?>
   </section>
 
