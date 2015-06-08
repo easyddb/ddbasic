@@ -11553,12 +11553,10 @@ fieldset legend {
   margin-bottom: 10px;
   overflow: hidden;
   padding: 20px;
+  min-width: 100%;
 }
 .ding_nodelist-taxonomy .item:first-of-type {
   border-top: 0;
-}
-.ding_nodelist-taxonomy .item .item-details {
-  width: 100%;
 }
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 130%;
