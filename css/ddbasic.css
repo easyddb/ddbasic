@@ -68,9 +68,6 @@
 }
 
 /* Links */
-a {
-  font-weight: 400;
-}
 a:link {
   color: #00b7e7;
   text-decoration: none;
@@ -3726,7 +3723,6 @@ body {
 }
 .logo img {
   margin-top: 10px;
-  max-height: 70px;
 }
 
 .site-name-wrapper {
@@ -11551,10 +11547,12 @@ fieldset legend {
   margin-bottom: 10px;
   overflow: hidden;
   padding: 20px;
-  width: 100%;
 }
 .ding_nodelist-taxonomy .item:first-of-type {
   border-top: 0;
+}
+.ding_nodelist-taxonomy .item .item-details {
+  width: 100%;
 }
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 130%;

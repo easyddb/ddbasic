@@ -816,10 +816,13 @@ fieldset {
     margin-bottom: 10px;
     overflow: hidden;
     padding: 20px;
-    width: 100%;
 
     &:first-of-type {
       border-top: 0;
+    }
+
+    .item-details {
+      width: 100%;
     }
 
     .item-title {
