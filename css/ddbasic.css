@@ -10362,6 +10362,14 @@ div[class^="collection-bg"] {
   margin: 40px 0 0 10px;
 }
 
+.media-image-right {
+  float: right;
+}
+
+.media-image-left {
+  float: left;
+}
+
 .search, .search-field-in-content {
   position: relative;
 }
