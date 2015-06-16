@@ -104,7 +104,7 @@
       <?php if (isset($content['field_ding_news_tags'])) : ?>
         <span class="news-tags label">
           <?php print render($content['field_ding_news_tags']); ?>
-          </span>
+        </span>
       <?php endif; ?>
        <?php if (isset($content['field_editorial_base'])) : ?>
         <span class="news-section label">
