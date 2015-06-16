@@ -80,9 +80,9 @@
  *   leading text "Tags: "
  * - $ddbasic_news_location: String containing address info for either
  *   field_address or group_audience,
- *   as relevant for the news node 
- * - $ddbasic_byline: outputs byline to be used before $name  
- * 
+ *   as relevant for the news node
+ * - $ddbasic_byline: outputs byline to be used before $name
+ *
  * @see template_preprocess()
  * @see template_preprocess_node()
  * @see template_process()
@@ -103,7 +103,12 @@
       <?php endif; ?>
       <?php if (isset($content['field_ding_news_tags'])) : ?>
         <span class="news-tags label">
-            <?php print render($content['field_ding_news_tags']); ?>
+          <?php print render($content['field_ding_news_tags']); ?>
+          </span>
+      <?php endif; ?>
+       <?php if (isset($content['field_editorial_base'])) : ?>
+        <span class="news-section label">
+          <?php print render($content['field_editorial_base']); ?>
           </span>
       <?php endif; ?>
     </div>

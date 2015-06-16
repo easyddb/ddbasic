@@ -1,4 +1,4 @@
-<?php
+  <?php
 /**
  * @file field--ddbasic-tags--full.tpl.php
  * Removed default field wrapper.
