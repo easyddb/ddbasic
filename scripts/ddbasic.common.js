@@ -137,8 +137,10 @@
     var hash = window.location.hash;
     if (hash == '#toggle-opening-hours') {
       var element = $('a.js-opening-hours-toggle');
-      $(element).toggleClass('js-collapsed js-expanded');
-      $('.js-opening-hours-toggle-element').css('display','block');
+      if (!$(element).hasClass('js-expanded')) {
+        $(element).toggleClass('js-collapsed js-expanded');
+        $('.js-opening-hours-toggle-element').css('display','block');
+      };
     };
 
     // Toggle footer menu.
