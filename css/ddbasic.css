@@ -1005,7 +1005,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .delete-reservation .form-submit,
 .pane-debts .delete-reservations .form-submit,
 .pane-bookmarks .delete-reservation .form-submit,
-.pane-bookmarks .delete-reservations .form-submit, #ding-bookmark-remove-form .form-submit, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable,
+.pane-bookmarks .delete-reservations .form-submit, #ding-bookmark-remove-form .form-submit, .material-item .action-button.reserve-button.unavailable.reservable,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable,
 .ding-periodical-issues .reserve-button.unavailable.reservable, .pane-ting-collection .form-submit, .pane-ting-object .form-submit,
 .pane-ting-collection .ding-entity-button,
 .pane-ting-object .ding-entity-button {
@@ -1047,7 +1048,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .delete-reservation .form-submit:focus,
 .pane-debts .delete-reservations .form-submit:focus,
 .pane-bookmarks .delete-reservation .form-submit:focus,
-.pane-bookmarks .delete-reservations .form-submit:focus, #ding-bookmark-remove-form .form-submit:focus, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus,
+.pane-bookmarks .delete-reservations .form-submit:focus, #ding-bookmark-remove-form .form-submit:focus, .material-item .action-button.reserve-button.unavailable.reservable:focus,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus,
 .ding-periodical-issues .reserve-button.unavailable.reservable:focus,
 .pane-ting-collection .ding-entity-button:focus,
 .pane-ting-object .ding-entity-button:focus, .form-submit:hover,
@@ -1075,7 +1077,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .delete-reservation .form-submit:hover,
 .pane-debts .delete-reservations .form-submit:hover,
 .pane-bookmarks .delete-reservation .form-submit:hover,
-.pane-bookmarks .delete-reservations .form-submit:hover, #ding-bookmark-remove-form .form-submit:hover, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover,
+.pane-bookmarks .delete-reservations .form-submit:hover, #ding-bookmark-remove-form .form-submit:hover, .material-item .action-button.reserve-button.unavailable.reservable:hover,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover,
 .ding-periodical-issues .reserve-button.unavailable.reservable:hover,
 .pane-ting-collection .ding-entity-button:hover,
 .pane-ting-object .ding-entity-button:hover, .form-submit:active,
@@ -1103,7 +1106,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .delete-reservation .form-submit:active,
 .pane-debts .delete-reservations .form-submit:active,
 .pane-bookmarks .delete-reservation .form-submit:active,
-.pane-bookmarks .delete-reservations .form-submit:active, #ding-bookmark-remove-form .form-submit:active, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active,
+.pane-bookmarks .delete-reservations .form-submit:active, #ding-bookmark-remove-form .form-submit:active, .material-item .action-button.reserve-button.unavailable.reservable:active,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active,
 .ding-periodical-issues .reserve-button.unavailable.reservable:active,
 .pane-ting-collection .ding-entity-button:active,
 .pane-ting-object .ding-entity-button:active {
@@ -1134,7 +1138,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .delete-reservation .disabled.form-submit,
 .pane-debts .delete-reservations .disabled.form-submit,
 .pane-bookmarks .delete-reservation .disabled.form-submit,
-.pane-bookmarks .delete-reservations .disabled.form-submit, #ding-bookmark-remove-form .disabled.form-submit, .field-name-ding-entity-buttons .disabled.reserve-button.unavailable.reservable,
+.pane-bookmarks .delete-reservations .disabled.form-submit, #ding-bookmark-remove-form .disabled.form-submit, .material-item .disabled.action-button.reserve-button.unavailable.reservable,
+.field-name-ding-entity-buttons .disabled.reserve-button.unavailable.reservable,
 .ding-periodical-issues .disabled.reserve-button.unavailable.reservable,
 .pane-ting-collection .disabled.ding-entity-button,
 .pane-ting-object .disabled.ding-entity-button, [disabled].form-submit,
@@ -1162,7 +1167,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .delete-reservation [disabled].form-submit,
 .pane-debts .delete-reservations [disabled].form-submit,
 .pane-bookmarks .delete-reservation [disabled].form-submit,
-.pane-bookmarks .delete-reservations [disabled].form-submit, #ding-bookmark-remove-form [disabled].form-submit, .field-name-ding-entity-buttons [disabled].reserve-button.unavailable.reservable,
+.pane-bookmarks .delete-reservations [disabled].form-submit, #ding-bookmark-remove-form [disabled].form-submit, .material-item [disabled].action-button.reserve-button.unavailable.reservable,
+.field-name-ding-entity-buttons [disabled].reserve-button.unavailable.reservable,
 .ding-periodical-issues [disabled].reserve-button.unavailable.reservable,
 .pane-ting-collection [disabled].ding-entity-button,
 .pane-ting-object [disabled].ding-entity-button {
@@ -5498,15 +5504,18 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   color: #cc3e00;
 }
 
+.material-item .action-button.reserve-button,
 .field-name-ding-entity-buttons .reserve-button,
 .ding-periodical-issues .reserve-button {
   display: none;
   margin-left: 10px;
 }
+.material-item .action-button.reserve-button.reservable,
 .field-name-ding-entity-buttons .reserve-button.reservable,
 .ding-periodical-issues .reserve-button.reservable {
   display: inline-block;
 }
+.material-item .action-button.reserve-button.unavailable.reservable,
 .field-name-ding-entity-buttons .reserve-button.unavailable.reservable,
 .ding-periodical-issues .reserve-button.unavailable.reservable {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNGUwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2IzMzcwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -5520,12 +5529,19 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   border: 0;
   color: #fff;
 }
-.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited,
+.material-item .action-button.reserve-button.unavailable.reservable:link, .material-item .action-button.reserve-button.unavailable.reservable:visited,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited,
 .ding-periodical-issues .reserve-button.unavailable.reservable:link,
 .ding-periodical-issues .reserve-button.unavailable.reservable:visited {
   color: #fff;
 }
-.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover, .field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active,
+.material-item .action-button.reserve-button.unavailable.reservable:link, .material-item .action-button.reserve-button.unavailable.reservable:visited, .material-item .action-button.reserve-button.unavailable.reservable:focus, .material-item .action-button.reserve-button.unavailable.reservable:hover, .material-item .action-button.reserve-button.unavailable.reservable:active,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:link,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:visited,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:focus,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:hover,
+.field-name-ding-entity-buttons .reserve-button.unavailable.reservable:active,
 .ding-periodical-issues .reserve-button.unavailable.reservable:link,
 .ding-periodical-issues .reserve-button.unavailable.reservable:visited,
 .ding-periodical-issues .reserve-button.unavailable.reservable:focus,
