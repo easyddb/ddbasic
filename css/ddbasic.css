@@ -5549,9 +5549,13 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   float: right;
 }
 .availability li {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   display: inline-block;
-  margin-bottom: 5px;
-  padding: 0;
+  margin: 0 0 5px 8px;
+  padding: 5px;
+  color: #fff;
 }
 .availability li.pending {
   background-color: #ff4e00;
@@ -5659,7 +5663,7 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   text-decoration: none;
 }
 .availability li.availability.unavailable.not-reservable {
-  background-color: #ff4e00;
+  background-color: #8c1145;
   color: #fff;
   padding-top: 5px;
   padding-right: 10px;
