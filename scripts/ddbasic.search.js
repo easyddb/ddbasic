@@ -31,8 +31,5 @@
       $('.topbar-link-search').hide();
     }
 
-    // Extended search button location.
-    $('.search .collapsible .fieldset-legend > a').insertBefore('.site-header .search .form-submit');
-
   });
 }(jQuery));
