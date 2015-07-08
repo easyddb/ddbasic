@@ -78,8 +78,13 @@ body {
 }
 
 .logo {
-  @include zen-grid-item(4, 1);
+  @include zen-grid-item(5, 1);
   margin-bottom: 10px;
+  
+  @include small-medium() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
 
   a {
     display: inline-block;
@@ -87,6 +92,15 @@ body {
 
   img {
     margin-top: 10px;
+    
+    @include small-medium() {
+      max-width: 50%;
+      max-height: 40px;
+    }
+    
+    @include small() {
+      width: 50%;
+    }
   }
 }
 
@@ -144,10 +158,6 @@ body {
   margin-top: $medium-spacing;
   margin-left: 2px;
   color: $white;
-}
-
-.logo {
-  @include zen-grid-item(5, 1);
 }
 
 
