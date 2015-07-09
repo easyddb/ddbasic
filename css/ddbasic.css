@@ -994,8 +994,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit,
 .pane-debts .renew-loan-button .form-submit,
 .pane-bookmarks .update-reservations .form-submit,
-.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .item-details .reserve-button,
-.ding-item-list-item .item-details .reserve-button, .ticket-info, .pane-reservations .renew-loan-button .not-renewable,
+.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .reserve-button,
+.ding-item-list-item .reserve-button, .ticket-info, .pane-reservations .renew-loan-button .not-renewable,
 .pane-loans .renew-loan-button .not-renewable,
 .pane-debts .renew-loan-button .not-renewable,
 .pane-bookmarks .renew-loan-button .not-renewable, .pane-reservations .delete-reservation .form-submit,
@@ -1037,8 +1037,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit:focus,
 .pane-debts .renew-loan-button .form-submit:focus,
 .pane-bookmarks .update-reservations .form-submit:focus,
-.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .item-details .reserve-button:focus,
-.ding-item-list-item .item-details .reserve-button:focus, .ticket-info:focus, .pane-reservations .renew-loan-button .not-renewable:focus,
+.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .reserve-button:focus,
+.ding-item-list-item .reserve-button:focus, .ticket-info:focus, .pane-reservations .renew-loan-button .not-renewable:focus,
 .pane-loans .renew-loan-button .not-renewable:focus,
 .pane-debts .renew-loan-button .not-renewable:focus,
 .pane-bookmarks .renew-loan-button .not-renewable:focus, .pane-reservations .delete-reservation .form-submit:focus,
@@ -1066,8 +1066,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit:hover,
 .pane-debts .renew-loan-button .form-submit:hover,
 .pane-bookmarks .update-reservations .form-submit:hover,
-.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .item-details .reserve-button:hover,
-.ding-item-list-item .item-details .reserve-button:hover, .ticket-info:hover, .pane-reservations .renew-loan-button .not-renewable:hover,
+.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .reserve-button:hover,
+.ding-item-list-item .reserve-button:hover, .ticket-info:hover, .pane-reservations .renew-loan-button .not-renewable:hover,
 .pane-loans .renew-loan-button .not-renewable:hover,
 .pane-debts .renew-loan-button .not-renewable:hover,
 .pane-bookmarks .renew-loan-button .not-renewable:hover, .pane-reservations .delete-reservation .form-submit:hover,
@@ -1095,8 +1095,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .form-submit:active,
 .pane-debts .renew-loan-button .form-submit:active,
 .pane-bookmarks .update-reservations .form-submit:active,
-.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .item-details .reserve-button:active,
-.ding-item-list-item .item-details .reserve-button:active, .ticket-info:active, .pane-reservations .renew-loan-button .not-renewable:active,
+.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .reserve-button:active,
+.ding-item-list-item .reserve-button:active, .ticket-info:active, .pane-reservations .renew-loan-button .not-renewable:active,
 .pane-loans .renew-loan-button .not-renewable:active,
 .pane-debts .renew-loan-button .not-renewable:active,
 .pane-bookmarks .renew-loan-button .not-renewable:active, .pane-reservations .delete-reservation .form-submit:active,
@@ -1127,8 +1127,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations .disabled.form-submit,
 .pane-debts .renew-loan-button .disabled.form-submit,
 .pane-bookmarks .update-reservations .disabled.form-submit,
-.pane-bookmarks .renew-loan-button .disabled.form-submit, .pane-debts .pay-button .disabled.form-submit, .alma-item-list .item-details .disabled.reserve-button,
-.ding-item-list-item .item-details .disabled.reserve-button, .disabled.ticket-info, .pane-reservations .renew-loan-button .disabled.not-renewable,
+.pane-bookmarks .renew-loan-button .disabled.form-submit, .pane-debts .pay-button .disabled.form-submit, .alma-item-list .disabled.reserve-button,
+.ding-item-list-item .disabled.reserve-button, .disabled.ticket-info, .pane-reservations .renew-loan-button .disabled.not-renewable,
 .pane-loans .renew-loan-button .disabled.not-renewable,
 .pane-debts .renew-loan-button .disabled.not-renewable,
 .pane-bookmarks .renew-loan-button .disabled.not-renewable, .pane-reservations .delete-reservation .disabled.form-submit,
@@ -1156,8 +1156,8 @@ table tbody:last-child tr:last-child td:last-child {
 .pane-debts .update-reservations [disabled].form-submit,
 .pane-debts .renew-loan-button [disabled].form-submit,
 .pane-bookmarks .update-reservations [disabled].form-submit,
-.pane-bookmarks .renew-loan-button [disabled].form-submit, .pane-debts .pay-button [disabled].form-submit, .alma-item-list .item-details [disabled].reserve-button,
-.ding-item-list-item .item-details [disabled].reserve-button, [disabled].ticket-info, .pane-reservations .renew-loan-button [disabled].not-renewable,
+.pane-bookmarks .renew-loan-button [disabled].form-submit, .pane-debts .pay-button [disabled].form-submit, .alma-item-list [disabled].reserve-button,
+.ding-item-list-item [disabled].reserve-button, [disabled].ticket-info, .pane-reservations .renew-loan-button [disabled].not-renewable,
 .pane-loans .renew-loan-button [disabled].not-renewable,
 .pane-debts .renew-loan-button [disabled].not-renewable,
 .pane-bookmarks .renew-loan-button [disabled].not-renewable, .pane-reservations .delete-reservation [disabled].form-submit,
@@ -1292,8 +1292,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit,
 .pane-debts .renew-loan-button .form-submit,
 .pane-bookmarks .update-reservations .form-submit,
-.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .item-details .reserve-button,
-.ding-item-list-item .item-details .reserve-button {
+.pane-bookmarks .renew-loan-button .form-submit, .pane-debts .pay-button .form-submit, .alma-item-list .reserve-button,
+.ding-item-list-item .reserve-button {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYTUwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzNTkwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #60a500), color-stop(100%, #335900));
@@ -1318,8 +1318,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:link,
 .pane-debts .renew-loan-button .form-submit:link,
 .pane-bookmarks .update-reservations .form-submit:link,
-.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .item-details .reserve-button:link,
-.ding-item-list-item .item-details .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
+.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .reserve-button:link,
+.ding-item-list-item .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
 .pane-loans .renew-loan-button .renewable:visited,
 .pane-debts .renew-loan-button .renewable:visited,
 .pane-bookmarks .renew-loan-button .renewable:visited, .pane-reservations .reserve-button:visited,
@@ -1332,8 +1332,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:visited,
 .pane-debts .renew-loan-button .form-submit:visited,
 .pane-bookmarks .update-reservations .form-submit:visited,
-.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .item-details .reserve-button:visited,
-.ding-item-list-item .item-details .reserve-button:visited {
+.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .reserve-button:visited,
+.ding-item-list-item .reserve-button:visited {
   color: #fff;
 }
 .field-name-ding-entity-buttons .reserve-button:link, .button-see-online:link, .ticket-available:link, .pane-reservations .renew-loan-button .renewable:link,
@@ -1349,8 +1349,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:link,
 .pane-debts .renew-loan-button .form-submit:link,
 .pane-bookmarks .update-reservations .form-submit:link,
-.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .item-details .reserve-button:link,
-.ding-item-list-item .item-details .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
+.pane-bookmarks .renew-loan-button .form-submit:link, .pane-debts .pay-button .form-submit:link, .alma-item-list .reserve-button:link,
+.ding-item-list-item .reserve-button:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .ticket-available:visited, .pane-reservations .renew-loan-button .renewable:visited,
 .pane-loans .renew-loan-button .renewable:visited,
 .pane-debts .renew-loan-button .renewable:visited,
 .pane-bookmarks .renew-loan-button .renewable:visited, .pane-reservations .reserve-button:visited,
@@ -1363,8 +1363,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:visited,
 .pane-debts .renew-loan-button .form-submit:visited,
 .pane-bookmarks .update-reservations .form-submit:visited,
-.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .item-details .reserve-button:visited,
-.ding-item-list-item .item-details .reserve-button:visited, .field-name-ding-entity-buttons .reserve-button:focus, .button-see-online:focus, .ticket-available:focus, .pane-reservations .renew-loan-button .renewable:focus,
+.pane-bookmarks .renew-loan-button .form-submit:visited, .pane-debts .pay-button .form-submit:visited, .alma-item-list .reserve-button:visited,
+.ding-item-list-item .reserve-button:visited, .field-name-ding-entity-buttons .reserve-button:focus, .button-see-online:focus, .ticket-available:focus, .pane-reservations .renew-loan-button .renewable:focus,
 .pane-loans .renew-loan-button .renewable:focus,
 .pane-debts .renew-loan-button .renewable:focus,
 .pane-bookmarks .renew-loan-button .renewable:focus, .pane-reservations .reserve-button:focus,
@@ -1377,8 +1377,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:focus,
 .pane-debts .renew-loan-button .form-submit:focus,
 .pane-bookmarks .update-reservations .form-submit:focus,
-.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .item-details .reserve-button:focus,
-.ding-item-list-item .item-details .reserve-button:focus, .field-name-ding-entity-buttons .reserve-button:hover, .button-see-online:hover, .ticket-available:hover, .pane-reservations .renew-loan-button .renewable:hover,
+.pane-bookmarks .renew-loan-button .form-submit:focus, .pane-debts .pay-button .form-submit:focus, .alma-item-list .reserve-button:focus,
+.ding-item-list-item .reserve-button:focus, .field-name-ding-entity-buttons .reserve-button:hover, .button-see-online:hover, .ticket-available:hover, .pane-reservations .renew-loan-button .renewable:hover,
 .pane-loans .renew-loan-button .renewable:hover,
 .pane-debts .renew-loan-button .renewable:hover,
 .pane-bookmarks .renew-loan-button .renewable:hover, .pane-reservations .reserve-button:hover,
@@ -1391,8 +1391,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:hover,
 .pane-debts .renew-loan-button .form-submit:hover,
 .pane-bookmarks .update-reservations .form-submit:hover,
-.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .item-details .reserve-button:hover,
-.ding-item-list-item .item-details .reserve-button:hover, .field-name-ding-entity-buttons .reserve-button:active, .button-see-online:active, .ticket-available:active, .pane-reservations .renew-loan-button .renewable:active,
+.pane-bookmarks .renew-loan-button .form-submit:hover, .pane-debts .pay-button .form-submit:hover, .alma-item-list .reserve-button:hover,
+.ding-item-list-item .reserve-button:hover, .field-name-ding-entity-buttons .reserve-button:active, .button-see-online:active, .ticket-available:active, .pane-reservations .renew-loan-button .renewable:active,
 .pane-loans .renew-loan-button .renewable:active,
 .pane-debts .renew-loan-button .renewable:active,
 .pane-bookmarks .renew-loan-button .renewable:active, .pane-reservations .reserve-button:active,
@@ -1405,8 +1405,8 @@ a.button:hover,
 .pane-debts .update-reservations .form-submit:active,
 .pane-debts .renew-loan-button .form-submit:active,
 .pane-bookmarks .update-reservations .form-submit:active,
-.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .item-details .reserve-button:active,
-.ding-item-list-item .item-details .reserve-button:active {
+.pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .reserve-button:active,
+.ding-item-list-item .reserve-button:active {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxOGIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1M2YwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
@@ -2958,11 +2958,11 @@ ul.icons li [class*=" icon-"] {
   content: "\f054";
 }
 
-.icon-plus-sign:before, .pane-ding-facetbrowser .expand-more:before, .pane-search-backends .expand-more:before, .pane-ting-object .collapsible.collapsed .field-group-format-title:before, .pane-ting-object .expand-more:before, .opening-hours-toggle.js-collapsed:before {
+.icon-plus-sign:before, .pane-ding-facetbrowser .expand-more:before, .pane-search-backends .expand-more:before, .pane-ting-object .collapsible.collapsed .field-group-format-title:before, .pane-ting-object .expand-more:before {
   content: "\f055";
 }
 
-.icon-minus-sign:before, .pane-ding-facetbrowser .expand-less:before, .pane-search-backends .expand-less:before, .pane-ting-object .collapsible .field-group-format-title:before, .pane-ting-object .expand-less:before, .opening-hours-toggle.js-expanded:before {
+.icon-minus-sign:before, .pane-ding-facetbrowser .expand-less:before, .pane-search-backends .expand-less:before, .pane-ting-object .collapsible .field-group-format-title:before, .pane-ting-object .expand-less:before {
   content: "\f056";
 }
 
@@ -2978,7 +2978,7 @@ ul.icons li [class*=" icon-"] {
   content: "\f059";
 }
 
-.icon-info-sign:before, .opening-hours-week .notice-star:before, .hours .day-notice-star:before {
+.icon-info-sign:before {
   content: "\f05a";
 }
 
@@ -5565,9 +5565,13 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   float: right;
 }
 .availability li {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   display: inline-block;
-  margin-bottom: 5px;
-  padding: 0;
+  margin: 0 0 5px 8px;
+  padding: 5px;
+  color: #fff;
 }
 .availability li.pending {
   background-color: #ff4e00;
@@ -5675,7 +5679,7 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
   text-decoration: none;
 }
 .availability li.availability.unavailable.not-reservable {
-  background-color: #ff4e00;
+  background-color: #8c1145;
   color: #fff;
   padding-top: 5px;
   padding-right: 10px;
@@ -8277,123 +8281,16 @@ div[class^="collection-bg"] {
 /**
  * Opening hours
  *
- * @author magnify, zorp
+ * @author magnify, zorp, ac
  */
-/* Toggle opening hours
-   ========================================================================== */
-.opening-hours-toggle {
-  padding-left: 20px;
-  /* Media queries */
-}
-.opening-hours-toggle.js-opening-hours-not-available {
-  display: none;
-}
-.opening-hours-toggle:hover {
-  text-decoration: none;
-}
-.opening-hours-toggle:before {
-  margin-right: 5px;
-  font-family: "FontAwesome";
-}
-@media only screen and (max-width: 768px) {
-  .opening-hours-toggle {
-    display: inline;
-    width: auto;
-  }
-}
-
-.block-opening-hours {
-  min-height: 279px;
-  height: auto !important;
-  height: 279px;
-}
-.block-opening-hours .read-more {
-  margin-left: 3px;
-}
-
-.opening-hours-week {
-  padding: 20px;
-  padding-top: 10px;
-  background: #fff;
-}
 .opening-hours-week .header {
-  font-weight: 600;
-  padding: 0;
-  padding-bottom: 10px;
-  background: #fff;
   color: #959595;
-}
-.opening-hours-week .days {
-  padding: 0;
-}
-.opening-hours-week .days .day {
-  padding: 6px;
-}
-.opening-hours-week .days .times {
-  padding-right: 1em;
-  margin-right: 0.5em;
-}
-.opening-hours-week .prev,
-.opening-hours-week .next {
-  font-size: 100%;
-  font-family: "FontAwesome";
-}
-.opening-hours-week .prev:hover,
-.opening-hours-week .next:hover {
-  text-decoration: none;
-}
-.opening-hours-week .prev {
-  float: left;
-  margin-left: 5px;
-}
-.opening-hours-week .next {
-  float: right;
-  margin-right: 5px;
-}
-.opening-hours-week .notice-star {
-  visibility: hidden;
-  margin-right: -2em;
-  padding-left: .5em;
-}
-.opening-hours-week .notice-star:before {
-  visibility: visible;
-  font-family: "FontAwesome";
 }
 
 .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: #fffffe;
-  padding: 10px;
-}
-.pane-ding-library-opening-hours-ding-library-opened-today ul {
-  padding-left: 0;
-}
-.pane-ding-library-opening-hours-ding-library-opened-today ul .library {
-  padding: 3px;
-  background-color: #f2f2f2;
-}
-.pane-ding-library-opening-hours-ding-library-opened-today ul .library:nth-of-type(2n+2) {
-  background-color: #e8e8e8;
 }
 
-.hours .day-notice-star {
-  visibility: hidden;
-  margin-right: .5em;
-}
-.hours .day-notice-star:before {
-  visibility: visible;
-  font-family: "FontAwesome";
-}
-
-.layout-wrapper .pane-ding-library-opening-hours-ding-library-opened-today {
-  background-color: transparent;
-  padding: 0;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .hours .day-notice-star {
-    visibility: visible;
-  }
-}
 /**
  * User
  *
@@ -10393,70 +10290,9 @@ div[class^="collection-bg"] {
   float: left;
 }
 
-.search, .search-field-in-content {
-  position: relative;
-}
-@media only screen and (min-width: 769px) {
-  .search .form-actions > .form-submit, .search-field-in-content .form-actions > .form-submit {
-    margin-top: 0;
-  }
-}
-.search .form-actions > a, .search-field-in-content .form-actions > a {
-  min-height: 60px;
-  height: auto !important;
-  height: 60px;
-  display: inline-block;
-  margin: -2px 10px 0 0;
-  line-height: 60px;
-}
 @media only screen and (min-width: 769px) {
   .search .form-actions > a, .search-field-in-content .form-actions > a {
-    background-color: transparent;
     color: #959595;
-    text-decoration: underline;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .search .form-actions > a, .search-field-in-content .form-actions > a {
-    display: none;
-  }
-}
-.search .collapsible, .search-field-in-content .collapsible {
-  *position: relative;
-  *zoom: 1;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-.search .collapsible:before, .search-field-in-content .collapsible:before, .search .collapsible:after, .search-field-in-content .collapsible:after {
-  content: "";
-  display: table;
-}
-.search .collapsible:after, .search-field-in-content .collapsible:after {
-  clear: both;
-}
-.search .collapsible.collapsed, .search-field-in-content .collapsible.collapsed {
-  padding: 0;
-  height: 0;
-  border: 0;
-}
-.search .collapsible legend, .search-field-in-content .collapsible legend {
-  display: none;
-}
-.search .collapsible .description, .search-field-in-content .collapsible .description {
-  display: none;
-}
-.search .collapsible .fieldset-wrapper > .form-item, .search-field-in-content .collapsible .fieldset-wrapper > .form-item {
-  margin-bottom: 10px;
-}
-@media only screen and (min-width: 769px) {
-  .search .collapsible .fieldset-wrapper > .form-item, .search-field-in-content .collapsible .fieldset-wrapper > .form-item {
-    width: 44.44444%;
-    float: left;
-    margin-right: 11.11111%;
-  }
-  .search .collapsible .fieldset-wrapper > .form-item:nth-of-type(2n + 2), .search-field-in-content .collapsible .fieldset-wrapper > .form-item:nth-of-type(2n + 2) {
-    float: right;
-    margin-right: 0;
   }
 }
 .search .collapsible input, .search-field-in-content .collapsible input {
@@ -10466,30 +10302,7 @@ div[class^="collection-bg"] {
   background-image: -moz-linear-gradient(#efefef, #fbfbfb);
   background-image: -webkit-linear-gradient(#efefef, #fbfbfb);
   background-image: linear-gradient(#efefef, #fbfbfb);
-  padding-right: 8px;
-  padding-left: 8px;
   border: 1px solid #d5d5d5;
-}
-.search .collapsible input, .search-field-in-content .collapsible input,
-.search .collapsible select,
-.search-field-in-content .collapsible select {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  min-height: 40px;
-  height: auto !important;
-  height: 40px;
-  width: 100%;
-}
-.search .collapsible label, .search-field-in-content .collapsible label {
-  color: #000;
-  font-weight: 700;
-}
-
-@media only screen and (min-width: 769px) {
-  .page-search .search .form-actions .fieldset-title, .page-search .search-field-in-content .form-actions .fieldset-title {
-    margin-top: 0;
-  }
 }
 
 .step-back {
@@ -10784,856 +10597,66 @@ div[class^="collection-bg"] {
   }
 }
 
-.alma-item-list {
-  margin: 10px 0;
-}
-.alma-item-list .item-rating-star {
-  display: inline-block;
-}
-
-.alma-item-list-item {
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-.alma-item-list-item .item-cover {
-  float: left;
-}
-.alma-item-list-item .item-details {
-  margin-left: 65px;
-}
-.alma-item-list-item .item-title a {
-  font-weight: 700;
-}
-.alma-item-list-item .reserve-button {
-  margin-top: 10px;
-  font-size: 100%;
-}
-
+/**
+ * Alma item list
+ *
+ * @author ac
+ */
 .pane-alma-item-list {
-  background-color: #fff;
-  padding: 10px;
+  background-color: #fffffe;
 }
 
-.ding-item-viewer {
-  margin: 10px 0;
-  height: 420px;
-}
 .ding-item-viewer .ui-tabs-nav {
   background: #191919;
 }
-.ding-item-viewer .browsebar-inner {
-  height: 360px;
-}
-.ding-item-viewer .browsebar-item {
-  background: #fff;
-  line-height: 1.2;
-  height: 260px;
-}
-.ding-item-viewer .browsebar-item h2 {
-  font-weight: 700;
-  font-size: 100%;
-}
-.ding-item-viewer .browsebar-item img {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  width: 120px;
-  max-height: 193px;
-}
-.ding-item-viewer .browsebar-item.active {
-  max-height: 410px;
-  height: auto;
-}
-.ding-item-viewer .browsebar-item.active h2 {
-  font-size: 80%;
-}
-.ding-item-viewer .browsebar-item.active h2 a {
-  font-weight: 700;
-}
-.ding-item-viewer .browsebar-item.active img {
-  margin-right: 10px;
-  width: 140px;
-}
-.ding-item-viewer .browsebar-item.active .subject {
-  display: block;
-  float: left;
-  margin: 3px 3px 3px 0;
-  white-space: nowrap;
-}
-.ding-item-viewer .browsebar-item.active .subjects {
-  max-height: 55px;
-  overflow: hidden;
-}
-.ding-item-viewer .browsebar-item.active .subjects strong {
-  display: block;
-  float: left;
-  line-height: 2em;
-  margin-right: 5px;
-}
-.ding-item-viewer .browsebar-item.active .field-type-ding-entity-buttons a {
-  margin-left: 5px;
-}
-.ding-item-viewer .browsebar-item.active .field-type-ting-author {
-  font-weight: bold;
-}
-.ding-item-viewer .browsebar-item.active .field-type-ting-abstract {
-  max-height: 117px;
-  overflow: hidden;
-}
-.ding-item-viewer .ui-tabs-nav .active {
-  background-color: #bcbcbc;
-}
-.ding-item-viewer .ui-tabs-nav .active a {
-  background: none;
-}
-.ding-item-viewer .view-mode-ding-item-viewer-small h2 {
-  clear: both;
-  height: 35px;
-  max-height: 35px;
-  overflow: hidden;
-  position: relative;
-}
 .ding-item-viewer .view-mode-ding-item-viewer-small .image-wrapper {
   background: #191919;
-  height: 170px;
-  margin-bottom: 10px;
-  max-height: 170px;
-  overflow: hidden;
-  width: 100%;
-}
-.ding-item-viewer .view-mode-ding-item-viewer-small .field-name-ting-author {
-  height: 38px;
-  overflow: hidden;
-  font-size: 80%;
-}
-
-.pane-ding-item-list-recommendations {
-  margin: 10px 0;
 }
 
 .pane-ding-item-list {
   background-color: #fffffe;
-  padding: 10px;
-}
-.pane-ding-item-list .pane-title {
-  margin-bottom: 0;
 }
 
-.layout-wrapper .pane-ding-item-list {
-  background-color: transparent;
-  padding: 0;
-}
-
-.alma-item-list,
-.ding-item-list-item {
-  overflow: hidden;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  border-top: 1px dashed #d5d5d5;
-  font-size: 16px;
-}
-.alma-item-list .item-cover,
-.ding-item-list-item .item-cover {
-  float: left;
-}
-.alma-item-list .item-details,
-.ding-item-list-item .item-details {
-  margin-left: 65px;
-}
-.alma-item-list .item-details .item-author,
-.ding-item-list-item .item-details .item-author {
-  font-size: 90%;
-}
-.alma-item-list .item-details .item-title a,
-.ding-item-list-item .item-details .item-title a {
-  font-weight: 700;
-}
-.alma-item-list .item-details .reserve-button,
-.ding-item-list-item .item-details .reserve-button {
-  margin-top: 10px;
-  font-size: 100%;
-}
-.alma-item-list .item-details .item-loan,
-.alma-item-list .item-details .item-loan a,
-.ding-item-list-item .item-details .item-loan,
-.ding-item-list-item .item-details .item-loan a {
-  font-size: 100%;
-  font-family: inherit;
-  line-height: inherit;
-}
-
-.col3 .ding_nodelist-taxonomy .item .item-list-image,
-.col4 .ding_nodelist-taxonomy .item .item-list-image {
-  display: none;
-}
-
-.ding_nodelist {
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-.ding_nodelist .node .item-date,
-.ding_nodelist .node .library,
-.ding_nodelist .node .item-price,
-.ding_nodelist .data .event-timestamp,
-.ding_nodelist .data .event-details,
-.ding_nodelist .item-details .item-date,
-.ding_nodelist .item-details .item-library,
-.ding_nodelist .item-details .item-price {
-  font-size: 80%;
-}
-.ding_nodelist .node > p {
-  margin: 10px 0;
-}
-.ding_nodelist .node-title {
-  text-decoration: underline;
-}
-.ding_nodelist .more {
-  display: none;
-}
-.ding_nodelist .event-time {
-  -moz-box-shadow: #bcbcbc 1px 1px 5px;
-  -webkit-box-shadow: #bcbcbc 1px 1px 5px;
-  box-shadow: #bcbcbc 1px 1px 5px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 49;
-  padding: 0 0 5px;
-  width: 60px;
-  background-color: #fff;
-  text-align: center;
-}
+/**
+ * Ding nodelist module
+ *
+ * @author ac
+ */
 .ding_nodelist .event-time .event-day {
-  background: #00b7e7;
-  color: #fff;
-  margin-bottom: 5px;
-  font-size: 80%;
-  line-height: 1.4;
-}
-.ding_nodelist .event-time .event-day a {
-  color: #fff;
-}
-.ding_nodelist .event-time .event-day a:hover {
-  text-decoration: none;
-}
-.ding_nodelist .event-time .event-date,
-.ding_nodelist .event-time .event-month {
-  line-height: 1;
-}
-.ding_nodelist .event-time .event-date {
-  font-size: 120%;
-}
-.ding_nodelist .event-time .event-month {
-  font-size: 80%;
-}
-.ding_nodelist .event-label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 68px;
-  background-image: url("../images/p.png");
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-}
-.ding_nodelist .label, .ding_nodelist .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist a, .ding_nodelist .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist a, .ding_nodelist .subjects .subject, .subjects .ding_nodelist .subject, .ding_nodelist .news-list .news-label, .news-list .ding_nodelist .news-label, .ding_nodelist .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist .field-item {
-  margin: 10px 5px;
-}
-.ding_nodelist .label-wrapper {
-  margin: 10px 0;
-}
-.ding_nodelist .node, .ding_nodelist.ding_nodelist-horizontal_accordion .data {
-  min-height: 40px;
-  height: auto !important;
-  height: 40px;
-  overflow: hidden;
-  background-image: url("../images/p.png");
-  color: #fff;
-  padding: 10px !important;
-}
-.ding_nodelist .more a {
-  color: #fff;
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  font-size: 120%;
-}
-.ding_nodelist .article-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 49;
-  width: 100%;
+  background-color: #00cafe;
 }
 
-.ding_nodelist-carousel {
-  position: relative;
-  height: 391px;
-}
-.ding_nodelist-carousel .item {
-  position: relative;
-  height: 391px;
-}
-.ding_nodelist-carousel h2 {
-  text-shadow: 1px 1px 13px #000;
-  position: absolute;
-  top: 40px;
-  right: 10px;
-  z-index: 49;
-  color: #fff;
-}
-.ding_nodelist-carousel .next-prev {
-  display: none;
-  position: relative;
-  top: 10px;
-  left: 0;
-}
-.ding_nodelist-carousel .next-prev span {
-  display: none;
-}
-.ding_nodelist-carousel .next-prev .prev {
-  left: 10px;
-}
-.ding_nodelist-carousel .next-prev .prev:after {
-  content: '\f053';
-}
-.ding_nodelist-carousel .next-prev .next {
-  left: 40px;
-}
-.ding_nodelist-carousel .next-prev .next:after {
-  content: '\f054';
-}
-.ding_nodelist-carousel .next-prev .prev,
-.ding_nodelist-carousel .next-prev .next {
-  position: absolute;
-  top: 10px;
-}
-.ding_nodelist-carousel .next-prev .prev:hover,
-.ding_nodelist-carousel .next-prev .next:hover {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background-color: #00b7e7;
-  text-decoration: none;
-}
-.ding_nodelist-carousel .next-prev .prev:hover:after,
-.ding_nodelist-carousel .next-prev .next:hover:after {
-  color: #d5d5d5;
-}
-.ding_nodelist-carousel .next-prev .prev:after,
-.ding_nodelist-carousel .next-prev .next:after {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  width: 25px;
-  height: 25px;
-  line-height: 20px;
-  color: #00b7e7;
-  text-align: center;
-  font-family: 'FontAwesome';
-}
-.ding_nodelist-carousel .pagination {
-  right: 10px;
-  top: 10px;
-  position: absolute;
-}
-.ding_nodelist-carousel .pagination a {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background-color: #d5d5d5;
-  display: block;
-  float: left;
-  width: 25px;
-  height: 25px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  margin-left: 5px;
-}
-.ding_nodelist-carousel .pagination .selected {
-  background-color: #00b7e7;
-  color: #fff;
-}
-.ding_nodelist-carousel h3 {
-  margin: 3px 0;
-  padding: 0;
-  text-align: left;
-}
-.ding_nodelist-carousel h3 a {
-  text-shadow: 1px 1px 13px #000;
-  margin-right: 10px;
-  color: #fff;
-}
-.ding_nodelist-carousel .article_image,
-.ding_nodelist-carousel .event-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.ding_nodelist-carousel .article_image a,
-.ding_nodelist-carousel .event-image a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.ding_nodelist-carousel .field-type-image {
-  margin: 0 auto;
-}
-.ding_nodelist-carousel .article_image img,
-.ding_nodelist-carousel .event-image img {
-  display: none;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
-.ding_nodelist-carousel .article_image .field-label,
-.ding_nodelist-carousel .event-image .field-label {
-  display: none;
-}
-
-.ding_nodelist-horizontal_accordion {
-  background: #000;
-  overflow: hidden;
-}
-.ding_nodelist-horizontal_accordion .item {
-  position: relative;
-}
-.ding_nodelist-horizontal_accordion .item_content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
 .ding_nodelist-horizontal_accordion .expand, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect, .ding_nodelist-horizontal_accordion .pane-search-backends .selected-checkbox-group .unselect, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .expand-facets, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .expand-facets, .ding_nodelist-horizontal_accordion .pane-search-backends .expand-facets, .pane-search-backends .ding_nodelist-horizontal_accordion .expand-facets {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  position: absolute;
-  bottom: 75px;
-  left: 10px;
-  z-index: 10;
-  display: block;
-  background-color: #00b7e7;
-  color: #fff;
-  cursor: pointer;
+  background-color: #00cafe;
 }
-.ding_nodelist-horizontal_accordion .expand:after, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .selected-checkbox-group .unselect:after, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect:after, .ding_nodelist-horizontal_accordion .pane-search-backends .selected-checkbox-group .unselect:after, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect:after, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .expand-facets:after, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .expand-facets:after, .ding_nodelist-horizontal_accordion .pane-search-backends .expand-facets:after, .pane-search-backends .ding_nodelist-horizontal_accordion .expand-facets:after {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  width: 30px;
-  height: 30px;
-  line-height: 32px;
-  color: #fff;
-  content: '\f054';
-  text-align: center;
-  font-family: 'FontAwesome';
-}
-.ding_nodelist-horizontal_accordion .expand a, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .selected-checkbox-group .unselect a, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect a, .ding_nodelist-horizontal_accordion .pane-search-backends .selected-checkbox-group .unselect a, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect a, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .expand-facets a, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .expand-facets a, .ding_nodelist-horizontal_accordion .pane-search-backends .expand-facets a, .pane-search-backends .ding_nodelist-horizontal_accordion .expand-facets a {
-  display: none;
-}
-.ding_nodelist-horizontal_accordion .slide-open .expand, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .selected-checkbox-group .unselect, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .expand-facets, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .slide-open .expand-facets, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .expand-facets, .pane-search-backends .ding_nodelist-horizontal_accordion .slide-open .expand-facets {
-  right: 10px;
-  left: auto;
-}
-.ding_nodelist-horizontal_accordion .slide-open .expand:after, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .selected-checkbox-group .unselect:after, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect:after, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .selected-checkbox-group .unselect:after, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .slide-open .unselect:after, .ding_nodelist-horizontal_accordion .slide-open .pane-ding-facetbrowser .expand-facets:after, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .slide-open .expand-facets:after, .ding_nodelist-horizontal_accordion .slide-open .pane-search-backends .expand-facets:after, .pane-search-backends .ding_nodelist-horizontal_accordion .slide-open .expand-facets:after {
-  content: '\f067';
-}
-.ding_nodelist-horizontal_accordion .slide-open .image img {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-.ding_nodelist-horizontal_accordion .image a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  display: block;
-  background-color: #000;
-}
-@media only screen and (max-width: 480px) {
-  .ding_nodelist-horizontal_accordion .image a {
-    width: 310px;
-    height: 260px;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .ding_nodelist-horizontal_accordion .image a {
-    width: 400px;
-    height: 300px;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .ding_nodelist-horizontal_accordion .image a {
-    width: 450px;
-    height: 340px;
-  }
-}
-.ding_nodelist-horizontal_accordion .image img {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-  opacity: 0.25;
-  min-width: 100%;
-  width: auto;
-  height: 100%;
-}
-.ding_nodelist-horizontal_accordion .data {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  color: #fff;
-}
-.ding_nodelist-horizontal_accordion .data span,
-.ding_nodelist-horizontal_accordion .data .event-fee {
-  margin-right: 5px;
-}
-.ding_nodelist-horizontal_accordion .data a {
-  color: #fff;
-}
-.ding_nodelist-horizontal_accordion .caption {
-  overflow: hidden;
-}
-.ding_nodelist-horizontal_accordion .caption h3 {
-  max-height: 30px;
-  text-shadow: none;
-  margin: 5px 0;
-}
-.ding_nodelist-horizontal_accordion .library {
-  overflow: hidden;
-  max-height: 24px;
-}
-.ding_nodelist-horizontal_accordion .library > div {
-  float: left;
+.ding_nodelist-horizontal_accordion .expand:hover, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .selected-checkbox-group .unselect:hover, .pane-ding-facetbrowser .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect:hover, .ding_nodelist-horizontal_accordion .pane-search-backends .selected-checkbox-group .unselect:hover, .pane-search-backends .selected-checkbox-group .ding_nodelist-horizontal_accordion .unselect:hover, .ding_nodelist-horizontal_accordion .pane-ding-facetbrowser .expand-facets:hover, .pane-ding-facetbrowser .ding_nodelist-horizontal_accordion .expand-facets:hover, .ding_nodelist-horizontal_accordion .pane-search-backends .expand-facets:hover, .pane-search-backends .ding_nodelist-horizontal_accordion .expand-facets:hover {
+  background-color: #00a7d2;
 }
 
-.ding_nodelist-single {
-  overflow: hidden;
-  background-color: #fff;
-}
-.ding_nodelist-single .article_image a,
-.ding_nodelist-single .event-image a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.ding_nodelist-single .article_image img,
-.ding_nodelist-single .event-image img {
-  display: none;
-}
-.ding_nodelist-single .item {
-  position: relative;
-  overflow: hidden;
-}
-@media only screen and (min-width: 481px) {
-  .ding_nodelist-single .item {
-    height: 381px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .ding_nodelist-single .item .event-label,
-  .ding_nodelist-single .item .event-time {
-    visibility: hidden;
-  }
-}
-.ding_nodelist-single h3 {
-  margin: 0 0 10px 0;
-}
-.ding_nodelist-single h3 a {
-  display: block;
-  color: #fff;
+.ding_nodelist-carousel .pagination .selected {
+  background-color: #00cafe;
 }
 
-.ding_nodelist-slider {
-  position: relative;
-  background-color: #fff;
-  padding-top: 10px;
-}
-.ding_nodelist-slider .item {
-  min-height: 122px;
-}
-.ding_nodelist-slider .node {
-  background: none;
-  color: #000;
-  padding: 0 !important;
-}
-.ding_nodelist-slider .item-body {
-  margin-top: 10px;
-}
-.ding_nodelist-slider .more a {
-  color: #000;
-}
-.ding_nodelist-slider .label, .ding_nodelist-slider .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-slider a, .ding_nodelist-slider .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-slider a, .ding_nodelist-slider .subjects .subject, .subjects .ding_nodelist-slider .subject, .ding_nodelist-slider .news-list .news-label, .news-list .ding_nodelist-slider .news-label, .ding_nodelist-slider .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-slider .field-item {
-  margin-left: 0;
-}
-.ding_nodelist-slider .category {
-  float: right;
-  margin-top: 4px;
-}
-@media only screen and (max-width: 768px) {
-  .ding_nodelist-slider .legend {
-    margin-bottom: 10px;
-    padding-right: 2em;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .ding_nodelist-slider .legend {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-    text-align: right;
-  }
-}
-.ding_nodelist-slider .legend span {
-  display: block;
-}
-@media only screen and (max-width: 768px) {
-  .ding_nodelist-slider .ding_nodelist-items {
-    padding-right: 2em;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .ding_nodelist-slider .ding_nodelist-items {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 66.10169%;
-    float: right;
-    margin-right: 0;
-    padding-right: 2em;
-  }
-}
-.ding_nodelist-slider .item {
-  margin-bottom: 10px;
-}
-.ding_nodelist-slider h3 {
-  margin-bottom: 5px;
-}
-.ding_nodelist-slider .node {
-  margin-top: 0;
-  padding: 0;
-}
-.ding_nodelist-slider .more {
-  margin-bottom: 5px;
-}
-@media only screen and (max-width: 768px) {
-  .ding_nodelist-slider .more a {
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-    padding: 5px 10px;
-  }
-}
-.ding_nodelist-slider .next-prev {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  bottom: 0;
-  width: 25px;
-}
-.ding_nodelist-slider .next-prev span {
-  display: none;
-}
-.ding_nodelist-slider .next-prev a {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  position: absolute;
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-color: #d5d5d5;
-  color: #fff;
-}
-.ding_nodelist-slider .next-prev a:hover {
-  background-color: #00b7e7;
-}
-.ding_nodelist-slider .next-prev a:after {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  width: 24px;
-  height: 24px;
-  color: #fff;
-  content: '\f054';
-  text-align: center;
-  font-family: 'FontAwesome';
-}
-.ding_nodelist-slider .next-prev .next {
-  bottom: 10px;
-}
-.ding_nodelist-slider .next-prev .next:after {
-  content: '\f107';
-}
-.ding_nodelist-slider .next-prev .prev {
-  top: 10px;
-}
-.ding_nodelist-slider .next-prev .prev:after {
-  content: '\f106';
-}
-
-.va-wrapper {
-  position: relative;
-}
-.va-wrapper .ding_nodelist-items .news {
-  background-color: #fff;
-  background-repeat: no-repeat;
-}
-.va-wrapper .item {
-  position: absolute;
-  z-index: 10;
-  display: block;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 100%;
-  height: 500px;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.va-wrapper .item:first-of-type {
-  border-top: 0;
-}
-.va-wrapper .va-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  visibility: hidden;
-  background-image: url("../images/p.png");
-  width: 100%;
-}
-.va-wrapper .va-content,
-.va-wrapper .va-content h3,
-.va-wrapper .va-content a {
-  color: #fff;
-}
-.va-wrapper .va-content .label, .va-wrapper .va-content .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .va-wrapper .va-content a, .va-wrapper .va-content .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .va-wrapper .va-content a, .va-wrapper .va-content .subjects .subject, .subjects .va-wrapper .va-content .subject, .va-wrapper .va-content .news-list .news-label, .news-list .va-wrapper .va-content .news-label, .va-wrapper .va-content .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .va-wrapper .va-content .field-item {
-  margin-left: 0;
-}
-.va-wrapper .va-content .inner-wrapper {
-  margin: 10px;
-}
-.va-wrapper .active .va-content {
-  visibility: visible;
-}
-.va-wrapper .va-title {
-  position: relative;
-  z-index: 1;
-}
-@media only screen and (max-width: 768px) {
-  .va-wrapper .va-title {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .va-wrapper .active .va-title {
-    visibility: visible;
-  }
-}
-
-fieldset legend {
-  margin: 0;
-  padding: 0;
-}
-
-.attachments-3-3 .ding_nodelist-taxonomy .item .item-list-image,
-.tertiary-content .ding_nodelist-taxonomy .item .item-list-image,
-.attachments-4-4 .ding_nodelist-taxonomy .item .item-list-image {
-  display: none;
-}
-
-.ding_nodelist-taxonomy .item:nth-child(odd) {
-  background-color: #e8e8e8;
-}
 .ding_nodelist-taxonomy .item {
-  background-color: #f2f2f2;
-  margin-bottom: 10px;
-  overflow: hidden;
-  padding: 20px;
-  min-width: 100%;
-}
-.ding_nodelist-taxonomy .item:first-of-type {
-  border-top: 0;
+  background-color: #ebebeb;
+  color: #4c4c4c;
 }
 .ding_nodelist-taxonomy .item .item-title {
   font-size: 130%;
 }
 .ding_nodelist-taxonomy .item .item-title a {
-  font-weight: 700;
+  font-weight: 600;
 }
-.ding_nodelist-taxonomy .item .item-date {
-  color: #959595;
+.ding_nodelist-taxonomy .item-details .item-date,
+.ding_nodelist-taxonomy .item-details .item-price,
+.ding_nodelist-taxonomy .item-details .item-library {
+  font-size: 100%;
 }
-.ding_nodelist-taxonomy .item .item-author {
-  display: none;
+.ding_nodelist-taxonomy .item:nth-child(odd) {
+  background-color: #e8e8e8;
 }
-.ding_nodelist-taxonomy .item .label, .ding_nodelist-taxonomy .item .view-node-search-result .list-item .field-type-taxonomy-term-reference a, .view-node-search-result .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a, .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference .ding_nodelist-taxonomy .item a, .ding_nodelist-taxonomy .item .subjects .subject, .subjects .ding_nodelist-taxonomy .item .subject, .ding_nodelist-taxonomy .item .news-list .news-label, .news-list .ding_nodelist-taxonomy .item .news-label, .ding_nodelist-taxonomy .item .super-heading .field-name-field-ding-news-library .field-item, .super-heading .field-name-field-ding-news-library .ding_nodelist-taxonomy .item .field-item {
-  margin-left: 0;
-}
-.ding_nodelist-taxonomy .item .item-body {
-  margin-top: 10px;
-}
-@media only screen and (min-width: 769px) {
-  .ding_nodelist-taxonomy .item {
-    display: table;
-  }
-  .ding_nodelist-taxonomy .item .item-details,
-  .ding_nodelist-taxonomy .item .item-list-image {
-    display: table-cell;
-    vertical-align: top;
-  }
-  .ding_nodelist-taxonomy .item .item-list-image {
-    padding-right: 10px;
-    width: 159px;
-  }
-  .ding_nodelist-taxonomy .item .item-list-image img {
-    width: 159px;
-    height: auto;
-    min-width: 159px;
-  }
-}
-
-.pane-bibliotek-info {
-  padding: 15px;
-  background-image: url("../images/pw_maze_white.png");
-}
-.pane-bibliotek-info .pane-content {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-@media only screen and (min-width: 769px) {
-  .pane-bibliotek-info .pane-content {
-    background-image: url("../images/dbc-logo-footer.png");
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-  }
+.ding_nodelist-taxonomy .item:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 /**
@@ -11641,142 +10664,8 @@ fieldset legend {
  *
  * @author ac
  */
-div.primary-content .view-ting-search-related-content {
-  *position: relative;
-  *zoom: 1;
-}
-div.primary-content .view-ting-search-related-content:before, div.primary-content .view-ting-search-related-content:after {
-  content: "";
-  display: table;
-}
-div.primary-content .view-ting-search-related-content:after {
-  clear: both;
-}
-div.primary-content .view-ting-search-related-content div.view-content > div {
-  float: left;
-  width: 50%;
-  margin-left: 0%;
-  margin-right: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-  max-height: inherit;
-}
-@media only screen and (max-width: 480px) {
-  div.primary-content .view-ting-search-related-content div.view-content > div {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  div.primary-content .view-ting-search-related-content div.view-content > div {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-}
-div.primary-content .view-ting-search-related-content div.view-content > div.even {
-  float: right;
-  width: 50%;
-  margin-right: 0%;
-  margin-left: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-@media only screen and (max-width: 480px) {
-  div.primary-content .view-ting-search-related-content div.view-content > div.even {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  div.primary-content .view-ting-search-related-content div.view-content > div.even {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-    _display: inline;
-    _overflow: hidden;
-    _overflow-y: visible;
-  }
-}
-
 .view-ting-search-related-content {
   background-color: #e8e8e8;
-}
-.view-ting-search-related-content div.view-content > div {
-  padding: 10px;
-}
-.view-ting-search-related-content .views-field-field-ding-event-list-image {
-  max-width: 159px;
-  max-height: 159px;
 }
 .view-ting-search-related-content .views-field-title {
   font-size: 130%;
@@ -11786,8 +10675,4 @@ div.primary-content .view-ting-search-related-content div.view-content > div.eve
 .view-ting-search-related-content .views-field-title a:hover,
 .view-ting-search-related-content .views-field-title a:visited {
   color: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
-}
-.view-ting-search-related-content .views-field-field-ding-event-body {
-  margin-top: 10px;
 }
