@@ -133,6 +133,16 @@
     // Toggle opening hours.
     toggleOpeningHours();
 
+    // Expand block when accesed from "Opening hours" widget.
+    var hash = window.location.hash;
+    if (hash == '#toggle-opening-hours') {
+      var element = $('a.js-opening-hours-toggle');
+      if (!$(element).hasClass('js-expanded')) {
+        $(element).toggleClass('js-collapsed js-expanded');
+        $('.js-opening-hours-toggle-element').css('display','block');
+      };
+    };
+
     // Toggle footer menu.
     $('.footer .pane-title').on('click', function() {
       var element = $(this).parent();

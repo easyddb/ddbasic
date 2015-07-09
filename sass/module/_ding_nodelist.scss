@@ -816,13 +816,10 @@ fieldset {
     margin-bottom: 10px;
     overflow: hidden;
     padding: 20px;
+    min-width: 100%;
 
     &:first-of-type {
       border-top: 0;
-    }
-
-    .item-details {
-      width: 100%;
     }
 
     .item-title {
@@ -867,6 +864,7 @@ fieldset {
         img {
           width: 159px;
           height: auto;
+          min-width: 159px;
         }
       }
     }

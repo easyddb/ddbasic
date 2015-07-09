@@ -127,7 +127,24 @@
       <?php endif; ?>
       <div class="description" itemprop="description">
         <?php
-          print render($content['field_ding_event_body']);
+          // Hide fields we have already rendered.
+          hide($content['field_ding_event_category']);
+          hide($content['og_group_ref']);
+          hide($content['ding_event_groups_ref']);
+
+          hide($content['field_ding_event_date']);
+          hide($content['field_ding_event_location']);
+          hide($content['field_ding_event_target']);
+          hide($content['field_ding_event_price']);
+
+          // Hide fields that will be displayed as panel panes instead.
+          hide($content['comments']);
+
+          // Hide fields now so that we can render them later.
+          hide($content['links']);
+          hide($content['field_ding_event_tags']);
+
+          print render($content);
         ?>
       </div>
     </div>
