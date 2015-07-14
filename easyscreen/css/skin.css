@@ -27,11 +27,14 @@
 #SlidersDiv .extended-vertical-ticker,
 .rss-ct-container.horizontalTicker,
 .carousel-ct-container .title,
+.events-day-title,
 .events-header,
 .event-details {
   background: url("../img/grey-p.png") repeat !important; /* Grey transparent bg */
 }
-
+.events-page {
+  display: none;
+}
 .filter-overlay {
   background: url("../img/bg-filter.png") repeat; /* Grey transparent bg */
 }
@@ -611,7 +614,6 @@ ul.newsticker {
 }
 
 /* Temporary content */
-
 .single-ct-container div.date-time:before,
 .carousel-ct-container div.date-time:before {
   content: "Kl.";
@@ -626,6 +628,10 @@ ul.newsticker {
 .single-ct-container div.date-time p.event-primary-address,
 .carousel-ct-container div.date-time p.event-primary-address {
   display: block;
+}
+
+.events-day-title h2 {
+  padding: 5px 20px;
 }
 
 .simple-tpl .header p.event-time {
@@ -650,23 +656,23 @@ ul.newsticker {
   padding: 20px;
 }
 
-.events-header,
-.events-header h2 {
+.events-page-header,
+.events-page-header h2 {
   font-family: 'ApexBold', Arial, Helvetica, sans-serif;
   font-size: 24px;
   overflow: hidden;
   text-transform: uppercase;
 }
 
-.events-header h2 {
+.events-page-header h2 {
   margin: 0;
 }
 
-.events-header .pagination {
-  float: left;
+.events-page-header .pagination {
+  float: right;
 }
 
-.events-header .pagination a {
+.events-page-header .pagination a {
   display: block;
   float: left;
   margin-right: 10px;
@@ -678,7 +684,7 @@ ul.newsticker {
   line-height: 35px;
 }
 
-.events-header .pagination a.active {
+.events-page-header .pagination a.active {
   background: #36a29d;
 }
 
