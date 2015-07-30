@@ -3708,9 +3708,9 @@ body {
 
 .logo {
   float: left;
-  width: 33.33333%;
+  width: 41.66667%;
   margin-left: 0%;
-  margin-right: -33.33333%;
+  margin-right: -41.66667%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -3724,11 +3724,42 @@ body {
   _overflow-y: visible;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .logo {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
 .logo a {
   display: inline-block;
 }
 .logo img {
   margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .logo img {
+    max-width: 50%;
+    max-height: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logo img {
+    width: 50%;
+  }
 }
 
 .site-name-wrapper {
@@ -3821,24 +3852,6 @@ body {
   margin-top: 10px;
   margin-left: 2px;
   color: #fff;
-}
-
-.logo {
-  float: left;
-  width: 41.66667%;
-  margin-left: 0%;
-  margin-right: -41.66667%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 
 /* Content
@@ -4889,6 +4902,10 @@ body {
   background-color: #191919;
   color: #fff;
   text-align: center;
+}
+
+.primary-content table img {
+  max-width: inherit;
 }
 
 /* Dibs accept/cancel/redirect page
@@ -6126,6 +6143,7 @@ header .search .form-actions, header .search-field-in-content .form-actions {
 .ding-format-short .ting-object-right, .ding-format-short .view-node-search-result .list-item .search-right, .view-node-search-result .list-item .ding-format-short .search-right, .ding-format-short .ting-reference-reverse-list .list-item .search-right, .ting-reference-reverse-list .list-item .ding-format-short .search-right, .ding-format-short .pane-search-result .search-results .list .search-result--availability, .pane-search-result .search-results .list .ding-format-short .search-result--availability, .ding-format-short .view-node-search-result .search-results .list .search-result--availability, .view-node-search-result .search-results .list .ding-format-short .search-result--availability, .ding-format-short .ting-reference-reverse-list .search-results .list .search-result--availability, .ting-reference-reverse-list .search-results .list .ding-format-short .search-result--availability, .ding-format-short .pane-new-materials .search-results .list .search-result--availability, .pane-new-materials .search-results .list .ding-format-short .search-result--availability {
   width: 100%;
   margin-right: -75px;
+  padding-right: 75px;
 }
 @media only screen and (max-width: 480px) {
   .ding-format-short .ting-object-right, .ding-format-short .view-node-search-result .list-item .search-right, .view-node-search-result .list-item .ding-format-short .search-right, .ding-format-short .ting-reference-reverse-list .list-item .search-right, .ting-reference-reverse-list .list-item .ding-format-short .search-right, .ding-format-short .pane-search-result .search-results .list .search-result--availability, .pane-search-result .search-results .list .ding-format-short .search-result--availability, .ding-format-short .view-node-search-result .search-results .list .search-result--availability, .view-node-search-result .search-results .list .ding-format-short .search-result--availability, .ding-format-short .ting-reference-reverse-list .search-results .list .search-result--availability, .ting-reference-reverse-list .search-results .list .ding-format-short .search-result--availability, .ding-format-short .pane-new-materials .search-results .list .search-result--availability, .pane-new-materials .search-results .list .ding-format-short .search-result--availability {
