@@ -143,6 +143,8 @@
           // Hide fields now so that we can render them later.
           hide($content['links']);
           hide($content['field_ding_event_tags']);
+
+          print render($content);
         ?>
       </div>
     </div>
