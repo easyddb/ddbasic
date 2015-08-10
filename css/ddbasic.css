@@ -5893,6 +5893,15 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 .search .form-text, .search-field-in-content .form-text {
   padding-left: 49px;
 }
+.search #ting-ext-search-left, .search-field-in-content #ting-ext-search-left {
+  display: inline-block;
+  width: 49%;
+  margin-right: 15px;
+}
+.search #ting-ext-search-right, .search-field-in-content #ting-ext-search-right {
+  display: inline-block;
+  width: 49%;
+}
 
 /* Search in content
    ========================================================================== */
@@ -6029,11 +6038,11 @@ input#edit-search-block-form--2.spinner {
   background-image: none;
 }
 
-header .search .form-actions, header .search-field-in-content .form-actions {
+headader .search .form-actions, headader .search-field-in-content .form-actions {
   top: 29px;
 }
 @media only screen and (max-width: 768px) {
-  header .search .form-actions, header .search-field-in-content .form-actions {
+  headader .search .form-actions, headader .search-field-in-content .form-actions {
     top: 0;
   }
 }

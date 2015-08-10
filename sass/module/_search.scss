@@ -98,6 +98,17 @@ $search-border-type: solid;
   .form-text {
     padding-left: 49px;
   }
+
+  #ting-ext-search-left {
+    display: inline-block;
+    width: 49%;
+    margin-right: 15px;
+  }
+
+  #ting-ext-search-right {
+    display: inline-block;
+    width: 49%;
+  }
 }
 
 
@@ -198,7 +209,7 @@ input#edit-search-block-form--2.spinner {
   background-image: none;
 }
 
-header .search .form-actions {
+headader .search .form-actions {
   top: 29px;
 
   @include small-medium() {
