@@ -150,4 +150,5 @@
   <div class="newsletter-footer">
     <p><?php print render($content['field_footer']); ?></p>
   </div>
+  <?php print render($content['field_ding_newsletter_materials']); ?>
 </div>
