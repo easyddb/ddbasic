@@ -8274,6 +8274,27 @@ div[class^="collection-bg"] {
   border-top: 1px solid #efefef;
   padding-top: 20px;
 }
+#ding-library-front .ding-library-news.js-og-single-content-type,
+#ding-library-front .ding-library-events.js-og-single-content-type {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-left: 0;
+  padding-right: 0;
+}
 @media only screen and (max-width: 768px) {
   #ding-library-front .ding-library-news,
   #ding-library-front .ding-library-events {
@@ -10161,6 +10182,27 @@ div[class^="collection-bg"] {
 .ding-group-events {
   border-top: 1px solid #efefef;
   padding-top: 20px;
+}
+.ding-group-news.js-og-single-content-type,
+.ding-group-events.js-og-single-content-type {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media only screen and (max-width: 768px) {
   .ding-group-news,
