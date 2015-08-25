@@ -260,6 +260,7 @@ header .search .form-actions {
   .ting-object-right {
     width: 100%;
     margin-right: -75px;
+    padding-right: 75px;
 
     @include small() {
       @include zen-grid-item(12, 1, right);
