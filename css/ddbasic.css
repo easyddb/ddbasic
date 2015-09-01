@@ -4242,7 +4242,11 @@ body {
   .frontpage-layout .col4,
   .frontpage-layout .col4.right,
   .frontpage-layout .col3,
-  .frontpage-layout .col3.right {
+  .frontpage-layout .col3.right,
+  .frontpage-layout .col3.pre3,
+  .frontpage-layout .col3.pre6,
+  .frontpage-layout .col4.pre4,
+  .frontpage-layout .col6.pre3 {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -9026,8 +9030,8 @@ div[class^="collection-bg"] {
   overflow: hidden;
 }
 @media only screen and (max-width: 480px) {
-  .user .form-item-name,
-  .user .form-item-pass {
+  .user div.form-item-name,
+  .user div.form-item-pass {
     float: left;
     width: 100%;
     margin-left: 0%;
