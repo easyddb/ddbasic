@@ -261,7 +261,11 @@ body {
     .col4,
     .col4.right,
     .col3,
-    .col3.right {
+    .col3.right,
+    .col3.pre3,
+    .col3.pre6,
+    .col4.pre4,
+    .col6.pre3 {
       @include zen-grid-item(12, 1);
       @include zen-clear();
     }
