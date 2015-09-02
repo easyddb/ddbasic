@@ -614,9 +614,9 @@ ul.newsticker {
 }
 
 /* Temporary content */
-.single-ct-container div.date-time:before,
-.carousel-ct-container div.date-time:before {
-  content: "Kl.";
+.single-ct-container p.event-time:before,
+.carousel-ct-container p.event-time:before {
+  content: "kl. ";
 }
 
 .single-ct-container div.date-time p,
