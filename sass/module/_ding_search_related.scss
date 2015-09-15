@@ -4,52 +4,8 @@
  * @author ac
  */
 
-div.primary-content .view-ting-search-related-content {
-
-  @include zen-grid-container;
-  
-  div.view-content > div {
-    @include zen-grid-item(6, 1);
-    
-    max-height: inherit;
-    
-    @include small() {
-      @include zen-clear();
-      @include zen-grid-item(12, 1);
-    }
-    
-    @include medium() {
-      @include zen-clear();
-      @include zen-grid-item(12, 1);
-    }
-  }
-  
-  div.view-content > div.even {
-    @include zen-grid-item(6, 1, right);
-    
-    @include small() {
-      @include zen-clear();
-      @include zen-grid-item(12, 1);
-    }
-    
-    @include medium() {
-      @include zen-clear();
-      @include zen-grid-item(12, 1);
-    }
-  }
-}
-
 .view-ting-search-related-content {
   background-color: $list-item-background-color-odd;
-
-  div.view-content > div {
-    padding: 10px;
-  }
-  
-  .views-field-field-ding-event-list-image {
-    max-width: 159px;
-    max-height: 159px;
-  }
   
   .views-field-title {
     font-size: $font-size-large;
@@ -59,12 +15,7 @@ div.primary-content .view-ting-search-related-content {
     a:hover,
     a:visited {
       color: $font-color-primary;
-      text-decoration: none;
     }
-  }
-  
-  .views-field-field-ding-event-body {
-    margin-top: 10px;
   }
 }
 
