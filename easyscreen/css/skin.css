@@ -411,10 +411,11 @@ body,
 .carousel-tpl .date,
 .simple-tpl .header .date-time,
 .carousel-tpl .date-time {
+  float: none;
   font-size: 35px;
   font-weight: bold;
-  float: left;
-  margin-bottom: 70px; 
+  margin-bottom: 70px;
+  width: 500px;
 }
 
 .date-time .event-primary-address {
@@ -441,8 +442,7 @@ body,
   width: 100%;
 }
 
-.single-ct-container .item-data,
-.carousel-tpl .item-data {
+.single-ct-container .item-data {
   position: inherit;
 }
 
