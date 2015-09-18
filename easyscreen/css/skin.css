@@ -183,8 +183,7 @@ body,
 }
 
 .nodelist-title {
-  position: relative;
-  top: -10px;
+  margin-bottom: 50px;
 }
 
 .carousel-ct-container .title {
@@ -344,8 +343,17 @@ body,
 }
 
 .section-container .carousel-ct-bodycontent .title {
-  display: block;
-  clear: both;
+  background: #52514c !important;
+  display: inline-block;
+  font-family: "ApexBold", Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 66px;
+  padding: 3px 5px;
+}
+
+.section-container .carousel-ct-bodycontent .teaser {
+  margin-top: 60px;
 }
 
 .carousel-tpl .item-data {
@@ -366,14 +374,13 @@ body,
 
 .simple-tpl .item-data {
   height: 100%;
-  margin: 25px;
+  margin: 30px 60px 60px 60px;
   position: relative;
 }
 
 .simple-tpl .header,
 .carousel-tpl .header {
-  position: absolute;
-  top: 35px;
+  position: relative;
   width: 100%;
 }
 
@@ -407,6 +414,7 @@ body,
   font-size: 35px;
   font-weight: bold;
   float: left;
+  margin-bottom: 70px; 
 }
 
 .date-time .event-primary-address {
@@ -426,30 +434,40 @@ body,
   font-size: 24px !important;
 }
 
-
-.carousel-tpl .item-data .body {
-  position: absolute;
-  top: 40px;
-}
-
 .simple-tpl .item-data .body,
 .carousel-tpl .item-data .body {
-  position: absolute;
-  top: 145px;
+  position: relative;
+}
+
+.single-ct-container .item-data,
+.carousel-tpl .item-data {
+  position: inherit;
+}
+
+.carousel-tpl .item-data {
+  padding-top: 45px;
 }
 
 .carousel-tpl .item-data .body {
-  bottom: 90px;
   width: 100%;
+}
+
+.section-container .carousel-tpl {
+  background: none !important;
 }
 
 .single-ct-container .title,
 .carousel-tpl .title {
   display: inline-block;
   font-family: 'ApexBold', Arial, Helvetica, sans-serif;
-  font-size: 27px;
+  font-size: 46px;
   font-weight: bold;
+  line-height: 66px;
   padding: 3px 5px;
+}
+
+.single-ct-container .image {
+  display: none !important;
 }
 
 .single-ct-container .teaser {
@@ -458,7 +476,7 @@ body,
   font-size: 26px;
   font-weight: bold;
   line-height: 32px;
-  margin-top: 25px;
+  margin-top: 80px;
   overflow: hidden;
   word-break: normal;
 }
