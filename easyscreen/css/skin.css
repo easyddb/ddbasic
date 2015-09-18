@@ -436,7 +436,9 @@ body,
 
 .simple-tpl .item-data .body,
 .carousel-tpl .item-data .body {
+  clear: both;
   position: relative;
+  width: 100%;
 }
 
 .single-ct-container .item-data,
