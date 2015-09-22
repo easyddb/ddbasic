@@ -468,10 +468,6 @@ body,
   padding: 3px 5px;
 }
 
-.single-ct-container .image {
-  display: none !important;
-}
-
 .single-ct-container .teaser {
   display: block;
   height: 160px;
