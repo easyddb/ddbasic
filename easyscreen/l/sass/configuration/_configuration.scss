@@ -1,0 +1,61 @@
+/**
+ * Rules that can be configured is located in this file.
+ *
+ * @author ac
+ */
+
+%grey-transparent-bg {
+  background: $grey-transparent-bg;
+}
+
+%search-buttons {
+  @extend %grey-transparent-bg;
+  
+  color: $gray;
+  position: absolute;
+  top: 5.5%;
+  display: block;
+  float: right;
+  width: 190px;
+  height: 70px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: $font-size-small;
+  
+  span {
+    display: block;
+    line-height: 1.5;
+    margin-top: 14px;
+  }
+  
+}
+
+%fullsize {
+  height: 100%;
+  width: 100%;
+}
+
+%date-time {
+  font-size: 30px;
+  font-weight: bold;
+  clear: both;
+  display: inline-block;
+  line-height: 1.2;
+  padding: 8px 10px;
+  border: 4px solid $white;
+  background-color: $gray-darker;
+  color: $white;
+}
+
+%label {
+  background: $gray-dark;
+  color: $white;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 2px 5px;
+}
+
+%label-active {
+  @extend %label;
+  background: $turquoise-color;
+}

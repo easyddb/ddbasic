@@ -1,0 +1,63 @@
+/**
+ * Custom ES styles
+ *
+ * @author ac
+ */
+
+.search,
+.search-scan {
+  display: block;
+}
+
+.search {
+  @extend %search-buttons;
+
+  right: 10px;
+  text-align: right;
+
+  span {
+    margin-left: 10px;
+    width: 115px;
+  }
+  
+  .icon-search {
+    color: $light-blue;
+    font-size: $font-size-giga;
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    top: 22px;
+  }
+}
+
+.search-scan {
+  @extend %search-buttons;
+  
+  right: 210px;
+  text-align: center;
+
+}
+
+.count-down-bar {
+  background-color: $turquoise-color;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 16;
+  overflow: hidden;
+  width: 100%;
+  height: 10px;
+  border-left: 0;
+  text-indent: -1000em;
+}
+
+.count-down-bar-bg {
+  background-color: $gray-dark;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  display: block;
+  width: 100%;
+  height: 10px;
+}

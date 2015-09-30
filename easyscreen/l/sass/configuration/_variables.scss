@@ -1,0 +1,136 @@
+/**
+ * Variables
+ *
+ * @author magnify
+ */
+
+
+
+/* Spacing variables
+   ========================================================================== */
+
+$large-spacing:                   20px;
+$medium-spacing:                  10px;
+$small-spacing:                   5px;
+
+
+
+/* Zen Grid variables
+   ========================================================================== */
+
+$zen-column-count: 12;
+$zen-gutter-width: 20px;
+$box-sizing-polyfill-path: "/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc";
+
+
+
+/* Breakpoints
+   ========================================================================== */
+
+$breakpoint-low:                  580px;
+$breakpoint-small:                480px;
+$breakpoint-medium:               768px;
+$breakpoint-large:                940px;
+$breakpoint-x-large:              1210px;
+
+
+
+/* Standard color definitions
+   ========================================================================== */
+
+$white:                          #fff !default;
+$black:                          #000 !default;
+$gray:                           #ceccbd !default;
+$gray-light:                     lighten($gray, 10%) !default;
+$gray-lighter:                   lighten($gray, 15%) !default;
+$gray-dark:                      #52514c;
+$gray-darker:                    transparentize($black, .4);
+$red:                            #a32e10;
+$green:                          #528c10;
+$yellow:                         #f0cb28;
+$blue:                           #00caff;
+$light-blue:                     #bde6e2;
+$turquoise-color:                #37a19d;
+
+
+/* Font library
+   ========================================================================== */
+
+$base-icon-library-font:         "FontAwesome";
+$date-time-font:                 "Verdana, Arial, sans-serif";
+
+
+/* Typography
+   ========================================================================== */
+
+$font-color-primary:              transparentize($black, .3);
+
+
+
+/* Font variables
+   ========================================================================== */
+
+$base-font-size:                  16px;
+$base-line-height:                24px;
+$base-font-family:                'Source Sans Pro', sans-serif;
+$base-font-weight-light:          300;
+$base-font-weight-normal:         400;
+$base-font-weight-bold:           600;
+
+
+/* Font sizes
+   ========================================================================== */
+
+
+$font-size-giga:                  200%;
+$font-size-largest:               180%;
+$font-size-larger:                160%;
+$font-size-large:                 130%;
+$font-size-medium:                110%;
+$font-size-reset:                 100%;
+$font-size-small:                 85%;
+$font-size-tiny:                  75%;
+
+
+/* Labels
+   ========================================================================== */
+
+$label-border-radius:             8px;
+$label-shadow:                    0 -1px 0 rgba(0,0,0,.25);
+$label-padding:                   3px 10px;
+
+
+/* Navigation
+   ========================================================================== */
+
+$navbar-bg-color:                 transparentize($white, .95);
+$navbar-bg-active-color:          transparentize($white, .95);
+$navbar-text-color:               lighten($black, 30%);
+$navbar-text-color-active:        lighten($black, 30%);
+
+
+/* Availability
+   ========================================================================== */
+
+$availability-pending:                      #ff4e00;
+$availability-processed:                    #ff4e00;
+$availability-available:                    #538c11;
+$availability-reservable:                   #ff4e00;
+$availability-available-reservable:         #538c11;
+$availability-available-not-reservable:     #ff4e00;
+$availability-unavailable-reservable:       #ff4e00;
+$availability-unavailable-not-reservable:   #8c1145;
+
+$legend-available:                          #538c11;
+$legend-on-loan:                            #ff4e00;
+$legend-unavailable:                        #8c1145;
+$legend-unreservable:                       #ff4e00;
+
+
+/* Images
+   ========================================================================== */
+
+$es-background-image:                       url('../img/bg-1.jpg');
+$es-background-filter:                      url('../img/bg-filter.png');
+$grey-transparent-bg:                       url('../img/grey-p.png');
+

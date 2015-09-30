@@ -1,0 +1,124 @@
+/**
+ * Buttons
+ *
+ * @author ac
+ */
+
+ 
+/* Extends
+   ========================================================================== */
+
+.single-wrapper {
+  
+  @extend %fullsize;
+  
+  .single {
+    @extend %fullsize;
+    
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .single-inner-wrapper {
+      @extend %grey-transparent-bg;
+      @extend %fullsize;
+    }
+    
+    .item-data {
+      padding: 30px 20px;
+    }
+    
+    .date-time {
+      @extend %date-time;
+      margin-bottom: 20px;
+    
+      .event-date {
+        display: inline-block;
+        margin: 0px;
+      
+        span {
+          margin-left: 10px;
+        }
+      }
+    
+      .event-time {
+        display: inline-block;
+        margin: 0 0 0 10px; 
+      }
+    
+      .event-primary-address {
+        font-size: 20px;
+        margin: 5px 0 0 0;
+      }
+    }
+    
+    .category {
+      @extend %label;
+      
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 20px;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+    
+    .nodelist-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+      word-break: normal;
+    }
+    
+    .title {
+      @extend %label;
+      
+      display: inline-block;
+      font-size: 27px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      padding: 3px 5px;
+    }
+    
+    .teaser {
+      display: block;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0 0 20px 0;
+      overflow: hidden;
+      word-break: normal;
+    }
+    
+    .read-more {
+      @extend %label-active;
+      margin: 0;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    
+  }
+
+}
+
+.col6,
+.col4 {
+  .single .teaser {
+    font-size: 20px;
+  }
+}
+
+@include large-x-large-portrait() {
+  .col6 {
+    .single {
+      .teaser {
+        font-size: 26px;
+      }
+      
+      .category,
+      .nodelist-title,
+      .title,
+      .teaser,
+      .date-time {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

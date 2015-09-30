@@ -1,0 +1,30 @@
+/**
+ * Buttons
+ *
+ * @author magnify
+ */
+
+
+/* Variables
+   ========================================================================== */
+
+$button-border:                   0;
+$button-box-shadow:               0 0 1px lighten($black, 35%) inset;
+$button-border-radius:            8px;
+$button-padding:                  8px 14px;
+
+$button-default-bg:               #444;
+$button-default-color:            #fff;
+$button-theme-bg:                 #00b7e7;
+$button-theme-color:              #fff;
+$button-action-bg:                #60a500;
+$button-action-color:             #fff;
+$button-warning-bg:               #f6d346;
+$button-warning-color:            #000;
+$button-danger-bg:                #bf3600;
+$button-danger-color:             #fff;
+
+
+
+/* Extends
+   ========================================================================== */

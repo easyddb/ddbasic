@@ -1,0 +1,216 @@
+/**
+ * Layout
+ *
+ * Base layout stuff
+ *
+ * @author magnify
+ */
+
+
+
+/* Base
+   ========================================================================== */
+
+html {
+  @extend %fullsize;
+}
+   
+body {
+  @extend %fullsize;
+  background-attachment: fixed;
+  background-image: $es-background-image;
+  background-size: cover;
+  color: $white;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+/* Page
+   ========================================================================== */
+
+#page {
+  @include zen-grid-container;
+}
+
+
+/* Header wrapper
+   ========================================================================== */
+
+.header-wrapper {
+  @include box-sizing(border-box);
+  
+  overflow: hidden;
+  height: 18%;
+  
+  h1 {
+    margin-top: 7px;
+  }
+  
+  .logo {
+    float: left;
+    margin-right: 30px;
+    margin-top: 8%;
+  }
+}
+
+/* Content
+   ========================================================================== */
+
+.content-wrapper {
+  height: 75%;
+  overflow: hidden;
+  
+  .col12 {
+    height: 100%;
+  }
+}
+
+
+/* Layouts
+   ========================================================================== */
+
+.easyscreen-layout {
+  @extend %fullsize;
+  background-image: $es-background-filter;   
+  background-repeat: repeat;
+  left: 0;
+  position: relative;
+  top: 0;
+  
+  .col12 {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
+
+  .layout-wrapper {
+    @include zen-clear();
+    overflow: hidden;
+    width: 94%;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .col12 .col {
+    height: 100%;
+  }
+  
+  .col12        { padding-left: 0;    padding-right: 0;    }
+  .col12 .col12 { padding-left: 10px; padding-right: 10px; }
+
+  .col3       { @include zen-grid-item(3, 1); }
+  .col3.right { @include zen-grid-item(3, 1, right); }
+  .col3.pre3  { @include zen-grid-item(3, 4); }
+  .col3.pre6  { @include zen-grid-item(3, 7); }
+
+  .col4       { @include zen-grid-item(4, 1); }
+  .col4.right { @include zen-grid-item(4, 1, right); }
+  .col4.pre4  { @include zen-grid-item(4, 5); }
+
+  .col6       { @include zen-grid-item(6, 1); }
+  .col6.right { @include zen-grid-item(6, 1, right); }
+  .col6.pre3  { @include zen-grid-item(6, 4); }
+
+  .col7       { @include zen-grid-item(7, 1); }
+  .col7.right { @include zen-grid-item(7, 1, right); }
+
+  .secondary-content,
+  .col8       { @include zen-grid-item(8, 1); }
+  .secondary-content-right,
+  .col8.right { @include zen-grid-item(8, 1, right); }
+
+  .col9       { @include zen-grid-item(9, 1); }
+  .col9.right { @include zen-grid-item(9, 1, right); }
+
+  /* Media queries */
+  @include small-medium() {
+    .col12,
+    .col9,
+    .col9.right,
+    .col8,
+    .col8.right,
+    .col6,
+    .col6.right,
+    .col4,
+    .col4.right,
+    .col3,
+    .col3.right {
+      @include zen-grid-item(12, 1);
+      @include zen-clear();
+    }
+  }
+  
+  @include large-x-large-portrait() {
+    .col12,
+    .col9,
+    .col9.right,
+    .col8,
+    .col8.right,
+    .col6,
+    .col6.right,
+    .col4,
+    .col4.right,
+    .col3,
+    .col3.right {
+      @include zen-grid-item(12, 1);
+      @include zen-clear();
+    }
+    
+    .content-wrapper {
+      height: 87%;
+      
+      .col6 {
+        height: 49%;
+        margin-bottom: 5%;
+      }
+      
+      .col4 {
+        height: 33%;
+        margin-bottom: 5%;
+      }
+      
+      .col8 {
+        height: 64%;
+        margin-bottom: 5%;
+      }
+    }
+    
+    .header-wrapper {
+      height: 10%;
+      
+      .col6 {
+        height: 100%;
+      
+        .logo {
+          margin-top: 7%;
+        }
+      
+        .search,
+        .search-scan {
+          top: 3%;
+        }
+        
+        .search {
+          right: 20px;
+        }
+        
+        .search-scan {
+          right: 220px;
+        }
+      }
+    }
+  }
+}
+
+
+/* Footer
+   ========================================================================== */
+
+.footer {
+  bottom: 0;
+  height: 15%;
+  overflow: hidden;
+  position: absolute;
+
+}
