@@ -7963,6 +7963,8 @@ div[class^="collection-bg"] {
   left: 5%;
   margin-right: -5%;
   transform: translate(-5%, -50%);
+  -webkit-transform: translate(-5%, -50%);
+  -ms-transform: translate(-5%, -50%);
 }
 .libraries .ding-library-left {
   float: left;
@@ -7984,6 +7986,8 @@ div[class^="collection-bg"] {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
 }
 .libraries.library-cover-exist:before {
   display: none;
@@ -10465,3 +10469,5 @@ div[class^="collection-bg"] {
 .view-ting-search-related-content .views-field-title a:visited {
   color: rgba(0, 0, 0, 0.7);
 }
+
+/*# sourceMappingURL=ddbasic.css.map */
