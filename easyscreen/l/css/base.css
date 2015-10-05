@@ -33,7 +33,7 @@
  * @author ac
  */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic");
-.search, .search-scan, .single-wrapper .single .single-inner-wrapper {
+.search, .search-scan, .single-wrapper .single .single-inner-wrapper, .events-list .event-details {
   background: url("../img/grey-p.png");
 }
 
@@ -55,13 +55,13 @@
   margin-top: 14px;
 }
 
-html, body, .easyscreen-layout, .single-wrapper, .single-wrapper .single, .single-wrapper .single .single-inner-wrapper {
+html, body, .easyscreen-layout, .single-wrapper, .single-wrapper .single, .single-wrapper .single .single-inner-wrapper, .events-list {
   height: 100%;
   width: 100%;
 }
 
 .single-wrapper .single .date-time {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   clear: both;
   display: inline-block;
@@ -2919,6 +2919,8 @@ body {
  *
  * @author ac
  */
+/* Variables
+   ========================================================================== */
 /* Extends
    ========================================================================== */
 .single-wrapper .single {
@@ -2929,7 +2931,7 @@ body {
   padding: 30px 20px;
 }
 .single-wrapper .single .date-time {
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 .single-wrapper .single .date-time .event-date {
   display: inline-block;
@@ -2949,20 +2951,20 @@ body {
 .single-wrapper .single .category {
   display: inline-block;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   margin-top: 0;
   text-transform: uppercase;
 }
 .single-wrapper .single .nodelist-title {
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   word-break: normal;
 }
 .single-wrapper .single .title {
   display: inline-block;
   font-size: 27px;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   padding: 3px 5px;
 }
 .single-wrapper .single .teaser {
@@ -2970,7 +2972,7 @@ body {
   font-size: 26px;
   font-weight: bold;
   line-height: 1.2;
-  margin: 0 0 20px 0;
+  margin: 0 0 5% 0;
   overflow: hidden;
   word-break: normal;
 }
@@ -2996,6 +2998,105 @@ body {
   .col6 .single .date-time {
     margin-bottom: 60px;
   }
+}
+/**
+ * Buttons
+ *
+ * @author ac
+ */
+/* Extends
+   ========================================================================== */
+/**
+ * Buttons
+ *
+ * @author ac
+ */
+/* Extends
+   ========================================================================== */
+.events-list a {
+  text-decoration: none;
+}
+.events-list .events-page-header {
+  font-size: 24px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.events-list .events-page-header .pagination {
+  float: right;
+}
+.events-list .events-page-header .pagination a {
+  color: #fff;
+  display: block;
+  float: left;
+  font-weight: 600;
+  margin-right: 10px;
+  border-radius: 20px;
+  background: #52514c;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+.events-list .events-page-header .pagination a:active {
+  background: #37a19d;
+}
+.events-list .events-day-title h2 {
+  font-size: 46px;
+  line-height: 1.1em;
+  margin-top: 1.5em;
+  padding: 5px 20px;
+}
+.events-list .event-details {
+  line-height: 36px;
+  margin-top: 10px;
+  height: 72px;
+  overflow: hidden;
+}
+.events-list .event-details span {
+  font-size: 20px;
+  display: inline;
+  text-align: left;
+}
+.events-list .event-details i {
+  color: #cacac8;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: normal;
+  padding-right: 0.7em;
+}
+.events-list .event-details .col {
+  vertical-align: top;
+  float: left;
+}
+.events-list .event-details .c1 {
+  width: 10%;
+  font-size: 16px;
+  line-height: 35px;
+  padding-right: 10px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.events-list .event-details .c2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  width: 10%;
+}
+.events-list .event-details .c3 {
+  font-weight: 600;
+  padding-right: 5%;
+  width: 40%;
+  word-break: normal;
+  font-size: 24px;
+  vertical-align: middle;
+}
+.events-list .event-details .c4 {
+  line-height: 33px;
+  width: 30%;
+}
+.events-list .event-details .c4 .event-details-attr {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=base.css.map */

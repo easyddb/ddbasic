@@ -4,6 +4,13 @@
  * @author ac
  */
 
+
+/* Variables
+   ========================================================================== */
+   
+$small-bottom-spacing:                   5%;
+
+
  
 /* Extends
    ========================================================================== */
@@ -29,7 +36,7 @@
     
     .date-time {
       @extend %date-time;
-      margin-bottom: 20px;
+      margin-bottom: $small-bottom-spacing;
     
       .event-date {
         display: inline-block;
@@ -56,14 +63,14 @@
       
       display: inline-block;
       font-size: 16px;
-      margin-bottom: 20px;
+      margin-bottom: $small-bottom-spacing;
       margin-top: 0;
       text-transform: uppercase;
     }
     
     .nodelist-title {
       font-size: 26px;
-      margin-bottom: 20px;
+      margin-bottom: $small-bottom-spacing;
       word-break: normal;
     }
     
@@ -73,7 +80,7 @@
       display: inline-block;
       font-size: 27px;
       line-height: 1.2;
-      margin-bottom: 20px;
+      margin-bottom: $small-bottom-spacing;
       padding: 3px 5px;
     }
     
@@ -82,7 +89,7 @@
       font-size: 26px;
       font-weight: bold;
       line-height: 1.2;
-      margin: 0 0 20px 0;
+      margin: 0 0 $small-bottom-spacing 0;
       overflow: hidden;
       word-break: normal;
     }
