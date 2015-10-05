@@ -83,6 +83,8 @@
     left: 5%;
     margin-right: -5%;
     transform: translate(-5%, -50%);
+    -webkit-transform: translate(-5%, -50%);
+    -ms-transform: translate(-5%, -50%);
   }
 
   .ding-library-left {
@@ -92,6 +94,8 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
   }
 
   &.library-cover-exist:before {
