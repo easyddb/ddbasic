@@ -2424,6 +2424,7 @@ body {
 }
 .easyscreen-layout .col12 .col {
   height: 100%;
+  overflow: hidden;
 }
 .easyscreen-layout .col12 {
   padding-left: 0;
@@ -3037,13 +3038,13 @@ body {
   text-align: center;
   line-height: 35px;
 }
-.events-list .events-page-header .pagination a:active {
+.events-list .events-page-header .pagination a.active {
   background: #37a19d;
 }
 .events-list .events-day-title h2 {
   font-size: 46px;
   line-height: 1.1em;
-  margin-top: 1.5em;
+  margin-top: 0.7em;
   padding: 5px 20px;
 }
 .events-list .event-details {

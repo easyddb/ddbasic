@@ -20,99 +20,99 @@
     font-size: 24px;
     overflow: hidden;
     text-transform: uppercase;
-	
-	.pagination {
-	  float: right;
-	  
-	  a {
-	    color: $white;
-		display: block;
-	    float: left;
-		font-weight: $base-font-weight-bold;
-	    margin-right: 10px;
-	    border-radius: 20px;
-	    background: $gray-dark;
-	    width: 35px;
-	    height: 35px;
-	    text-align: center;
-	    line-height: 35px;
-		
-		&:active {
-		  background: $turquoise-color;
-		}
-	  }
-	}
+    
+    .pagination {
+      float: right;
+      
+      a {
+        color: $white;
+        display: block;
+        float: left;
+        font-weight: $base-font-weight-bold;
+        margin-right: 10px;
+        border-radius: 20px;
+        background: $gray-dark;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        
+        &.active {
+          background: $turquoise-color;
+        }
+      }
+    }
   }
   
   .events-day-title {
     h2 {
-	  font-size: 46px;
-	  line-height: 1.1em;
-	  margin-top: 1.5em;
-	  padding: 5px 20px;
+      font-size: 46px;
+      line-height: 1.1em;
+      margin-top: 0.7em;
+      padding: 5px 20px;
     }
   }
   
   .event-details {
     @extend %grey-transparent-bg;
-	
+    
     line-height: 36px;
     margin-top: 10px;
     height: 72px;
-	overflow: hidden;
-	
-	span {
-	  font-size: 20px;
+    overflow: hidden;
+    
+    span {
+      font-size: 20px;
       display: inline;
       text-align: left;
-	}
-	
-	i {
-	  color: #cacac8;
+    }
+    
+    i {
+      color: #cacac8;
       display: inline-block;
       font-size: 16px;
       text-transform: uppercase;
       font-style: normal;
       padding-right: 0.7em;
-	}
-	
-	.col {
-	  vertical-align: top;
+    }
+    
+    .col {
+      vertical-align: top;
       float: left;
-	}
-	
-	.c1 {
+    }
+    
+    .c1 {
       width: 10%;
-	  font-size: 16px;
-	  line-height: 35px;
+      font-size: 16px;
+      line-height: 35px;
       padding-right: 10px;
       text-align: right;
       text-transform: uppercase;
     }
-	
-	.c2 {
-	  font-weight: $base-font-weight-bold;
+    
+    .c2 {
+      font-weight: $base-font-weight-bold;
       font-size: 24px;
-	  line-height: 33px;
-	  width: 10%;
-	}
-	
-	.c3 {
-	  font-weight: $base-font-weight-bold;
-	  padding-right: 5%;
+      line-height: 33px;
+      width: 10%;
+    }
+    
+    .c3 {
+      font-weight: $base-font-weight-bold;
+      padding-right: 5%;
       width: 40%;
       word-break: normal;
-	  font-size: 24px;
+      font-size: 24px;
       vertical-align: middle;
-	}
-	
-	.c4 {
+    }
+    
+    .c4 {
       line-height: 33px;
       width: 30%;
-	  
-	  .event-details-attr {
-	    display: inline-block;
-	  }
+      
+      .event-details-attr {
+        display: inline-block;
+      }
     }
   }
 }
