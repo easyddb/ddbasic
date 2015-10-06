@@ -1,0 +1,87 @@
+/**
+ * Buttons
+ *
+ * @author ac
+ */
+
+
+/* Variables
+   ========================================================================== */
+   
+$small-bottom-spacing:                   5%;
+
+
+ 
+/* Extends
+   ========================================================================== */
+
+.image-wrapper {
+  
+  @extend %fullsize;
+  
+  .image {
+    @extend %fullsize;
+    
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .image-inner-wrapper {
+      @extend %grey-transparent-bg;
+      @extend %fullsize;
+      
+      position: relative;
+    }
+    
+    .item-data {
+      bottom: 0;
+      padding: 30px 20px;
+      position: absolute;
+    }
+    
+    .image-title {
+      @extend %label;
+      
+      display: inline-block;
+      font-size: 27px;
+      line-height: 1.2;
+      margin-bottom: $small-bottom-spacing;
+      padding: 3px 5px;
+      word-break: normal;
+    }
+
+    .teaser {
+      display: block;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0 0 $small-bottom-spacing 0;
+      overflow: hidden;
+      word-break: normal;
+    }
+    
+  }
+
+}
+
+.col6,
+.col4 {
+  .image .teaser {
+    font-size: 20px;
+  }
+}
+
+@include large-x-large-portrait() {
+  .col6 {
+    .image {
+      .teaser {
+        font-size: 26px;
+      }
+      
+      .image-title,
+      .title,
+      .teaser {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

@@ -33,7 +33,7 @@
  * @author ac
  */
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic");
-.search, .search-scan, .single-wrapper .single .single-inner-wrapper, .events-list .event-details {
+.search, .search-scan, .single-wrapper .single .single-inner-wrapper, .events-list .event-details, .image-wrapper .image .image-inner-wrapper {
   background: url("../img/grey-p.png");
 }
 
@@ -55,7 +55,7 @@
   margin-top: 14px;
 }
 
-html, body, .easyscreen-layout, .single-wrapper, .single-wrapper .single, .single-wrapper .single .single-inner-wrapper, .events-list {
+html, body, .easyscreen-layout, .single-wrapper, .single-wrapper .single, .single-wrapper .single .single-inner-wrapper, .events-list, .image-wrapper, .image-wrapper .image, .image-wrapper .image .image-inner-wrapper {
   height: 100%;
   width: 100%;
 }
@@ -72,7 +72,7 @@ html, body, .easyscreen-layout, .single-wrapper, .single-wrapper .single, .singl
   color: #fff;
 }
 
-.single-wrapper .single .read-more, .single-wrapper .single .category, .single-wrapper .single .title {
+.single-wrapper .single .read-more, .single-wrapper .single .category, .single-wrapper .single .title, .image-wrapper .image .image-title {
   background: #52514c;
   color: #fff;
   font-weight: bold;
@@ -3098,6 +3098,61 @@ body {
 }
 .events-list .event-details .c4 .event-details-attr {
   display: inline-block;
+}
+
+/**
+ * Buttons
+ *
+ * @author ac
+ */
+/* Variables
+   ========================================================================== */
+/* Extends
+   ========================================================================== */
+.image-wrapper .image {
+  background-attachment: fixed;
+  background-size: cover;
+}
+.image-wrapper .image .image-inner-wrapper {
+  position: relative;
+}
+.image-wrapper .image .item-data {
+  bottom: 0;
+  padding: 30px 20px;
+  position: absolute;
+}
+.image-wrapper .image .image-title {
+  display: inline-block;
+  font-size: 27px;
+  line-height: 1.2;
+  margin-bottom: 5%;
+  padding: 3px 5px;
+  word-break: normal;
+}
+.image-wrapper .image .teaser {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 5% 0;
+  overflow: hidden;
+  word-break: normal;
+}
+
+.col6 .image .teaser,
+.col4 .image .teaser {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 769px) and (orientation: portrait) {
+  .col6 .image .teaser {
+    font-size: 26px;
+  }
+  .col6 .image .image-title,
+  .col6 .image .title,
+  .col6 .image .teaser {
+    margin-bottom: 60px;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */
