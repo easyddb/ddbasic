@@ -2925,7 +2925,7 @@ body {
 /* Extends
    ========================================================================== */
 .single-wrapper .single {
-  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
 }
 .single-wrapper .single .item-data {
@@ -3110,7 +3110,7 @@ body {
 /* Extends
    ========================================================================== */
 .image-wrapper .image {
-  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
 }
 .image-wrapper .image .image-inner-wrapper {

@@ -22,7 +22,7 @@ $small-bottom-spacing:                   5%;
   .image {
     @extend %fullsize;
     
-    background-attachment: fixed;
+	background-position: center center;
     background-size: cover;
     
     .image-inner-wrapper {

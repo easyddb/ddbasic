@@ -22,7 +22,7 @@ $small-bottom-spacing:                   5%;
   .single {
     @extend %fullsize;
     
-    background-attachment: fixed;
+    background-position: center center;
     background-size: cover;
     
     .single-inner-wrapper {
