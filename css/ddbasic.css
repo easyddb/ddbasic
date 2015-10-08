@@ -93,16 +93,16 @@ a:focus {
 }
 
 /* Article background extends */
-.field-name-field-ding-news-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, #ding-library-front .opening-hours-week .header, .groups-list .groups-list-item {
+.field-name-field-ding-news-materials .field-item, .field-name-field-ding-event-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, #ding-library-front .opening-hours-week .header, .groups-list .groups-list-item {
   background-color: #ebebeb;
 }
 
-.field-name-field-ding-news-materials .field-item:nth-child(odd), .library-list .views-row:nth-child(odd), .field-name-field-ding-page-materials .field-item:nth-child(odd), .news-list .news-list-item:nth-child(odd), .event-list .event-list-item:nth-child(odd), .opening-hours-week .days .odd, .staff-list .staff-list-item:nth-child(odd),
+.field-name-field-ding-news-materials .field-item:nth-child(odd), .field-name-field-ding-event-materials .field-item:nth-child(odd), .library-list .views-row:nth-child(odd), .field-name-field-ding-page-materials .field-item:nth-child(odd), .news-list .news-list-item:nth-child(odd), .event-list .event-list-item:nth-child(odd), .opening-hours-week .days .odd, .staff-list .staff-list-item:nth-child(odd),
 .staff-list-all .staff-list-item:nth-child(odd), .groups-list .groups-list-item:nth-child(odd) {
   background-color: #e8e8e8;
 }
 
-.field-name-field-ding-news-materials .field-item:nth-child(even), .library-list .views-row:nth-child(even), .field-name-field-ding-page-materials .field-item:nth-child(even), .news-list .news-list-item:nth-child(even), .event-list .event-list-item:nth-child(even), .opening-hours-week .days .even, .staff-list .staff-list-item:nth-child(even),
+.field-name-field-ding-news-materials .field-item:nth-child(even), .field-name-field-ding-event-materials .field-item:nth-child(even), .library-list .views-row:nth-child(even), .field-name-field-ding-page-materials .field-item:nth-child(even), .news-list .news-list-item:nth-child(even), .event-list .event-list-item:nth-child(even), .opening-hours-week .days .even, .staff-list .staff-list-item:nth-child(even),
 .staff-list-all .staff-list-item:nth-child(even), .groups-list .groups-list-item:nth-child(even) {
   background-color: #f2f2f2;
 }
@@ -5229,11 +5229,11 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
  */
 /* Extends for page elements
    ========================================================================== */
-.field-name-field-ding-news-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, .groups-list .groups-list-item {
+.field-name-field-ding-news-materials .field-item, .field-name-field-ding-event-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, .groups-list .groups-list-item {
   margin-bottom: 10px;
 }
 
-.field-name-field-ding-news-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, .groups-list .groups-list-item {
+.field-name-field-ding-news-materials .field-item, .field-name-field-ding-event-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item, .news-list .news-list-item, .groups-list .groups-list-item {
   padding: 20px;
 }
 
@@ -5254,7 +5254,7 @@ html.js .search input.form-autocomplete, html.js .search-field-in-content input.
 }
 
 /* Styling for material list items (example use: search results, related materials on news etc.) */
-.field-name-field-ding-news-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item {
+.field-name-field-ding-news-materials .field-item, .field-name-field-ding-event-materials .field-item, .library-list .views-row, .field-name-field-ding-page-materials .field-item {
   overflow: hidden;
   position: relative;
 }
@@ -7773,6 +7773,108 @@ div[class^="collection-bg"] {
   .event .event-content {
     clear: left;
     width: 100%;
+  }
+}
+
+/* List of related materials */
+.field-name-field-ding-event-materials {
+  /* Media queries */
+}
+.field-name-field-ding-event-materials .field-label {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .field-name-field-ding-event-materials .group_ting_object_teaser_left {
+    display: none;
+  }
+  .field-name-field-ding-event-materials .group_ting_object_teaser_right {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .field-name-field-ding-event-materials .group_ting_object_teaser_left {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+  .field-name-field-ding-event-materials .group_ting_object_teaser_right {
+    float: right;
+    width: 75%;
+    margin-right: 0%;
+    margin-left: -75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 940px) {
+  .field-name-field-ding-event-materials .group_ting_object_teaser_left {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+  .field-name-field-ding-event-materials .group_ting_object_teaser_right {
+    float: right;
+    width: 75%;
+    margin-right: 0%;
+    margin-left: -75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/profiles/ding2/themes/ddbasic/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 }
 
