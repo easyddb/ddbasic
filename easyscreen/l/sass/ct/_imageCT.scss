@@ -8,7 +8,7 @@
 /* Variables
    ========================================================================== */
    
-$small-bottom-spacing:                   5%;
+$small-bottom-spacing:                   30px;
 
 
  
@@ -21,20 +21,22 @@ $small-bottom-spacing:                   5%;
   
   .image {
     @extend %fullsize;
+	position: relative;
     
 	background-position: center center;
     background-size: cover;
     
     .image-inner-wrapper {
-      @extend %grey-transparent-bg;
       @extend %fullsize;
       
       position: relative;
     }
     
     .item-data {
-      bottom: 0;
-      padding: 30px 20px;
+      @extend %grey-transparent-bg;
+	  
+	  bottom: 0;
+      padding: $small-bottom-spacing;
       position: absolute;
     }
     
@@ -54,7 +56,7 @@ $small-bottom-spacing:                   5%;
       font-size: 26px;
       font-weight: bold;
       line-height: 1.2;
-      margin: 0 0 $small-bottom-spacing 0;
+      margin: 0;
       overflow: hidden;
       word-break: normal;
     }
