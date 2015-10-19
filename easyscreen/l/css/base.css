@@ -2382,7 +2382,8 @@ body {
   height: 75%;
   overflow: hidden;
 }
-.content-wrapper .col12 {
+.content-wrapper .col12,
+.content-wrapper .slide {
   height: 100%;
 }
 
@@ -3164,5 +3165,52 @@ body {
    ========================================================================== */
 /* Extends
    ========================================================================== */
+/**
+ * Article popup
+ *
+ * @author ac
+ */
+/* Extends
+   ========================================================================== */
+.article-view-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 3, 4, 0.4);
+  z-index: 100;
+}
+.article-view-popup .article-view-body {
+  width: 80%;
+  height: 80%;
+  background: #eeeeee;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.article-view-popup .article-view-body .article-view-contentdata-container {
+  height: 98%;
+  left: 1%;
+  position: relative;
+  top: 1%;
+  width: 98%;
+  overflow-y: auto;
+}
+.article-view-popup .article-view-body .article-view-contentdata-container .art-popup-tpl {
+  visibility: visible;
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+.article-view-popup #closeBtnOpacPopup {
+  color: #37a19d;
+  line-height: 37px;
+  text-aligh: center;
+  width: 37px;
+  height: 37px;
+  font-size: 37px;
+  top: 12px;
+  right: 12px;
+}
 
 /*# sourceMappingURL=base.css.map */

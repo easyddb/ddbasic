@@ -5,8 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link type="text/css" rel="stylesheet" href="css/base.css"/>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="js/slides.js"></script>
-	<script src="js/ct/single.js"></script>
+
   </head>
   <body class="body">
     <div class="easyscreen-layout">
@@ -194,5 +193,45 @@
         <div class="count-down-bar-bg"></div>
       </div>
     </div>
+	<div id="ArticlePopup" class="article-view-popup" unselectable="on" style="display: block;">
+  <div class="article-view-body" style="position: relative; top: 37px; left: 100px; z-index: 99;">
+    <div id="mainHolder" class="article-view-contentdata-container">
+      <div id="bodyHolder" class="art-popup-tpl" style="visibility: visible;">
+        <div class="image-wrapper">
+          <div class="image-wrapper-inner">
+            <img class="image" src="http://ac.easyddb.dev.inlead.dk/sites/default/files/title_image/event/dalgaard_615x425.jpg" style="width: 205px;">
+          </div>
+        </div>
+        <div class="header">
+          <strong class="category" style="display: none;"></strong>
+		  <div class="date-time"><p class="event-date">17. november</p>
+		    <p class="event-time">kl. 19.30</p><p class="event-primary-address"></p>
+		  </div>
+          <i class="date">17. november kl. 19.30</i>
+          <span class="library"></span>
+        </div>
+        <div class="content-wrapper body" id="articlePopup_body">
+          <h1 class="title">Poesi i Vandkanten - Daniel Dalgaard</h1>
+          <div class="bodyContent">
+		    <p>Mød den unge digter Daniel Dalgaard, der læser op fra egne værker. Aftenen er som vanligt krydret med fællessang, musik og vin.</p>
+			<p>&nbsp;</p><p>&nbsp;</p>
+            <p>Lemvig GymnasiumTirsdag den 17. november kl. 19.30Entré: 75 kr. (40 kr. for studerende)</p>
+			<p>Køb billet hos Lemvig Boghandel, biblioteket eller her &gt;&gt;&gt;&nbsp;</p>
+	        <p>Poesi i Vandkanten arrangeres af: Lemvig Bibliotek, Lemvig Musikskole, Lemvig Gymnasium, Lemvig Boghandel og Gode fortælleres venner.</p>
+	      </div>
+	    </div>
+      </div>
+    </div>
+    <div id="closeBtnOpacPopup" style="position: absolute; cursor: pointer;"><i class="icon-remove-sign"></i></div>
+    <div class="shadowtl2" style="top: -10px; height: 30px; left: -10px; position: absolute; z-index: -99; width: 30px;"></div>
+    <div class="shadowtop2" style="width: 780px; height: 30px; left: 20px; position: absolute; top: -10px; z-index: -99;"></div>
+    <div class="shadowtr2" style="top: -10px; height: 30px; right: -10px; position: absolute; z-index: -99; width: 30px;"></div>
+    <div class="shadowleft2" style="height: 256px; width: 10px; left: -10px; position: absolute; top: 20px; z-index: -99;"></div>
+    <div class="shadowright2" style="height: 256px; width: 10px; right: -10px; position: absolute; top: 20px; z-index: -99;"></div>
+    <div class="shadowbl2" style="bottom: -20px; height: 40px; left: -10px; position: absolute; z-index: -99; width: 30px;"></div>
+    <div class="shadowbottom2" style="width: 780px; bottom: -20px; height: 20px; left: 20px; position: absolute; z-index: -99;"></div>
+    <div class="shadowbr2" style="bottom: -20px; height: 40px; right: -10px; position: absolute; z-index: -99; width: 30px;"></div>
+  </div>
+</div>
   </body>
 </html>
