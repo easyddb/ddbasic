@@ -164,5 +164,11 @@
           }
       });
     });
+
+    $('.layout-wrapper').each(function() {
+      if ($(this).children().length == 0) {
+        $(this).css('display', 'none');
+      }
+    });
   });
 })(jQuery);
