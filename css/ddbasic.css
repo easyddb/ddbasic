@@ -1407,12 +1407,12 @@ a.button:hover,
 .pane-bookmarks .update-reservations .form-submit:active,
 .pane-bookmarks .renew-loan-button .form-submit:active, .pane-debts .pay-button .form-submit:active, .alma-item-list .reserve-button:active,
 .ding-item-list-item .reserve-button:active {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxOGIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1M2YwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxOGMwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1M2YwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
-  background-image: -moz-linear-gradient(#518b00, #253f00);
-  background-image: -webkit-linear-gradient(#518b00, #253f00);
-  background-image: linear-gradient(#518b00, #253f00);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518c00), color-stop(100%, #253f00));
+  background-image: -moz-linear-gradient(#518c00, #253f00);
+  background-image: -webkit-linear-gradient(#518c00, #253f00);
+  background-image: linear-gradient(#518c00, #253f00);
   background-color: #335900;
 }
 
@@ -3686,14 +3686,13 @@ body {
 }
 .header-wrapper .header-inner {
   position: relative;
-  overflow: hidden;
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
 }
 .header-wrapper .header-inner > section {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Site name, slogan and logo
@@ -10590,5 +10589,3 @@ div[class^="collection-bg"] {
   background: #262626;
   color: #fffff9;
 }
-
-/*# sourceMappingURL=ddbasic.css.map */
