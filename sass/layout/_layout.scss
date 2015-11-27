@@ -52,14 +52,13 @@ body {
 
   .header-inner {
     position: relative;
-    overflow: hidden;
     margin-right: auto;
     margin-left: auto;
     max-width: 1200px;
 
     > section {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }
