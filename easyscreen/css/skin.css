@@ -841,6 +841,38 @@ ul.newsticker {
   width: 30%;
 }
 
+.fullscreen .textandimage-ct-container {
+  background: #000;
+  height: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  position: absolute !important;
+  width: 100%;
+  z-index: 100;
+}
+
+.fullscreen #SlidersDiv .textandimage-ct-container .text-and-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreen #SlidersDiv .textandimage-ct-container {
+  padding: 0;
+}
+
+.fullscreen #SlidersDiv .textandimage-ct-container .image {
+  height: auto;
+  width: auto;
+  margin: 0;
+  max-width: 100%;
+  position: absolute;               
+  top: 50%;                        
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
 /* Temporary content */
 .row5 {
   height: 80%;
