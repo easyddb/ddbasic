@@ -184,6 +184,7 @@ body,
 
 .nodelist-title {
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .carousel-ct-container .title {
@@ -388,8 +389,7 @@ body,
   text-align: left;
 }
 
-.simple-tpl .header p,
-.carousel-tpl .header p {
+.simple-tpl .header p {
   margin: 0;
 }
 
@@ -870,6 +870,8 @@ ul.newsticker {
   position: absolute;               
   top: 50%;                        
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   left: 50%;
 }
 
