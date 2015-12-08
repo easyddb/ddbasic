@@ -29,7 +29,9 @@
 .carousel-ct-container .title,
 .events-day-title,
 .events-header,
-.event-details {
+.event-details,
+.empty-list h2,
+.empty-list div {
   background: url("../img/grey-p.png") repeat !important; /* Grey transparent bg */
 }
 .events-page {
@@ -869,10 +871,48 @@ ul.newsticker {
   max-width: 100%;
   position: absolute;               
   top: 50%;                        
-  -ms-transform: translate(-50%, -50%);	
+  -ms-transform: translate(-50%, -50%);    
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   left: 50%;
+}
+
+.empty-list {
+  height: 100%;
+}
+
+.empty-list h2 {
+  padding: 5px 20px;
+}
+
+.empty-list div {
+  height: 65%;
+  padding: 20px;
+  position: relative;
+}
+
+.empty-list div span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);    
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.empty-list-pagination {
+  display: none;
+}
+
+.c4 .l-location {
+  height: 33px;
+  overflow: hidden;
+}
+
+.c4 .location,
+.c4 .organizer {
+  margin-left: -4px;
 }
 
 /* Temporary content */
