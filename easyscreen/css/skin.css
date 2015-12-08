@@ -729,6 +729,12 @@ ul.newsticker {
   width: 10%;
 }
 
+.event-details .c1 span {
+  display: block;
+  text-align: right;
+ 
+}
+
 .event-details .c2 {
   width: 10%;
 }
@@ -781,6 +787,7 @@ ul.newsticker {
   display: inline;
   text-align: left;
 }
+
 .event-details span.event-details-attr {
   display: inline-block;
 }
@@ -835,12 +842,12 @@ ul.newsticker {
 
 .column3 .event-details .c3 {
   padding-right: 5%;
-  width: 40%;
+  width: 35%;
   word-break: normal;
 }
 
 .column3 .event-details .c4 {
-  width: 30%;
+  width: 35%;
 }
 
 .fullscreen .textandimage-ct-container {
@@ -908,6 +915,10 @@ ul.newsticker {
 .c4 .l-location {
   height: 33px;
   overflow: hidden;
+}
+
+.c1 .le-fra {
+  margin-top: -2px;
 }
 
 .c4 .location,
