@@ -36,6 +36,7 @@
 }
 .events-page {
   display: none;
+  margin-top: 20px;
 }
 .filter-overlay {
   background: url("../img/bg-filter.png") repeat; /* Grey transparent bg */
@@ -647,8 +648,14 @@ ul.newsticker {
   display: block;
 }
 
+.events-day-block {
+  padding-bottom: 30px;
+}
+
 .events-day-title h2 {
   padding: 5px 20px;
+  height: 62px;
+  margin: 0;
 }
 
 .simple-tpl .header p.event-time {
