@@ -103,14 +103,7 @@
 }
 
 body {
-<<<<<<< HEAD
   background: #deded4;
-=======
-  background: url("../img/baggrund_easyscreen2.jpg") no-repeat;
-  font-family: 'ApexMedium', Arial, Helvetica, sans-serif;
-  -webkit-background-size: cover;
-  background-size: cover;
->>>>>>> origin/development
 }
 
 .filter-overlay {
@@ -178,16 +171,7 @@ body,
 }
 
 #Header .text {
-<<<<<<< HEAD
   color: #006666 !important;
-=======
-  display: inline-block;
-  font-family: 'ApexBold', Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  height: 95px;
-  letter-spacing: 0.1px;
-  line-height: 80px;
->>>>>>> origin/development
   margin-left: 7%;
   text-indent: -9000px;
   display: block;
