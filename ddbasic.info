@@ -2,7 +2,7 @@
   name        = DDBasic
   description = The default theme for the danish library distribution
   core        = 7.x
-  release     = 7.x-2.2.0+easy
+  release     = 7.x-2.3.1+easy
 
 
 ;----------// Stylesheets
