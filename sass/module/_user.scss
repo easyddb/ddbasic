@@ -476,8 +476,8 @@
   @extend %search-user-header;
 
   @include small() {
-    .form-item-name,
-    .form-item-pass {
+    div.form-item-name,
+    div.form-item-pass {
       @include zen-grid-item(12, 1);
       @include zen-clear();
     }
